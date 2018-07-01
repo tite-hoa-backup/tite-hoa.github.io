@@ -754,20 +754,7 @@ p {
       zoom: 1; } }
   @supports (-ms-ime-align: auto) {
     .sidebar-container {
-      overflow: hidden;
-      transition: all 0s ease;
-      -o-transition: all 0s ease;
-      -ms-transition: all 0s ease;
-      -moz-transition: all 0s ease;
-      -khtml-transition: all 0s ease;
-      -webkit-transition: all 0s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
-      -webkit-will-change: transition;
-      zoom: 1; } }
+      overflow: hidden; } }
   @media screen and (max-width: 768px) {
     .sidebar-container {
       width: 224px; } }

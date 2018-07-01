@@ -43,7 +43,7 @@
     var setHamburgerIcon = document.querySelector('.hamburger > i');
     var vw = window.innerWidth;
 
-    if (vw < 640) {
+    // if (vw < 640) {
 
         if (getHamburgerClass) {
     
@@ -87,7 +87,7 @@
             }
             
         }
-    }
+    // }
 
 }());
 

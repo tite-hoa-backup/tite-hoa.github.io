@@ -1,0 +1,154 @@
+.board-wrapper {
+    
+    .list-board-plain {
+        width: 100%;
+        margin: $grid 0;
+        height: $grid12x;
+        padding: 0 $grid4x;
+        @include selection();
+        @include render-hack(width);
+        @include box-sizing(border-box);
+        @include border-radius($grid2x);
+        @include transform(translateZ(0));
+        // background-color: powderblue;
+
+        &:hover {
+            background-color: #f9f9f9;
+        }
+
+        .list-numbering-wrapper {
+            // background-color: lightseagreen;
+            height: 100%;
+            width: $grid10x;
+            margin-right: $grid;
+            @include center-text();
+            @include render-hack(width);
+
+            @media #{$chrome} {
+                top: -10% !important;
+            }
+
+            @media #{$firefox} {
+                top: -10% !important;
+            }
+
+            @media #{$ie} {
+                top: -10% !important;
+            }
+
+            @supports (-ms-ime-align:auto) {
+                top: -10% !important;
+            }
+
+            .list-numbering {
+                color: $brand;
+                @include center-text();
+
+                // &::after {
+                //     content: counter(content);
+                //     counter-increment: content -1;
+                // }
+            }
+        }
+
+
+
+        .list-board-text-wrapper {
+            // background-color: royalblue;
+            width: 74%;
+            height: 100%;
+            margin-right: $grid3x;
+            @include overflow();
+
+            .dashboard-new-oval {
+                width: $grid2x;
+                height: $grid2x;
+                margin-left: $grid;
+                display: inline-block;
+                margin-bottom: $grid2x;
+                background-color: $noti;
+                @include border-radius($grid4x);
+            }
+
+            // TODO: 노가다코드 바꾸기
+            // list length mqbp
+            @media #{$wider}   { width: 71%; }
+            @media #{$wide}    { width: 64%; }
+            @media #{$ipad}    { width: 62%; }
+            @media #{$desktop} { width: 52%; }
+            @media #{$dt}      { width: 41%; }
+            @media #{$tablet}  { width: 62%; }
+            @media #{$landsc}  { width: 45%; }
+            @media #{$middle}  { width: 62%; }
+            @media #{$pablet}  { width: 54%; }
+            @media #{$mobile}  { width: 46%; }
+            @media #{$mini}    { width: 38%; }
+
+
+            .list-board-text {
+                color: $text333;
+                cursor: pointer;
+                @include overflow();
+                @include center-text();
+                display: block;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+        .list-board-edit,
+        .list-board-time {
+            right: 0;
+            float: right;
+            height: 100%;
+            color: $text999;
+            position: relative;
+            display: inline-block;
+        }
+
+        .list-board-time {
+            // background-color: sandybrown;
+            width: $grid24x;
+            margin-right: $grid2x;
+
+            span {
+                @include center-text();
+            }
+
+            // TODO: 노가다코드 바꾸기
+            // list display mqbp
+            @media #{$tablet} {
+                display: none;
+            }
+
+            @media #{$landsc} {
+                display: inline-block;
+            }
+
+            @media #{$middle} {
+                display: none;
+            }
+        }
+
+        .list-board-edit {
+            // background-color: salmon;
+            width: $grid16x;
+            
+            a {
+                cursor: pointer;
+                @include center-text();
+
+                &::after {
+                    content: "수정하기";
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.dashboard-card-activity {
+
+    .new-admin-count {
+        @include dashboard-subspan();
+
+        &:after {
+            content: "최근 우리아파트 타이트 유저들의 활동입니다";
+        }
+    }
+
+    .dashboard-activity-wrapper {
+
+        .dashboard-activity-item {
+            padding: $grid2x $grid4x;
+            padding-top: $grid;
+            border: 1px solid $texteee;
+            @include border-radius($grid2x);
+
+            &:not(:first-child) {
+                margin-top: $grid2x;
+            }
+
+            .material-icons {
+                color: $text999;
+                margin-right: $grid2x;
+                @include transform(translateY(25%));
+            }
+
+            .dashboard-activity-count {
+                color: $brand;
+                font-weight: 900;
+                margin-left: $grid;
+
+                &::after {
+                    content: "개";
+                }
+
+                &.new-users {
+
+                    &::after {
+                        content: "명";
+                    }
+                }
+            }
+        }
+    }
+}

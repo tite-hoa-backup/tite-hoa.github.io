@@ -1,0 +1,10 @@
+.dashboard-card-notification {
+
+    .new-notification-count {
+        @include dashboard-subspan();
+
+        &:after {
+            content: "개의 최근 공지사항이 있습니다";
+        }
+    }
+}

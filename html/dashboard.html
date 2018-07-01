@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Tite - 상황판</title>
+
+    <meta name="description" content="Tite - 관리사무소 도구">
+    <meta name="keywords" content="Tite">
+    <meta property="og:image" content="/img/dist/launcher.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/dist/style.css">
+    <!-- endinject -->
+</head>
+<body id="main" class="has-header">
+    <div class="dim"></div>
+
+    <!-- header -->
+    <div class="main-header">
+        <div class="hamburger">
+            <i class="material-icons md-24">menu</i>
+        </div>
+        <a class="main-header-link" href="/html/dashboard.html">
+            <img src="/img/dist/launcher.svg" class="main-header-logo">
+            <div class="main-header-apt-name-box"><span class="main-header-apt-name">옥련동 현대5차아파트</span></div>
+        </a>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-wrapper">
+            <a class="sidebar-item dashboard-overall this" title="상황판" href="/html/dashboard.html">
+                <i class="material-icons md-24">dashboard</i><span class="sidebar-text" data-subtitle="Dashboard">상황판</span>
+            </a>
+            <a class="sidebar-item board-plain" title="공지사항 / 알림" href="/html/notification.html">
+                <i class="material-icons md-24">notification_important</i><span class="sidebar-text" data-subtitle="Dashboard">공지사항 / 알림</span>
+            </a>
+            <a class="sidebar-item dashboard" title="주민투표" href="/html/vote.html">
+                <i class="material-icons md-24">how_to_vote</i><span class="sidebar-text" data-subtitle="Dashboard">주민투표</span>
+            </a>
+            <a class="sidebar-item board-plain" title="민원" href="/html/petition.html">
+                <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
+                <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
+            </a>
+            <!-- <a class="sidebar-item qna-board" title="관리자 글 게시" href="/html/admin-post.html">
+                <i class="material-icons md-24">security</i><span class="sidebar-text" data-subtitle="Dashboard">관리자 글 게시</span>
+            </a> -->
+            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
+                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
+            </a>
+            <a class="sidebar-item board-plain" title="예약알림 설정" href="/html/pre-noti.html">
+                <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- board -->
+    <div class="board-container dashboard-container copy">
+        <div class="board-header">
+            <h3 class="header-title">
+                <i class="material-icons md-24 title-icon">dashboard</i>상황판
+            </h3>
+            <!-- <h6 class="header-subtitle">Dashboard</h6> -->
+            <span class="header-subtitle-description">우리 아파트단지 최근 소식을 모아볼 수 있습니다</span>
+            <!-- write new post -->
+            <!-- <a href="/html/write/write-post.html" class="header-newpost" title="새로운 글 작성하기">
+                <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text"></span>
+            </a> -->
+        </div>
+        <!-- dashboard each cards -->
+        <div class="dashboard-container">
+
+            <!-- dashboard: activity -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card extended">
+                    <h3 class="dashboard-title">
+                        <i class="material-icons md-22">public</i>우리 아파트 소식
+                    </h3>
+                    <div class="dashboard-card-activity">
+                        <h6 class="dashboard-card-subtitle">새로운 활동</h6>
+                        <span class="new-admin-count"></span>
+                        <div class="dashboard-activity-wrapper">
+
+                            <div class="dashboard-activity-item">
+                                <i class="material-icons md-24">business</i>관리사무소 좋아요:
+                                <span class="dashboard-activity-count hoa-likes">48</span>
+                            </div>
+
+                            <div class="dashboard-activity-item">
+                                <i class="material-icons md-24">favorite</i>최근 좋아요:
+                                <span class="dashboard-activity-count recent-likes">32</span>
+                            </div>
+
+                            <div class="dashboard-activity-item">
+                                <i class="material-icons md-24">chat</i>최근 댓글:
+                                <span class="dashboard-activity-count recent-comments">16</span>
+                            </div>
+
+                            <div class="dashboard-activity-item">
+                                <i class="material-icons md-24">public</i>새로운 게시글:
+                                <span class="dashboard-activity-count new-posts">8</span>
+                            </div>
+
+                            <div class="dashboard-activity-item">
+                                <i class="material-icons md-24">group_add</i>새로 가입한 유저:
+                                <span class="dashboard-activity-count new-users">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dashboard: notification -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card">
+                    <h3 class="dashboard-title">
+                        <a href="/html/notification.html"><i class="material-icons md-22">notification_important</i>공지사항 / 알림</a>
+                        <a href="/html/notification.html" class="dashboard-see-all-each"></a>
+                    </h3>
+                    <div class="dashboard-card-notification">
+                        <h6 class="dashboard-card-subtitle">최근 공지사항</h6>
+                        <span class="new-notification-count">1</span>
+                        <div class="dashboard-card-notification-item">
+                            <div class="dashboard-item-each scrollable">
+                                <a href="/html/post/post-notification.html" class="dashboard-card-item-atitle">103동 3, 4라인 엘레베이터 공사관련 알림</a>
+                                <span class="dashboard-card-item-span">
+                                    6월 27일 수요일 오전 10시부터 12시까지 103동 3, 4라인 엘레베이터가 보수공사로 인해서 잠시 운행이 중단됩니다. 주민 여러분들의 너른 양해 부탁드립니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn to page -->
+                <div class="dashboard-button-wrapper">
+                    <a class="dashboard-btn-overall-link" href="/html/write/write-post-noti.html">
+                        <button class="dashboard-btn-overall">새 공지사항 게시</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- dashboard: vote -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card">
+                    <h3 class="dashboard-title">
+                        <a href="/html/vote.html"><i class="material-icons md-22">how_to_vote</i>주민투표</a>
+                        <a href="/html/vote.html" class="dashboard-see-all-each"></a>
+                    </h3>
+                    <div class="dashboard-card-vote">
+                        <h6 class="dashboard-card-subtitle"><a href="/html/post/post-vote.html">함박초등학교 입시설명회</a></h6>
+                        <span class="dashboard-card-vote-duedate">2018년 7월 18일</span>
+                        <div class="dashboard-card-vote-item">
+                            <span class="vote-item-progress" style="width: 24%">
+                                <span class="vote-item-title">6월 29일 (금)</span>
+                            </span>
+                            <span class="vote-item-numb">48</span>
+                        </div>
+                        <div class="dashboard-card-vote-item">
+                            <span class="vote-item-progress" style="width: 56%">
+                                <span class="vote-item-title item-highest">7월 6일 (금)</span>
+                            </span>
+                            <span class="vote-item-numb">112</span>
+                        </div>
+                        <div class="dashboard-card-vote-item">
+                            <span class="vote-item-progress" style="width: 32%">
+                                <span class="vote-item-title">7월 13일 (금)</span>
+                            </span>
+                            <span class="vote-item-numb">64</span>
+                        </div>
+                        <span class="dashboard-card-vote-join">224</span>
+                    </div>
+                </div>
+                <!-- btn to page -->
+                <div class="dashboard-button-wrapper">
+                    <a class="dashboard-btn-overall-link" href="/html/write/write-post-vote.html">
+                        <button class="dashboard-btn-overall">새 주민투표 만들기</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- dashboard: petition -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card">
+                    <h3 class="dashboard-title">
+                        <a href="/html/petition.html"><i class="material-icons md-22">record_voice_over</i>민원</a>
+                        <a href="/html/petition.html" class="dashboard-see-all-each"></a>
+                    </h3>
+                    <div class="dashboard-card-petition">
+                        <h6 class="dashboard-card-subtitle">새로운 민원<span class="dashboard-new-oval"></span></h6>
+                        <span class="new-petition-count">2</span>
+                        <div class="dashboard-card-petition-item">
+                            <div class="dashboard-item-each scrollable">
+                                <a href="/html/post/post-petition.html" class="dashboard-card-item-atitle">관리사무소 스피커 방송 제한</a>
+                                <span class="dashboard-card-item-span">
+                                    정말 위급한 사항이 아니면 스피커를 통한 관리실 방송 제한을 청원합니다. 직장 때문에 밤과 낮이 반대인 주민들고 많고, 겨우 재운 아이를 깨우고, 예고도 없고, 소거할 수 있는 선택권도 없는 방송에 대한 제한을 청원합니다.
+                                </span>
+                            </div>
+                            <div class="dashboard-item-each scrollable">
+                                <a href="#" class="dashboard-card-item-atitle">봄 맞이 에어컨 청소</a>
+                                <span class="dashboard-card-item-span">
+                                        우리 아파트 후문에 위치한 클리닝 월드에서 봄 맞이 에어컨 청소 공동구매를 진행합니다! 신청 기간은 3월 31일까지이고, 신청 순서대로 4월 1일부터 방문 청소를 해주신다고 하네요 ^^
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn to page -->
+                <div class="dashboard-button-wrapper">
+                    <a class="dashboard-btn-overall-link" href="/html/petition.html">
+                        <button class="dashboard-btn-overall">전체 민원 보기</button>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- dashboard: business -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card">
+                    <h3 class="dashboard-title">
+                        <a href="/html/business-post.html"><i class="material-icons md-22">store</i>광고 글</a>
+                        <a href="/html/business-post.html" class="dashboard-see-all-each"></a>
+                    </h3>
+                    <div class="dashboard-card-business">
+                        <h6 class="dashboard-card-subtitle">광고 글 목록</h6>
+                        <span class="new-business-count">1</span>
+                    </div>
+                </div>
+                <!-- btn to page -->
+                <div class="dashboard-button-wrapper">
+                    <a class="dashboard-btn-overall-link" href="/html/write/write-post-business.html">
+                        <button class="dashboard-btn-overall">새 광고 글 게시</button>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- dashboard: pre-noti -->
+            <div class="dashboard-wrapper">
+                <div class="dashboard-card">
+                    <h3 class="dashboard-title">
+                        <a href="/html/pre-noti.html"><i class="material-icons md-22">alarm_add</i>예약알림</a>
+                        <a href="/html/pre-noti.html" class="dashboard-see-all-each"></a>
+                    </h3>
+                    <div class="dashboard-card-pre-noti">
+                        <h6 class="dashboard-card-subtitle dashboard-no-item">등록된 예약알림이 없습니다</h6>
+                    </div>
+                </div>
+                <!-- btn to page -->
+                <div class="dashboard-button-wrapper">
+                    <a class="dashboard-btn-overall-link" href="/html/write/write-post-pre-noti.html">
+                        <button class="dashboard-btn-overall">새 예약알림 만들기</button>
+                    </a>
+                </div>
+            </div>
+                    
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="/js/dist/index.js"></script>
+    <!-- endinject -->
+</body>
+</html>

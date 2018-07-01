@@ -1,0 +1,185 @@
+.dashboard-container {
+    max-width: 1440px !important;
+}
+
+.board-container {
+    z-index: 1;
+    max-width: 960px;
+    position: relative;
+    top: (($grid16x) + $grid8x);
+    margin: 0 $grid6x $grid8x (($grid64x) + $grid6x);
+    @include box-sizing(border-box);
+    @include transition(margin .5s ease);
+
+    @media #{$tablet} {
+        margin: 0 $grid4x $grid8x (($grid56x) + $grid4x);
+    }
+
+    @media #{$landsc} {
+        margin: 0 $grid4x $grid4x;
+    }
+
+    .board-header {
+        z-index: 2;
+        margin-bottom: $grid4x;
+
+        .header-title,
+        .header-subtitle {
+            display: inline-block;
+
+            .title-icon {
+                color: $text555;
+                margin-right: $grid2x;
+                @include font-size($grid8x);
+                @include transform(translateY(20%));
+            }
+        }
+
+        // h6 english subtitle
+        .header-subtitle {
+            color: $text999;
+            font-weight: 400;
+            margin-left: $grid;
+            vertical-align: middle;
+            @include font-size($grid4x);
+
+            @media #{$mini} {
+                display: none;
+            }
+        }
+
+        // span
+        .header-subtitle-description {
+            // display: inline-block;
+            color: $text999;
+            margin: 0 0 $grid8x 0 !important;
+            @include font-size($grid3x + ($grid / 2));
+
+            &::before {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+
+
+        // new post btn
+        .header-newpost {
+            top: 0;
+            right: 0;
+            float: right;
+            color: white;
+            cursor: pointer;
+            height: $grid12x;
+            position: absolute;
+            display: inline-block;
+            background-color: $brand;
+            padding: 0 $grid4x 0 $grid3x;
+            @include button-pressed();
+            @include border-radius($grid2x);
+            @include transition(all .5s ease);
+
+            @media #{$tablet}{
+                width: $grid12x;
+            }
+
+            &:hover {
+                background-color: $brand-hover;
+            }
+            
+            .header-newpost-icon {
+                top: 50%;
+                margin-right: $grid2x;
+                @include transform(translateY(45%));
+            }
+
+            .header-newpost-text {
+                font-weight: 900;
+                @include center-text();
+                @include line-height($grid6x);
+
+                &::after {
+                    content: "새로운 글 작성하기";
+                }
+
+                @media #{$desktop} {
+
+                    &::after {
+                        content: "새 글 작성";
+                    }
+                }
+
+                @media #{$tablet} {
+                    display: none;
+                }
+
+                &.noti {                 &::after { content: "새 공지사항 게시";}
+                    @media #{$desktop} { &::after { content: "새 공지사항"; } }
+                }
+
+                &.vote {                 &::after { content: "새 주민투표 만들기";}
+                    @media #{$desktop} { &::after { content: "새 주민투표"; } }
+                }
+
+                &.admin {                &::after { content: "새 관리자 글 게시";}
+                    @media #{$desktop} { &::after { content: "새 관리자 글"; } }
+                }
+
+                &.business {             &::after { content: "새 광고 글 게시";}
+                    @media #{$desktop} { &::after { content: "새 광고 글"; } }
+                }
+
+                &.pre-noti {             &::after { content: "새 예약알림 만들기";}
+                    @media #{$desktop} { &::after { content: "새 예약알림"; } }
+                }
+
+            }
+        }
+    }
+    
+    .board-wrapper {
+        z-index: 2;
+        display: block;
+        padding: $grid4x;
+        background-color: white;
+        border: 1px solid $texteee;
+        @include border-radius($grid2x);
+
+        .board-wrapper-header {
+            margin-bottom: $grid2x;
+            border-bottom: 1px solid $texteee;
+
+            .board-notice-count {
+                color: $brand;
+                font-weight: 900;
+                display: inline-block;
+                margin: $grid2x 0 $grid4x;
+                
+                &::before,
+                &::after {
+                    font-weight: 400;
+                    color: $text333;
+                }
+                
+                &::before {
+                    content: "총 ";
+                }
+                
+                &::after {
+                    content: " 의 글이 있습니다";
+                }
+            }
+        }
+    }
+}
+
+.copy {
+
+    &::after {
+        color: $text999;
+        margin: $grid8x 0;
+        display: inline-block;
+        content: "© 2018. 타이트 주식회사. Tite, Ltd., All Rights Reserved.";
+        @include font-size($grid3x);
+        @include line-height($grid3x);
+    }
+}

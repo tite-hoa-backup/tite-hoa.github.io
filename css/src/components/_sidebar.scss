@@ -1,0 +1,138 @@
+.expanded {
+    zoom: 1;
+    left: 0 !important;
+    @include render-hack(left);
+    @include transform(translateZ(0));
+}
+
+.sidebar-container {
+    top: 0;
+    left: 0;
+    zoom: 1;
+    z-index: 10;
+    height: 100vh;
+    width: $grid64x;
+    position: fixed;
+    overflow: scroll;
+    background-color: $brand;
+    @include render-hack(left);
+    @include box-sizing(border-box);
+    @include transition(all .5s ease);
+    @include transform(translateZ(0));
+
+    // hide scrollbar ie
+    @media #{$ie} {
+        overflow: hidden;
+    }
+
+    // hide scrollbar edge
+    @supports (-ms-ime-align:auto) {
+        overflow: hidden;
+    }
+
+    @media #{$tablet} {
+        width: $grid56x;
+    }
+
+    @media #{$landsc} {
+        left: -($grid56x);
+    }
+
+    .sidebar-wrapper {
+        padding-top: $grid16x;
+
+        &:first-child {
+            margin-top: $grid4x;
+        }
+
+        &:last-child {
+            margin-bottom: $grid4x;
+        }
+
+        .sidebar-item {
+            width: 100%;
+            color: white;
+            display: block;
+            cursor: pointer;
+            height: $grid16x;
+            padding-left: $grid8x;
+            @include button-pressed();
+            @include font-size($grid4x);
+            @include line-height($grid8x);
+            @include transition(all .5s ease);
+
+            @media #{$mobile} {
+                padding-left: $grid6x;
+            }
+
+            .sidebar-text {
+                @include center-text();
+            }
+            
+            .material-icons {
+                top: 50%;
+                margin-right: $grid4x;
+                @include transform(translateY(50%));
+            }
+
+            &:hover {
+                background-color: $white-overlay;
+                @include transition(all .1s ease);
+            }
+        }
+
+        .this {
+            color: white;
+            font-weight: 900;
+            background-color: $brand-hover;
+
+            &:hover {
+                background-color: $brand-hover;
+            }
+        }
+    }
+}
+
+
+
+/* ==============================
+    noti new oval
+============================== */
+.sidebar-noti-new {
+    width: $grid5x;
+    height: $grid5x;
+    text-align: center;
+    // margin-left: $grid;
+    display: inline-block;
+    background-color: $noti;
+    @extend %center-vertical;
+    @include border-radius($grid4x);
+
+    .noti-count {
+        color: white;
+        font-weight: 900;
+        @include center-text();
+        @include font-size(10px);
+        @include transform(translateY(-56%));
+    }
+}
+
+
+
+/* ==============================
+    dim layer when open sidebar
+============================== */
+.dim-layer {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.38);
+    @include transform(translateZ(0));
+    @include transition(all .25s ease);
+
+    @media #{$landsc} {
+        display: block;
+    }
+}

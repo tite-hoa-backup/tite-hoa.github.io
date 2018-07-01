@@ -1,0 +1,10 @@
+.dashboard-card-pre-noti {
+
+    .new-pre-noti-count {
+        @include dashboard-subspan();
+
+        &:after {
+            content: "개의 새로운 예약알림이 있습니다";
+        }
+    }
+}

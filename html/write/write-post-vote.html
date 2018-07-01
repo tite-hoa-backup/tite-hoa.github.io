@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Tite - 새 주민투표 만들기</title>
+
+    <meta name="description" content="Tite - 관리사무소 도구">
+    <meta name="keywords" content="Tite">
+    <meta property="og:image" content="/img/dist/launcher.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/dist/style.css">
+    <!-- endinject -->
+</head>
+<body id="main" class="has-header">
+    <div class="dim"></div>
+
+    <!-- header -->
+    <div class="main-header">
+        <div class="hamburger">
+            <i class="material-icons md-24">menu</i>
+        </div>
+        <a class="main-header-link" href="/html/dashboard.html">
+            <img src="/img/dist/launcher.svg" class="main-header-logo">
+            <div class="main-header-apt-name-box"><span class="main-header-apt-name">옥련동 현대5차아파트</span></div>
+        </a>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-wrapper">
+            <a class="sidebar-item dashboard-overall" title="상황판" href="/html/dashboard.html">
+                <i class="material-icons md-24">dashboard</i><span class="sidebar-text" data-subtitle="Dashboard">상황판</span>
+            </a>
+            <a class="sidebar-item board-plain" title="공지사항 / 알림" href="/html/notification.html">
+                <i class="material-icons md-24">notification_important</i><span class="sidebar-text" data-subtitle="Dashboard">공지사항 / 알림</span>
+            </a>
+            <a class="sidebar-item dashboard" title="주민투표" href="/html/vote.html">
+                <i class="material-icons md-24">how_to_vote</i><span class="sidebar-text" data-subtitle="Dashboard">주민투표</span>
+            </a>
+            <a class="sidebar-item board-plain" title="민원" href="/html/petition.html">
+                <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
+                <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
+            </a>
+            <!-- <a class="sidebar-item qna-board" title="관리자 글 게시" href="/html/admin-post.html">
+                <i class="material-icons md-24">security</i><span class="sidebar-text" data-subtitle="Dashboard">관리자 글 게시</span>
+            </a> -->
+            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
+                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
+            </a>
+            <a class="sidebar-item board-plain" title="예약알림 설정" href="/html/pre-noti.html">
+                <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- board -->
+    <div class="board-container copy">
+        <div class="board-header">
+            <h3 class="header-title">
+                <i class="material-icons md-24 title-icon">how_to_vote</i>새 주민투표 만들기
+            </h3>
+            <span class="header-subtitle-description">입주민 투표를 열고 관리할 수 있습니다</span>
+        </div>
+
+        <!-- post body -->
+        <div class="post-wrapper write-post-wrapper">
+            <div class="post-wrapper-header write-post-wrapper-header">
+                <input class="post-title write-post-title" placeholder="투표의 제목을 입력해주세요">
+            </div>
+            <div class="post-wrapper-paragraph write-post-wrapper-paragraph">
+                <textarea class="write-post-parahraph" placeholder="여기서부터 글을 작성해주세요"></textarea>
+
+                <div class="write-post-vote-items-wrapper">
+                    <form class="write-post-vote-items-each">
+                        <input class="add-vote-item-input" placeholder="투표항목 입력 (20자 이내)">
+                        <button class="remove-vote-item-btn" onclick="alert('투표항목은 2개보다 적을 수 없습니다.'); return false"></button>
+                    </form>
+
+                    <form class="write-post-vote-items-each">
+                        <input class="add-vote-item-input" placeholder="투표항목 입력 (20자 이내)">
+                        <button class="remove-vote-item-btn" onclick="alert('투표항목은 2개보다 적을 수 없습니다.'); return false"></button>
+                    </form>
+
+                    <button class="add-vote-item-btn">+ 투표항목 추가</button>
+
+                    <!-- upload image, set duedate -->
+                    <form class="write-post-upload-image-wrapper">
+                        <label for="upload-image" class="write-post-upload-image-title">
+                            <i class="material-icons md-24">image</i>사진첨부: 
+                        </label>
+                        <input type="file" name="upload-image" id="upload-image" class="write-post-upload-image" accept="image/*" multiple>
+                    </form>
+
+                    <form class="write-post-vote-items-each">
+                        <label for="vote-duedate" class="write-post-vote-set-duedate-title">
+                            <i class="material-icons md-24">date_range</i>투표기간 설정:
+                        </label>
+                        <select id="vote-duedate" name="vote-duedate" class="write-post-vote-set-duedate">
+                            <option>1주일</option>
+                            <option>1일</option>
+                            <option>3일</option>
+                            <option>1달</option>
+                            <option>직접설정</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
+            <!-- back button -->
+            <div class="post-write-submit">
+                <button class="post-write-submit-button" type="submit"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="/js/dist/index.js"></script>
+    <!-- endinject -->
+</body>
+</html>

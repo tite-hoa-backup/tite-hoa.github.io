@@ -1,0 +1,244 @@
+.post-comment-container {
+
+    .post-info-wrapper {
+        padding: $grid8x 0 $grid8x;
+        border-bottom: 1px solid $texteee;
+
+        // comment info
+        .post-like-title,
+        .post-comment-title {
+            color: $text999;
+
+            .post-like-count,
+            .post-comment-count {
+                color: $text333;
+                font-weight: 900;
+
+                &::before,
+                &::after {
+                    color: $text999;
+                    font-weight: 400;
+                }
+
+                &::before {
+                    content: " ";
+                }
+            }
+        }
+
+        .post-like-title {
+            
+            &::before {
+                content: "좋아요 ";
+            }
+            
+            &::after {
+                content: " ㆍ ";
+            }
+        }
+
+        .post-comment-title {
+            
+            &::before {
+                content: "댓글 ";
+            }
+        }
+
+
+        .post-edit-remove {
+            float: right;
+            cursor: pointer;
+            font-weight: 900;
+            display: inline-block;
+            
+            .post-edit {
+                
+                &::after {
+                    content: " | ";
+                    color: $text999;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        // comment wrapper
+        .post-comment-comment-container {
+            padding: $grid $grid2x;
+            margin-top: $grid4x;
+            background-color: $textf9;
+            @include border-radius($grid4x);
+
+            @media #{$pablet} {
+                padding: $grid;
+            }
+            
+            .post-comment-comment-wrapper {
+                padding: $grid6x $grid4x;
+    
+                &:not(:first-child) {
+                    padding-top: 0;
+                }
+    
+                .post-comment-thumbnail {
+                    width: $grid10x;
+                    height: $grid10x;
+                    margin-right: $grid4x;
+                    display: inline-block;
+                    background-color: white;
+                    @include border-radius($grid10x);
+                }
+    
+                .post-comment-box {
+                    vertical-align: top;
+                    display: inline-block;
+    
+                    .post-comment-username {
+                        font-weight: 900;
+                        margin-right: ($grid / 2);
+                    }
+    
+                    .post-comment-comment-info {
+                        display: block;
+                        color: $text999;
+                        @include font-size(14px);
+    
+                        .post-comment-timestamp {
+                            
+                            &::after {
+                                content: " 전 ㆍ ";
+                            }
+                        }
+        
+                        .post-comment-liked-count {
+                            
+                            &::before {
+                                content: "좋아요 ";
+                            }
+                        }
+                    }
+
+
+                    // comment reply
+                    .post-reply-thumbnail {
+                        width: $grid8x;
+                        height: $grid8x;
+                        display: inline-block;
+                        background-color: white;
+                        margin: $grid6x $grid2x 0 0;
+                        @include border-radius($grid8x);
+                    }
+
+                    .post-comment-reply {
+                        display: inline-block;
+                        vertical-align: baseline;
+    
+                        .post-reply-username {
+                            font-weight: 900;
+                            margin-right: ($grid / 2);
+                        }
+    
+                        .post-comment-reply-info {
+                            display: block;
+                            color: $text999;
+                            margin-top: -($grid / 2);
+                            @include font-size(($grid3x) + ($grid / 2));
+        
+                            .post-reply-timestamp {
+                                
+                                &::after {
+                                    content: " 전 ㆍ ";
+                                }
+                            }
+            
+                            .post-reply-liked-count {
+                                
+                                &::before {
+                                    content: "좋아요 ";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .post-comment-textarea-wrapper {
+                padding: $grid4x;
+                position:relative;
+
+                .post-comment-textarea,
+                .post-comment-textarea-btn {
+                    border: none;
+                    outline: none;
+                    height: $grid20x;
+
+                    @media #{$tablet} {
+                        height: $grid16x;
+                    }
+
+                    @media #{$mobile} {
+                        height: $grid14x;
+                    }
+
+                    @media #{$ie} {
+                        overflow-y: hidden !important;
+                    }
+
+                    @supports (-ms-ime-align:auto) {
+                        overflow-y: hidden !important;
+                    }
+                }
+
+                .post-comment-textarea {
+                    width: 100%;
+                    resize: none;
+                    padding: $grid4x;
+                    position: relative;
+                    border: 1px solid $texteee;
+                    padding-right: ($grid20x + $grid);
+                    @include render-hack(width);
+                    @include line-height($grid4x);
+                    @include border-radius($grid2x);
+                    @include transform(translateZ(0));
+
+                    @media #{$ie} {
+                        overflow-y: hidden !important;
+                    }
+
+                    @supports (-ms-ime-align:auto) {
+                        overflow-y: hidden !important;
+                    }
+
+                    @media #{$mobile} {
+                        padding-right: ($grid16x + $grid);
+                    }
+                }
+
+                .post-comment-textarea-btn {
+                    right: 0;
+                    z-index: 1;
+                    color: white;
+                    width: $grid20x;
+                    cursor: pointer;
+                    font-weight: 900;
+                    position: absolute;
+                    margin-right: $grid4x;
+                    background-color: $brand;
+                    @include button-pressed();
+                    @include border-radius(0 $grid2x $grid2x 0);
+
+                    &:active {
+                        background-color: $brand-hover;
+                    }
+                    
+                    &::after {
+                        content: "등록";
+                    }
+
+                    @media #{$mobile} {
+                        width: $grid14x;
+                    }
+                }
+            }
+        }
+    }
+}

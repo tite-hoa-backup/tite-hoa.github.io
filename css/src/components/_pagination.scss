@@ -1,0 +1,69 @@
+.list-board-page-indicator {
+    width: 100%;
+    height: $grid12x;
+    margin-top: $grid;
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid $texteee;
+    @include render-hack(width);
+    @include transform(translateZ(0));
+    // background-color: burlywood;
+
+
+    .indicator-before,
+    .indicator-pagination,
+    .indicator-next {
+        cursor: pointer;
+        height: $grid12x;
+        padding: 0 $grid4x;
+        margin-top: $grid3x;
+        @include center-icon-text();
+
+        @media #{$mobile} {
+            padding: 0 $grid2x;
+        }
+
+        &[disabled] {
+            cursor: default;
+
+            a {
+                color: $texteee !important;
+            }
+        }
+    }
+
+
+    // .indicator-before,
+    // .indicator-next {
+    //     background-color: antiquewhite;
+    // }
+
+    
+    .indicator-pagination {
+        // background-color: aquamarine;
+
+        li {
+            color: $text999;
+            padding: 0 $grid2x;
+            display: inline-block;
+            @include transform(translateY(-25%));
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .this-page {
+
+            li {
+                cursor: default;
+                font-weight: 900;
+                color: $brand !important;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

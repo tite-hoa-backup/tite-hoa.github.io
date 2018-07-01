@@ -1,0 +1,74 @@
+.post-wrapper {
+    z-index: 2;
+    display: block;
+    padding: $grid8x;
+    background-color: white;
+    border: 1px solid $texteee;
+    @include selection();
+    @include border-radius($grid2x);
+
+    @media #{$pablet} {
+        padding: $grid8x $grid4x;
+    }
+
+    .post-wrapper-header {
+        border-bottom: 1px solid $texteee;
+
+        .post-title {
+            margin-bottom: $grid;
+            @include font-size($grid6x);
+            @include line-height($grid6x);
+        }
+
+        .post-timestamp {
+            color: $text999;
+            margin: 0 0 $grid4x 0;
+            display: inline-block;
+
+            &::after {
+                content: " 게시";
+            }
+        }
+    }
+
+    .post-wrapper-paragraph {
+        margin: $grid4x 0 0;
+        padding: $grid4x $grid4x $grid8x;
+        border-bottom: 1px solid $texteee;
+
+        @media #{$pablet} {
+            padding: $grid4x 0 $grid8x;
+        }
+
+        .post-view-count {
+            @include view-count();
+        }
+    }
+
+    .post-write-submit,
+    .post-back-list {
+        margin-top: $grid8x;
+
+        .post-write-submit-button {
+
+            &::after {
+                content: "글 게시하기";
+            }
+        }
+        
+        .post-back-list-button {
+
+            &::after {
+                content: "목록으로 돌아가기";
+            }
+        }
+
+        .post-write-submit-button,
+        .post-back-list-button {
+            width: $grid48x;
+            height: $grid12x;
+            @include btn-brand-border();
+            @include button-pressed();
+        }
+    }
+}

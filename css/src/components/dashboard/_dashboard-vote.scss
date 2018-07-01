@@ -1,0 +1,78 @@
+.dashboard-card-vote {
+
+    .dashboard-card-subtitle {
+        margin-bottom: -($grid);
+        @include line-height($grid5x);
+
+        a {
+            color: $text333;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .dashboard-card-vote-duedate {
+        @include dashboard-subspan();
+
+        &::after {
+            content: " 종료예정";
+        }
+    }
+
+    .dashboard-card-vote-item {
+        width: 100%;
+        margin-bottom: $grid2x;
+        background-color: white;
+        border: 1px solid $textddd;
+        @include border-radius($grid2x);
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .vote-item-numb {
+            float: right;
+            color: $text999;
+            margin-right: $grid4x;
+            @include transform(translateY(30%));
+
+            &:after {
+                content: "명"
+            }
+        }
+        
+        .vote-item-progress {
+            height: 100%;
+            padding: $grid2x;
+            display: inline-block;
+            background-color: $texteee;
+            @include border-radius(7px 0 0 7px);
+
+            .vote-item-title {
+                display: block;
+                overflow: visible;
+                white-space: nowrap;
+                padding-left: $grid2x;
+                text-overflow: ellipsis;
+            }
+
+            .item-highest {
+                font-weight: 900;
+            }
+        }
+    }
+    
+    .dashboard-card-vote-join {
+        color: $text999;
+        margin: $grid2x 0;
+        display: inline-block;
+        @include font-size(($grid3x) + ($grid / 2));
+
+        &::after {
+            content: "명 참여";
+        }
+    }
+}

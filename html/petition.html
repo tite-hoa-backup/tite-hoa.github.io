@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Tite - 민원</title>
+
+    <meta name="description" content="Tite - 관리사무소 도구">
+    <meta name="keywords" content="Tite">
+    <meta property="og:image" content="/img/dist/launcher.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/dist/style.css">
+    <!-- endinject -->
+</head>
+<body id="main" class="has-header">
+    <div class="dim"></div>
+
+    <!-- header -->
+    <div class="main-header">
+        <div class="hamburger">
+            <i class="material-icons md-24">menu</i>
+        </div>
+        <a class="main-header-link" href="/html/dashboard.html">
+            <img src="/img/dist/launcher.svg" class="main-header-logo">
+            <div class="main-header-apt-name-box"><span class="main-header-apt-name">옥련동 현대5차아파트</span></div>
+        </a>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-wrapper">
+            <a class="sidebar-item dashboard-overall" title="상황판" href="/html/dashboard.html">
+                <i class="material-icons md-24">dashboard</i><span class="sidebar-text" data-subtitle="Dashboard">상황판</span>
+            </a>
+            <a class="sidebar-item board-plain" title="공지사항 / 알림" href="/html/notification.html">
+                <i class="material-icons md-24">notification_important</i><span class="sidebar-text" data-subtitle="Dashboard">공지사항 / 알림</span>
+            </a>
+            <a class="sidebar-item dashboard" title="주민투표" href="/html/vote.html">
+                <i class="material-icons md-24">how_to_vote</i><span class="sidebar-text" data-subtitle="Dashboard">주민투표</span>
+            </a>
+            <a class="sidebar-item board-plain this" title="민원" href="/html/petition.html">
+                <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
+                <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
+            </a>
+            <!-- <a class="sidebar-item qna-board" title="관리자 글 게시" href="/html/admin-post.html">
+                <i class="material-icons md-24">security</i><span class="sidebar-text" data-subtitle="Dashboard">관리자 글 게시</span>
+            </a> -->
+            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
+                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
+            </a>
+            <a class="sidebar-item board-plain" title="예약알림 설정" href="/html/pre-noti.html">
+                <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- board -->
+    <div class="board-container copy board-petition">
+        <div class="board-header">
+            <h3 class="header-title">
+                <i class="material-icons md-24 title-icon">record_voice_over</i>민원
+            </h3>
+            <!-- <h6 class="header-subtitle">Petition</h6> -->
+            <span class="header-subtitle-description">입주민들의 민원 현황을 관리하고 처리할 수 있습니다</span>
+            <!-- write new post -->
+            <!-- <a href="/html/write/write-post.html" class="header-newpost" title="새로운 글 작성하기">
+                <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text"></span>
+            </a> -->
+        </div>
+        <div class="board-wrapper">
+            <div class="board-wrapper-header">
+                <span class="board-notice-count open-petition-count">건</span>
+            </div>
+            
+            <!-- list each wip -->
+            <h3 class="list-header-title petition-title now">새로운 민원<span class="petition-count">(2)</span></h3>
+            <div class="list-board-plain petition-submitted">
+                <!-- <div class="list-check-box-wrapper"><input type="checkbox" class="list-check-box"></div> -->
+                <div class="list-board-text-wrapper"><a class="list-board-text" href="/html/post/post-petition.html">관리사무소 스피커 방송 제한<span class="dashboard-new-oval"></span></a></div>
+                <div class="board-petition-set-status-inline list-board-edit">
+                    <select class="petition-set-status-selectbox-inline">
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리중</option>
+                        <option>처리완료</option>
+                    </select>
+                </div>
+                <div class="list-board-time"><span>2018/06/19</span></div>
+            </div>
+            <div class="list-board-plain">
+                <!-- <div class="list-check-box-wrapper"><input type="checkbox" class="list-check-box"></div> -->
+                <div class="list-board-text-wrapper"><a class="list-board-text" href="#">상하수도관 공사 소음 방지대책<span class="dashboard-new-oval"></span></a></div>
+                <div class="board-petition-set-status-inline list-board-edit">
+                    <select class="petition-set-status-selectbox-inline">
+                        <option>처리중</option>
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리완료</option>
+                    </select>
+                </div>
+                <div class="list-board-time"><span>2018/06/19</span></div>
+            </div>
+            
+            <!-- list each old -->
+            <h3 class="list-header-title petition-title old">종료된 민원</h3>
+            <div class="list-board-plain">
+                <!-- <div class="list-check-box-wrapper"><input type="checkbox" class="list-check-box"></div> -->
+                <div class="list-board-text-wrapper"><a class="list-board-text" href="#">102동 앞 강아지공원 벽 균열 보강공사</a></div>
+                <div class="board-petition-set-status-inline list-board-edit">
+                    <select class="petition-set-status-selectbox-inline">
+                        <option>처리완료</option>
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리중</option>
+                    </select>
+                </div>
+                <div class="list-board-time"><span>2018/06/19</span></div>
+            </div>
+            <div class="list-board-plain">
+                <!-- <div class="list-check-box-wrapper"><input type="checkbox" class="list-check-box"></div> -->
+                <div class="list-board-text-wrapper"><a class="list-board-text" href="#">후문 육교 주변 불량청소년 선도 건의안</a></div>
+                <div class="board-petition-set-status-inline list-board-edit">
+                    <select class="petition-set-status-selectbox-inline">
+                        <option>처리완료</option>
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리중</option>
+                    </select>
+                </div>
+                <div class="list-board-time"><span>2018/06/19</span></div>
+            </div>
+            <div class="list-board-plain">
+                <!-- <div class="list-check-box-wrapper"><input type="checkbox" class="list-check-box"></div> -->
+                <div class="list-board-text-wrapper"><a class="list-board-text" href="#">옥련 현대5차아파트, 앞으로의 10년</a></div>
+                <div class="board-petition-set-status-inline list-board-edit">
+                    <select class="petition-set-status-selectbox-inline">
+                        <option>처리완료</option>
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리중</option>
+                    </select>
+                </div>
+                <div class="list-board-time"><span>2018/06/19</span></div>
+            </div>
+            
+            <!-- pagination -->
+            <div class="list-board-page-indicator">
+                <div class="indicator-before" disabled>
+                    <a><i class="material-icons md-24">navigate_before</i></a>
+                </div>
+                <div class="indicator-pagination">
+                    <a class="this-page"><li>1</li></a>
+                    <a><li>2</li></a>
+                    <a><li>3</li></a>
+                    <a><li>4</li></a>
+                    <a><li>5</li></a>
+                </div>
+                <div class="indicator-next">
+                    <a><i class="material-icons md-24">navigate_next</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="/js/dist/index.js"></script>
+    <!-- endinject -->
+</body>
+</html>

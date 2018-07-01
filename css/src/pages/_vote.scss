@@ -1,0 +1,274 @@
+.board-vote-container {
+    padding: $grid4x;
+
+    @media #{$mobile} {
+        padding: $grid4x 0;
+    }
+    
+    &:not(:last-of-type) {
+        border-bottom: 1px solid $texteee;
+    }
+
+    .board-vote-header {
+        color: $text999;
+        margin-top: $grid4x;
+        display: inline-block;
+    }
+
+    // .vote-now {
+    //     font-weight: 900;
+    // }
+
+    .board-vote-wrapper {
+        @include selection();
+
+        .board-vote-card {
+
+            .board-vote-card-vote {
+
+                .vote-text {
+                    margin-bottom: $grid6x;
+                }
+
+                .board-vote-card-subtitle {
+                    font-weight: 900;
+                    margin: $grid4x 0 0;
+                    @include selection();
+                    @include font-size($grid6x);
+                    @include line-height($grid5x);
+
+                    a {
+                        color: $text333;
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .board-vote-card-vote-duedate {
+                    @include dashboard-subspan();
+
+                    &::after {
+                        content: " 종료됨";
+                    }
+                }
+
+                .vote-wip {
+                    font-weight: 900;
+                    color: $brand !important;
+
+                    &::after {
+                        content: " 종료예정";
+                    }
+
+                    &.vote-wip-post {
+                        margin-top: $grid2x;
+                        @include font-size($grid4x);
+                    }
+
+                    &.vote-date {
+                        font-weight: 400;
+                        color: $text999 !important;
+                        @include font-size($grid3x);
+
+                        &::before {
+                            content: "(";
+                        }
+
+                        &::after {
+                            content: "일 남음)";
+                        }
+
+                        @media #{$mobile} {
+                            display: block;
+                            margin: -$grid4x 0 $grid4x 0;
+                        }
+                    }
+                }
+                
+
+                .board-vote-card-vote-item {
+                    width: 100%;
+                    max-width: 640px;
+                    margin-bottom: $grid2x;
+                    background-color: white;
+                    border: 1px solid $textddd;
+                    @include render-hack(width);
+                    @include border-radius($grid2x);
+                    @include transform(translateZ(0));
+
+                    &.item-failed {
+                        @include opacity(0.38);
+
+                        // &:hover {
+                        //     cursor: not-allowed;
+                        // }
+                    
+                        // .vote-item-title {
+                        //     text-decoration: line-through;
+                        // }
+                    }
+
+                    .checked {
+                        margin-right: $grid2x;
+                        @include transform(translateY(10%));
+                    }
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .vote-item-numb {
+                        float: right;
+                        color: $text999;
+                        margin-right: $grid4x;
+                        @include transform(translateY(30%));
+
+                        @supports (-ms-ime-align:auto) {
+                            @include transform(translateY(40%) !important);
+                        }
+
+                        @media #{$ie} {
+                            @include transform(translateY(40%) !important);
+                        }
+
+                        @media #{$chrome} {
+                            @include transform(translateY(40%) !important);
+                        }
+
+                        @media #{$firefox} {
+                            @include transform(translateY(40%) !important);
+                        }
+
+                        &:after {
+                            content: "명"
+                        }
+                    }
+
+                    .vote-item-progress {
+                        height: 100%;
+                        padding: $grid2x;
+                        display: inline-block;
+                        background-color: $texteee;
+                        @include border-radius(7px 0 0 7px);
+
+                        .vote-item-title {
+                            padding-left: $grid2x;
+                            // white-space: initial !important;
+                            word-wrap: break-word !important;
+                            @include overflow();
+                            @include transform(translateY(0%) !important);
+
+                            @supports (-ms-ime-align:auto) {
+                                @include transform(translateY(10%) !important);
+                            }
+    
+                            @media #{$ie} {
+                                @include transform(translateY(10%) !important);
+                            }
+    
+                            @media #{$chrome} {
+                                @include transform(translateY(10%) !important);
+                            }
+    
+                            @media #{$firefox} {
+                                @include transform(translateY(10%) !important);
+                            }
+                        }
+
+                        .item-highest {
+                            font-weight: 900;
+                        }
+                    }
+                }
+
+                
+                .board-vote-card-vote-join {
+                    margin-bottom: $grid4x;
+                    @include view-count();
+
+                    &::after {
+                        content: " 참여";
+                    }
+                }
+
+                .board-vote-result {
+                    color: $brand;
+                    display: block;
+                    font-weight: 900;
+                    margin-bottom: $grid4x;
+
+                    &::before {
+                        font-weight: 400;
+                        content: "투표결과: ";
+                    }
+                }
+
+                
+                // post info
+                .post-info-wrapper {
+                    padding: $grid2x 0 $grid4x;
+
+
+                    // comment info
+                    .post-like-title,
+                    .post-comment-title {
+                        color: $text999;
+
+                        .post-like-count,
+                        .post-comment-count {
+                            color: $text333;
+                            font-weight: 900;
+
+                            &::before,
+                            &::after {
+                                color: $text999;
+                                font-weight: 400;
+                            }
+
+                            &::before {
+                                content: " ";
+                            }
+                        }
+                    }
+
+                    .post-like-title {
+                        
+                        &::before {
+                            content: "좋아요 ";
+                        }
+                        
+                        &::after {
+                            content: " ㆍ ";
+                        }
+                    }
+
+                    .post-comment-title {
+                        
+                        &::before {
+                            content: "댓글 ";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.noline {
+    border: 0 !important;
+    padding: 0 !important;
+    margin-top: -($grid2x !important);
+    margin-bottom: $grid6x !important;
+}
+
+
+.open-vote-count {
+
+    &::after {
+        content: " 의 진행중인 투표가 있습니다" !important;
+    }
+}

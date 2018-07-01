@@ -1,0 +1,183 @@
+.write-post-wrapper {
+
+    .write-post-wrapper-header {
+
+        .write-post-title {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-weight: 900;
+            margin-bottom: $grid4x;
+            @include render-hack(width);
+            @include transform(translateZ(0));
+        }
+    }
+
+    .write-post-wrapper-paragraph {
+        padding-left: 0;
+        padding-right: 0;
+
+        // [contenteditable=true]:before {
+        //     content: attr(placeholder) !important;
+        // }
+        
+        .write-post-parahraph {
+            width: 100%;
+            resize: none;
+            height: 50vh;
+            outline: none;
+            overflow: auto;
+            padding: $grid4x;
+            border: 1px solid $textccc;
+            overflow-x: hidden !important;
+            @include render-hack(width);
+            @include line-height($grid4x);
+            @include border-radius($grid2x);
+            @include transform(translateZ(0));
+
+            &:focus {
+                border: 1px solid $brand;
+            }
+        }
+
+
+        // duedate picker, set time, upload image
+        .write-post-vote-items-each,
+        .write-post-upload-image-wrapper,
+        .write-post-set-time-wrapper,
+        .post-wrapper-duedate-wrapper {
+
+            .write-post-vote-set-duedate-title,
+            .write-post-upload-image-title,
+            .write-post-set-time-title,
+            .write-post-set-duedate-title {
+                color: $brand;
+                font-weight: 900;
+                margin-top: $grid8x $grid 0 0;
+
+                .material-icons {
+                    margin-right: $grid;
+                    display: inline-block;
+                    @include transform(translateY(20%));
+                }
+            }
+
+            .write-post-set-time,
+            .write-post-set-duedate {
+                width: $grid40x;
+                margin: $grid6x 0 0;
+            }
+
+            .write-post-upload-image {
+                margin: $grid6x 0 0;
+                max-width: $grid56x;
+            }
+        }
+
+
+        // vote items
+        .write-post-vote-items-wrapper {
+
+            .write-post-vote-items-each {
+
+                .write-post-vote-set-duedate-title {
+                    color: $brand;
+                    // font-weight: 900;
+                    margin-top: $grid8x;
+                    margin-right: $grid;
+                }
+
+                .write-post-vote-set-duedate {
+                    width: $grid24x;
+                    margin: $grid8x 0 0;
+
+                    @media #{$ie} {
+                        margin-bottom: $grid4x;
+                    }
+
+                    @supports (-ms-ime-align:auto) {
+                        margin-bottom: $grid4x;
+                    }
+                }
+
+                .add-vote-item-input {
+                    padding-right: $grid28x;
+        
+                    &:focus {
+                        border: 1px solid $brand;
+                    }
+
+                    @media #{$mini} {
+                        padding-right: $grid24x;
+                    }
+                }
+
+                .remove-vote-item-btn {
+                    right: 0;
+                    z-index: 1;
+                    outline: none;
+                    width: $grid24x;
+                    cursor: pointer;
+                    height: $grid12x;
+                    position: absolute;
+                    margin-top: $grid4x;
+                    margin-right: $grid8x;
+                    background-color: $textf9;
+                    border: 1px solid $textccc;
+                    @include border-radius(0 $grid2x $grid2x 0);
+
+                    &::after {
+                        content: "항목삭제";
+                    }
+
+                    @media #{$chrome} {
+                        margin-top: -$grid12x;
+                    }
+
+                    &:hover {
+                        background-color: $texteee;
+                    }
+
+                    @media #{$pablet} {
+                        margin-right: $grid4x;
+                    }
+
+                    @media #{$mini} {
+                        width: $grid20x;
+                        margin-top: -$grid12x;
+
+                        @media #{$ie} {
+                            margin-top: $grid4x;
+                        }
+
+                        @supports (-ms-ime-align:auto) {
+                            margin-top: $grid4x;
+                        }
+                    }
+                }
+            }
+            
+            .add-vote-item-input,
+            .add-vote-item-btn {
+                width: 100%;
+                outline: none;
+                height: $grid12x;
+                text-align: left;
+                margin-top: $grid4x;
+                padding-left: $grid4x;
+                border: 1px solid $textccc;
+                background-color: transparent;
+                @include border-radius($grid2x);
+    
+                &:hover {
+                    background-color: $textf9;
+                }
+            }
+    
+            .add-vote-item-btn {
+                cursor: pointer;
+            }
+        }
+    }
+}
+

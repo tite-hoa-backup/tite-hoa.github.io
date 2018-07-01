@@ -1,0 +1,102 @@
+.list-header-title {
+    margin: $grid6x 0 $grid2x;
+
+    &.petition-title {
+        margin-left: $grid2x;
+        margin-right: $grid2x;
+    }
+
+    &.old {
+        margin-top: $grid8x;
+    }
+
+    .petition-count {
+        color: $text999;
+        margin-left: $grid;
+        display: inline-block;
+        @include font-size($grid4x);
+    }
+}
+
+
+.post-wrapper-paragraph {
+
+    .board-petition-card-join {
+        @include view-count();
+    
+        &::after {
+            content: " 참여중";
+        }
+    }
+
+    .board-petition-set-status {
+
+        .petition-set-status-title {
+            color: $brand;
+            font-weight: 900;
+            margin-top: $grid8x;
+            display: inline-block;
+        }
+
+        .petition-set-status-selectbox {
+            margin-left: $grid;
+        }
+    }
+}
+
+
+.board-petition-set-status-inline {
+
+    .petition-set-status-selectbox-inline {
+        width: $grid20x;
+        display: inline-block;
+        @include center-text();
+        @include transform(translateY(-64%));
+
+        @media #{$chrome} {
+            @include transform(translateY(-50%));
+        }
+
+        @media #{$firefox} {
+            @include transform(translateY(-50%));
+        }
+
+        @media #{$ie} {
+            @include transform(translateY(-50%));
+        }
+
+        @supports (-ms-ime-align:auto) {
+            @include transform(translateY(-50%));
+        }
+    }
+}
+
+
+.board-petition {
+
+    .board-petition-set-status-inline,
+    .list-board-time {
+        // background-color: antiquewhite;
+        left: -($grid4x) !important;
+    }
+}
+
+
+.open-petition-count {
+
+    &::after {
+        content: " 의 새로운 민원이 있습니다" !important;
+    }
+}
+
+
+.list-board-plain {
+
+    &.petition-submitted {
+        background-color: $textf9 !important;
+
+        &:hover {
+            background-color: $textf4 !important;
+        }
+    }
+}

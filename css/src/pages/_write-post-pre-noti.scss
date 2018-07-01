@@ -1,0 +1,57 @@
+.post-wrapper {
+
+    .post-wrapper-paragraph {
+
+        .write-post-set-time-wrapper {
+            padding: $grid4x $grid4x $grid6x;
+            margin-top: $grid6x;
+            border: 1px solid $textddd;
+            @include border-radius($grid2x);
+
+            .write-post-set-time-legend {
+                font-weight: 900;
+                padding: 0 $grid2x;
+            }
+
+            .write-post-set-time,
+            .write-post-set-time-title {
+                margin: 0 0 $grid4x 0;
+            }
+
+            .write-post-set-date {
+
+                .write-post-set-date-text {
+                    color: $brand;
+                    display: block;
+                    font-weight: 900;
+                    margin: 0 0 $grid 0;
+                }
+
+                .write-post-set-date-item {
+                    cursor: pointer;
+                    margin-top: $grid;
+                    display: inline-block;
+
+                    input[type="checkbox"] {
+                        cursor: pointer;
+                        margin-right: ($grid / 2);
+                    }
+    
+                    label {
+                        cursor: pointer;
+                        margin-right: $grid4x;
+                    }
+
+                    @media #{$wide} {
+                        display: block;
+                        margin-top: $grid2x;
+
+                        input[type="checkbox"] {
+                            margin-left: $grid2x;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -2695,27 +2695,55 @@ p {
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-username {
           font-weight: 900;
           margin-right: 2px; }
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info,
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info {
           display: block;
           color: #999;
           font-size: 14px;
           font-size: 0.875rem; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-timestamp::after,
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-timestamp::after {
             content: " 전 ㆍ "; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-reply-liked-count,
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-liked-count,
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-reply-liked-count,
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count {
             cursor: pointer;
             color: #999; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-reply-liked-count.liked,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-liked-count.liked,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-reply-liked-count.liked,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count.liked {
-              color: #17C060; }
+              color: #17C060 !important; }
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-reply-liked-count.liked:hover,
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-liked-count.liked:hover,
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-reply-liked-count.liked:hover,
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count.liked:hover {
+                color: #14A251 !important; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-reply-liked-count::before,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-liked-count::before,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-reply-liked-count::before,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count::before {
               content: "좋아요 "; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-reply-liked-count:hover,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-liked-count:hover,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-reply-liked-count:hover,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count:hover {
+              color: #333; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply,
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply {
+            color: #999;
             cursor: pointer; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply::before,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply::before {
               content: " ㆍ ";
-              color: #999; }
+              color: #999 !important; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply::after,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply::after {
-              content: "답글 펼쳐보기"; }
+              content: "답글 더 보기"; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply:hover,
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply:hover {
+              color: #333; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-reply-thumbnail {
           width: 32px;
           height: 32px;
@@ -2749,13 +2777,6 @@ p {
             font-size: 0.875rem; }
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-timestamp::after {
               content: " 전 ㆍ "; }
-            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count {
-              cursor: pointer;
-              color: #999; }
-              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count.liked {
-                color: #17C060; }
-              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count::before {
-                content: "좋아요 "; }
     .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper {
       padding: 16px;
       position: relative; }
@@ -2853,6 +2874,19 @@ p {
         -moz-will-change: border-radius;
         -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        zoom: 1;
+        transition: background-color 0.25s ease;
+        -o-transition: background-color 0.25s ease;
+        -ms-transition: background-color 0.25s ease;
+        -moz-transition: background-color 0.25s ease;
+        -khtml-transition: background-color 0.25s ease;
+        -webkit-transition: background-color 0.25s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
         zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:active {
           transform: scale(0.975);
@@ -2881,7 +2915,7 @@ p {
           -khtml-will-change: transition;
           -webkit-will-change: transition;
           zoom: 1; }
-        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:active {
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:hover {
           background-color: #14A251; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn::after {
           content: "등록"; }

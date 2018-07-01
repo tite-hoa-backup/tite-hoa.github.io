@@ -125,6 +125,7 @@
                         margin-right: ($grid / 2);
                     }
     
+                    .post-comment-reply-info,
                     .post-comment-comment-info {
                         display: block;
                         color: $text999;
@@ -137,29 +138,45 @@
                             }
                         }
         
+
+                        .post-reply-liked-count,
                         .post-comment-liked-count {
                             cursor: pointer;
                             color: $text999;
 
                             &.liked {
-                                color: $brand;
+                                color: $brand !important;
+    
+                                &:hover {
+                                    color: $brand-hover !important;
+                                }
                             }
                             
                             &::before {
                                 content: "좋아요 ";
                             }
+
+                            &:hover {
+                                color: $text333;
+                            }
                         }
 
+
                         .post-comment-see-reply {
+                            color: $text999;
                             cursor: pointer;
                             
                             &::before {
                                 content: " ㆍ ";
-                                color: $text999;
+                                color: $text999 !important;
                             }
                             
                             &::after {
-                                content: "답글 펼쳐보기";
+                                content: "답글 더 보기";
+                            }
+
+                            &:hover {
+                                color: $text333;
                             }
                         }
                     }
@@ -194,19 +211,6 @@
                                 
                                 &::after {
                                     content: " 전 ㆍ ";
-                                }
-                            }
-            
-                            .post-reply-liked-count {
-                                cursor: pointer;
-                                color: $text999;
-
-                                &.liked {
-                                    color: $brand;
-                                }
-                                
-                                &::before {
-                                    content: "좋아요 ";
                                 }
                             }
                         }
@@ -278,8 +282,9 @@
                     background-color: $brand;
                     @include button-pressed();
                     @include border-radius(0 $grid2x $grid2x 0);
+                    @include transition(background-color .25s ease);
 
-                    &:active {
+                    &:hover {
                         background-color: $brand-hover;
                     }
                     

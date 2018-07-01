@@ -83,7 +83,7 @@
             @include border-radius($grid2x);
             @include transition(all .5s ease);
 
-            @media #{$tablet}{
+            @media #{$pablet}{
                 width: $grid12x;
             }
 
@@ -113,7 +113,7 @@
                     }
                 }
 
-                @media #{$tablet} {
+                @media #{$pablet} {
                     display: none;
                 }
 

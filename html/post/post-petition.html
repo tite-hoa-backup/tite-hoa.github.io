@@ -109,8 +109,13 @@
                         <a class="post-edit">수정</a>
                         <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
                     </div>
-                    <!-- comment each -->
+                    
+                    <!-- comment see more -->
                     <div class="post-comment-comment-container">
+                        <div class="post-comment-see-more">
+                            <button class="post-comment-see-more-btn">댓글 더 불러오기</button>
+                        </div>
+    
                         <!-- comments -->
                         <div class="post-comment-comment-wrapper">
                             <img src="https://bitbucket.org/account/spemer/avatar/48/?ts=1529484182" class="post-comment-thumbnail">
@@ -119,7 +124,8 @@
                                 <span class="post-comment-text">항상 수고가 많으십니다!</span>
                                 <div class="post-comment-comment-info">
                                     <span class="post-comment-timestamp">1시간</span>
-                                    <span class="post-comment-liked-count">4</span>
+                                    <a class="post-comment-liked-count liked">4</a>
+                                    <a class="post-comment-see-reply"></a>
                                 </div>
                             </div>
                         </div>
@@ -131,11 +137,11 @@
                                 <span class="post-comment-text">좋은 정보 감사합니다 ^^</span>
                                 <div class="post-comment-comment-info">
                                     <span class="post-comment-timestamp">38분</span>
-                                    <span class="post-comment-liked-count">2</span>
+                                    <a class="post-comment-liked-count">2</a>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="post-comment-comment-wrapper">
                             <img src="https://bitbucket.org/account/drcarter/avatar/48/?ts=1529462887" class="post-comment-thumbnail">
                             <div class="post-comment-box">
@@ -143,7 +149,7 @@
                                 <span class="post-comment-text">이런... 이번에는 저희 동이군요;</span>
                                 <div class="post-comment-comment-info">
                                     <span class="post-comment-timestamp">16분</span>
-                                    <span class="post-comment-liked-count">1</span>
+                                    <a class="post-comment-liked-count liked">1</a>
                                 </div>
                                 <!-- comment reply -->
                                 <img src="https://bitbucket.org/account/xrath/avatar/48/?ts=1529448372" class="post-reply-thumbnail">
@@ -152,12 +158,12 @@
                                     <span class="post-reply-text">흑... 하필 저날 저시간에 출근하네요 저는 ㅠㅠ</span>
                                     <div class="post-comment-reply-info">
                                         <span class="post-reply-timestamp">12분</span>
-                                        <span class="post-reply-liked-count"></span>
+                                        <a class="post-reply-liked-count"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="post-comment-comment-wrapper">
                             <img src="https://bitbucket.org/account/rainhelper/avatar/48/?ts=1529509838" class="post-comment-thumbnail">
                             <div class="post-comment-box">
@@ -165,7 +171,8 @@
                                 <span class="post-comment-text">정보 감사합니다!</span>
                                 <div class="post-comment-comment-info">
                                     <span class="post-comment-timestamp">4분</span>
-                                    <span class="post-comment-liked-count"></span>
+                                    <a class="post-comment-liked-count"></a>
+                                    <a class="post-comment-see-reply"></a>
                                 </div>
                             </div>
                         </div>

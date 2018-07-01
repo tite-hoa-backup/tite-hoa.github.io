@@ -71,7 +71,35 @@
             @media #{$pablet} {
                 padding: $grid;
             }
+
+
+            // comment - see more
+            .post-comment-see-more {
+                width: 100%;
+                padding: $grid4x;
+
+                .post-comment-see-more-btn {
+                    color: $brand;
+                    cursor: pointer;
+                    width: $grid40x;
+                    height: $grid10x;
+                    margin: $grid2x 0;
+                    display: inline-block;
+                    border: 1px solid $brand;
+                    background-color: transparent;
+                    @include button-pressed();
+                    @include border-radius($grid2x);
+                    @include font-size($grid3x + ($grid / 2));
+                    @include transition(background-color .25s ease);
+
+                    &:hover {
+                        background-color: white;
+                    }
+                }
+            }
             
+
+            // comment each body
             .post-comment-comment-wrapper {
                 padding: $grid6x $grid4x;
     
@@ -110,9 +138,28 @@
                         }
         
                         .post-comment-liked-count {
+                            cursor: pointer;
+                            color: $text999;
+
+                            &.liked {
+                                color: $brand;
+                            }
                             
                             &::before {
                                 content: "좋아요 ";
+                            }
+                        }
+
+                        .post-comment-see-reply {
+                            cursor: pointer;
+                            
+                            &::before {
+                                content: " ㆍ ";
+                                color: $text999;
+                            }
+                            
+                            &::after {
+                                content: "답글 펼쳐보기";
                             }
                         }
                     }
@@ -151,6 +198,12 @@
                             }
             
                             .post-reply-liked-count {
+                                cursor: pointer;
+                                color: $text999;
+
+                                &.liked {
+                                    color: $brand;
+                                }
                                 
                                 &::before {
                                     content: "좋아요 ";

@@ -120,9 +120,11 @@
                 @include render-hack(width);
                 @include border-radius($grid2x);
                 @include transform(translateZ(0));
+                @include transition(background-color .5s ease);
 
                 &:hover {
                     background-color: $textf9;
+                    @include transition(background-color .1s ease);
                 }
 
                 &:not(:first-child) {

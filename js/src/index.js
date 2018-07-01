@@ -43,8 +43,6 @@
     var setHamburgerIcon = document.querySelector('.hamburger > i');
     var vw = window.innerWidth;
 
-    // if (vw < 640) {
-
         if (getHamburgerClass) {
     
             var setHamburgerToggle = {
@@ -52,16 +50,17 @@
                 nav: document.querySelector('.sidebar-container'),
                 body: document.querySelector('body'),
                 dim: document.querySelector('.dim'),
-                // dimLayer: document.querySelector('.dim-layer'),
+
+                dimLayer: document.querySelector('.dim-layer'),
         
                 doToggle: function(e) {
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');
                     this.nav.classList.toggle('expanded');
-                    // TODO: 딤 레이어 선택시 사이드바 들어가도록 -> sidebar.scss
                     this.dim.classList.toggle('dim-layer');
+                    
                     // if (this.dimLayer) {
-                    //     this.dim.classList.toggle('expanded');
+                    //     this.dim.classList.toggle('dim-layer');
                     // }
                 }
             };
@@ -87,7 +86,6 @@
             }
             
         }
-    // }
 
 }());
 

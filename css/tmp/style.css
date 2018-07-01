@@ -1151,7 +1151,7 @@ p {
         -khtml-will-change: transition;
         -webkit-will-change: transition;
         zoom: 1; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 420px) {
         .board-container .board-header .header-newpost {
           width: 48px; } }
       .board-container .board-header .header-newpost:hover {
@@ -1197,7 +1197,7 @@ p {
         @media screen and (max-width: 980px) {
           .board-container .board-header .header-newpost .header-newpost-text::after {
             content: "새 글 작성"; } }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 420px) {
           .board-container .board-header .header-newpost .header-newpost-text {
             display: none; } }
         .board-container .board-header .header-newpost .header-newpost-text.noti::after {
@@ -1856,9 +1856,35 @@ p {
         -moz-will-change: transform;
         -khtml-will-change: transform;
         -webkit-will-change: transform;
+        zoom: 1;
+        transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        -ms-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -khtml-transition: background-color 0.5s ease;
+        -webkit-transition: background-color 0.5s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
         zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:hover {
-          background-color: #f9f9f9; }
+          background-color: #f9f9f9;
+          transition: background-color 0.1s ease;
+          -o-transition: background-color 0.1s ease;
+          -ms-transition: background-color 0.1s ease;
+          -moz-transition: background-color 0.1s ease;
+          -khtml-transition: background-color 0.1s ease;
+          -webkit-transition: background-color 0.1s ease;
+          will-change: transition;
+          -o-will-change: transition;
+          -ms-will-change: transition;
+          -moz-will-change: transition;
+          -khtml-will-change: transition;
+          -webkit-will-change: transition;
+          zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:not(:first-child) {
           margin-top: -8px; }
       .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-subtitle {
@@ -2294,7 +2320,35 @@ p {
   -moz-will-change: border-radius;
   -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  zoom: 1;
+  transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -khtml-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  will-change: transition;
+  -o-will-change: transition;
+  -ms-will-change: transition;
+  -moz-will-change: transition;
+  -khtml-will-change: transition;
+  -webkit-will-change: transition;
   zoom: 1; }
+  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -khtml-transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    will-change: transition;
+    -o-will-change: transition;
+    -ms-will-change: transition;
+    -moz-will-change: transition;
+    -khtml-will-change: transition;
+    -webkit-will-change: transition;
+    zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
     margin-top: 8px; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
@@ -2543,6 +2597,75 @@ p {
     @media screen and (max-width: 420px) {
       .post-comment-container .post-info-wrapper .post-comment-comment-container {
         padding: 4px; } }
+    .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more {
+      width: 100%;
+      padding: 16px; }
+      .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn {
+        color: #17C060;
+        cursor: pointer;
+        width: 160px;
+        height: 40px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #17C060;
+        background-color: transparent;
+        border-radius: 8px;
+        -o-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        will-change: border-radius;
+        -o-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -webkit-will-change: border-radius;
+        zoom: 1;
+        font-size: 14px;
+        font-size: 0.875rem;
+        transition: background-color 0.25s ease;
+        -o-transition: background-color 0.25s ease;
+        -ms-transition: background-color 0.25s ease;
+        -moz-transition: background-color 0.25s ease;
+        -khtml-transition: background-color 0.25s ease;
+        -webkit-transition: background-color 0.25s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1; }
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:active {
+          transform: scale(0.975);
+          -o-transform: scale(0.975);
+          -ms-transform: scale(0.975);
+          -moz-transform: scale(0.975);
+          -khtml-transform: scale(0.975);
+          -webkit-transform: scale(0.975);
+          will-change: transform;
+          -o-will-change: transform;
+          -ms-will-change: transform;
+          -moz-will-change: transform;
+          -khtml-will-change: transform;
+          -webkit-will-change: transform;
+          zoom: 1;
+          transition: transform 0.1s ease;
+          -o-transition: transform 0.1s ease;
+          -ms-transition: transform 0.1s ease;
+          -moz-transition: transform 0.1s ease;
+          -khtml-transition: transform 0.1s ease;
+          -webkit-transition: transform 0.1s ease;
+          will-change: transition;
+          -o-will-change: transition;
+          -ms-will-change: transition;
+          -moz-will-change: transition;
+          -khtml-will-change: transition;
+          -webkit-will-change: transition;
+          zoom: 1; }
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:hover {
+          background-color: white; }
     .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper {
       padding: 24px 16px; }
       .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper:not(:first-child) {
@@ -2579,8 +2702,20 @@ p {
           font-size: 0.875rem; }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-timestamp::after {
             content: " 전 ㆍ "; }
-          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count::before {
-            content: "좋아요 "; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count {
+            cursor: pointer;
+            color: #999; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count.liked {
+              color: #17C060; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-liked-count::before {
+              content: "좋아요 "; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply {
+            cursor: pointer; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply::before {
+              content: " ㆍ ";
+              color: #999; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply::after {
+              content: "답글 펼쳐보기"; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-reply-thumbnail {
           width: 32px;
           height: 32px;
@@ -2614,8 +2749,13 @@ p {
             font-size: 0.875rem; }
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-timestamp::after {
               content: " 전 ㆍ "; }
-            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count::before {
-              content: "좋아요 "; }
+            .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count {
+              cursor: pointer;
+              color: #999; }
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count.liked {
+                color: #17C060; }
+              .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-liked-count::before {
+                content: "좋아요 "; }
     .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper {
       padding: 16px;
       position: relative; }

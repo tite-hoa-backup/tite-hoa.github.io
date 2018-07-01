@@ -15,6 +15,12 @@
             padding-top: $grid;
             border: 1px solid $texteee;
             @include border-radius($grid2x);
+            @include transition(background-color .5s ease);
+
+            &:hover {
+                background-color: $textf9;
+                @include transition(background-color .1s ease);
+            }
 
             &:not(:first-child) {
                 margin-top: $grid2x;

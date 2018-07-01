@@ -43,47 +43,50 @@
     var setHamburgerIcon = document.querySelector('.hamburger > i');
     var vw = window.innerWidth;
 
-    if (getHamburgerClass) {
+    if (vw < 640) {
 
-        var setHamburgerToggle = {
-            navToggle: document.querySelector('.hamburger'),
-            nav: document.querySelector('.sidebar-container'),
-            body: document.querySelector('body'),
-            dim: document.querySelector('.dim'),
-            // dimLayer: document.querySelector('.dim-layer'),
+        if (getHamburgerClass) {
     
-            doToggle: function(e) {
-                e.preventDefault();
-                this.navToggle.classList.toggle('expanded');
-                this.nav.classList.toggle('expanded');
-                // TODO: 딤 레이어 선택시 사이드바 들어가도록 -> sidebar.scss
-                this.dim.classList.toggle('dim-layer');
-                // if (this.dimLayer) {
-                //     this.dim.classList.toggle('expanded');
-                // }
-            }
-        };
-    
-        setHamburgerToggle.navToggle.addEventListener('click', function(e) {
-            setHamburgerToggle.doToggle(e);
-        });
-
-
-        // hamburger menu icon change toggle (mqbp 아이콘 변경)
-        var setHamburger = document.querySelector('.hamburger');
+            var setHamburgerToggle = {
+                navToggle: document.querySelector('.hamburger'),
+                nav: document.querySelector('.sidebar-container'),
+                body: document.querySelector('body'),
+                dim: document.querySelector('.dim'),
+                // dimLayer: document.querySelector('.dim-layer'),
         
-        if (setHamburger) {
-            setHamburger.addEventListener('click', function() {
-                var getHamburgerExpanded = document.querySelectorAll('.expanded')[1];
-                if (getHamburgerExpanded) {
-                    setHamburgerIcon.innerHTML = 'close';
+                doToggle: function(e) {
+                    e.preventDefault();
+                    this.navToggle.classList.toggle('expanded');
+                    this.nav.classList.toggle('expanded');
+                    // TODO: 딤 레이어 선택시 사이드바 들어가도록 -> sidebar.scss
+                    this.dim.classList.toggle('dim-layer');
+                    // if (this.dimLayer) {
+                    //     this.dim.classList.toggle('expanded');
+                    // }
                 }
-                else {
-                    setHamburgerIcon.innerHTML = 'menu';
-                }
+            };
+        
+            setHamburgerToggle.navToggle.addEventListener('click', function(e) {
+                setHamburgerToggle.doToggle(e);
             });
+    
+    
+            // hamburger menu icon change toggle (mqbp 아이콘 변경)
+            var setHamburger = document.querySelector('.hamburger');
+            
+            if (setHamburger) {
+                setHamburger.addEventListener('click', function() {
+                    var getHamburgerExpanded = document.querySelectorAll('.expanded')[1];
+                    if (getHamburgerExpanded) {
+                        setHamburgerIcon.innerHTML = 'close';
+                    }
+                    else {
+                        setHamburgerIcon.innerHTML = 'menu';
+                    }
+                });
+            }
+            
         }
-        
     }
 
 }());

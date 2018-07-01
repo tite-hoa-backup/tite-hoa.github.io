@@ -26,6 +26,16 @@
             @media #{$pablet} {
                 margin-left: -($grid2x) !important;
             }
+
+            // prevent refresh animation ie
+            @media #{$ie} {
+                @include transition(margin-left 0s ease);
+            }
+
+            // prevent refresh animation edge
+            @supports (-ms-ime-align:auto) {
+                @include transition(margin-left 0s ease);
+            }
         }
 
 

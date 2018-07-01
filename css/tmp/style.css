@@ -479,6 +479,36 @@ p {
     @media screen and (max-width: 420px) {
       #main .main-header .main-header-logo {
         margin-left: -8px !important; } }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      #main .main-header .main-header-logo {
+        transition: margin-left 0s ease;
+        -o-transition: margin-left 0s ease;
+        -ms-transition: margin-left 0s ease;
+        -moz-transition: margin-left 0s ease;
+        -khtml-transition: margin-left 0s ease;
+        -webkit-transition: margin-left 0s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1; } }
+    @supports (-ms-ime-align: auto) {
+      #main .main-header .main-header-logo {
+        transition: margin-left 0s ease;
+        -o-transition: margin-left 0s ease;
+        -ms-transition: margin-left 0s ease;
+        -moz-transition: margin-left 0s ease;
+        -khtml-transition: margin-left 0s ease;
+        -webkit-transition: margin-left 0s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1; } }
   #main .main-header .hamburger {
     display: none; }
     #main .main-header .hamburger i {
@@ -708,10 +738,36 @@ p {
   zoom: 1; }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .sidebar-container {
-      overflow: hidden; } }
+      overflow: hidden;
+      transition: all 0s ease;
+      -o-transition: all 0s ease;
+      -ms-transition: all 0s ease;
+      -moz-transition: all 0s ease;
+      -khtml-transition: all 0s ease;
+      -webkit-transition: all 0s ease;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; } }
   @supports (-ms-ime-align: auto) {
     .sidebar-container {
-      overflow: hidden; } }
+      overflow: hidden;
+      transition: all 0s ease;
+      -o-transition: all 0s ease;
+      -ms-transition: all 0s ease;
+      -moz-transition: all 0s ease;
+      -khtml-transition: all 0s ease;
+      -webkit-transition: all 0s ease;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; } }
   @media screen and (max-width: 768px) {
     .sidebar-container {
       width: 224px; } }
@@ -775,6 +831,21 @@ p {
         -khtml-will-change: transition;
         -webkit-will-change: transition;
         zoom: 1; }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .sidebar-container .sidebar-wrapper .sidebar-item {
+          transition: all 0s ease;
+          -o-transition: all 0s ease;
+          -ms-transition: all 0s ease;
+          -moz-transition: all 0s ease;
+          -khtml-transition: all 0s ease;
+          -webkit-transition: all 0s ease;
+          will-change: transition;
+          -o-will-change: transition;
+          -ms-will-change: transition;
+          -moz-will-change: transition;
+          -khtml-will-change: transition;
+          -webkit-will-change: transition;
+          zoom: 1; } }
       @media screen and (max-width: 360px) {
         .sidebar-container .sidebar-wrapper .sidebar-item {
           padding-left: 24px; } }
@@ -971,6 +1042,21 @@ p {
   @media screen and (max-width: 640px) {
     .board-container {
       margin: 0 16px 16px; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .board-container {
+      transition: margin 0s ease;
+      -o-transition: margin 0s ease;
+      -ms-transition: margin 0s ease;
+      -moz-transition: margin 0s ease;
+      -khtml-transition: margin 0s ease;
+      -webkit-transition: margin 0s ease;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; } }
   .board-container .board-header {
     z-index: 2;
     margin-bottom: 16px; }
@@ -1549,6 +1635,21 @@ p {
     -khtml-will-change: transition;
     -webkit-will-change: transition;
     zoom: 1; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .dashboard-container .dashboard-wrapper {
+        transition: all 0s ease;
+        -o-transition: all 0s ease;
+        -ms-transition: all 0s ease;
+        -moz-transition: all 0s ease;
+        -khtml-transition: all 0s ease;
+        -webkit-transition: all 0s ease;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1; } }
     .dashboard-container .dashboard-wrapper:not(:nth-child(3n + 0)) {
       margin-right: 1.25%;
       transform: translateZ(0);

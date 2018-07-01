@@ -19,6 +19,11 @@
         margin: 0 $grid4x $grid4x;
     }
 
+    // prevent refresh animation ie
+    @media #{$ie} {
+        @include transition(margin 0s ease);
+    }
+
     .board-header {
         z-index: 2;
         margin-bottom: $grid4x;

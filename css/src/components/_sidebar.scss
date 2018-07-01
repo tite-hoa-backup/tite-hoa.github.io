@@ -21,13 +21,17 @@
     @include transform(translateZ(0));
 
     // hide scrollbar ie
+    // prevent refresh animation ie
     @media #{$ie} {
         overflow: hidden;
+        @include transition(all 0s ease);
     }
 
     // hide scrollbar edge
+    // prevent refresh animation edge
     @supports (-ms-ime-align:auto) {
         overflow: hidden;
+        @include transition(all 0s ease);
     }
 
     @media #{$tablet} {
@@ -60,6 +64,11 @@
             @include font-size($grid4x);
             @include line-height($grid8x);
             @include transition(all .5s ease);
+
+            // prevent refresh animation ie
+            @media #{$ie} {
+                @include transition(all 0s ease);
+            }
 
             @media #{$mobile} {
                 padding-left: $grid6x;

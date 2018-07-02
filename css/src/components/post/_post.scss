@@ -43,6 +43,28 @@
         .post-view-count {
             @include view-count();
         }
+
+        .post-image-wrapper {
+            width: 100%;
+            padding: $grid8x 0 0 0;
+
+            .post-image-landscape {
+                width: 64%;
+            }
+
+            .post-image-portrait {
+                width: 48%;
+            }
+
+            .post-image-landscape,
+            .post-image-portrait {
+                @include border-radius($grid2x);
+
+                @media #{$pablet} {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     .post-write-submit,

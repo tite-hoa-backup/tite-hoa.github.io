@@ -2453,6 +2453,32 @@ p {
       .post-wrapper .post-wrapper-paragraph .post-view-count::after {
         font-weight: 400;
         content: "이 읽었습니다"; }
+    .post-wrapper .post-wrapper-paragraph .post-image-wrapper {
+      width: 100%;
+      padding: 32px 0 0 0; }
+      .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-landscape {
+        width: 64%; }
+      .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-portrait {
+        width: 48%; }
+      .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-landscape,
+      .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-portrait {
+        border-radius: 8px;
+        -o-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        will-change: border-radius;
+        -o-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -webkit-will-change: border-radius;
+        zoom: 1; }
+        @media screen and (max-width: 420px) {
+          .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-landscape,
+          .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-portrait {
+            width: 100%; } }
   .post-wrapper .post-write-submit,
   .post-wrapper .post-back-list {
     margin-top: 32px; }

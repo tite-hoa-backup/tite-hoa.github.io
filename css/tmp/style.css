@@ -3926,6 +3926,9 @@ p {
     cursor: pointer;
     margin-top: 4px;
     display: inline-block; }
+    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item.weekly-event {
+      display: block;
+      margin: 8px 0; }
     .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
       cursor: pointer;
       margin-right: 2px; }
@@ -3938,3 +3941,10 @@ p {
         margin-top: 8px; }
         .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
           margin-left: 8px; } }
+  .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-summary .write-post-summary-text {
+    font-weight: 900;
+    margin-top: 16px;
+    display: inline-block; }
+    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-summary .write-post-summary-text:after {
+      font-weight: 400;
+      content: " 마다 알림을 전송합니다."; }

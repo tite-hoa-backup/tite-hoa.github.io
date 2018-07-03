@@ -46,9 +46,6 @@
                 <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
                 <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
             </a>
-            <!-- <a class="sidebar-item qna-board" title="관리자 글 게시" href="/html/admin-post.html">
-                <i class="material-icons md-24">security</i><span class="sidebar-text" data-subtitle="Dashboard">관리자 글 게시</span>
-            </a> -->
             <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
                 <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
             </a>
@@ -90,45 +87,54 @@
                         <legend class="write-post-set-time-legend">예약알림 설정</legend>
 
                         <label class="write-post-set-time-title" for="set-noti-time">예약알림 시간 설정: </label>
-                        <input class="write-post-set-time" type="time" id="set-noti-time" value="12:00">
+                        <input class="write-post-set-time" type="time" id="set-noti-time" value="09:00">
 
                         <div class="write-post-set-date">
                             <span class="write-post-set-date-text">예약알림 반복 설정: </span>
 
+                            <div class="write-post-set-date-item weekly-event">
+                                <input type="checkbox" id="weekly" value="weekly" checked>
+                                <label for="weekly">매주</label>
+                            </div>
+
                             <div class="write-post-set-date-item">
-                                <input type="checkbox" id="mon" value="mon">
-                                <label for="mon">매주 월요일</label>
+                                <input type="checkbox" id="mon" value="mon" checked>
+                                <label for="mon">월요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
                                 <input type="checkbox" id="tue" value="tue">
-                                <label for="tue">매주 화요일</label>
+                                <label for="tue">화요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
                                 <input type="checkbox" id="wed" value="wed">
-                                <label for="wed">매주 수요일</label>
+                                <label for="wed">수요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
                                 <input type="checkbox" id="thu" value="thu">
-                                <label for="thu">매주 목요일</label>
+                                <label for="thu">목요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
-                                <input type="checkbox" id="fri" value="fri">
-                                <label for="fri">매주 금요일</label>
+                                <input type="checkbox" id="fri" value="fri" checked>
+                                <label for="fri">금요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
                                 <input type="checkbox" id="sat" value="sat">
-                                <label for="sat">매주 토요일</label>
+                                <label for="sat">토요일</label>
                             </div>
 
                             <div class="write-post-set-date-item">
                                 <input type="checkbox" id="sun" value="sun">
-                                <label for="sun">매주 일요일</label>
+                                <label for="sun">일요일</label>
                             </div>
+                        </div>
+
+                        <div class="write-post-summary">
+                            <span class="write-post-summary-text">매주 월요일, 금요일 오전 09:00</span>
                         </div>
                     </fieldset>
                 </form>

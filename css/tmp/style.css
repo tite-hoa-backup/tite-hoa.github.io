@@ -1272,9 +1272,10 @@ p {
 
 .board-wrapper .list-board-plain {
   width: 100%;
-  margin: 4px 0;
+  margin: 0;
   height: 48px;
   padding: 0 16px;
+  position: relative;
   will-change: width;
   -o-will-change: width;
   -ms-will-change: width;
@@ -1325,33 +1326,28 @@ p {
     color: white !important;
     background-color: #17C060 !important; }
   .board-wrapper .list-board-plain:nth-of-type(odd) {
-    background-color: #fafafa; }
-  .board-wrapper .list-board-plain.header {
-    height: 48px; }
-    .board-wrapper .list-board-plain.header span {
-      font-weight: 900;
-      cursor: default !important;
-      color: #999 !important; }
-    .board-wrapper .list-board-plain.header .list-numbering-wrapper {
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
-      -webkit-will-change: transform;
-      zoom: 1; }
-    .board-wrapper .list-board-plain.header .list-board-text:hover {
-      text-decoration: none !important; }
+    background-color: #f9f9f9; }
+  .board-wrapper .list-board-plain.header span {
+    font-weight: 900;
+    cursor: default !important;
+    color: #999 !important; }
+  .board-wrapper .list-board-plain.header .list-numbering-wrapper {
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    will-change: transform;
+    -o-will-change: transform;
+    -ms-will-change: transform;
+    -moz-will-change: transform;
+    -khtml-will-change: transform;
+    -webkit-will-change: transform;
+    zoom: 1; }
+  .board-wrapper .list-board-plain.header .list-board-text:hover {
+    text-decoration: none !important; }
   .board-wrapper .list-board-plain .list-numbering-wrapper {
-    height: 100%;
-    width: 40px;
-    margin-right: 8px;
     top: 50%;
     position: relative;
     display: inline-block;
@@ -1375,18 +1371,6 @@ p {
     -khtml-will-change: width;
     -webkit-will-change: width;
     zoom: 1; }
-    @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-      .board-wrapper .list-board-plain .list-numbering-wrapper {
-        top: -10% !important; } }
-    @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-      .board-wrapper .list-board-plain .list-numbering-wrapper {
-        top: -10% !important; } }
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      .board-wrapper .list-board-plain .list-numbering-wrapper {
-        top: -10% !important; } }
-    @supports (-ms-ime-align: auto) {
-      .board-wrapper .list-board-plain .list-numbering-wrapper {
-        top: -10% !important; } }
     .board-wrapper .list-board-plain .list-numbering-wrapper .list-numbering {
       color: #17C060;
       top: 50%;
@@ -1406,9 +1390,6 @@ p {
       -webkit-will-change: transform;
       zoom: 1; }
   .board-wrapper .list-board-plain .list-board-text-wrapper {
-    width: 73%;
-    height: 100%;
-    margin-right: 12px;
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -1438,39 +1419,6 @@ p {
       -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
       zoom: 1; }
-    @media screen and (max-width: 1600px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 70%; } }
-    @media screen and (max-width: 1280px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 63%; } }
-    @media screen and (max-width: 1112px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 61%; } }
-    @media screen and (max-width: 980px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 51%; } }
-    @media screen and (max-width: 860px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 41%; } }
-    @media screen and (max-width: 768px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 60%; } }
-    @media screen and (max-width: 640px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 44%; } }
-    @media screen and (max-width: 520px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 60%; } }
-    @media screen and (max-width: 420px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 51%; } }
-    @media screen and (max-width: 360px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 42%; } }
-    @media screen and (max-width: 320px) {
-      .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 37%; } }
     .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text {
       color: #333;
       cursor: pointer;
@@ -1498,22 +1446,15 @@ p {
       -moz-will-change: transform;
       -khtml-will-change: transform;
       -webkit-will-change: transform;
-      zoom: 1;
-      display: block; }
+      zoom: 1; }
       .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text:hover {
         text-decoration: underline; }
   .board-wrapper .list-board-plain .list-board-view-count,
   .board-wrapper .list-board-plain .list-board-time {
-    right: 0;
-    float: right;
-    height: 100%;
     color: #999;
-    position: relative;
     display: inline-block; }
   .board-wrapper .list-board-plain .list-board-time {
-    width: 96px;
-    color: #333;
-    margin-right: 8px; }
+    color: #333; }
     .board-wrapper .list-board-plain .list-board-time span {
       top: 50%;
       position: relative;
@@ -1533,15 +1474,14 @@ p {
       zoom: 1; }
     @media screen and (max-width: 768px) {
       .board-wrapper .list-board-plain .list-board-time {
-        display: none; } }
+        display: none !important; } }
     @media screen and (max-width: 640px) {
       .board-wrapper .list-board-plain .list-board-time {
-        display: inline-block; } }
+        display: inline-block !important; } }
     @media screen and (max-width: 520px) {
       .board-wrapper .list-board-plain .list-board-time {
-        display: none; } }
+        display: none !important; } }
   .board-wrapper .list-board-plain .list-board-view-count {
-    width: 64px;
     text-align: right; }
     .board-wrapper .list-board-plain .list-board-view-count span {
       top: 50%;
@@ -1560,6 +1500,63 @@ p {
       -khtml-will-change: transform;
       -webkit-will-change: transform;
       zoom: 1; }
+  .board-wrapper .list-board-plain .list-numbering-wrapper,
+  .board-wrapper .list-board-plain .list-board-text-wrapper,
+  .board-wrapper .list-board-plain .list-board-view-count,
+  .board-wrapper .list-board-plain .list-board-time {
+    position: absolute;
+    height: 48px !important;
+    margin-right: 8px !important;
+    will-change: translateZ(0);
+    -o-will-change: translateZ(0);
+    -ms-will-change: translateZ(0);
+    -moz-will-change: translateZ(0);
+    -khtml-will-change: translateZ(0);
+    -webkit-will-change: translateZ(0);
+    zoom: 1; }
+  .board-wrapper .list-board-plain .list-numbering-wrapper {
+    width: 40px !important; }
+  .board-wrapper .list-board-plain .list-board-text-wrapper {
+    left: 72px !important;
+    right: 184px !important; }
+    @media screen and (max-width: 768px) {
+      .board-wrapper .list-board-plain .list-board-text-wrapper {
+        right: 72px !important; } }
+    @media screen and (max-width: 640px) {
+      .board-wrapper .list-board-plain .list-board-text-wrapper {
+        right: 184px !important; } }
+    @media screen and (max-width: 520px) {
+      .board-wrapper .list-board-plain .list-board-text-wrapper {
+        right: 72px !important; } }
+    @media screen and (max-width: 360px) {
+      .board-wrapper .list-board-plain .list-board-text-wrapper {
+        left: 64px !important;
+        right: 64px !important; } }
+    .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
+      right: 216px !important; }
+      @media screen and (max-width: 768px) {
+        .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
+          right: 104px !important; } }
+      @media screen and (max-width: 640px) {
+        .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
+          right: 216px !important; } }
+      @media screen and (max-width: 520px) {
+        .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
+          right: 104px !important; } }
+      @media screen and (max-width: 360px) {
+        .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
+          left: 64px !important;
+          right: 96px !important; } }
+  .board-wrapper .list-board-plain .list-board-time {
+    width: 96px !important;
+    right: 72px !important; }
+    .board-wrapper .list-board-plain .list-board-time.petition-submitted-time {
+      right: 104px !important; }
+  .board-wrapper .list-board-plain .list-board-view-count {
+    width: 48px !important;
+    right: 8px !important; }
+    .board-wrapper .list-board-plain .list-board-view-count.board-petition-set-status-inline {
+      width: 80px !important; }
 
 .dashboard-container {
   box-sizing: border-box;
@@ -2411,7 +2408,7 @@ p {
   font-size: 12px;
   font-size: 0.75rem; }
   .dashboard-card-pre-noti .new-pre-noti-count:after {
-    content: "개의 새로운 예약알림이 있습니다"; }
+    content: "개의 예약알림이 있습니다"; }
 
 /* ==============================
     scss modules - post copmonents
@@ -3799,8 +3796,6 @@ p {
   margin-left: 4px; }
 
 .board-petition-set-status-inline .petition-set-status-selectbox-inline {
-  width: 80px;
-  display: inline-block;
   top: 50%;
   position: relative;
   display: inline-block;
@@ -3890,10 +3885,6 @@ p {
       -khtml-will-change: transform;
       -webkit-will-change: transform;
       zoom: 1; } }
-
-.board-petition .board-petition-set-status-inline,
-.board-petition .list-board-time {
-  left: -16px !important; }
 
 .open-petition-count::after {
   content: " 의 새로운 민원이 있습니다" !important; }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Tite - 예약알림 | </title>
+
+    <meta name="description" content="Tite - 관리사무소 도구">
+    <meta name="keywords" content="Tite">
+    <meta property="og:image" content="/img/dist/launcher.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/dist/style.css">
+    <!-- endinject -->
+</head>
+<body id="main" class="has-header">
+    <div class="dim"></div>
+
+    <!-- header -->
+    <div class="main-header">
+        <div class="hamburger">
+            <i class="material-icons md-24">menu</i>
+        </div>
+        <a class="main-header-link" href="/html/dashboard.html">
+            <img src="/img/dist/launcher.svg" class="main-header-logo">
+            <div class="main-header-apt-name-box"><span class="main-header-apt-name">옥련동 현대5차아파트</span></div>
+        </a>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar-container">
+        <div class="sidebar-wrapper">
+            <a class="sidebar-item dashboard-overall" title="상황판" href="/html/dashboard.html">
+                <i class="material-icons md-24">dashboard</i><span class="sidebar-text" data-subtitle="Dashboard">상황판</span>
+            </a>
+            <a class="sidebar-item board-plain" title="공지사항 / 알림" href="/html/notification.html">
+                <i class="material-icons md-24">notification_important</i><span class="sidebar-text" data-subtitle="Dashboard">공지사항 / 알림</span>
+            </a>
+            <a class="sidebar-item dashboard" title="주민투표" href="/html/vote.html">
+                <i class="material-icons md-24">how_to_vote</i><span class="sidebar-text" data-subtitle="Dashboard">주민투표</span>
+            </a>
+            <a class="sidebar-item board-plain" title="민원" href="/html/petition.html">
+                <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
+                <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
+            </a>
+            <!-- <a class="sidebar-item qna-board" title="관리자 글 게시" href="/html/admin-post.html">
+                <i class="material-icons md-24">security</i><span class="sidebar-text" data-subtitle="Dashboard">관리자 글 게시</span>
+            </a> -->
+            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
+                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
+            </a>
+            <a class="sidebar-item board-plain this" title="예약알림 설정" href="/html/pre-noti.html">
+                <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- board -->
+    <div class="board-container copy">
+        <div class="board-header">
+            <h3 class="header-title">
+                <i class="material-icons md-24 title-icon">alarm_add</i>예약알림
+            </h3>
+            <!-- <h6 class="header-subtitle">Petition</h6> -->
+            <span class="header-subtitle-description">알림을 만들거나 관리하고, 입주민들에게 전송할 수 있습니다</span>
+            <!-- write new post -->
+            <a href="/html/write/write-post-pre-noti.html" class="header-newpost" title="새로운 글 작성하기">
+                <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text pre-noti"></span>
+            </a>
+        </div>
+
+        <!-- post body -->
+        <div class="post-wrapper">
+            <div class="post-wrapper-header">
+                <h3 class="post-title">관리사무소 스피커 방송 제한</h3>
+                <span class="post-timestamp">2018/06/19</span>
+            </div>
+            <div class="post-wrapper-paragraph">
+                <p>
+                    정말 위급한 사항이 아니면 스피커를 통한 관리실 방송 제한을 청원합니다.<br>
+                    직장때문에 밤과 낮이 반대인 주민들도 많고, 겨우 재운 아이를 깨우고, 예고도 없고,<br>
+                    소거할 수 있는 선택권도 없는 방송에 대한 제한을 청원합니다.<br>
+                    대신 타이트 앱이나 엘레베이터 부착물 등의 대안을 통해 공지할 수 있는 방안을 마련하기를 청원합니다.
+                </p>
+
+                <!-- set petition status -->
+                <div class="board-petition-set-status">
+                    <span class="petition-set-status-title">민원 상태 변경:</span>
+                    <select class="petition-set-status-selectbox">
+                        <option>접수완료</option>
+                        <option>검토중</option>
+                        <option>처리중</option>
+                        <option>처리완료</option>
+                        <option>반려</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- comment -->
+            <div class="post-comment-container">
+                <div class="post-info-wrapper">
+                    <span class="post-like-title"><span class="post-like-count">24</span></span>
+                    <span class="post-comment-title"><span class="post-comment-count">2</span></span>
+                    <div class="post-edit-remove">
+                        <a class="post-edit">수정</a>
+                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
+                    </div>
+                    
+                    <!-- comment see more -->
+                    <div class="post-comment-comment-container">
+                        <div class="post-comment-see-more">
+                            <button class="post-comment-see-more-btn">댓글 더 불러오기</button>
+                        </div>
+    
+                        <!-- comments -->
+                        <div class="post-comment-comment-wrapper">
+                            <img src="https://bitbucket.org/account/spemer/avatar/48/?ts=1529484182" class="post-comment-thumbnail">
+                            <div class="post-comment-box">
+                                <span class="post-comment-username">spemer</span>
+                                <span class="post-comment-text">항상 수고가 많으십니다!</span>
+                                <div class="post-comment-comment-info">
+                                    <span class="post-comment-timestamp">1시간</span>
+                                    <a class="post-comment-liked-count liked">4</a>
+                                    <a class="post-comment-see-reply"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-comment-comment-wrapper">
+                            <img src="https://bitbucket.org/account/kyungwon_moon/avatar/48/?ts=1529401258" class="post-comment-thumbnail">
+                            <div class="post-comment-box">
+                                <span class="post-comment-username">kyungwon_moon</span>
+                                <span class="post-comment-text">좋은 정보 감사합니다 ^^</span>
+                                <div class="post-comment-comment-info">
+                                    <span class="post-comment-timestamp">38분</span>
+                                    <a class="post-comment-liked-count">2</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-comment-comment-wrapper">
+                            <img src="https://bitbucket.org/account/drcarter/avatar/48/?ts=1529462887" class="post-comment-thumbnail">
+                            <div class="post-comment-box">
+                                <span class="post-comment-username">drcarter</span>
+                                <span class="post-comment-text">이런... 이번에는 저희 동이군요;</span>
+                                <div class="post-comment-comment-info">
+                                    <span class="post-comment-timestamp">16분</span>
+                                    <a class="post-comment-liked-count liked">1</a>
+                                </div>
+                                <!-- comment reply -->
+                                <img src="https://bitbucket.org/account/xrath/avatar/48/?ts=1529448372" class="post-reply-thumbnail">
+                                <div class="post-comment-reply">
+                                    <span class="post-reply-username">xrath</span>
+                                    <span class="post-reply-text">흑... 하필 저날 저시간에 출근하네요 저는 ㅠㅠ</span>
+                                    <div class="post-comment-reply-info">
+                                        <span class="post-reply-timestamp">12분</span>
+                                        <a class="post-reply-liked-count"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post-comment-comment-wrapper">
+                            <img src="https://bitbucket.org/account/rainhelper/avatar/48/?ts=1529509838" class="post-comment-thumbnail">
+                            <div class="post-comment-box">
+                                <span class="post-comment-username">rainhelper</span>
+                                <span class="post-comment-text">정보 감사합니다!</span>
+                                <div class="post-comment-comment-info">
+                                    <span class="post-comment-timestamp">4분</span>
+                                    <a class="post-comment-liked-count"></a>
+                                    <a class="post-comment-see-reply"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- comment textarea -->
+                        <form class="post-comment-textarea-wrapper">
+                            <button class="post-comment-textarea-btn" type="submit"></button>
+                            <textarea class="post-comment-textarea" placeholder="댓글을 남겨주세요" contentEditable="true"></textarea>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- back button -->
+            <div class="post-back-list">
+                <a href="/html/petition.html" class="post-back-list-link">
+                    <button class="post-back-list-button"></button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="/js/dist/index.js"></script>
+    <!-- endinject -->
+</body>
+</html>

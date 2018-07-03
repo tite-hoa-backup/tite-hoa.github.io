@@ -2,9 +2,10 @@
     
     .list-board-plain {
         width: 100%;
-        margin: $grid 0;
+        margin: 0;
         height: $grid12x;
         padding: 0 $grid4x;
+        position: relative;
         @include selection();
         @include render-hack(width);
         @include box-sizing(border-box);
@@ -13,12 +14,10 @@
         // background-color: powderblue;
 
         &:nth-of-type(odd) {
-            background-color: #fafafa;
+            background-color: #f9f9f9;
         }
 
         &.header {
-            height: $grid12x;
-
             span {
                 font-weight: 900;
                 cursor: default !important;
@@ -39,47 +38,17 @@
 
 
         .list-numbering-wrapper {
-            // background-color: lightseagreen;
-            height: 100%;
-            width: $grid10x;
-            margin-right: $grid2x;
             @include center-text();
             @include render-hack(width);
-
-            @media #{$chrome} {
-                top: -10% !important;
-            }
-
-            @media #{$firefox} {
-                top: -10% !important;
-            }
-
-            @media #{$ie} {
-                top: -10% !important;
-            }
-
-            @supports (-ms-ime-align:auto) {
-                top: -10% !important;
-            }
 
             .list-numbering {
                 color: $brand;
                 @include center-text();
-
-                // &::after {
-                //     content: counter(content);
-                //     counter-increment: content -1;
-                // }
             }
         }
 
 
-
         .list-board-text-wrapper {
-            // background-color: royalblue;
-            width: 73%;
-            height: 100%;
-            margin-right: $grid3x;
             @include overflow();
 
             .dashboard-new-oval {
@@ -92,27 +61,12 @@
                 @include border-radius($grid4x);
             }
 
-            // TODO: 노가다코드 바꾸기
-            // list length mqbp
-            @media #{$wider}   { width: 70%; }
-            @media #{$wide}    { width: 63%; }
-            @media #{$ipad}    { width: 61%; }
-            @media #{$desktop} { width: 51%; }
-            @media #{$dt}      { width: 41%; }
-            @media #{$tablet}  { width: 60%; }
-            @media #{$landsc}  { width: 44%; }
-            @media #{$middle}  { width: 60%; }
-            @media #{$pablet}  { width: 51%; }
-            @media #{$mobile}  { width: 42%; }
-            @media #{$mini}    { width: 37%; }
-
 
             .list-board-text {
                 color: $text333;
                 cursor: pointer;
                 @include overflow();
                 @include center-text();
-                display: block;
     
                 &:hover {
                     text-decoration: underline;
@@ -123,46 +77,122 @@
 
         .list-board-view-count,
         .list-board-time {
-            right: 0;
-            float: right;
-            height: 100%;
             color: $text999;
-            position: relative;
             display: inline-block;
         }
 
         .list-board-time {
-            // background-color: sandybrown;
-            width: $grid24x;
             color: $text333;
-            margin-right: $grid2x;
 
             span {
                 @include center-text();
             }
 
-            // TODO: 노가다코드 바꾸기
-            // list display mqbp
             @media #{$tablet} {
-                display: none;
+                display: none !important;
             }
 
             @media #{$landsc} {
-                display: inline-block;
+                display: inline-block !important;
             }
 
             @media #{$middle} {
-                display: none;
+                display: none !important;
+            }
+        }
+
+        .list-board-view-count {
+            text-align: right;
+            
+            span {
+                @include center-text();
+            }
+        }
+
+
+
+
+        $margin: $grid2x;
+        $numbering-width: $grid10x;
+        $date-width: $grid24x;
+        $view-count-width: $grid12x;
+
+        .list-numbering-wrapper,
+        .list-board-text-wrapper,
+        .list-board-view-count,
+        .list-board-time {
+            position: absolute;
+            height: $grid12x !important;
+            margin-right: $margin !important;
+            @include render-hack(translateZ(0));
+        }
+
+        .list-numbering-wrapper {
+            // background-color: lightseagreen;
+            width: $numbering-width !important;
+        }
+
+        .list-board-text-wrapper {
+            // background-color: thistle;
+            left: ($numbering-width + $grid8x) !important;
+            right: ($date-width + $view-count-width + $grid10x) !important;
+
+            @media #{$tablet} {
+                right: ($view-count-width + $grid6x) !important;
+            }
+
+            @media #{$landsc} {
+                right: ($date-width + $view-count-width + $grid10x) !important;
+            }
+
+            @media #{$middle} {
+                right: ($view-count-width + $grid6x) !important;
+            }
+
+            @media #{$mobile} {
+                left: ($numbering-width + $grid6x) !important;
+                right: ($view-count-width + $grid4x) !important;
+            }
+
+            &.petition-title-text {
+                right: ($date-width + $view-count-width + $grid18x) !important;
+
+                @media #{$tablet} {
+                    right: ($view-count-width + $grid14x) !important;
+                }
+    
+                @media #{$landsc} {
+                    right: ($date-width + $view-count-width + $grid18x) !important;
+                }
+    
+                @media #{$middle} {
+                    right: ($view-count-width + $grid14x) !important;
+                }
+    
+                @media #{$mobile} {
+                    left: ($numbering-width + $grid6x) !important;
+                    right: ($view-count-width + $grid12x) !important;
+                }
+            }
+        }
+
+        .list-board-time {
+            // background-color: sandybrown;
+            width: $date-width !important;
+            right: ($view-count-width + $grid6x) !important;
+
+            &.petition-submitted-time {
+                right: ($view-count-width + $grid14x) !important;
             }
         }
 
         .list-board-view-count {
             // background-color: salmon;
-            width: $grid16x;
-            text-align: right;
-            
-            span {
-                @include center-text();
+            width: $view-count-width !important;
+            right: $grid2x !important;
+
+            &.board-petition-set-status-inline {
+                width: $view-count-width + $grid8x !important;
             }
         }
     }

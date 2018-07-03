@@ -48,8 +48,6 @@
 .board-petition-set-status-inline {
 
     .petition-set-status-selectbox-inline {
-        width: $grid20x;
-        display: inline-block;
         @include center-text();
         @include transform(translateY(-64%));
 
@@ -72,14 +70,13 @@
 }
 
 
-.board-petition {
+// .board-petition {
 
-    .board-petition-set-status-inline,
-    .list-board-time {
-        // background-color: antiquewhite;
-        left: -($grid4x) !important;
-    }
-}
+//     .board-petition-set-status-inline,
+//     .list-board-time {
+//         background-color: antiquewhite;
+//     }
+// }
 
 
 .open-petition-count {

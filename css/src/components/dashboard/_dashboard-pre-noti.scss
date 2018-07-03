@@ -4,7 +4,7 @@
         @include dashboard-subspan();
 
         &:after {
-            content: "개의 예약알림이 있습니다";
+            content: "개의 게시중인 예약알림이 있습니다";
         }
     }
 }

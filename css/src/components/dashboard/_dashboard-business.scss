@@ -4,7 +4,7 @@
         @include dashboard-subspan();
 
         &:after {
-            content: "개의 새로운 광고 글이 있습니다";
+            content: "개의 게시중인 광고 글이 있습니다";
         }
     }
 }

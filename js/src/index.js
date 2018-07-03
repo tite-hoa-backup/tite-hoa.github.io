@@ -48,7 +48,7 @@
             var setHamburgerToggle = {
                 navToggle: document.querySelector('.hamburger'),
                 nav: document.querySelector('.sidebar-container'),
-                body: document.querySelector('body'),
+
                 dim: document.querySelector('.dim'),
 
                 dimLayer: document.querySelector('.dim-layer'),
@@ -57,11 +57,13 @@
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');
                     this.nav.classList.toggle('expanded');
+
                     this.dim.classList.toggle('dim-layer');
-                    
-                    // if (this.dimLayer) {
-                    //     this.dim.classList.toggle('dim-layer');
-                    // }
+                    // this.dimLayer.classList.toggle('dim-layer');
+
+                    if (this.dimLayer) {
+                        this.dim.classList.toggle('dim-layer');
+                    }
                 }
             };
         

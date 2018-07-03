@@ -1324,12 +1324,34 @@ p {
   .board-wrapper .list-board-plain ::selection {
     color: white !important;
     background-color: #17C060 !important; }
-  .board-wrapper .list-board-plain:hover {
-    background-color: #f9f9f9; }
+  .board-wrapper .list-board-plain:nth-of-type(odd) {
+    background-color: #fafafa; }
+  .board-wrapper .list-board-plain.header {
+    height: 48px; }
+    .board-wrapper .list-board-plain.header span {
+      font-weight: 900;
+      cursor: default !important;
+      color: #999 !important; }
+    .board-wrapper .list-board-plain.header .list-numbering-wrapper {
+      transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -khtml-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      will-change: transform;
+      -o-will-change: transform;
+      -ms-will-change: transform;
+      -moz-will-change: transform;
+      -khtml-will-change: transform;
+      -webkit-will-change: transform;
+      zoom: 1; }
+    .board-wrapper .list-board-plain.header .list-board-text:hover {
+      text-decoration: none !important; }
   .board-wrapper .list-board-plain .list-numbering-wrapper {
     height: 100%;
     width: 40px;
-    margin-right: 4px;
+    margin-right: 8px;
     top: 50%;
     position: relative;
     display: inline-block;
@@ -1384,7 +1406,7 @@ p {
       -webkit-will-change: transform;
       zoom: 1; }
   .board-wrapper .list-board-plain .list-board-text-wrapper {
-    width: 74%;
+    width: 73%;
     height: 100%;
     margin-right: 12px;
     overflow: hidden;
@@ -1418,37 +1440,37 @@ p {
       zoom: 1; }
     @media screen and (max-width: 1600px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 71%; } }
+        width: 70%; } }
     @media screen and (max-width: 1280px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 64%; } }
+        width: 63%; } }
     @media screen and (max-width: 1112px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 62%; } }
+        width: 61%; } }
     @media screen and (max-width: 980px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 52%; } }
+        width: 51%; } }
     @media screen and (max-width: 860px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
         width: 41%; } }
     @media screen and (max-width: 768px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 62%; } }
+        width: 60%; } }
     @media screen and (max-width: 640px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 45%; } }
+        width: 44%; } }
     @media screen and (max-width: 520px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 62%; } }
+        width: 60%; } }
     @media screen and (max-width: 420px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 54%; } }
+        width: 51%; } }
     @media screen and (max-width: 360px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 46%; } }
+        width: 42%; } }
     @media screen and (max-width: 320px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        width: 38%; } }
+        width: 37%; } }
     .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text {
       color: #333;
       cursor: pointer;
@@ -1480,7 +1502,7 @@ p {
       display: block; }
       .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text:hover {
         text-decoration: underline; }
-  .board-wrapper .list-board-plain .list-board-edit,
+  .board-wrapper .list-board-plain .list-board-view-count,
   .board-wrapper .list-board-plain .list-board-time {
     right: 0;
     float: right;
@@ -1490,6 +1512,7 @@ p {
     display: inline-block; }
   .board-wrapper .list-board-plain .list-board-time {
     width: 96px;
+    color: #333;
     margin-right: 8px; }
     .board-wrapper .list-board-plain .list-board-time span {
       top: 50%;
@@ -1517,10 +1540,10 @@ p {
     @media screen and (max-width: 520px) {
       .board-wrapper .list-board-plain .list-board-time {
         display: none; } }
-  .board-wrapper .list-board-plain .list-board-edit {
-    width: 64px; }
-    .board-wrapper .list-board-plain .list-board-edit a {
-      cursor: pointer;
+  .board-wrapper .list-board-plain .list-board-view-count {
+    width: 64px;
+    text-align: right; }
+    .board-wrapper .list-board-plain .list-board-view-count span {
       top: 50%;
       position: relative;
       display: inline-block;
@@ -1537,10 +1560,6 @@ p {
       -khtml-will-change: transform;
       -webkit-will-change: transform;
       zoom: 1; }
-      .board-wrapper .list-board-plain .list-board-edit a::after {
-        content: "수정하기"; }
-      .board-wrapper .list-board-plain .list-board-edit a:hover {
-        text-decoration: underline; }
 
 .dashboard-container {
   box-sizing: border-box;

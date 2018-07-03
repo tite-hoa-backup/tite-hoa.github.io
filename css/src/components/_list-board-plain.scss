@@ -12,15 +12,37 @@
         @include transform(translateZ(0));
         // background-color: powderblue;
 
-        &:hover {
-            background-color: #f9f9f9;
+        &:nth-of-type(odd) {
+            background-color: #fafafa;
         }
+
+        &.header {
+            height: $grid12x;
+
+            span {
+                font-weight: 900;
+                cursor: default !important;
+                color: $text999 !important;
+            }
+
+            .list-numbering-wrapper {
+                @include transform(translateY(-50%));
+            }
+
+            .list-board-text {
+
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+        }
+
 
         .list-numbering-wrapper {
             // background-color: lightseagreen;
             height: 100%;
             width: $grid10x;
-            margin-right: $grid;
+            margin-right: $grid2x;
             @include center-text();
             @include render-hack(width);
 
@@ -55,7 +77,7 @@
 
         .list-board-text-wrapper {
             // background-color: royalblue;
-            width: 74%;
+            width: 73%;
             height: 100%;
             margin-right: $grid3x;
             @include overflow();
@@ -72,17 +94,17 @@
 
             // TODO: 노가다코드 바꾸기
             // list length mqbp
-            @media #{$wider}   { width: 71%; }
-            @media #{$wide}    { width: 64%; }
-            @media #{$ipad}    { width: 62%; }
-            @media #{$desktop} { width: 52%; }
+            @media #{$wider}   { width: 70%; }
+            @media #{$wide}    { width: 63%; }
+            @media #{$ipad}    { width: 61%; }
+            @media #{$desktop} { width: 51%; }
             @media #{$dt}      { width: 41%; }
-            @media #{$tablet}  { width: 62%; }
-            @media #{$landsc}  { width: 45%; }
-            @media #{$middle}  { width: 62%; }
-            @media #{$pablet}  { width: 54%; }
-            @media #{$mobile}  { width: 46%; }
-            @media #{$mini}    { width: 38%; }
+            @media #{$tablet}  { width: 60%; }
+            @media #{$landsc}  { width: 44%; }
+            @media #{$middle}  { width: 60%; }
+            @media #{$pablet}  { width: 51%; }
+            @media #{$mobile}  { width: 42%; }
+            @media #{$mini}    { width: 37%; }
 
 
             .list-board-text {
@@ -99,7 +121,7 @@
         }
 
 
-        .list-board-edit,
+        .list-board-view-count,
         .list-board-time {
             right: 0;
             float: right;
@@ -112,6 +134,7 @@
         .list-board-time {
             // background-color: sandybrown;
             width: $grid24x;
+            color: $text333;
             margin-right: $grid2x;
 
             span {
@@ -133,21 +156,13 @@
             }
         }
 
-        .list-board-edit {
+        .list-board-view-count {
             // background-color: salmon;
             width: $grid16x;
+            text-align: right;
             
-            a {
-                cursor: pointer;
+            span {
                 @include center-text();
-
-                &::after {
-                    content: "수정하기";
-                }
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
     }

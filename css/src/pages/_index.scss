@@ -37,8 +37,8 @@
                     margin-bottom: $grid4x;
                     background-color: $textf9;
                     border: 1px solid $textccc;
+                    @include border-radius();
                     @include render-hack(width);
-                    @include border-radius($grid);
                     @include transform(translateZ(0));
 
                     &:focus {
@@ -59,7 +59,7 @@
                     font-weight: 900;
                     margin-bottom: $grid8x;
                     background-color: $brand;
-                    @include border-radius($grid);
+                    @include border-radius();
                     @include transition(all .25s ease);
 
                     &:hover {

@@ -9,6 +9,7 @@
 }
 
 
+
 /* ==============================
   overflow ellipsis
 ============================== */
@@ -18,6 +19,7 @@
     display: inline-block;
     @include text-overflow();
 }
+
 
 
 /* ==============================
@@ -31,13 +33,13 @@
 }
 
 
+
 /* ==============================
   board card design/layout
 ============================== */
 @mixin board-card(){
     padding: $grid4x;
     background-color: white;
-    // border: 1px solid $texteee;
     @include border-radius($grid2x $grid2x 0 0);
 }
 
@@ -107,7 +109,7 @@
     font-weight: 900;
     border: 1px solid $brand;
     background-color: white;
-    @include border-radius($grid2x);
+    @include border-radius();
     @include transition(all .25s ease);
     
     &:hover {

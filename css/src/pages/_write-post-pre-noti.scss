@@ -6,7 +6,7 @@
             padding: $grid4x $grid4x $grid6x;
             margin-top: $grid6x;
             border: 1px solid $textddd;
-            @include border-radius($grid2x);
+            @include border-radius();
 
             .write-post-set-time-legend {
                 font-weight: 900;

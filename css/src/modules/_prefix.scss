@@ -15,7 +15,7 @@
 /* ==============================
   border radius
 ============================== */
-@mixin border-radius      ($val) {
+@mixin border-radius      ($val:$grid2x) {
     border-radius:         $val;
     -o-border-radius:      $val;
     -ms-border-radius:     $val;

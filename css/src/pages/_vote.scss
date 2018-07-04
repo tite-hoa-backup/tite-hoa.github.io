@@ -95,8 +95,8 @@
                     margin-bottom: $grid2x;
                     background-color: white;
                     border: 1px solid $textddd;
+                    @include border-radius();
                     @include render-hack(width);
-                    @include border-radius($grid2x);
                     @include transform(translateZ(0));
 
                     &.item-failed {

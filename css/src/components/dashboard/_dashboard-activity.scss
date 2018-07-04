@@ -14,7 +14,7 @@
             padding: $grid2x $grid4x;
             padding-top: $grid;
             border: 1px solid $texteee;
-            @include border-radius($grid2x);
+            @include border-radius();
             @include transition(background-color .5s ease);
 
             &:hover {

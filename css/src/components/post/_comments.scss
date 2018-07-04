@@ -66,7 +66,7 @@
             padding: $grid $grid2x;
             margin-top: $grid4x;
             background-color: $textf9;
-            @include border-radius($grid4x);
+            @include border-radius();
 
             @media #{$pablet} {
                 padding: $grid;
@@ -87,8 +87,8 @@
                     display: inline-block;
                     border: 1px solid $brand;
                     background-color: transparent;
+                    @include border-radius();
                     @include button-pressed();
-                    @include border-radius($grid2x);
                     @include font-size($grid3x + ($grid / 2));
                     @include transition(background-color .25s ease);
 
@@ -252,9 +252,9 @@
                     position: relative;
                     border: 1px solid $texteee;
                     padding-right: ($grid20x + $grid);
+                    @include border-radius();
                     @include render-hack(width);
                     @include line-height($grid4x);
-                    @include border-radius($grid2x);
                     @include transform(translateZ(0));
 
                     @media #{$ie} {

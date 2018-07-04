@@ -79,8 +79,8 @@
             display: inline-block;
             background-color: $brand;
             padding: 0 $grid4x 0 $grid3x;
+            @include border-radius();
             @include button-pressed();
-            @include border-radius($grid2x);
             @include transition(all .5s ease);
 
             @media #{$pablet}{
@@ -147,7 +147,7 @@
         padding: $grid4x;
         background-color: white;
         border: 1px solid $texteee;
-        @include border-radius($grid2x);
+        @include border-radius();
 
         .board-wrapper-header {
             margin-bottom: $grid2x;

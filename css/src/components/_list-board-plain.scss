@@ -7,9 +7,9 @@
         padding: 0 $grid4x;
         position: relative;
         @include selection();
+        @include border-radius();
         @include render-hack(width);
         @include box-sizing(border-box);
-        @include border-radius($grid2x);
         @include transform(translateZ(0));
         // background-color: powderblue;
 
@@ -58,7 +58,7 @@
                 display: inline-block;
                 margin-bottom: $grid2x;
                 background-color: $noti;
-                @include border-radius($grid4x);
+                @include border-radius(100%);
             }
 
 

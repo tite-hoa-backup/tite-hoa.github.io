@@ -17,9 +17,6 @@
         padding-left: 0;
         padding-right: 0;
 
-        // [contenteditable=true]:before {
-        //     content: attr(placeholder) !important;
-        // }
         
         .write-post-parahraph {
             width: 100%;
@@ -30,9 +27,9 @@
             padding: $grid4x;
             border: 1px solid $textccc;
             overflow-x: hidden !important;
+            @include border-radius();
             @include render-hack(width);
             @include line-height($grid4x);
-            @include border-radius($grid2x);
             @include transform(translateZ(0));
 
             &:focus {
@@ -131,7 +128,7 @@
                     }
 
                     @media #{$chrome} {
-                        margin-top: -$grid12x;
+                        margin-top: -($grid12x);
                     }
 
                     &:hover {
@@ -167,7 +164,7 @@
                 padding-left: $grid4x;
                 border: 1px solid $textccc;
                 background-color: transparent;
-                @include border-radius($grid2x);
+                @include border-radius();
     
                 &:hover {
                     background-color: $textf9;

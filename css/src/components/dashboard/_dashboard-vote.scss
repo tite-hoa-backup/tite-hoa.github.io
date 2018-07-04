@@ -27,7 +27,7 @@
         margin-bottom: $grid2x;
         background-color: white;
         border: 1px solid $textddd;
-        @include border-radius($grid2x);
+        @include border-radius();
         
         &:last-child {
             margin-bottom: 0;

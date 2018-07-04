@@ -58,7 +58,7 @@
 
             .post-image-landscape,
             .post-image-portrait {
-                @include border-radius($grid2x);
+                @include border-radius();
 
                 @media #{$pablet} {
                     width: 100%;

@@ -116,7 +116,7 @@
     display: inline-block;
     background-color: $noti;
     @extend %center-vertical;
-    @include border-radius($grid4x);
+    @include border-radius(100%);
 
     .noti-count {
         color: white;

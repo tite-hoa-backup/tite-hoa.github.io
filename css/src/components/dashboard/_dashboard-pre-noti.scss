@@ -24,9 +24,9 @@
             padding: $grid4x;
             overflow: scroll;
             border: 1px solid $texteee;
+            @include border-radius();
             @include render-hack(width);
             @include button-pressed(0.985);
-            @include border-radius($grid2x);
             @include transform(translateZ(0));
             @include transition(all .25s ease);
 

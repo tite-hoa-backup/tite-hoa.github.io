@@ -126,7 +126,7 @@
 @mixin button-pressed($val:0.975){
     &:active {
         @include transform(scale($val));
-        @include transition(transform .1s ease);
+        @include transition(transform .25s ease !important);
     }
 }
 

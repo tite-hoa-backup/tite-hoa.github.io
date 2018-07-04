@@ -195,6 +195,7 @@ select,
 input[type="date"],
 input[type="time"],
 input[type="file"],
+input[type="radio"],
 input[type="checkbox"] {
   cursor: pointer; }
 
@@ -793,12 +794,12 @@ p {
       -webkit-will-change: transition;
       zoom: 1; }
       .sidebar-container .sidebar-wrapper .sidebar-item:active {
-        transform: scale(0.975);
-        -o-transform: scale(0.975);
-        -ms-transform: scale(0.975);
-        -moz-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
-        -webkit-transform: scale(0.975);
+        transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
         will-change: transform;
         -o-will-change: transform;
         -ms-will-change: transform;
@@ -806,12 +807,12 @@ p {
         -khtml-will-change: transform;
         -webkit-will-change: transform;
         zoom: 1;
-        transition: transform 0.1s ease;
-        -o-transition: transform 0.1s ease;
-        -ms-transition: transform 0.1s ease;
-        -moz-transition: transform 0.1s ease;
-        -khtml-transition: transform 0.1s ease;
-        -webkit-transition: transform 0.1s ease;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -1139,12 +1140,12 @@ p {
         -khtml-will-change: transform;
         -webkit-will-change: transform;
         zoom: 1;
-        transition: transform 0.1s ease;
-        -o-transition: transform 0.1s ease;
-        -ms-transition: transform 0.1s ease;
-        -moz-transition: transform 0.1s ease;
-        -khtml-transition: transform 0.1s ease;
-        -webkit-transition: transform 0.1s ease;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -1906,12 +1907,12 @@ p {
           -khtml-will-change: transform;
           -webkit-will-change: transform;
           zoom: 1;
-          transition: transform 0.1s ease;
-          -o-transition: transform 0.1s ease;
-          -ms-transition: transform 0.1s ease;
-          -moz-transition: transform 0.1s ease;
-          -khtml-transition: transform 0.1s ease;
-          -webkit-transition: transform 0.1s ease;
+          transition: transform 0.25s ease !important;
+          -o-transition: transform 0.25s ease !important;
+          -ms-transition: transform 0.25s ease !important;
+          -moz-transition: transform 0.25s ease !important;
+          -khtml-transition: transform 0.25s ease !important;
+          -webkit-transition: transform 0.25s ease !important;
           will-change: transition;
           -o-will-change: transition;
           -ms-will-change: transition;
@@ -2126,12 +2127,12 @@ p {
           -khtml-will-change: transform;
           -webkit-will-change: transform;
           zoom: 1;
-          transition: transform 0.1s ease;
-          -o-transition: transform 0.1s ease;
-          -ms-transition: transform 0.1s ease;
-          -moz-transition: transform 0.1s ease;
-          -khtml-transition: transform 0.1s ease;
-          -webkit-transition: transform 0.1s ease;
+          transition: transform 0.25s ease !important;
+          -o-transition: transform 0.25s ease !important;
+          -ms-transition: transform 0.25s ease !important;
+          -moz-transition: transform 0.25s ease !important;
+          -khtml-transition: transform 0.25s ease !important;
+          -webkit-transition: transform 0.25s ease !important;
           will-change: transition;
           -o-will-change: transition;
           -ms-will-change: transition;
@@ -2521,12 +2522,12 @@ p {
       -khtml-will-change: transform;
       -webkit-will-change: transform;
       zoom: 1;
-      transition: transform 0.1s ease;
-      -o-transition: transform 0.1s ease;
-      -ms-transition: transform 0.1s ease;
-      -moz-transition: transform 0.1s ease;
-      -khtml-transition: transform 0.1s ease;
-      -webkit-transition: transform 0.1s ease;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -2735,12 +2736,12 @@ p {
         -khtml-will-change: transform;
         -webkit-will-change: transform;
         zoom: 1;
-        transition: transform 0.1s ease;
-        -o-transition: transform 0.1s ease;
-        -ms-transition: transform 0.1s ease;
-        -moz-transition: transform 0.1s ease;
-        -khtml-transition: transform 0.1s ease;
-        -webkit-transition: transform 0.1s ease;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -2864,12 +2865,12 @@ p {
           -khtml-will-change: transform;
           -webkit-will-change: transform;
           zoom: 1;
-          transition: transform 0.1s ease;
-          -o-transition: transform 0.1s ease;
-          -ms-transition: transform 0.1s ease;
-          -moz-transition: transform 0.1s ease;
-          -khtml-transition: transform 0.1s ease;
-          -webkit-transition: transform 0.1s ease;
+          transition: transform 0.25s ease !important;
+          -o-transition: transform 0.25s ease !important;
+          -ms-transition: transform 0.25s ease !important;
+          -moz-transition: transform 0.25s ease !important;
+          -khtml-transition: transform 0.25s ease !important;
+          -webkit-transition: transform 0.25s ease !important;
           will-change: transition;
           -o-will-change: transition;
           -ms-will-change: transition;
@@ -3115,12 +3116,12 @@ p {
           -khtml-will-change: transform;
           -webkit-will-change: transform;
           zoom: 1;
-          transition: transform 0.1s ease;
-          -o-transition: transform 0.1s ease;
-          -ms-transition: transform 0.1s ease;
-          -moz-transition: transform 0.1s ease;
-          -khtml-transition: transform 0.1s ease;
-          -webkit-transition: transform 0.1s ease;
+          transition: transform 0.25s ease !important;
+          -o-transition: transform 0.25s ease !important;
+          -ms-transition: transform 0.25s ease !important;
+          -moz-transition: transform 0.25s ease !important;
+          -khtml-transition: transform 0.25s ease !important;
+          -webkit-transition: transform 0.25s ease !important;
           will-change: transition;
           -o-will-change: transition;
           -ms-will-change: transition;
@@ -4088,6 +4089,8 @@ p {
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time,
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-title {
     margin: 0 0 16px 0; }
+  .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-radio-wrapper {
+    margin: 4px 0 8px; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-text {
     color: #17C060;
     display: block;
@@ -4097,9 +4100,6 @@ p {
     cursor: pointer;
     margin-top: 4px;
     display: inline-block; }
-    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item.weekly-event {
-      display: block;
-      margin: 8px 0; }
     .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
       cursor: pointer;
       margin-right: 2px; }

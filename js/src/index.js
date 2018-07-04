@@ -16,10 +16,10 @@
             if (this.value.length === 0) {
                 getLoginBtn.disabled = true;
             }
-            else if (this.value.length >= 1) {
+            else if (this.value.length >= 0) {
                 getPwForm.addEventListener('input', function() {
 
-                    if (getIdForm.value.length >= 1 && getPwForm.value.length >= 1) {
+                    if (getIdForm.value.length >= 0 && getPwForm.value.length >= 0) {
                         getLoginBtn.disabled = false;
                         getLoginBtn.setAttribute('title', '로그인');
                     }

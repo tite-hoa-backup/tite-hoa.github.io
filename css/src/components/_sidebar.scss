@@ -61,9 +61,9 @@
             cursor: pointer;
             height: $grid16x;
             padding-left: $grid8x;
-            @include button-pressed();
             @include font-size($grid4x);
             @include line-height($grid8x);
+            @include button-pressed(0.95);
             @include transition(all .5s ease);
 
             // prevent refresh animation ie

@@ -20,6 +20,10 @@
 
             .write-post-set-date {
 
+                .write-post-set-date-radio-wrapper {
+                    margin: $grid 0 $grid2x;
+                }
+
                 .write-post-set-date-text {
                     color: $brand;
                     display: block;
@@ -32,10 +36,6 @@
                     margin-top: $grid;
                     display: inline-block;
 
-                    &.weekly-event {
-                        display: block;
-                        margin: $grid2x 0;
-                    }
 
                     input[type="checkbox"] {
                         cursor: pointer;

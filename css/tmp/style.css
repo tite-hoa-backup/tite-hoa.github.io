@@ -1842,6 +1842,7 @@ p {
       .dashboard-container .dashboard-wrapper .dashboard-card .scrollable {
         width: 100%;
         height: 100%;
+        cursor: pointer;
         padding: 16px;
         overflow: scroll;
         border: 1px solid #eee;
@@ -1946,9 +1947,14 @@ p {
         @supports (-ms-ime-align: auto) {
           .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each {
             overflow: hidden !important; } }
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle,
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical; }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle {
           width: 100%;
-          display: block;
+          display: inline-block;
           color: #333;
           cursor: pointer;
           font-weight: 900;
@@ -1987,12 +1993,8 @@ p {
           .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle:hover {
             text-decoration: underline; }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span {
-          display: block;
           color: #777;
-          overflow: hidden;
-          display: -webkit-box;
           -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
           height: 67.2px;
           text-overflow: ellipsis;
           -o-text-overflow: ellipsis;
@@ -2417,12 +2419,103 @@ p {
   .dashboard-card-pre-noti .new-pre-noti-count:after {
     content: "개의 게시중인 예약알림이 있습니다"; }
 
-.dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-title {
-  display: block;
-  font-weight: 900; }
-
-.dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-time {
-  display: block; }
+.dashboard-card-pre-noti .dashboard-card-pre-noti-item {
+  margin-top: 8px; }
+  .dashboard-card-pre-noti .dashboard-card-pre-noti-item:first-of-type {
+    margin-top: 0; }
+  .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    cursor: pointer;
+    padding: 16px;
+    overflow: scroll;
+    border: 1px solid #eee;
+    will-change: width;
+    -o-will-change: width;
+    -ms-will-change: width;
+    -moz-will-change: width;
+    -khtml-will-change: width;
+    -webkit-will-change: width;
+    zoom: 1;
+    border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    will-change: border-radius;
+    -o-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -webkit-will-change: border-radius;
+    zoom: 1;
+    transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -khtml-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+    -o-will-change: transform;
+    -ms-will-change: transform;
+    -moz-will-change: transform;
+    -khtml-will-change: transform;
+    -webkit-will-change: transform;
+    zoom: 1;
+    transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -khtml-transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    will-change: transition;
+    -o-will-change: transition;
+    -ms-will-change: transition;
+    -moz-will-change: transition;
+    -khtml-will-change: transition;
+    -webkit-will-change: transition;
+    zoom: 1; }
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:hover {
+      background-color: #f9f9f9;
+      transition: background-color 0.1s ease;
+      -o-transition: background-color 0.1s ease;
+      -ms-transition: background-color 0.1s ease;
+      -moz-transition: background-color 0.1s ease;
+      -khtml-transition: background-color 0.1s ease;
+      -webkit-transition: background-color 0.1s ease;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; }
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title,
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1; }
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
+      font-weight: 900; }
+      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title:hover {
+        text-decoration: underline; }
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
+      color: #777;
+      height: 22.4px;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      -khtml-text-overflow: ellipsis;
+      -webkit-text-overflow: ellipsis;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 22.4px;
+      line-height: 1.4rem; }
 
 /* ==============================
     scss modules - post copmonents

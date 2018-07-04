@@ -114,6 +114,7 @@
             .scrollable {
                 width: 100%;
                 height: 100%;
+                cursor: pointer;
                 padding: $grid4x;
                 overflow: scroll;
                 border: 1px solid $texteee;
@@ -173,9 +174,21 @@
                     overflow: hidden !important;
                 }
             
+                // overflow -> ellipsis
+                $line-height: 1.6;
+                $lines-to-show: 3;
+                $noti-font-size: 14px;
+            
+                .dashboard-card-item-atitle,
+                .dashboard-card-item-span {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical; 
+                }
+            
                 .dashboard-card-item-atitle {
                     width: 100%;
-                    display: block;
+                    display: inline-block;
                     color: $text333;
                     cursor: pointer;
                     font-weight: 900;
@@ -188,19 +201,10 @@
                         text-decoration: underline;
                     }
                 }
-            
-                // overflow -> ellipsis
-                $line-height: 1.6;
-                $lines-to-show: 3;
-                $noti-font-size: 14px;
 
                 .dashboard-card-item-span {
-                    display: block;
                     color: $text777;
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical; 
+                    -webkit-line-clamp: $lines-to-show;
                     height: $line-height * $lines-to-show * $noti-font-size;
                     @include selection();
                     @include text-overflow();

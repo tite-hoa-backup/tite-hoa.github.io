@@ -9,14 +9,60 @@
     }
 
     .dashboard-card-pre-noti-item {
+        margin-top: $grid2x;
 
-        .dashboard-card-pre-noti-title {
-            display: block;
-            font-weight: 900;
+        &:first-of-type {
+            margin-top: 0;
         }
 
-        .dashboard-card-pre-noti-time {
+        .dashboard-card-pre-noti-item-link {
+            width: 100%;
+            height: 100%;
             display: block;
+            color: $text333;
+            cursor: pointer;
+            padding: $grid4x;
+            overflow: scroll;
+            border: 1px solid $texteee;
+            @include render-hack(width);
+            @include border-radius($grid2x);
+            @include transform(translateZ(0));
+            @include transition(background-color .5s ease);
+
+            &:hover {
+                background-color: $textf9;
+                @include transition(background-color .1s ease);
+            }
+            
+            // overflow -> ellipsis
+            $line-height: 1.6;
+            $lines-to-show: 1;
+            $noti-font-size: 14px;
+
+            .dashboard-card-pre-noti-title,
+            .dashboard-card-pre-noti-time {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical; 
+                -webkit-line-clamp: $lines-to-show;
+
+            }
+
+            .dashboard-card-pre-noti-title {
+                font-weight: 900;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+    
+            .dashboard-card-pre-noti-time {
+                color: $text777;
+                height: $line-height * $lines-to-show * $noti-font-size;
+                @include text-overflow();
+                @include font-size($noti-font-size);
+                @include line-height($noti-font-size);
+            }
         }
     }
 }

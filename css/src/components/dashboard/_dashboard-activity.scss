@@ -18,7 +18,7 @@
             @include transition(background-color .5s ease);
 
             &:hover {
-                background-color: $textf9;
+                background-color: $textfa;
                 @include transition(background-color .1s ease);
             }
 

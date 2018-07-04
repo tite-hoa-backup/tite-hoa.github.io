@@ -35,7 +35,6 @@
 
         @media #{$ipad} {
             width: 49%;
-            // margin-bottom: $grid8x;
             @include render-hack(width);
             @include transform(translateZ(0));
 
@@ -56,7 +55,6 @@
         @media #{$tablet} {
             width: 100%;
             margin-right: none;
-            // margin-bottom: $grid6x;
             @include render-hack(width);
             @include transform(translateZ(0));
         }
@@ -126,7 +124,7 @@
 
                 &:hover {
                     border: 1px solid $brand;
-                    background-color: $textf9;
+                    background-color: $textfa;
                     @include transition(all .25s ease);
                 }
 

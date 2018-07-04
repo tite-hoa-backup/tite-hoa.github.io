@@ -26,6 +26,10 @@
                 margin-top: $grid2x;
             }
 
+            &:first-child {
+                border: 1px solid $brand;
+            }
+
             .material-icons {
                 color: $text999;
                 margin-right: $grid2x;

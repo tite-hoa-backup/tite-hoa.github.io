@@ -39,7 +39,8 @@
     }
 
     @media #{$landsc} {
-        left: -($grid56x);
+        width: $grid64x;
+        left: -($grid64x);
     }
 
     .sidebar-wrapper {

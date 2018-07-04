@@ -7,4 +7,16 @@
             content: "개의 게시중인 예약알림이 있습니다";
         }
     }
+
+    .dashboard-card-pre-noti-item {
+
+        .dashboard-card-pre-noti-title {
+            display: block;
+            font-weight: 900;
+        }
+
+        .dashboard-card-pre-noti-time {
+            display: block;
+        }
+    }
 }

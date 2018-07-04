@@ -760,7 +760,8 @@ p {
       width: 224px; } }
   @media screen and (max-width: 640px) {
     .sidebar-container {
-      left: -224px; } }
+      width: 256px;
+      left: -256px; } }
   .sidebar-container .sidebar-wrapper {
     padding-top: 64px; }
     .sidebar-container .sidebar-wrapper:first-child {
@@ -2371,6 +2372,8 @@ p {
     zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
     margin-top: 8px; }
+  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:first-child {
+    border: 1px solid #17C060; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
     color: #999;
     margin-right: 8px;
@@ -2413,6 +2416,13 @@ p {
   font-size: 0.75rem; }
   .dashboard-card-pre-noti .new-pre-noti-count:after {
     content: "개의 게시중인 예약알림이 있습니다"; }
+
+.dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-title {
+  display: block;
+  font-weight: 900; }
+
+.dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-time {
+  display: block; }
 
 /* ==============================
     scss modules - post copmonents

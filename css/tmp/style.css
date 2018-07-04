@@ -1258,7 +1258,11 @@ p {
         .board-container .board-wrapper .board-wrapper-header .board-notice-count::before {
           content: "총 "; }
         .board-container .board-wrapper .board-wrapper-header .board-notice-count::after {
-          content: " 의 글이 있습니다"; }
+          content: "의 글이 있습니다"; }
+        .board-container .board-wrapper .board-wrapper-header .board-notice-count.pre-noti-posts::after {
+          content: "의 게시중인 예약알림이 있습니다"; }
+        .board-container .board-wrapper .board-wrapper-header .board-notice-count.business-posts::after {
+          content: "의 게시중인 광고 글이 있습니다"; }
 
 .copy::after {
   color: #999;
@@ -3520,7 +3524,7 @@ p {
   margin-bottom: 24px !important; }
 
 .open-vote-count::after {
-  content: " 의 진행중인 투표가 있습니다" !important; }
+  content: "의 진행중인 투표가 있습니다" !important; }
 
 .write-post-wrapper .write-post-wrapper-header .write-post-title {
   width: 100%;
@@ -3887,7 +3891,7 @@ p {
       zoom: 1; } }
 
 .open-petition-count::after {
-  content: " 의 새로운 민원이 있습니다" !important; }
+  content: "의 새로운 민원이 있습니다" !important; }
 
 .list-board-plain.petition-submitted {
   background-color: #f9f9f9 !important; }
@@ -3941,10 +3945,11 @@ p {
         margin-top: 8px; }
         .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
           margin-left: 8px; } }
-  .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-summary .write-post-summary-text {
-    font-weight: 900;
-    margin-top: 16px;
-    display: inline-block; }
-    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-summary .write-post-summary-text:after {
-      font-weight: 400;
-      content: " 마다 알림을 전송합니다."; }
+
+.post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text {
+  font-weight: 900;
+  margin-top: 16px;
+  display: inline-block; }
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text::after {
+    font-weight: 400;
+    content: " 마다 주민들에게 알림을 전송합니다."; }

@@ -57,19 +57,19 @@
                     }
                 }
             }
-            
+        }
+        
 
-            .write-post-summary {
+        .write-post-summary {
 
-                .write-post-summary-text {
-                    font-weight: 900;
-                    margin-top: $grid4x;
-                    display: inline-block;
+            .write-post-summary-text {
+                font-weight: 900;
+                margin-top: $grid4x;
+                display: inline-block;
 
-                    &:after {
-                        font-weight: 400;
-                        content: " 마다 알림을 전송합니다.";
-                    }
+                &::after {
+                    font-weight: 400;
+                    content: " 마다 주민들에게 알림을 전송합니다.";
                 }
             }
         }

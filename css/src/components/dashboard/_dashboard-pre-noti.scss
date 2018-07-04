@@ -25,13 +25,29 @@
             overflow: scroll;
             border: 1px solid $texteee;
             @include render-hack(width);
+            @include button-pressed(0.985);
             @include border-radius($grid2x);
             @include transform(translateZ(0));
-            @include transition(background-color .5s ease);
+            @include transition(all .25s ease);
+
+
+            // prevent scrollbar
+            overflow: hidden !important;
+
+            // hide scrollbar ie
+            @media #{$ie} {
+                overflow: hidden !important;
+            }
+
+            // hide scrollbar edge
+            @supports (-ms-ime-align:auto) {
+                overflow: hidden !important;
+            }
 
             &:hover {
+                border: 1px solid $brand;
                 background-color: $textf9;
-                @include transition(background-color .1s ease);
+                @include transition(all .25s ease);
             }
             
             // overflow -> ellipsis
@@ -41,24 +57,22 @@
 
             .dashboard-card-pre-noti-title,
             .dashboard-card-pre-noti-time {
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-box-orient: vertical; 
-                -webkit-line-clamp: $lines-to-show;
-
+                overflow: hidden !important;
+                display: -webkit-box !important;
+                display: -moz-box !important;
+                display: -ms-flexbox !important;
+                -webkit-box-orient: vertical !important;
+                -moz-line-clamp: $lines-to-show !important;
+                -webkit-line-clamp: $lines-to-show !important;
+                height: $line-height * $lines-to-show * 16px;
             }
 
             .dashboard-card-pre-noti-title {
                 font-weight: 900;
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
     
             .dashboard-card-pre-noti-time {
                 color: $text777;
-                height: $line-height * $lines-to-show * $noti-font-size;
                 @include text-overflow();
                 @include font-size($noti-font-size);
                 @include line-height($noti-font-size);

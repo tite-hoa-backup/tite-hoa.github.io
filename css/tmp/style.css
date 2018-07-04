@@ -1879,12 +1879,12 @@ p {
         -khtml-will-change: transform;
         -webkit-will-change: transform;
         zoom: 1;
-        transition: background-color 0.5s ease;
-        -o-transition: background-color 0.5s ease;
-        -ms-transition: background-color 0.5s ease;
-        -moz-transition: background-color 0.5s ease;
-        -khtml-transition: background-color 0.5s ease;
-        -webkit-transition: background-color 0.5s ease;
+        transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -khtml-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -1892,14 +1892,42 @@ p {
         -khtml-will-change: transition;
         -webkit-will-change: transition;
         zoom: 1; }
+        .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:active {
+          transform: scale(0.985);
+          -o-transform: scale(0.985);
+          -ms-transform: scale(0.985);
+          -moz-transform: scale(0.985);
+          -khtml-transform: scale(0.985);
+          -webkit-transform: scale(0.985);
+          will-change: transform;
+          -o-will-change: transform;
+          -ms-will-change: transform;
+          -moz-will-change: transform;
+          -khtml-will-change: transform;
+          -webkit-will-change: transform;
+          zoom: 1;
+          transition: transform 0.1s ease;
+          -o-transition: transform 0.1s ease;
+          -ms-transition: transform 0.1s ease;
+          -moz-transition: transform 0.1s ease;
+          -khtml-transition: transform 0.1s ease;
+          -webkit-transition: transform 0.1s ease;
+          will-change: transition;
+          -o-will-change: transition;
+          -ms-will-change: transition;
+          -moz-will-change: transition;
+          -khtml-will-change: transition;
+          -webkit-will-change: transition;
+          zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:hover {
+          border: 1px solid #17C060;
           background-color: #f9f9f9;
-          transition: background-color 0.1s ease;
-          -o-transition: background-color 0.1s ease;
-          -ms-transition: background-color 0.1s ease;
-          -moz-transition: background-color 0.1s ease;
-          -khtml-transition: background-color 0.1s ease;
-          -webkit-transition: background-color 0.1s ease;
+          transition: all 0.25s ease;
+          -o-transition: all 0.25s ease;
+          -ms-transition: all 0.25s ease;
+          -moz-transition: all 0.25s ease;
+          -khtml-transition: all 0.25s ease;
+          -webkit-transition: all 0.25s ease;
           will-change: transition;
           -o-will-change: transition;
           -ms-will-change: transition;
@@ -1949,24 +1977,25 @@ p {
             overflow: hidden !important; } }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle,
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span {
-          overflow: hidden;
-          display: -webkit-box;
-          -webkit-box-orient: vertical; }
-        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle {
-          width: 100%;
-          display: inline-block;
-          color: #333;
-          cursor: pointer;
-          font-weight: 900;
-          overflow: hidden;
-          white-space: nowrap;
-          display: inline-block;
+          overflow: hidden !important;
+          display: -webkit-box !important;
+          display: -moz-box !important;
+          display: -ms-flexbox !important;
+          -webkit-box-orient: vertical !important;
           text-overflow: ellipsis;
           -o-text-overflow: ellipsis;
           -ms-text-overflow: ellipsis;
           -moz-text-overflow: ellipsis;
           -khtml-text-overflow: ellipsis;
-          -webkit-text-overflow: ellipsis;
+          -webkit-text-overflow: ellipsis; }
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle {
+          width: 100%;
+          color: #333;
+          cursor: pointer;
+          font-weight: 900;
+          -moz-line-clamp: 1 !important;
+          -webkit-line-clamp: 1 !important;
+          height: 25.6px;
           will-change: width;
           -o-will-change: width;
           -ms-will-change: width;
@@ -1990,11 +2019,10 @@ p {
           .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle ::selection {
             color: white !important;
             background-color: #17C060 !important; }
-          .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle:hover {
-            text-decoration: underline; }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span {
           color: #777;
-          -webkit-line-clamp: 3;
+          -moz-line-clamp: 3 !important;
+          -webkit-line-clamp: 3 !important;
           height: 67.2px;
           text-overflow: ellipsis;
           -o-text-overflow: ellipsis;
@@ -2465,27 +2493,62 @@ p {
     -khtml-will-change: transform;
     -webkit-will-change: transform;
     zoom: 1;
-    transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    -ms-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -khtml-transition: background-color 0.5s ease;
-    -webkit-transition: background-color 0.5s ease;
+    transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -khtml-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
     will-change: transition;
     -o-will-change: transition;
     -ms-will-change: transition;
     -moz-will-change: transition;
     -khtml-will-change: transition;
     -webkit-will-change: transition;
-    zoom: 1; }
+    zoom: 1;
+    overflow: hidden !important; }
+    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:active {
+      transform: scale(0.985);
+      -o-transform: scale(0.985);
+      -ms-transform: scale(0.985);
+      -moz-transform: scale(0.985);
+      -khtml-transform: scale(0.985);
+      -webkit-transform: scale(0.985);
+      will-change: transform;
+      -o-will-change: transform;
+      -ms-will-change: transform;
+      -moz-will-change: transform;
+      -khtml-will-change: transform;
+      -webkit-will-change: transform;
+      zoom: 1;
+      transition: transform 0.1s ease;
+      -o-transition: transform 0.1s ease;
+      -ms-transition: transform 0.1s ease;
+      -moz-transition: transform 0.1s ease;
+      -khtml-transition: transform 0.1s ease;
+      -webkit-transition: transform 0.1s ease;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+        overflow: hidden !important; } }
+    @supports (-ms-ime-align: auto) {
+      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+        overflow: hidden !important; } }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:hover {
+      border: 1px solid #17C060;
       background-color: #f9f9f9;
-      transition: background-color 0.1s ease;
-      -o-transition: background-color 0.1s ease;
-      -ms-transition: background-color 0.1s ease;
-      -moz-transition: background-color 0.1s ease;
-      -khtml-transition: background-color 0.1s ease;
-      -webkit-transition: background-color 0.1s ease;
+      transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -khtml-transition: all 0.25s ease;
+      -webkit-transition: all 0.25s ease;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -2495,17 +2558,18 @@ p {
       zoom: 1; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title,
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 1; }
+      overflow: hidden !important;
+      display: -webkit-box !important;
+      display: -moz-box !important;
+      display: -ms-flexbox !important;
+      -webkit-box-orient: vertical !important;
+      -moz-line-clamp: 1 !important;
+      -webkit-line-clamp: 1 !important;
+      height: 25.6px; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
       font-weight: 900; }
-      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title:hover {
-        text-decoration: underline; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
       color: #777;
-      height: 22.4px;
       text-overflow: ellipsis;
       -o-text-overflow: ellipsis;
       -ms-text-overflow: ellipsis;

@@ -119,13 +119,15 @@
                 overflow: scroll;
                 border: 1px solid $texteee;
                 @include render-hack(width);
+                @include button-pressed(0.985);
                 @include border-radius($grid2x);
                 @include transform(translateZ(0));
-                @include transition(background-color .5s ease);
+                @include transition(all .25s ease);
 
                 &:hover {
+                    border: 1px solid $brand;
                     background-color: $textf9;
-                    @include transition(background-color .1s ease);
+                    @include transition(all .25s ease);
                 }
 
                 &:not(:first-child) {
@@ -181,30 +183,31 @@
             
                 .dashboard-card-item-atitle,
                 .dashboard-card-item-span {
-                    overflow: hidden;
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical; 
+                    overflow: hidden !important;
+                    display: -webkit-box !important;
+                    display: -moz-box !important;
+                    display: -ms-flexbox !important;
+                    -webkit-box-orient: vertical !important; 
+                    @include text-overflow();
                 }
             
                 .dashboard-card-item-atitle {
                     width: 100%;
-                    display: inline-block;
                     color: $text333;
                     cursor: pointer;
                     font-weight: 900;
-                    @include overflow();
+                    -moz-line-clamp: 1 !important;
+                    -webkit-line-clamp: 1 !important;
+                    height: $line-height * 1 * 16px;
                     @include selection();
                     @include render-hack(width);
                     @include transform(translateZ(0));
-            
-                    &:hover {
-                        text-decoration: underline;
-                    }
                 }
 
                 .dashboard-card-item-span {
                     color: $text777;
-                    -webkit-line-clamp: $lines-to-show;
+                    -moz-line-clamp: $lines-to-show !important;
+                    -webkit-line-clamp: $lines-to-show !important;
                     height: $line-height * $lines-to-show * $noti-font-size;
                     @include selection();
                     @include text-overflow();

@@ -79,6 +79,40 @@
                             <i class="material-icons md-24">image</i>사진첨부: 
                         </label>
                         <input type="file" name="upload-image" id="upload-image" class="write-post-upload-image" accept="image/*" multiple>
+
+                        <form class="write-post-set-time-form">
+                            <fieldset class="write-post-set-time-wrapper">
+                                <legend class="write-post-set-time-legend">광고 게시기간 설정</legend>
+                                <div class="write-post-set-date-radio-wrapper">
+                                    <label class="write-post-set-date-item weekly-event" for="weekly">
+                                        <input type="radio" id="weekly" value="weekly" name="week" checked>
+                                        <span for="weekly">1개월</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item weekly-event" for="biweekly">
+                                        <input type="radio" id="biweekly" value="biweekly" name="week">
+                                        <span for="biweekly">2개월</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item weekly-event" for="next">
+                                        <input type="radio" id="next" value="next" name="week">
+                                        <span for="next">3개월</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item weekly-event" for="setself">
+                                        <input type="radio" id="setself" value="setself" name="week">
+                                        <span for="setself">4개월</span>
+                                    </label>
+                                </div>
+
+                                <div class="write-post-summary">
+                                    <span class="write-post-summary-text business">1개월</span>
+                                    <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
+                                </div>
+
+                            </fieldset>
+                        </form>
+
                     </form>
                 </div>
             </div>

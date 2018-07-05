@@ -147,3 +147,54 @@
         content: "이 읽었습니다";
     }
 }
+
+
+
+/* ==============================
+  radio, checkbox styling
+============================== */
+@mixin input-styling(){
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    &:not(:last-of-type) {
+        margin-right: $grid;
+    }
+
+    input {
+        opacity: 0;
+        display: none;
+        
+        &:checked ~ span {
+            color: white;
+            font-weight: 900;
+            border: 1px solid $brand;
+            background-color: $brand;
+        }
+    }
+
+    span {
+        display: inline-block;
+        padding: $grid2x $grid4x;
+        border: 1px solid $texteee;
+        @include border-radius();
+        @include button-pressed(0.95);
+
+        &:hover {
+            background-color: $textfa;
+        }
+    }
+
+    @media #{$wide} {
+        display: inline-block;
+        margin-top: $grid2x;
+
+        input {
+            margin-left: $grid2x;
+        }
+    }
+}

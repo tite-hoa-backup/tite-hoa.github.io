@@ -401,6 +401,9 @@ p {
   view count span
 ============================== */
 /* ==============================
+  radio, checkbox styling
+============================== */
+/* ==============================
     scss modules - global copmonents
 ============================== */
 #main .main-header {
@@ -3770,6 +3773,102 @@ p {
     zoom: 1; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-parahraph:focus {
       border: 1px solid #17C060; }
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label,
+  .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label:not(:last-of-type),
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label:not(:last-of-type),
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label:not(:last-of-type),
+    .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label:not(:last-of-type) {
+      margin-right: 4px; }
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label input,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label input,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label input,
+    .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label input {
+      opacity: 0;
+      display: none; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label input:checked ~ span,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label input:checked ~ span,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label input:checked ~ span,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label input:checked ~ span {
+        color: white;
+        font-weight: 900;
+        border: 1px solid #17C060;
+        background-color: #17C060; }
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span,
+    .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      -o-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -khtml-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      will-change: border-radius;
+      -o-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -webkit-will-change: border-radius;
+      zoom: 1;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:active,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:active,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:active,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span:active {
+        transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        will-change: transform;
+        -o-will-change: transform;
+        -ms-will-change: transform;
+        -moz-will-change: transform;
+        -khtml-will-change: transform;
+        -webkit-will-change: transform;
+        zoom: 1; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:hover,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:hover,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:hover,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span:hover {
+        background-color: #fafafa; }
+    @media screen and (max-width: 1280px) {
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label {
+        display: inline-block;
+        margin-top: 8px; }
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label input,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label input,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label input,
+        .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label input {
+          margin-left: 8px; } }
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-vote-set-duedate-title,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-upload-image-title,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-set-time-title,
@@ -4170,6 +4269,12 @@ p {
   font-weight: 900;
   margin-top: 16px;
   display: inline-block; }
-  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text::after {
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.pre-noti::after {
     font-weight: 400;
     content: " 마다 주민들에게 알림을 전송합니다."; }
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.vote::after {
+    font-weight: 400;
+    content: " 후 이시간에 투표를 종료합니다."; }
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.business::after {
+    font-weight: 400;
+    content: " 후 이시간에 광고 게시를 종료합니다."; }

@@ -94,16 +94,42 @@
                     </form>
 
                     <form class="write-post-vote-items-each">
-                        <label for="vote-duedate" class="write-post-vote-set-duedate-title">
-                            <i class="material-icons md-24">date_range</i>투표기간 설정:
-                        </label>
-                        <select id="vote-duedate" name="vote-duedate" class="write-post-vote-set-duedate">
-                            <option>1주일</option>
-                            <option>1일</option>
-                            <option>3일</option>
-                            <option>1달</option>
-                            <option>직접설정</option>
-                        </select>
+                        <form class="write-post-set-time-form">
+                            <fieldset class="write-post-set-time-wrapper">
+                                <legend class="write-post-set-time-legend">투표기간 설정</legend>
+                                <div class="write-post-set-date-radio-wrapper">
+                                    <label class="write-post-set-date-item" for="oneday">
+                                        <input type="radio" id="oneday" value="oneday" name="vote-duedate" checked>
+                                        <span for="oneday">1일</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item" for="threedays">
+                                        <input type="radio" id="threedays" value="threedays" name="vote-duedate">
+                                        <span for="threedays">3일</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item" for="week">
+                                        <input type="radio" id="week" value="week" name="vote-duedate">
+                                        <span for="week">1주일</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item" for="twoweeks">
+                                        <input type="radio" id="twoweeks" value="twoweeks" name="vote-duedate">
+                                        <span for="twoweeks">2주일</span>
+                                    </label>
+
+                                    <label class="write-post-set-date-item" for="month">
+                                        <input type="radio" id="month" value="month" name="vote-duedate">
+                                        <span for="month">1개월</span>
+                                    </label>
+                                </div>
+
+                                <div class="write-post-summary">
+                                    <span class="write-post-summary-text vote">1일</span>
+                                    <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
+                                </div>
+                            </fieldset>
+                        </form>
                     </form>
                 </div>
             </div>

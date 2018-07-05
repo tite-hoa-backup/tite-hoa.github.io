@@ -44,6 +44,13 @@
         .write-post-set-time-wrapper,
         .post-wrapper-duedate-wrapper {
 
+            fieldset {
+
+                label {
+                    @include input-styling();
+                }
+            }
+
             .write-post-vote-set-duedate-title,
             .write-post-upload-image-title,
             .write-post-set-time-title,

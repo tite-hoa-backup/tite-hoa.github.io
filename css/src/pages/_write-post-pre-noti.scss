@@ -32,50 +32,7 @@
                 }
 
                 .write-post-set-date-item {
-                    cursor: pointer;
-                    position: relative;
-                    user-select: none;
-                    -ms-user-select: none;
-                    -moz-user-select: none;
-                    -webkit-user-select: none;
-
-                    &:not(:last-of-type) {
-                        margin-right: $grid;
-                    }
-
-                    input {
-                        opacity: 0;
-                        display: none;
-                        
-                        &:checked ~ span {
-                            color: white;
-                            font-weight: 900;
-                            border: 1px solid $brand;
-                            background-color: $brand;
-                        }
-                    }
-
-                    span {
-                        // position: absolute;
-                        display: inline-block;
-                        padding: $grid2x $grid4x;
-                        border: 1px solid $texteee;
-                        @include border-radius();
-                        @include button-pressed(0.95);
-
-                        &:hover {
-                            background-color: $textfa;
-                        }
-                    }
-
-                    @media #{$wide} {
-                        display: inline-block;
-                        margin-top: $grid2x;
-
-                        input {
-                            margin-left: $grid2x;
-                        }
-                    }
+                    @include input-styling();
                 }
             }
         }
@@ -88,9 +45,25 @@
                 margin-top: $grid4x;
                 display: inline-block;
 
-                &::after {
-                    font-weight: 400;
-                    content: " 마다 주민들에게 알림을 전송합니다.";
+                &.pre-noti {
+                    &::after {
+                        font-weight: 400;
+                        content: " 마다 주민들에게 알림을 전송합니다.";
+                    }
+                }
+
+                &.vote {
+                    &::after {
+                        font-weight: 400;
+                        content: " 후 이시간에 투표를 종료합니다.";
+                    }
+                }
+
+                &.business {
+                    &::after {
+                        font-weight: 400;
+                        content: " 후 이시간에 광고 게시를 종료합니다.";
+                    }
                 }
             }
         }

@@ -93,57 +93,67 @@
                             <span class="write-post-set-date-text">예약알림 반복 설정: </span>
 
                             <div class="write-post-set-date-radio-wrapper">
-                                <label class="write-post-set-date-item weekly-event">
+                                <label class="write-post-set-date-item weekly-event" for="weekly">
                                     <input type="radio" id="weekly" value="weekly" name="week" checked>
                                     <span for="weekly">매주</span>
                                 </label>
 
-                                <label class="write-post-set-date-item weekly-event">
+                                <label class="write-post-set-date-item weekly-event" for="biweekly">
+                                    <input type="radio" id="biweekly" value="biweekly" name="week">
+                                    <span for="biweekly">격주</span>
+                                </label>
+
+                                <label class="write-post-set-date-item weekly-event" for="next">
                                     <input type="radio" id="next" value="next" name="week">
                                     <span for="next">돌아오는</span>
                                 </label>
+
+                                <label class="write-post-set-date-item weekly-event" for="setself">
+                                    <input type="radio" id="setself" value="setself" name="week">
+                                    <span for="setself">직접설정</span>
+                                </label>
                             </div>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="mon">
                                 <input type="checkbox" id="mon" value="mon" checked>
                                 <!-- 예시를 위한 임시 체크 선택 -->
                                 <span for="mon">월요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="tue">
                                 <input type="checkbox" id="tue" value="tue">
                                 <span for="tue">화요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="wed">
                                 <input type="checkbox" id="wed" value="wed">
                                 <span for="wed">수요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="thu">
                                 <input type="checkbox" id="thu" value="thu">
                                 <span for="thu">목요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="fri">
                                 <input type="checkbox" id="fri" value="fri" checked>
                                 <!-- 예시를 위한 임시 체크 선택 -->
                                 <span for="fri">금요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="sat">
                                 <input type="checkbox" id="sat" value="sat">
                                 <span for="sat">토요일</span>
                             </label>
 
-                            <label class="write-post-set-date-item">
+                            <label class="write-post-set-date-item" for="sun">
                                 <input type="checkbox" id="sun" value="sun">
                                 <span for="sun">일요일</span>
                             </label>
                         </div>
 
                         <div class="write-post-summary">
-                            <span class="write-post-summary-text">매주 월요일, 금요일 오전 09:00</span>
+                            <span class="write-post-summary-text pre-noti">매주 월요일, 금요일 오전 09:00</span>
                             <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
                         </div>
                     </fieldset>

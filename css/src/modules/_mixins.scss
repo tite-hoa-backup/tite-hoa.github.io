@@ -124,9 +124,9 @@
   button pressed
 ============================== */
 @mixin button-pressed($val:0.975){
+    @include transition(transform .25s ease !important);
     &:active {
         @include transform(scale($val));
-        @include transition(transform .25s ease !important);
     }
 }
 

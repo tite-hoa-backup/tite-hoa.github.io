@@ -21,37 +21,58 @@
             .write-post-set-date {
 
                 .write-post-set-date-radio-wrapper {
-                    margin: $grid 0 $grid2x;
+                    margin: $grid2x 0 $grid4x;
                 }
 
                 .write-post-set-date-text {
                     color: $brand;
                     display: block;
                     font-weight: 900;
-                    margin: 0 0 $grid 0;
+                    margin: 0 0 $grid2x 0;
                 }
 
                 .write-post-set-date-item {
                     cursor: pointer;
-                    margin-top: $grid;
-                    display: inline-block;
+                    position: relative;
+                    user-select: none;
+                    -ms-user-select: none;
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
 
-
-                    input[type="checkbox"] {
-                        cursor: pointer;
-                        margin-right: ($grid / 2);
+                    &:not(:last-of-type) {
+                        margin-right: $grid;
                     }
-    
-                    label {
-                        cursor: pointer;
-                        margin-right: $grid4x;
+
+                    input {
+                        opacity: 0;
+                        display: none;
+                        
+                        &:checked ~ span {
+                            color: white;
+                            font-weight: 900;
+                            border: 1px solid $brand;
+                            background-color: $brand;
+                        }
+                    }
+
+                    span {
+                        // position: absolute;
+                        display: inline-block;
+                        padding: $grid2x $grid4x;
+                        border: 1px solid $texteee;
+                        @include border-radius();
+                        @include button-pressed(0.95);
+
+                        &:hover {
+                            background-color: $textfa;
+                        }
                     }
 
                     @media #{$wide} {
-                        display: block;
+                        display: inline-block;
                         margin-top: $grid2x;
 
-                        input[type="checkbox"] {
+                        input {
                             margin-left: $grid2x;
                         }
                     }

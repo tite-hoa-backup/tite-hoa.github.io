@@ -780,6 +780,19 @@ p {
       font-size: 1rem;
       line-height: 51.2px;
       line-height: 3.2rem;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1;
       transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
@@ -806,19 +819,6 @@ p {
         -moz-will-change: transform;
         -khtml-will-change: transform;
         -webkit-will-change: transform;
-        zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
-        -webkit-will-change: transition;
         zoom: 1; }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .sidebar-container .sidebar-wrapper .sidebar-item {
@@ -1113,6 +1113,19 @@ p {
       -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
       zoom: 1;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1;
       transition: all 0.5s ease;
       -o-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
@@ -1139,19 +1152,6 @@ p {
         -moz-will-change: transform;
         -khtml-will-change: transform;
         -webkit-will-change: transform;
-        zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
-        -webkit-will-change: transition;
         zoom: 1; }
       @media screen and (max-width: 420px) {
         .board-container .board-header .header-newpost {
@@ -1867,6 +1867,19 @@ p {
         -khtml-will-change: width;
         -webkit-will-change: width;
         zoom: 1;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1;
         transform: translateZ(0);
         -o-transform: translateZ(0);
         -ms-transform: translateZ(0);
@@ -1906,19 +1919,6 @@ p {
           -moz-will-change: transform;
           -khtml-will-change: transform;
           -webkit-will-change: transform;
-          zoom: 1;
-          transition: transform 0.25s ease !important;
-          -o-transition: transform 0.25s ease !important;
-          -ms-transition: transform 0.25s ease !important;
-          -moz-transition: transform 0.25s ease !important;
-          -khtml-transition: transform 0.25s ease !important;
-          -webkit-transition: transform 0.25s ease !important;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
-          -webkit-will-change: transition;
           zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:hover {
           border: 1px solid #17C060;
@@ -2097,6 +2097,19 @@ p {
         -khtml-will-change: transition;
         -webkit-will-change: transition;
         zoom: 1;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1;
         transform: translateZ(0);
         -o-transform: translateZ(0);
         -ms-transform: translateZ(0);
@@ -2126,19 +2139,6 @@ p {
           -moz-will-change: transform;
           -khtml-will-change: transform;
           -webkit-will-change: transform;
-          zoom: 1;
-          transition: transform 0.25s ease !important;
-          -o-transition: transform 0.25s ease !important;
-          -ms-transition: transform 0.25s ease !important;
-          -moz-transition: transform 0.25s ease !important;
-          -khtml-transition: transform 0.25s ease !important;
-          -webkit-transition: transform 0.25s ease !important;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
-          -webkit-will-change: transition;
           zoom: 1; }
 
 /* ==============================
@@ -2481,6 +2481,19 @@ p {
     -khtml-will-change: width;
     -webkit-will-change: width;
     zoom: 1;
+    transition: transform 0.25s ease !important;
+    -o-transition: transform 0.25s ease !important;
+    -ms-transition: transform 0.25s ease !important;
+    -moz-transition: transform 0.25s ease !important;
+    -khtml-transition: transform 0.25s ease !important;
+    -webkit-transition: transform 0.25s ease !important;
+    will-change: transition;
+    -o-will-change: transition;
+    -ms-will-change: transition;
+    -moz-will-change: transition;
+    -khtml-will-change: transition;
+    -webkit-will-change: transition;
+    zoom: 1;
     transform: translateZ(0);
     -o-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -2521,19 +2534,6 @@ p {
       -moz-will-change: transform;
       -khtml-will-change: transform;
       -webkit-will-change: transform;
-      zoom: 1;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
-      -webkit-will-change: transition;
       zoom: 1; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
@@ -2712,6 +2712,19 @@ p {
       -moz-will-change: transition;
       -khtml-will-change: transition;
       -webkit-will-change: transition;
+      zoom: 1;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
       zoom: 1; }
       .post-wrapper .post-write-submit .post-write-submit-button:hover,
       .post-wrapper .post-write-submit .post-back-list-button:hover,
@@ -2735,19 +2748,6 @@ p {
         -moz-will-change: transform;
         -khtml-will-change: transform;
         -webkit-will-change: transform;
-        zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
-        -webkit-will-change: transition;
         zoom: 1; }
 
 .post-comment-container .post-info-wrapper {
@@ -2836,6 +2836,19 @@ p {
         -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
         zoom: 1;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1;
         font-size: 14px;
         font-size: 0.875rem;
         transition: background-color 0.25s ease;
@@ -2864,19 +2877,6 @@ p {
           -moz-will-change: transform;
           -khtml-will-change: transform;
           -webkit-will-change: transform;
-          zoom: 1;
-          transition: transform 0.25s ease !important;
-          -o-transition: transform 0.25s ease !important;
-          -ms-transition: transform 0.25s ease !important;
-          -moz-transition: transform 0.25s ease !important;
-          -khtml-transition: transform 0.25s ease !important;
-          -webkit-transition: transform 0.25s ease !important;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
-          -webkit-will-change: transition;
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:hover {
           background-color: white; }
@@ -3076,6 +3076,19 @@ p {
         position: absolute;
         margin-right: 16px;
         background-color: #17C060;
+        transition: transform 0.25s ease !important;
+        -o-transition: transform 0.25s ease !important;
+        -ms-transition: transform 0.25s ease !important;
+        -moz-transition: transform 0.25s ease !important;
+        -khtml-transition: transform 0.25s ease !important;
+        -webkit-transition: transform 0.25s ease !important;
+        will-change: transition;
+        -o-will-change: transition;
+        -ms-will-change: transition;
+        -moz-will-change: transition;
+        -khtml-will-change: transition;
+        -webkit-will-change: transition;
+        zoom: 1;
         border-radius: 0 8px 8px 0;
         -o-border-radius: 0 8px 8px 0;
         -ms-border-radius: 0 8px 8px 0;
@@ -3115,19 +3128,6 @@ p {
           -moz-will-change: transform;
           -khtml-will-change: transform;
           -webkit-will-change: transform;
-          zoom: 1;
-          transition: transform 0.25s ease !important;
-          -o-transition: transform 0.25s ease !important;
-          -ms-transition: transform 0.25s ease !important;
-          -moz-transition: transform 0.25s ease !important;
-          -khtml-transition: transform 0.25s ease !important;
-          -webkit-transition: transform 0.25s ease !important;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
-          -webkit-will-change: transition;
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:hover {
           background-color: #14A251; }
@@ -4090,27 +4090,80 @@ p {
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-title {
     margin: 0 0 16px 0; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-radio-wrapper {
-    margin: 4px 0 8px; }
+    margin: 8px 0 16px; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-text {
     color: #17C060;
     display: block;
     font-weight: 900;
-    margin: 0 0 4px 0; }
+    margin: 0 0 8px 0; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item {
     cursor: pointer;
-    margin-top: 4px;
-    display: inline-block; }
-    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
-      cursor: pointer;
-      margin-right: 2px; }
-    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item label {
-      cursor: pointer;
-      margin-right: 16px; }
+    position: relative;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
+    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item:not(:last-of-type) {
+      margin-right: 4px; }
+    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input {
+      opacity: 0;
+      display: none; }
+      .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input:checked ~ span {
+        color: white;
+        font-weight: 900;
+        border: 1px solid #17C060;
+        background-color: #17C060; }
+    .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      -o-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -khtml-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      will-change: border-radius;
+      -o-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -webkit-will-change: border-radius;
+      zoom: 1;
+      transition: transform 0.25s ease !important;
+      -o-transition: transform 0.25s ease !important;
+      -ms-transition: transform 0.25s ease !important;
+      -moz-transition: transform 0.25s ease !important;
+      -khtml-transition: transform 0.25s ease !important;
+      -webkit-transition: transform 0.25s ease !important;
+      will-change: transition;
+      -o-will-change: transition;
+      -ms-will-change: transition;
+      -moz-will-change: transition;
+      -khtml-will-change: transition;
+      -webkit-will-change: transition;
+      zoom: 1; }
+      .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:active {
+        transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        will-change: transform;
+        -o-will-change: transform;
+        -ms-will-change: transform;
+        -moz-will-change: transform;
+        -khtml-will-change: transform;
+        -webkit-will-change: transform;
+        zoom: 1; }
+      .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:hover {
+        background-color: #fafafa; }
     @media screen and (max-width: 1280px) {
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item {
-        display: block;
+        display: inline-block;
         margin-top: 8px; }
-        .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input[type="checkbox"] {
+        .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input {
           margin-left: 8px; } }
 
 .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text {

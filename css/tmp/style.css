@@ -783,12 +783,12 @@ p {
       font-size: 1rem;
       line-height: 51.2px;
       line-height: 3.2rem;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -o-transition: all 0.25s ease !important;
+      -ms-transition: all 0.25s ease !important;
+      -moz-transition: all 0.25s ease !important;
+      -khtml-transition: all 0.25s ease !important;
+      -webkit-transition: all 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -1116,12 +1116,12 @@ p {
       -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
       zoom: 1;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -o-transition: all 0.25s ease !important;
+      -ms-transition: all 0.25s ease !important;
+      -moz-transition: all 0.25s ease !important;
+      -khtml-transition: all 0.25s ease !important;
+      -webkit-transition: all 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -1870,12 +1870,12 @@ p {
         -khtml-will-change: width;
         -webkit-will-change: width;
         zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
+        transition: all 0.25s ease !important;
+        -o-transition: all 0.25s ease !important;
+        -ms-transition: all 0.25s ease !important;
+        -moz-transition: all 0.25s ease !important;
+        -khtml-transition: all 0.25s ease !important;
+        -webkit-transition: all 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -2100,12 +2100,12 @@ p {
         -khtml-will-change: transition;
         -webkit-will-change: transition;
         zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
+        transition: all 0.25s ease !important;
+        -o-transition: all 0.25s ease !important;
+        -ms-transition: all 0.25s ease !important;
+        -moz-transition: all 0.25s ease !important;
+        -khtml-transition: all 0.25s ease !important;
+        -webkit-transition: all 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -2484,12 +2484,12 @@ p {
     -khtml-will-change: width;
     -webkit-will-change: width;
     zoom: 1;
-    transition: transform 0.25s ease !important;
-    -o-transition: transform 0.25s ease !important;
-    -ms-transition: transform 0.25s ease !important;
-    -moz-transition: transform 0.25s ease !important;
-    -khtml-transition: transform 0.25s ease !important;
-    -webkit-transition: transform 0.25s ease !important;
+    transition: all 0.25s ease !important;
+    -o-transition: all 0.25s ease !important;
+    -ms-transition: all 0.25s ease !important;
+    -moz-transition: all 0.25s ease !important;
+    -khtml-transition: all 0.25s ease !important;
+    -webkit-transition: all 0.25s ease !important;
     will-change: transition;
     -o-will-change: transition;
     -ms-will-change: transition;
@@ -2716,12 +2716,12 @@ p {
       -khtml-will-change: transition;
       -webkit-will-change: transition;
       zoom: 1;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -o-transition: all 0.25s ease !important;
+      -ms-transition: all 0.25s ease !important;
+      -moz-transition: all 0.25s ease !important;
+      -khtml-transition: all 0.25s ease !important;
+      -webkit-transition: all 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -2739,12 +2739,12 @@ p {
       .post-wrapper .post-write-submit .post-back-list-button:active,
       .post-wrapper .post-back-list .post-write-submit-button:active,
       .post-wrapper .post-back-list .post-back-list-button:active {
-        transform: scale(0.975);
-        -o-transform: scale(0.975);
-        -ms-transform: scale(0.975);
-        -moz-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
-        -webkit-transform: scale(0.975);
+        transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
         will-change: transform;
         -o-will-change: transform;
         -ms-will-change: transform;
@@ -2839,12 +2839,12 @@ p {
         -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
         zoom: 1;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
+        transition: all 0.25s ease !important;
+        -o-transition: all 0.25s ease !important;
+        -ms-transition: all 0.25s ease !important;
+        -moz-transition: all 0.25s ease !important;
+        -khtml-transition: all 0.25s ease !important;
+        -webkit-transition: all 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -2868,12 +2868,12 @@ p {
         -webkit-will-change: transition;
         zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:active {
-          transform: scale(0.975);
-          -o-transform: scale(0.975);
-          -ms-transform: scale(0.975);
-          -moz-transform: scale(0.975);
-          -khtml-transform: scale(0.975);
-          -webkit-transform: scale(0.975);
+          transform: scale(0.95);
+          -o-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+          -moz-transform: scale(0.95);
+          -khtml-transform: scale(0.95);
+          -webkit-transform: scale(0.95);
           will-change: transform;
           -o-will-change: transform;
           -ms-will-change: transform;
@@ -3079,12 +3079,12 @@ p {
         position: absolute;
         margin-right: 16px;
         background-color: #17C060;
-        transition: transform 0.25s ease !important;
-        -o-transition: transform 0.25s ease !important;
-        -ms-transition: transform 0.25s ease !important;
-        -moz-transition: transform 0.25s ease !important;
-        -khtml-transition: transform 0.25s ease !important;
-        -webkit-transition: transform 0.25s ease !important;
+        transition: all 0.25s ease !important;
+        -o-transition: all 0.25s ease !important;
+        -ms-transition: all 0.25s ease !important;
+        -moz-transition: all 0.25s ease !important;
+        -khtml-transition: all 0.25s ease !important;
+        -webkit-transition: all 0.25s ease !important;
         will-change: transition;
         -o-will-change: transition;
         -ms-will-change: transition;
@@ -3119,12 +3119,12 @@ p {
         -webkit-will-change: transition;
         zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:active {
-          transform: scale(0.975);
-          -o-transform: scale(0.975);
-          -ms-transform: scale(0.975);
-          -moz-transform: scale(0.975);
-          -khtml-transform: scale(0.975);
-          -webkit-transform: scale(0.975);
+          transform: scale(0.95);
+          -o-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+          -moz-transform: scale(0.95);
+          -khtml-transform: scale(0.95);
+          -webkit-transform: scale(0.95);
           will-change: transform;
           -o-will-change: transform;
           -ms-will-change: transform;
@@ -3822,12 +3822,12 @@ p {
       -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
       zoom: 1;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -o-transition: all 0.25s ease !important;
+      -ms-transition: all 0.25s ease !important;
+      -moz-transition: all 0.25s ease !important;
+      -khtml-transition: all 0.25s ease !important;
+      -webkit-transition: all 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -3839,12 +3839,12 @@ p {
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:active,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:active,
       .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span:active {
-        transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        -webkit-transform: scale(0.95);
+        transform: scale(0.975);
+        -o-transform: scale(0.975);
+        -ms-transform: scale(0.975);
+        -moz-transform: scale(0.975);
+        -khtml-transform: scale(0.975);
+        -webkit-transform: scale(0.975);
         will-change: transform;
         -o-will-change: transform;
         -ms-will-change: transform;
@@ -4229,12 +4229,12 @@ p {
       -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
       zoom: 1;
-      transition: transform 0.25s ease !important;
-      -o-transition: transform 0.25s ease !important;
-      -ms-transition: transform 0.25s ease !important;
-      -moz-transition: transform 0.25s ease !important;
-      -khtml-transition: transform 0.25s ease !important;
-      -webkit-transition: transform 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -o-transition: all 0.25s ease !important;
+      -ms-transition: all 0.25s ease !important;
+      -moz-transition: all 0.25s ease !important;
+      -khtml-transition: all 0.25s ease !important;
+      -webkit-transition: all 0.25s ease !important;
       will-change: transition;
       -o-will-change: transition;
       -ms-will-change: transition;
@@ -4243,12 +4243,12 @@ p {
       -webkit-will-change: transition;
       zoom: 1; }
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:active {
-        transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        -webkit-transform: scale(0.95);
+        transform: scale(0.975);
+        -o-transform: scale(0.975);
+        -ms-transform: scale(0.975);
+        -moz-transform: scale(0.975);
+        -khtml-transform: scale(0.975);
+        -webkit-transform: scale(0.975);
         will-change: transform;
         -o-will-change: transform;
         -ms-will-change: transform;
@@ -4274,7 +4274,7 @@ p {
     content: " 마다 주민들에게 알림을 전송합니다."; }
   .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.vote::after {
     font-weight: 400;
-    content: " 후 이시간에 투표를 종료합니다."; }
+    content: " 후 이 시간에 투표를 종료합니다."; }
   .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.business::after {
     font-weight: 400;
-    content: " 후 이시간에 광고 게시를 종료합니다."; }
+    content: " 후 이 시간에 광고 게시를 종료합니다."; }

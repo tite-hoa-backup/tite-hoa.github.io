@@ -80,7 +80,7 @@
             background-color: $brand;
             padding: 0 $grid4x 0 $grid3x;
             @include border-radius();
-            @include button-pressed();
+            @include button-pressed(.975);
             @include transition(all .5s ease);
 
             @media #{$pablet}{

@@ -55,14 +55,14 @@
                 &.vote {
                     &::after {
                         font-weight: 400;
-                        content: " 후 이시간에 투표를 종료합니다.";
+                        content: " 후 이 시간에 투표를 종료합니다.";
                     }
                 }
 
                 &.business {
                     &::after {
                         font-weight: 400;
-                        content: " 후 이시간에 광고 게시를 종료합니다.";
+                        content: " 후 이 시간에 광고 게시를 종료합니다.";
                     }
                 }
             }

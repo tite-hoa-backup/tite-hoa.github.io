@@ -123,8 +123,8 @@
 /* ==============================
   button pressed
 ============================== */
-@mixin button-pressed($val:0.975){
-    @include transition(transform .25s ease !important);
+@mixin button-pressed($val:0.95){
+    @include transition(all .25s ease !important);
     &:active {
         @include transform(scale($val));
     }
@@ -182,7 +182,7 @@
         padding: $grid2x $grid4x;
         border: 1px solid $texteee;
         @include border-radius();
-        @include button-pressed(0.95);
+        @include button-pressed(0.975);
 
         &:hover {
             background-color: $textfa;

@@ -111,16 +111,19 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+::-ms-input-placeholder,
+:-ms-input-placeholder {
+    color: $textccc;
+}
+
 ::placeholder {
     opacity: 1;
     color: $textccc;
 }
-
-::-webkit-input-placeholder { color: $textccc; }
-::-moz-placeholder          { color: $textccc; }
-:-moz-placeholder           { color: $textccc; }
-::-ms-input-placeholder     { color: $textccc; }
-:-ms-input-placeholder      { color: $textccc; }
 
 
 /** Bold */

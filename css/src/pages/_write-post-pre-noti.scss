@@ -3,9 +3,9 @@
     .post-wrapper-paragraph {
 
         .write-post-set-time-wrapper {
-            padding: $grid4x $grid4x $grid6x;
             margin-top: $grid6x;
-            border: 1px solid $textddd;
+            border: 1px solid $textccc;
+            padding: $grid4x $grid4x $grid6x;
             @include border-radius();
 
             .write-post-set-time-legend {
@@ -19,6 +19,11 @@
             }
 
             .write-post-set-date {
+
+                &:first-child {
+                    padding: $grid4x 0 $grid4x;
+                    border-bottom: 1px dashed $texteee;
+                }
 
                 .write-post-set-date-radio-wrapper {
                     margin: $grid2x 0 $grid4x;

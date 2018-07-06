@@ -193,23 +193,15 @@ input[type="radio"],
 input[type="checkbox"] {
   cursor: pointer; }
 
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
+::-ms-input-placeholder,
+:-ms-input-placeholder {
+  color: #ccc; }
+
 ::placeholder {
   opacity: 1;
-  color: #ccc; }
-
-::-webkit-input-placeholder {
-  color: #ccc; }
-
-::-moz-placeholder {
-  color: #ccc; }
-
-:-moz-placeholder {
-  color: #ccc; }
-
-::-ms-input-placeholder {
-  color: #ccc; }
-
-:-ms-input-placeholder {
   color: #ccc; }
 
 /** Bold */
@@ -2352,6 +2344,15 @@ p {
     .post-wrapper .post-back-list .post-back-list-button {
       width: 192px;
       height: 48px;
+      -webkit-transition: all 0.25s ease !important;
+      transition: all 0.25s ease !important;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
+      zoom: 1;
       color: #17C060;
       cursor: pointer;
       font-weight: 900;
@@ -2373,22 +2374,7 @@ p {
       -ms-will-change: transition;
       -o-will-change: transition;
       will-change: transition;
-      zoom: 1;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important;
-      -webkit-will-change: transition;
-      -khtml-will-change: transition;
-      -moz-will-change: transition;
-      -ms-will-change: transition;
-      -o-will-change: transition;
-      will-change: transition;
       zoom: 1; }
-      .post-wrapper .post-write-submit .post-write-submit-button:hover,
-      .post-wrapper .post-write-submit .post-back-list-button:hover,
-      .post-wrapper .post-back-list .post-write-submit-button:hover,
-      .post-wrapper .post-back-list .post-back-list-button:hover {
-        color: white;
-        background-color: #17C060; }
       .post-wrapper .post-write-submit .post-write-submit-button:active,
       .post-wrapper .post-write-submit .post-back-list-button:active,
       .post-wrapper .post-back-list .post-write-submit-button:active,
@@ -2403,6 +2389,12 @@ p {
         -o-will-change: transform;
         will-change: transform;
         zoom: 1; }
+      .post-wrapper .post-write-submit .post-write-submit-button:hover,
+      .post-wrapper .post-write-submit .post-back-list-button:hover,
+      .post-wrapper .post-back-list .post-write-submit-button:hover,
+      .post-wrapper .post-back-list .post-back-list-button:hover {
+        color: white;
+        background-color: #17C060; }
 
 .post-comment-container .post-info-wrapper {
   padding: 32px 0 32px;
@@ -2735,6 +2727,13 @@ p {
         @media screen and (max-width: 360px) {
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn {
             width: 56px; } }
+
+.post-wrapper .post-wrapper-paragraph .write-post-summary {
+  margin-top: 16px;
+  border-top: 1px dashed #eee; }
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text::after {
+    font-weight: 400;
+    content: " 마다 주민들에게 알림을 전송합니다."; }
 
 /* ==============================
     scss modules - pages
@@ -3639,9 +3638,9 @@ p {
     background-color: #f4f4f4 !important; }
 
 .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper {
-  padding: 16px 16px 24px;
   margin-top: 24px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  padding: 16px 16px 24px;
   border-radius: 8px;
   -webkit-will-change: border-radius;
   -khtml-will-change: border-radius;
@@ -3656,6 +3655,9 @@ p {
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time,
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-title {
     margin: 0 0 16px 0; }
+  .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date:first-child {
+    padding: 16px 0 16px;
+    border-bottom: 1px dashed #eee; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-radio-wrapper {
     margin: 8px 0 16px; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-text {

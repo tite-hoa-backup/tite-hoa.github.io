@@ -89,8 +89,8 @@
         .post-back-list-button {
             width: $grid48x;
             height: $grid12x;
-            @include btn-brand-border();
             @include button-pressed();
+            @include btn-brand-border();
         }
     }
 }

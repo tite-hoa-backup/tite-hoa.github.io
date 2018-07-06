@@ -1,0 +1,18 @@
+.post-wrapper {
+
+    .post-wrapper-paragraph {
+
+        .write-post-summary {
+            margin-top: $grid4x;
+            border-top: 1px dashed $texteee;
+
+            .write-post-summary-text {
+
+                &::after {
+                    font-weight: 400;
+                    content: " 마다 주민들에게 알림을 전송합니다.";
+                }
+            }
+        }
+    }
+}

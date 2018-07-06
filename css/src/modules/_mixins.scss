@@ -26,6 +26,10 @@
   selection $brand
 ============================== */
 @mixin selection(){
+    ::-moz-selection {
+        color: white !important;
+        background-color: $brand !important;
+    }
     ::selection {
         color: white !important;
         background-color: $brand !important;
@@ -81,20 +85,20 @@
   center icon text for pagination
 ============================== */
 @mixin center-icon-text(){
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -moz-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
+    display:     -webkit-inline-box;
+    display:    -webkit-inline-flex;
+    display:        -moz-inline-box;
+    display:     -ms-inline-flexbox;
+    display:            inline-flex;
+    -webkit-box-align:       center;
+    -webkit-align-items:     center;
+       -moz-box-align:       center;
+        -ms-flex-align:      center;
+            align-items:     center;
+    -webkit-box-pack:        center;
     -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
+       -moz-box-pack:        center;
+        -ms-flex-pack:       center;
             justify-content: center;
 }
 
@@ -156,9 +160,11 @@
 @mixin input-styling(){
     cursor: pointer;
     position: relative;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
+    user-select:         none;
+    -o-user-select:      none;
+    -ms-user-select:     none;
+    -moz-user-select:    none;
+    -khtml-user-select:  none;
     -webkit-user-select: none;
 
     &:not(:last-of-type) {
@@ -182,7 +188,7 @@
         padding: $grid2x $grid4x;
         border: 1px solid $texteee;
         @include border-radius();
-        @include button-pressed(0.975);
+        @include button-pressed(0.95);
 
         &:hover {
             background-color: $textfa;

@@ -2,12 +2,12 @@
   gpu hack
 ============================== */
 @mixin render-hack      ($val...) {
-    will-change:         $val;
-    -o-will-change:      $val;
-    -ms-will-change:     $val;
-    -moz-will-change:    $val;
-    -khtml-will-change:  $val;
     -webkit-will-change: $val;
+    -khtml-will-change:  $val;
+    -moz-will-change:    $val;
+    -ms-will-change:     $val;
+    -o-will-change:      $val;
+    will-change:         $val;
     zoom: 1;
 }
 
@@ -17,11 +17,6 @@
 ============================== */
 @mixin border-radius      ($val:$grid2x) {
     border-radius:         $val;
-    -o-border-radius:      $val;
-    -ms-border-radius:     $val;
-    -moz-border-radius:    $val;
-    -khtml-border-radius:  $val;
-    -webkit-border-radius: $val;
     @include render-hack(border-radius);
 }
 
@@ -30,12 +25,8 @@
     transition
 ============================== */
 @mixin transition      ($transition...) {
-    transition:         $transition;
-    -o-transition:      $transition;
-    -ms-transition:     $transition;
-    -moz-transition:    $transition;
-    -khtml-transition:  $transition;
     -webkit-transition: $transition;
+    transition:         $transition;
     @include render-hack(transition);
 }
 
@@ -44,12 +35,9 @@
   transform
 ============================== */
 @mixin transform      ($val){
-    transform:         $val;
-    -o-transform:      $val;
-    -ms-transform:     $val;
-    -moz-transform:    $val;
-    -khtml-transform:  $val;
     -webkit-transform: $val;
+    -khtml-transform:  $val;
+    transform:         $val;
   @include render-hack(transform);
 }
 
@@ -58,12 +46,10 @@
   box-shadow
 ============================== */
 @mixin box-shadow         ($val:$grid, $val2:$grid2x, $color:$black08){
-    box-shadow:          0 $val $val2 $color;
-    -o-box-shadow:       0 $val $val2 $color;
-    -ms-box-shadow:      0 $val $val2 $color;
-    -moz-box-shadow:     0 $val $val2 $color;
-    -khtml-box-shadow:   0 $val $val2 $color;
     -webkit-box-shadow:  0 $val $val2 $color;
+    -ms-box-shadow:      0 $val $val2 $color;
+    -o-box-shadow:       0 $val $val2 $color;
+    box-shadow:          0 $val $val2 $color;
     @include render-hack(box-shadow);
 }
 
@@ -72,12 +58,11 @@
   box-sizing
 ============================== */
 @mixin box-sizing      ($val:border-box){
-    box-sizing:         $val;
-    -o-box-sizing:      $val;
-    -ms-box-sizing:     $val;
-    -moz-box-sizing:    $val;
-    -khtml-box-sizing:  $val;
     -webkit-box-sizing: $val;
+    -khtml-box-sizing:  $val;
+    -ms-box-sizing:     $val;
+    -o-box-sizing:      $val;
+    box-sizing:         $val;
     @include render-hack(box-sizing);
 }
 
@@ -86,12 +71,11 @@
   text-overflow
 ============================== */
 @mixin text-overflow      ($val:ellipsis){
-    text-overflow:         $val;
-    -o-text-overflow:      $val;
-    -ms-text-overflow:     $val;
-    -moz-text-overflow:    $val;
-    -khtml-text-overflow:  $val;
     -webkit-text-overflow: $val;
+    -khtml-text-overflow:  $val;
+    -moz-text-overflow:    $val;
+    -ms-text-overflow:     $val;
+    text-overflow:         $val;
 }
 
 

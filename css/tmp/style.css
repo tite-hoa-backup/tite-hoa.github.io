@@ -47,18 +47,15 @@
 .sidebar-noti-new {
   top: 50%;
   position: relative;
-  transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -khtml-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
 
 /* ==============================
@@ -102,49 +99,46 @@ html {
   font-size: 1rem;
   line-height: 25.6px;
   line-height: 1.6rem;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-  -o-box-sizing: inherit;
-  -ms-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  -khtml-box-sizing: inherit;
   -webkit-box-sizing: inherit;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: inherit;
+  -ms-box-sizing: inherit;
+  -o-box-sizing: inherit;
+  box-sizing: inherit;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1; }
   *::before, *::after {
-    box-sizing: inherit;
-    -o-box-sizing: inherit;
-    -ms-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    -khtml-box-sizing: inherit;
     -webkit-box-sizing: inherit;
-    will-change: box-sizing;
-    -o-will-change: box-sizing;
-    -ms-will-change: box-sizing;
-    -moz-will-change: box-sizing;
-    -khtml-will-change: box-sizing;
+    -khtml-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    box-sizing: inherit;
     -webkit-will-change: box-sizing;
+    -khtml-will-change: box-sizing;
+    -moz-will-change: box-sizing;
+    -ms-will-change: box-sizing;
+    -o-will-change: box-sizing;
+    will-change: box-sizing;
     zoom: 1; }
 
 body {
@@ -232,18 +226,14 @@ body {
 a {
   color: #17C060;
   text-decoration: none;
-  transition: color 0.25s ease;
-  -o-transition: color 0.25s ease;
-  -ms-transition: color 0.25s ease;
-  -moz-transition: color 0.25s ease;
-  -khtml-transition: color 0.25s ease;
   -webkit-transition: color 0.25s ease;
-  will-change: transition;
-  -o-will-change: transition;
-  -ms-will-change: transition;
-  -moz-will-change: transition;
-  -khtml-will-change: transition;
+  transition: color 0.25s ease;
   -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition;
   zoom: 1; }
   a:hover {
     color: #14A251; }
@@ -414,68 +404,58 @@ p {
   position: fixed;
   background-color: white;
   border-bottom: 1px solid #eee;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  -ms-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  -khtml-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  will-change: box-shadow;
-  -o-will-change: box-shadow;
-  -ms-will-change: box-shadow;
-  -moz-will-change: box-shadow;
-  -khtml-will-change: box-shadow;
+  -ms-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   -webkit-will-change: box-shadow;
+  -khtml-will-change: box-shadow;
+  -moz-will-change: box-shadow;
+  -ms-will-change: box-shadow;
+  -o-will-change: box-shadow;
+  will-change: box-shadow;
   zoom: 1;
-  will-change: width;
-  -o-will-change: width;
-  -ms-will-change: width;
-  -moz-will-change: width;
-  -khtml-will-change: width;
   -webkit-will-change: width;
+  -khtml-will-change: width;
+  -moz-will-change: width;
+  -ms-will-change: width;
+  -o-will-change: width;
+  will-change: width;
   zoom: 1;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
   #main .main-header .main-header-logo {
     width: 40px;
     height: 40px;
     margin: 12px 16px 12px 32px;
-    transition: margin-left 0.5s ease;
-    -o-transition: margin-left 0.5s ease;
-    -ms-transition: margin-left 0.5s ease;
-    -moz-transition: margin-left 0.5s ease;
-    -khtml-transition: margin-left 0.5s ease;
     -webkit-transition: margin-left 0.5s ease;
-    will-change: transition;
-    -o-will-change: transition;
-    -ms-will-change: transition;
-    -moz-will-change: transition;
-    -khtml-will-change: transition;
+    transition: margin-left 0.5s ease;
     -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition;
     zoom: 1; }
     @media screen and (max-width: 640px) {
       #main .main-header .main-header-logo {
@@ -485,33 +465,25 @@ p {
         margin-left: -8px !important; } }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       #main .main-header .main-header-logo {
-        transition: margin-left 0s ease;
-        -o-transition: margin-left 0s ease;
-        -ms-transition: margin-left 0s ease;
-        -moz-transition: margin-left 0s ease;
-        -khtml-transition: margin-left 0s ease;
         -webkit-transition: margin-left 0s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: margin-left 0s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; } }
     @supports (-ms-ime-align: auto) {
       #main .main-header .main-header-logo {
-        transition: margin-left 0s ease;
-        -o-transition: margin-left 0s ease;
-        -ms-transition: margin-left 0s ease;
-        -moz-transition: margin-left 0s ease;
-        -khtml-transition: margin-left 0s ease;
         -webkit-transition: margin-left 0s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: margin-left 0s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; } }
   #main .main-header .hamburger {
     display: none; }
@@ -521,18 +493,15 @@ p {
       color: #333;
       position: relative;
       display: inline-block;
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
     @media screen and (max-width: 640px) {
       #main .main-header .hamburger {
@@ -541,18 +510,15 @@ p {
         height: 48px;
         margin-left: 16px;
         display: inline-block;
-        transform: translateY(-68%);
-        -o-transform: translateY(-68%);
-        -ms-transform: translateY(-68%);
-        -moz-transform: translateY(-68%);
-        -khtml-transform: translateY(-68%);
         -webkit-transform: translateY(-68%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-68%);
+        transform: translateY(-68%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
     @media screen and (max-width: 420px) {
       #main .main-header .hamburger {
@@ -569,91 +535,75 @@ p {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
-    -moz-text-overflow: ellipsis;
-    -khtml-text-overflow: ellipsis;
     -webkit-text-overflow: ellipsis;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1;
-    transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -khtml-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-100%);
+    transform: translateY(-100%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
       #main .main-header .main-header-link .main-header-apt-name-box {
-        transform: translateY(-75%);
-        -o-transform: translateY(-75%);
-        -ms-transform: translateY(-75%);
-        -moz-transform: translateY(-75%);
-        -khtml-transform: translateY(-75%);
         -webkit-transform: translateY(-75%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-75%);
+        transform: translateY(-75%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
     @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
       #main .main-header .main-header-link .main-header-apt-name-box {
-        transform: translateY(-75%);
-        -o-transform: translateY(-75%);
-        -ms-transform: translateY(-75%);
-        -moz-transform: translateY(-75%);
-        -khtml-transform: translateY(-75%);
         -webkit-transform: translateY(-75%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-75%);
+        transform: translateY(-75%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       #main .main-header .main-header-link .main-header-apt-name-box {
-        transform: translateY(-75%);
-        -o-transform: translateY(-75%);
-        -ms-transform: translateY(-75%);
-        -moz-transform: translateY(-75%);
-        -khtml-transform: translateY(-75%);
         -webkit-transform: translateY(-75%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-75%);
+        transform: translateY(-75%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
     @supports (-ms-ime-align: auto) {
       #main .main-header .main-header-link .main-header-apt-name-box {
-        transform: translateY(-75%);
-        -o-transform: translateY(-75%);
-        -ms-transform: translateY(-75%);
-        -moz-transform: translateY(-75%);
-        -khtml-transform: translateY(-75%);
         -webkit-transform: translateY(-75%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-75%);
+        transform: translateY(-75%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
   #main .main-header .main-header-link .main-header-apt-name {
     font-weight: 900;
@@ -663,25 +613,22 @@ p {
 .expanded {
   zoom: 1;
   left: 0 !important;
-  will-change: left;
-  -o-will-change: left;
-  -ms-will-change: left;
-  -moz-will-change: left;
-  -khtml-will-change: left;
   -webkit-will-change: left;
+  -khtml-will-change: left;
+  -moz-will-change: left;
+  -ms-will-change: left;
+  -o-will-change: left;
+  will-change: left;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
 
 .sidebar-container {
@@ -694,67 +641,55 @@ p {
   position: fixed;
   overflow: scroll;
   background-color: #17C060;
-  will-change: left;
-  -o-will-change: left;
-  -ms-will-change: left;
-  -moz-will-change: left;
-  -khtml-will-change: left;
   -webkit-will-change: left;
+  -khtml-will-change: left;
+  -moz-will-change: left;
+  -ms-will-change: left;
+  -o-will-change: left;
+  will-change: left;
   zoom: 1;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1;
-  transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -khtml-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  will-change: transition;
-  -o-will-change: transition;
-  -ms-will-change: transition;
-  -moz-will-change: transition;
-  -khtml-will-change: transition;
+  transition: all 0.5s ease;
   -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .sidebar-container {
       overflow: hidden;
-      transition: all 0s ease;
-      -o-transition: all 0s ease;
-      -ms-transition: all 0s ease;
-      -moz-transition: all 0s ease;
-      -khtml-transition: all 0s ease;
       -webkit-transition: all 0s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; } }
   @supports (-ms-ime-align: auto) {
     .sidebar-container {
@@ -783,60 +718,45 @@ p {
       font-size: 1rem;
       line-height: 51.2px;
       line-height: 3.2rem;
-      transition: all 0.25s ease !important;
-      -o-transition: all 0.25s ease !important;
-      -ms-transition: all 0.25s ease !important;
-      -moz-transition: all 0.25s ease !important;
-      -khtml-transition: all 0.25s ease !important;
       -webkit-transition: all 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease !important;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1;
-      transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -khtml-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.5s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
       .sidebar-container .sidebar-wrapper .sidebar-item:active {
-        transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
         -webkit-transform: scale(0.95);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: scale(0.95);
+        transform: scale(0.95);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .sidebar-container .sidebar-wrapper .sidebar-item {
-          transition: all 0s ease;
-          -o-transition: all 0s ease;
-          -ms-transition: all 0s ease;
-          -moz-transition: all 0s ease;
-          -khtml-transition: all 0s ease;
           -webkit-transition: all 0s ease;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
+          transition: all 0s ease;
           -webkit-will-change: transition;
+          -khtml-will-change: transition;
+          -moz-will-change: transition;
+          -ms-will-change: transition;
+          -o-will-change: transition;
+          will-change: transition;
           zoom: 1; } }
       @media screen and (max-width: 360px) {
         .sidebar-container .sidebar-wrapper .sidebar-item {
@@ -845,49 +765,39 @@ p {
         top: 50%;
         position: relative;
         display: inline-block;
-        transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -khtml-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-50%);
+        transform: translateY(-50%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       .sidebar-container .sidebar-wrapper .sidebar-item .material-icons {
         top: 50%;
         margin-right: 16px;
-        transform: translateY(50%);
-        -o-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        -moz-transform: translateY(50%);
-        -khtml-transform: translateY(50%);
         -webkit-transform: translateY(50%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(50%);
+        transform: translateY(50%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       .sidebar-container .sidebar-wrapper .sidebar-item:hover {
         background-color: rgba(255, 255, 255, 0.16);
-        transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -khtml-transition: all 0.1s ease;
         -webkit-transition: all 0.1s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.1s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; }
     .sidebar-container .sidebar-wrapper .this {
       color: white;
@@ -906,17 +816,12 @@ p {
   display: inline-block;
   background-color: #EA3955;
   border-radius: 100%;
-  -o-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -khtml-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1; }
   .sidebar-noti-new .noti-count {
     color: white;
@@ -924,33 +829,27 @@ p {
     top: 50%;
     position: relative;
     display: inline-block;
-    transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -khtml-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-50%);
+    transform: translateY(-50%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1;
     font-size: 10px;
     font-size: 0.625rem;
-    transform: translateY(-56%);
-    -o-transform: translateY(-56%);
-    -ms-transform: translateY(-56%);
-    -moz-transform: translateY(-56%);
-    -khtml-transform: translateY(-56%);
     -webkit-transform: translateY(-56%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-56%);
+    transform: translateY(-56%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
 
 /* ==============================
@@ -963,31 +862,24 @@ p {
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.38);
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1;
-  transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -khtml-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
-  will-change: transition;
-  -o-will-change: transition;
-  -ms-will-change: transition;
-  -moz-will-change: transition;
-  -khtml-will-change: transition;
+  transition: all 0.25s ease;
   -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition;
   zoom: 1; }
   @media screen and (max-width: 640px) {
     .dim-layer {
@@ -1002,31 +894,26 @@ p {
   position: relative;
   top: 96px;
   margin: 0 24px 32px 280px;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1;
-  transition: margin 0.5s ease;
-  -o-transition: margin 0.5s ease;
-  -ms-transition: margin 0.5s ease;
-  -moz-transition: margin 0.5s ease;
-  -khtml-transition: margin 0.5s ease;
   -webkit-transition: margin 0.5s ease;
-  will-change: transition;
-  -o-will-change: transition;
-  -ms-will-change: transition;
-  -moz-will-change: transition;
-  -khtml-will-change: transition;
+  transition: margin 0.5s ease;
   -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition;
   zoom: 1; }
   @media screen and (max-width: 768px) {
     .board-container {
@@ -1036,18 +923,14 @@ p {
       margin: 0 16px 16px; } }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .board-container {
-      transition: margin 0s ease;
-      -o-transition: margin 0s ease;
-      -ms-transition: margin 0s ease;
-      -moz-transition: margin 0s ease;
-      -khtml-transition: margin 0s ease;
       -webkit-transition: margin 0s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: margin 0s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; } }
   .board-container .board-header {
     z-index: 2;
@@ -1061,18 +944,15 @@ p {
         margin-right: 8px;
         font-size: 32px;
         font-size: 2rem;
-        transform: translateY(20%);
-        -o-transform: translateY(20%);
-        -ms-transform: translateY(20%);
-        -moz-transform: translateY(20%);
-        -khtml-transform: translateY(20%);
         -webkit-transform: translateY(20%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(20%);
+        transform: translateY(20%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
     .board-container .board-header .header-subtitle {
       color: #999;
@@ -1104,57 +984,41 @@ p {
       background-color: #17C060;
       padding: 0 16px 0 12px;
       border-radius: 8px;
-      -o-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1;
-      transition: all 0.25s ease !important;
-      -o-transition: all 0.25s ease !important;
-      -ms-transition: all 0.25s ease !important;
-      -moz-transition: all 0.25s ease !important;
-      -khtml-transition: all 0.25s ease !important;
       -webkit-transition: all 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease !important;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1;
-      transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -khtml-transition: all 0.5s ease;
       -webkit-transition: all 0.5s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.5s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
       .board-container .board-header .header-newpost:active {
-        transform: scale(0.975);
-        -o-transform: scale(0.975);
-        -ms-transform: scale(0.975);
-        -moz-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
         -webkit-transform: scale(0.975);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: scale(0.975);
+        transform: scale(0.975);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       @media screen and (max-width: 420px) {
         .board-container .board-header .header-newpost {
@@ -1164,36 +1028,30 @@ p {
       .board-container .board-header .header-newpost .header-newpost-icon {
         top: 50%;
         margin-right: 8px;
-        transform: translateY(45%);
-        -o-transform: translateY(45%);
-        -ms-transform: translateY(45%);
-        -moz-transform: translateY(45%);
-        -khtml-transform: translateY(45%);
         -webkit-transform: translateY(45%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(45%);
+        transform: translateY(45%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       .board-container .board-header .header-newpost .header-newpost-text {
         font-weight: 900;
         top: 50%;
         position: relative;
         display: inline-block;
-        transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -khtml-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(-50%);
+        transform: translateY(-50%);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1;
         line-height: 38.4px;
         line-height: 2.4rem; }
@@ -1237,17 +1095,12 @@ p {
     background-color: white;
     border: 1px solid #eee;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     .board-container .board-wrapper .board-wrapper-header {
       margin-bottom: 8px;
@@ -1286,51 +1139,45 @@ p {
   padding: 0 16px;
   position: relative;
   border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1;
-  will-change: width;
-  -o-will-change: width;
-  -ms-will-change: width;
-  -moz-will-change: width;
-  -khtml-will-change: width;
   -webkit-will-change: width;
+  -khtml-will-change: width;
+  -moz-will-change: width;
+  -ms-will-change: width;
+  -o-will-change: width;
+  will-change: width;
   zoom: 1;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
+  .board-wrapper .list-board-plain ::-moz-selection {
+    color: white !important;
+    background-color: #17C060 !important; }
   .board-wrapper .list-board-plain ::selection {
     color: white !important;
     background-color: #17C060 !important; }
@@ -1341,18 +1188,15 @@ p {
     cursor: default !important;
     color: #999 !important; }
   .board-wrapper .list-board-plain.header .list-numbering-wrapper {
-    transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -khtml-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-50%);
+    transform: translateY(-50%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
   .board-wrapper .list-board-plain.header .list-board-text:hover {
     text-decoration: none !important; }
@@ -1360,54 +1204,47 @@ p {
     top: 50%;
     position: relative;
     display: inline-block;
-    transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -khtml-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-50%);
+    transform: translateY(-50%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1; }
     .board-wrapper .list-board-plain .list-numbering-wrapper .list-numbering {
       color: #17C060;
       top: 50%;
       position: relative;
       display: inline-block;
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
   .board-wrapper .list-board-plain .list-board-text-wrapper {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
-    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
     -khtml-text-overflow: ellipsis;
-    -webkit-text-overflow: ellipsis; }
+    -moz-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
     .board-wrapper .list-board-plain .list-board-text-wrapper .dashboard-new-oval {
       width: 8px;
       height: 8px;
@@ -1416,17 +1253,12 @@ p {
       margin-bottom: 8px;
       background-color: #EA3955;
       border-radius: 100%;
-      -o-border-radius: 100%;
-      -ms-border-radius: 100%;
-      -moz-border-radius: 100%;
-      -khtml-border-radius: 100%;
-      -webkit-border-radius: 100%;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1; }
     .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text {
       color: #333;
@@ -1434,27 +1266,23 @@ p {
       overflow: hidden;
       white-space: nowrap;
       display: inline-block;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
-      -moz-text-overflow: ellipsis;
-      -khtml-text-overflow: ellipsis;
       -webkit-text-overflow: ellipsis;
+      -khtml-text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       top: 50%;
       position: relative;
       display: inline-block;
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
       .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text:hover {
         text-decoration: underline; }
@@ -1468,18 +1296,15 @@ p {
       top: 50%;
       position: relative;
       display: inline-block;
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
     @media screen and (max-width: 768px) {
       .board-wrapper .list-board-plain .list-board-time {
@@ -1496,18 +1321,15 @@ p {
       top: 50%;
       position: relative;
       display: inline-block;
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
   .board-wrapper .list-board-plain .list-numbering-wrapper,
   .board-wrapper .list-board-plain .list-board-text-wrapper,
@@ -1516,12 +1338,12 @@ p {
     position: absolute;
     height: 48px !important;
     margin-right: 8px !important;
-    will-change: translateZ(0);
-    -o-will-change: translateZ(0);
-    -ms-will-change: translateZ(0);
-    -moz-will-change: translateZ(0);
-    -khtml-will-change: translateZ(0);
     -webkit-will-change: translateZ(0);
+    -khtml-will-change: translateZ(0);
+    -moz-will-change: translateZ(0);
+    -ms-will-change: translateZ(0);
+    -o-will-change: translateZ(0);
+    will-change: translateZ(0);
     zoom: 1; }
   .board-wrapper .list-board-plain .list-numbering-wrapper {
     width: 40px !important; }
@@ -1568,18 +1390,17 @@ p {
       width: 80px !important; }
 
 .dashboard-container {
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -khtml-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  will-change: box-sizing;
-  -o-will-change: box-sizing;
-  -ms-will-change: box-sizing;
-  -moz-will-change: box-sizing;
-  -khtml-will-change: box-sizing;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-will-change: box-sizing;
+  -khtml-will-change: box-sizing;
+  -moz-will-change: box-sizing;
+  -ms-will-change: box-sizing;
+  -o-will-change: box-sizing;
+  will-change: box-sizing;
   zoom: 1; }
   .dashboard-container.board-container.copy::after {
     margin-top: 16px; }
@@ -1588,192 +1409,159 @@ p {
     width: 32.5%;
     margin: 0 auto;
     margin-bottom: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    -ms-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    -khtml-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    will-change: box-shadow;
-    -o-will-change: box-shadow;
-    -ms-will-change: box-shadow;
-    -moz-will-change: box-shadow;
-    -khtml-will-change: box-shadow;
+    -ms-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    -o-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     -webkit-will-change: box-shadow;
+    -khtml-will-change: box-shadow;
+    -moz-will-change: box-shadow;
+    -ms-will-change: box-shadow;
+    -o-will-change: box-shadow;
+    will-change: box-shadow;
     zoom: 1;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1;
-    transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -khtml-transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1;
-    transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -khtml-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
-    will-change: transition;
-    -o-will-change: transition;
-    -ms-will-change: transition;
-    -moz-will-change: transition;
-    -khtml-will-change: transition;
+    transition: all 0.25s ease;
     -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition;
     zoom: 1; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .dashboard-container .dashboard-wrapper {
-        transition: all 0s ease;
-        -o-transition: all 0s ease;
-        -ms-transition: all 0s ease;
-        -moz-transition: all 0s ease;
-        -khtml-transition: all 0s ease;
         -webkit-transition: all 0s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; } }
     .dashboard-container .dashboard-wrapper:not(:nth-child(3n + 0)) {
       margin-right: 1.25%;
-      transform: translateZ(0);
-      -o-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      -moz-transform: translateZ(0);
-      -khtml-transform: translateZ(0);
       -webkit-transform: translateZ(0);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateZ(0);
+      transform: translateZ(0);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1;
-      will-change: margin-right;
-      -o-will-change: margin-right;
-      -ms-will-change: margin-right;
-      -moz-will-change: margin-right;
-      -khtml-will-change: margin-right;
       -webkit-will-change: margin-right;
+      -khtml-will-change: margin-right;
+      -moz-will-change: margin-right;
+      -ms-will-change: margin-right;
+      -o-will-change: margin-right;
+      will-change: margin-right;
       zoom: 1; }
     @media screen and (max-width: 1112px) {
       .dashboard-container .dashboard-wrapper {
         width: 49%;
-        will-change: width;
-        -o-will-change: width;
-        -ms-will-change: width;
-        -moz-will-change: width;
-        -khtml-will-change: width;
         -webkit-will-change: width;
+        -khtml-will-change: width;
+        -moz-will-change: width;
+        -ms-will-change: width;
+        -o-will-change: width;
+        will-change: width;
         zoom: 1;
-        transform: translateZ(0);
-        -o-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -khtml-transform: translateZ(0);
         -webkit-transform: translateZ(0);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
         .dashboard-container .dashboard-wrapper:not(:nth-child(3n + 0)) {
           margin-right: 0;
-          transform: translateZ(0);
-          -o-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          -moz-transform: translateZ(0);
-          -khtml-transform: translateZ(0);
           -webkit-transform: translateZ(0);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateZ(0);
+          transform: translateZ(0);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1;
-          will-change: margin-right;
-          -o-will-change: margin-right;
-          -ms-will-change: margin-right;
-          -moz-will-change: margin-right;
-          -khtml-will-change: margin-right;
           -webkit-will-change: margin-right;
+          -khtml-will-change: margin-right;
+          -moz-will-change: margin-right;
+          -ms-will-change: margin-right;
+          -o-will-change: margin-right;
+          will-change: margin-right;
           zoom: 1; }
         .dashboard-container .dashboard-wrapper:nth-child(odd) {
           margin-right: 2%;
-          transform: translateZ(0);
-          -o-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          -moz-transform: translateZ(0);
-          -khtml-transform: translateZ(0);
           -webkit-transform: translateZ(0);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateZ(0);
+          transform: translateZ(0);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1;
-          will-change: margin-right;
-          -o-will-change: margin-right;
-          -ms-will-change: margin-right;
-          -moz-will-change: margin-right;
-          -khtml-will-change: margin-right;
           -webkit-will-change: margin-right;
+          -khtml-will-change: margin-right;
+          -moz-will-change: margin-right;
+          -ms-will-change: margin-right;
+          -o-will-change: margin-right;
+          will-change: margin-right;
           zoom: 1; } }
     @media screen and (max-width: 768px) {
       .dashboard-container .dashboard-wrapper {
         width: 100%;
         margin-right: none;
-        will-change: width;
-        -o-will-change: width;
-        -ms-will-change: width;
-        -moz-will-change: width;
-        -khtml-will-change: width;
         -webkit-will-change: width;
+        -khtml-will-change: width;
+        -moz-will-change: width;
+        -ms-will-change: width;
+        -o-will-change: width;
+        will-change: width;
         zoom: 1;
-        transform: translateZ(0);
-        -o-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -khtml-transform: translateZ(0);
         -webkit-transform: translateZ(0);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; } }
     .dashboard-container .dashboard-wrapper .dashboard-card {
       position: relative;
@@ -1782,38 +1570,31 @@ p {
       padding: 16px;
       background-color: white;
       border-radius: 8px 8px 0 0;
-      -o-border-radius: 8px 8px 0 0;
-      -ms-border-radius: 8px 8px 0 0;
-      -moz-border-radius: 8px 8px 0 0;
-      -khtml-border-radius: 8px 8px 0 0;
-      -webkit-border-radius: 8px 8px 0 0;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1;
       /* ==============================
                 dashboard item each
             ============================== */ }
+      .dashboard-container .dashboard-wrapper .dashboard-card ::-moz-selection {
+        color: white !important;
+        background-color: #17C060 !important; }
       .dashboard-container .dashboard-wrapper .dashboard-card ::selection {
         color: white !important;
         background-color: #17C060 !important; }
       .dashboard-container .dashboard-wrapper .dashboard-card.extended {
         height: 488px;
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1; }
         @media screen and (max-width: 420px) {
           .dashboard-container .dashboard-wrapper .dashboard-card.extended {
@@ -1851,93 +1632,70 @@ p {
         overflow: scroll;
         border: 1px solid #eee;
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1;
-        will-change: width;
-        -o-will-change: width;
-        -ms-will-change: width;
-        -moz-will-change: width;
-        -khtml-will-change: width;
         -webkit-will-change: width;
+        -khtml-will-change: width;
+        -moz-will-change: width;
+        -ms-will-change: width;
+        -o-will-change: width;
+        will-change: width;
         zoom: 1;
-        transition: all 0.25s ease !important;
-        -o-transition: all 0.25s ease !important;
-        -ms-transition: all 0.25s ease !important;
-        -moz-transition: all 0.25s ease !important;
-        -khtml-transition: all 0.25s ease !important;
         -webkit-transition: all 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease !important;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1;
-        transform: translateZ(0);
-        -o-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -khtml-transform: translateZ(0);
         -webkit-transform: translateZ(0);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1;
-        transition: all 0.25s ease;
-        -o-transition: all 0.25s ease;
-        -ms-transition: all 0.25s ease;
-        -moz-transition: all 0.25s ease;
-        -khtml-transition: all 0.25s ease;
         -webkit-transition: all 0.25s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:active {
-          transform: scale(0.985);
-          -o-transform: scale(0.985);
-          -ms-transform: scale(0.985);
-          -moz-transform: scale(0.985);
-          -khtml-transform: scale(0.985);
           -webkit-transform: scale(0.985);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: scale(0.985);
+          transform: scale(0.985);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:hover {
           border: 1px solid #17C060;
           background-color: #fafafa;
-          transition: all 0.25s ease;
-          -o-transition: all 0.25s ease;
-          -ms-transition: all 0.25s ease;
-          -moz-transition: all 0.25s ease;
-          -khtml-transition: all 0.25s ease;
           -webkit-transition: all 0.25s ease;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
+          transition: all 0.25s ease;
           -webkit-will-change: transition;
+          -khtml-will-change: transition;
+          -moz-will-change: transition;
+          -ms-will-change: transition;
+          -o-will-change: transition;
+          will-change: transition;
           zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:not(:first-child) {
           margin-top: -8px; }
@@ -1945,6 +1703,9 @@ p {
         font-weight: 900;
         font-size: 20px;
         font-size: 1.25rem; }
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-subtitle ::-moz-selection {
+          color: white !important;
+          background-color: #17C060 !important; }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-subtitle ::selection {
           color: white !important;
           background-color: #17C060 !important; }
@@ -1956,17 +1717,12 @@ p {
           margin-bottom: 8px;
           background-color: #EA3955;
           border-radius: 100%;
-          -o-border-radius: 100%;
-          -ms-border-radius: 100%;
-          -moz-border-radius: 100%;
-          -khtml-border-radius: 100%;
-          -webkit-border-radius: 100%;
-          will-change: border-radius;
-          -o-will-change: border-radius;
-          -ms-will-change: border-radius;
-          -moz-will-change: border-radius;
-          -khtml-will-change: border-radius;
           -webkit-will-change: border-radius;
+          -khtml-will-change: border-radius;
+          -moz-will-change: border-radius;
+          -ms-will-change: border-radius;
+          -o-will-change: border-radius;
+          will-change: border-radius;
           zoom: 1; }
       .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-no-item {
         margin-bottom: 16px; }
@@ -1986,12 +1742,11 @@ p {
           display: -moz-box !important;
           display: -ms-flexbox !important;
           -webkit-box-orient: vertical !important;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          -ms-text-overflow: ellipsis;
-          -moz-text-overflow: ellipsis;
+          -webkit-text-overflow: ellipsis;
           -khtml-text-overflow: ellipsis;
-          -webkit-text-overflow: ellipsis; }
+          -moz-text-overflow: ellipsis;
+          -ms-text-overflow: ellipsis;
+          text-overflow: ellipsis; }
         .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle {
           width: 100%;
           color: #333;
@@ -2000,26 +1755,26 @@ p {
           -moz-line-clamp: 1 !important;
           -webkit-line-clamp: 1 !important;
           height: 25.6px;
-          will-change: width;
-          -o-will-change: width;
-          -ms-will-change: width;
-          -moz-will-change: width;
-          -khtml-will-change: width;
           -webkit-will-change: width;
+          -khtml-will-change: width;
+          -moz-will-change: width;
+          -ms-will-change: width;
+          -o-will-change: width;
+          will-change: width;
           zoom: 1;
-          transform: translateZ(0);
-          -o-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          -moz-transform: translateZ(0);
-          -khtml-transform: translateZ(0);
           -webkit-transform: translateZ(0);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateZ(0);
+          transform: translateZ(0);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
+          .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle ::-moz-selection {
+            color: white !important;
+            background-color: #17C060 !important; }
           .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-atitle ::selection {
             color: white !important;
             background-color: #17C060 !important; }
@@ -2028,16 +1783,18 @@ p {
           -moz-line-clamp: 3 !important;
           -webkit-line-clamp: 3 !important;
           height: 67.2px;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          -ms-text-overflow: ellipsis;
-          -moz-text-overflow: ellipsis;
-          -khtml-text-overflow: ellipsis;
           -webkit-text-overflow: ellipsis;
+          -khtml-text-overflow: ellipsis;
+          -moz-text-overflow: ellipsis;
+          -ms-text-overflow: ellipsis;
+          text-overflow: ellipsis;
           font-size: 14px;
           font-size: 0.875rem;
           line-height: 22.4px;
           line-height: 1.4rem; }
+          .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span ::-moz-selection {
+            color: white !important;
+            background-color: #17C060 !important; }
           .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-item-each .dashboard-card-item-span ::selection {
             color: white !important;
             background-color: #17C060 !important; }
@@ -2047,27 +1804,22 @@ p {
       padding: 16px;
       background-color: white;
       border-radius: 0 0 8px 8px;
-      -o-border-radius: 0 0 8px 8px;
-      -ms-border-radius: 0 0 8px 8px;
-      -moz-border-radius: 0 0 8px 8px;
-      -khtml-border-radius: 0 0 8px 8px;
-      -webkit-border-radius: 0 0 8px 8px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1; }
       .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall {
         width: 100%;
         height: 48px;
-        will-change: width;
-        -o-will-change: width;
-        -ms-will-change: width;
-        -moz-will-change: width;
-        -khtml-will-change: width;
         -webkit-will-change: width;
+        -khtml-will-change: width;
+        -moz-will-change: width;
+        -ms-will-change: width;
+        -o-will-change: width;
+        will-change: width;
         zoom: 1;
         color: #17C060;
         cursor: pointer;
@@ -2075,73 +1827,54 @@ p {
         border: 1px solid #17C060;
         background-color: white;
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1;
-        transition: all 0.25s ease;
-        -o-transition: all 0.25s ease;
-        -ms-transition: all 0.25s ease;
-        -moz-transition: all 0.25s ease;
-        -khtml-transition: all 0.25s ease;
         -webkit-transition: all 0.25s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1;
-        transition: all 0.25s ease !important;
-        -o-transition: all 0.25s ease !important;
-        -ms-transition: all 0.25s ease !important;
-        -moz-transition: all 0.25s ease !important;
-        -khtml-transition: all 0.25s ease !important;
         -webkit-transition: all 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease !important;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1;
-        transform: translateZ(0);
-        -o-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -khtml-transform: translateZ(0);
         -webkit-transform: translateZ(0);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall:hover {
           color: white;
           background-color: #17C060; }
         .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall:active {
-          transform: scale(0.985);
-          -o-transform: scale(0.985);
-          -ms-transform: scale(0.985);
-          -moz-transform: scale(0.985);
-          -khtml-transform: scale(0.985);
           -webkit-transform: scale(0.985);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: scale(0.985);
+          transform: scale(0.985);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
 
 /* ==============================
@@ -2154,25 +1887,22 @@ p {
   text-align: center;
   display: inline-block;
   border-top: 1px solid #eee;
-  will-change: width;
-  -o-will-change: width;
-  -ms-will-change: width;
-  -moz-will-change: width;
-  -khtml-will-change: width;
   -webkit-will-change: width;
+  -khtml-will-change: width;
+  -moz-will-change: width;
+  -ms-will-change: width;
+  -o-will-change: width;
+  will-change: width;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
   .list-board-page-indicator .indicator-before,
   .list-board-page-indicator .indicator-pagination,
@@ -2213,18 +1943,15 @@ p {
     color: #999;
     padding: 0 8px;
     display: inline-block;
-    transform: translateY(-25%);
-    -o-transform: translateY(-25%);
-    -ms-transform: translateY(-25%);
-    -moz-transform: translateY(-25%);
-    -khtml-transform: translateY(-25%);
     -webkit-transform: translateY(-25%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(-25%);
+    transform: translateY(-25%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
     .list-board-page-indicator .indicator-pagination li:hover {
       text-decoration: underline; }
@@ -2272,17 +1999,12 @@ p {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1; }
   .dashboard-card-vote .dashboard-card-vote-item:last-child {
     margin-bottom: 0; }
@@ -2290,18 +2012,15 @@ p {
     float: right;
     color: #999;
     margin-right: 16px;
-    transform: translateY(30%);
-    -o-transform: translateY(30%);
-    -ms-transform: translateY(30%);
-    -moz-transform: translateY(30%);
-    -khtml-transform: translateY(30%);
     -webkit-transform: translateY(30%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(30%);
+    transform: translateY(30%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
     .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
       content: "명"; }
@@ -2311,17 +2030,12 @@ p {
     display: inline-block;
     background-color: #eee;
     border-radius: 7px 0 0 7px;
-    -o-border-radius: 7px 0 0 7px;
-    -ms-border-radius: 7px 0 0 7px;
-    -moz-border-radius: 7px 0 0 7px;
-    -khtml-border-radius: 7px 0 0 7px;
-    -webkit-border-radius: 7px 0 0 7px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .vote-item-title {
       display: block;
@@ -2364,45 +2078,32 @@ p {
   padding-top: 4px;
   border: 1px solid #eee;
   border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1;
-  transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  -ms-transition: background-color 0.5s ease;
-  -moz-transition: background-color 0.5s ease;
-  -khtml-transition: background-color 0.5s ease;
   -webkit-transition: background-color 0.5s ease;
-  will-change: transition;
-  -o-will-change: transition;
-  -ms-will-change: transition;
-  -moz-will-change: transition;
-  -khtml-will-change: transition;
+  transition: background-color 0.5s ease;
   -webkit-will-change: transition;
+  -khtml-will-change: transition;
+  -moz-will-change: transition;
+  -ms-will-change: transition;
+  -o-will-change: transition;
+  will-change: transition;
   zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
     background-color: #fafafa;
-    transition: background-color 0.1s ease;
-    -o-transition: background-color 0.1s ease;
-    -ms-transition: background-color 0.1s ease;
-    -moz-transition: background-color 0.1s ease;
-    -khtml-transition: background-color 0.1s ease;
     -webkit-transition: background-color 0.1s ease;
-    will-change: transition;
-    -o-will-change: transition;
-    -ms-will-change: transition;
-    -moz-will-change: transition;
-    -khtml-will-change: transition;
+    transition: background-color 0.1s ease;
     -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition;
     zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
     margin-top: 8px; }
@@ -2411,18 +2112,15 @@ p {
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
     color: #999;
     margin-right: 8px;
-    transform: translateY(25%);
-    -o-transform: translateY(25%);
-    -ms-transform: translateY(25%);
-    -moz-transform: translateY(25%);
-    -khtml-transform: translateY(25%);
     -webkit-transform: translateY(25%);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateY(25%);
+    transform: translateY(25%);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count {
     color: #17C060;
@@ -2465,78 +2163,59 @@ p {
     overflow: scroll;
     border: 1px solid #eee;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1;
-    transition: all 0.25s ease !important;
-    -o-transition: all 0.25s ease !important;
-    -ms-transition: all 0.25s ease !important;
-    -moz-transition: all 0.25s ease !important;
-    -khtml-transition: all 0.25s ease !important;
     -webkit-transition: all 0.25s ease !important;
-    will-change: transition;
-    -o-will-change: transition;
-    -ms-will-change: transition;
-    -moz-will-change: transition;
-    -khtml-will-change: transition;
+    transition: all 0.25s ease !important;
     -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition;
     zoom: 1;
-    transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -khtml-transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1;
-    transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -khtml-transition: all 0.25s ease;
     -webkit-transition: all 0.25s ease;
-    will-change: transition;
-    -o-will-change: transition;
-    -ms-will-change: transition;
-    -moz-will-change: transition;
-    -khtml-will-change: transition;
+    transition: all 0.25s ease;
     -webkit-will-change: transition;
+    -khtml-will-change: transition;
+    -moz-will-change: transition;
+    -ms-will-change: transition;
+    -o-will-change: transition;
+    will-change: transition;
     zoom: 1;
     overflow: hidden !important; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:active {
-      transform: scale(0.985);
-      -o-transform: scale(0.985);
-      -ms-transform: scale(0.985);
-      -moz-transform: scale(0.985);
-      -khtml-transform: scale(0.985);
       -webkit-transform: scale(0.985);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: scale(0.985);
+      transform: scale(0.985);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
@@ -2547,18 +2226,14 @@ p {
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:hover {
       border: 1px solid #17C060;
       background-color: #fafafa;
-      transition: all 0.25s ease;
-      -o-transition: all 0.25s ease;
-      -ms-transition: all 0.25s ease;
-      -moz-transition: all 0.25s ease;
-      -khtml-transition: all 0.25s ease;
       -webkit-transition: all 0.25s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title,
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
@@ -2574,12 +2249,11 @@ p {
       font-weight: 900; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
       color: #777;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
-      -moz-text-overflow: ellipsis;
-      -khtml-text-overflow: ellipsis;
       -webkit-text-overflow: ellipsis;
+      -khtml-text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       font-size: 14px;
       font-size: 0.875rem;
       line-height: 22.4px;
@@ -2595,18 +2269,16 @@ p {
   background-color: white;
   border: 1px solid #eee;
   border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1; }
+  .post-wrapper ::-moz-selection {
+    color: white !important;
+    background-color: #17C060 !important; }
   .post-wrapper ::selection {
     color: white !important;
     background-color: #17C060 !important; }
@@ -2654,17 +2326,12 @@ p {
       .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-landscape,
       .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-portrait {
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1; }
         @media screen and (max-width: 420px) {
           .post-wrapper .post-wrapper-paragraph .post-image-wrapper .post-image-landscape,
@@ -2691,43 +2358,30 @@ p {
       border: 1px solid #17C060;
       background-color: white;
       border-radius: 8px;
-      -o-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1;
-      transition: all 0.25s ease;
-      -o-transition: all 0.25s ease;
-      -ms-transition: all 0.25s ease;
-      -moz-transition: all 0.25s ease;
-      -khtml-transition: all 0.25s ease;
       -webkit-transition: all 0.25s ease;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1;
-      transition: all 0.25s ease !important;
-      -o-transition: all 0.25s ease !important;
-      -ms-transition: all 0.25s ease !important;
-      -moz-transition: all 0.25s ease !important;
-      -khtml-transition: all 0.25s ease !important;
       -webkit-transition: all 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease !important;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
       .post-wrapper .post-write-submit .post-write-submit-button:hover,
       .post-wrapper .post-write-submit .post-back-list-button:hover,
@@ -2739,18 +2393,15 @@ p {
       .post-wrapper .post-write-submit .post-back-list-button:active,
       .post-wrapper .post-back-list .post-write-submit-button:active,
       .post-wrapper .post-back-list .post-back-list-button:active {
-        transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
         -webkit-transform: scale(0.95);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: scale(0.95);
+        transform: scale(0.95);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
 
 .post-comment-container .post-info-wrapper {
@@ -2799,17 +2450,12 @@ p {
     margin-top: 16px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     @media screen and (max-width: 420px) {
       .post-comment-container .post-info-wrapper .post-comment-comment-container {
@@ -2827,59 +2473,43 @@ p {
         border: 1px solid #17C060;
         background-color: transparent;
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1;
-        transition: all 0.25s ease !important;
-        -o-transition: all 0.25s ease !important;
-        -ms-transition: all 0.25s ease !important;
-        -moz-transition: all 0.25s ease !important;
-        -khtml-transition: all 0.25s ease !important;
         -webkit-transition: all 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease !important;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1;
         font-size: 14px;
         font-size: 0.875rem;
-        transition: background-color 0.25s ease;
-        -o-transition: background-color 0.25s ease;
-        -ms-transition: background-color 0.25s ease;
-        -moz-transition: background-color 0.25s ease;
-        -khtml-transition: background-color 0.25s ease;
         -webkit-transition: background-color 0.25s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: background-color 0.25s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:active {
-          transform: scale(0.95);
-          -o-transform: scale(0.95);
-          -ms-transform: scale(0.95);
-          -moz-transform: scale(0.95);
-          -khtml-transform: scale(0.95);
           -webkit-transform: scale(0.95);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: scale(0.95);
+          transform: scale(0.95);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:hover {
           background-color: white; }
@@ -2894,17 +2524,12 @@ p {
         display: inline-block;
         background-color: white;
         border-radius: 40px;
-        -o-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -khtml-border-radius: 40px;
-        -webkit-border-radius: 40px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1; }
       .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box {
         vertical-align: top;
@@ -2968,17 +2593,12 @@ p {
           background-color: white;
           margin: 24px 8px 0 0;
           border-radius: 32px;
-          -o-border-radius: 32px;
-          -ms-border-radius: 32px;
-          -moz-border-radius: 32px;
-          -khtml-border-radius: 32px;
-          -webkit-border-radius: 32px;
-          will-change: border-radius;
-          -o-will-change: border-radius;
-          -ms-will-change: border-radius;
-          -moz-will-change: border-radius;
-          -khtml-will-change: border-radius;
           -webkit-will-change: border-radius;
+          -khtml-will-change: border-radius;
+          -moz-will-change: border-radius;
+          -ms-will-change: border-radius;
+          -o-will-change: border-radius;
+          will-change: border-radius;
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply {
           display: inline-block;
@@ -3026,39 +2646,31 @@ p {
         border: 1px solid #eee;
         padding-right: 84px;
         border-radius: 8px;
-        -o-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -khtml-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1;
-        will-change: width;
-        -o-will-change: width;
-        -ms-will-change: width;
-        -moz-will-change: width;
-        -khtml-will-change: width;
         -webkit-will-change: width;
+        -khtml-will-change: width;
+        -moz-will-change: width;
+        -ms-will-change: width;
+        -o-will-change: width;
+        will-change: width;
         zoom: 1;
         line-height: 25.6px;
         line-height: 1.6rem;
-        transform: translateZ(0);
-        -o-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        -moz-transform: translateZ(0);
-        -khtml-transform: translateZ(0);
         -webkit-transform: translateZ(0);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateZ(0);
+        transform: translateZ(0);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea {
@@ -3079,58 +2691,42 @@ p {
         position: absolute;
         margin-right: 16px;
         background-color: #17C060;
-        transition: all 0.25s ease !important;
-        -o-transition: all 0.25s ease !important;
-        -ms-transition: all 0.25s ease !important;
-        -moz-transition: all 0.25s ease !important;
-        -khtml-transition: all 0.25s ease !important;
         -webkit-transition: all 0.25s ease !important;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: all 0.25s ease !important;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1;
         border-radius: 0 8px 8px 0;
-        -o-border-radius: 0 8px 8px 0;
-        -ms-border-radius: 0 8px 8px 0;
-        -moz-border-radius: 0 8px 8px 0;
-        -khtml-border-radius: 0 8px 8px 0;
-        -webkit-border-radius: 0 8px 8px 0;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1;
-        transition: background-color 0.25s ease;
-        -o-transition: background-color 0.25s ease;
-        -ms-transition: background-color 0.25s ease;
-        -moz-transition: background-color 0.25s ease;
-        -khtml-transition: background-color 0.25s ease;
         -webkit-transition: background-color 0.25s ease;
-        will-change: transition;
-        -o-will-change: transition;
-        -ms-will-change: transition;
-        -moz-will-change: transition;
-        -khtml-will-change: transition;
+        transition: background-color 0.25s ease;
         -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:active {
-          transform: scale(0.95);
-          -o-transform: scale(0.95);
-          -ms-transform: scale(0.95);
-          -moz-transform: scale(0.95);
-          -khtml-transform: scale(0.95);
           -webkit-transform: scale(0.95);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: scale(0.95);
+          transform: scale(0.95);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:hover {
           background-color: #14A251; }
@@ -3150,33 +2746,23 @@ p {
     height: 340px;
     background-color: white;
     border-radius: 16px;
-    -o-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -khtml-border-radius: 16px;
-    -webkit-border-radius: 16px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     @media screen and (max-width: 420px) {
       #index .login-form-container {
         width: 100%;
         border-radius: 0;
-        -o-border-radius: 0;
-        -ms-border-radius: 0;
-        -moz-border-radius: 0;
-        -khtml-border-radius: 0;
-        -webkit-border-radius: 0;
-        will-change: border-radius;
-        -o-will-change: border-radius;
-        -ms-will-change: border-radius;
-        -moz-will-change: border-radius;
-        -khtml-will-change: border-radius;
         -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
         zoom: 1; } }
     #index .login-form-container .login-form-title {
       margin: 8px 0; }
@@ -3185,6 +2771,9 @@ p {
       margin: 0 auto; }
       #index .login-form-container .login-text-field .login-form-wrapper {
         margin-top: 32px; }
+        #index .login-form-container .login-text-field .login-form-wrapper ::-moz-selection {
+          color: white !important;
+          background-color: #17C060 !important; }
         #index .login-form-container .login-text-field .login-form-wrapper ::selection {
           color: white !important;
           background-color: #17C060 !important; }
@@ -3200,37 +2789,29 @@ p {
           background-color: #f9f9f9;
           border: 1px solid #ccc;
           border-radius: 8px;
-          -o-border-radius: 8px;
-          -ms-border-radius: 8px;
-          -moz-border-radius: 8px;
-          -khtml-border-radius: 8px;
-          -webkit-border-radius: 8px;
-          will-change: border-radius;
-          -o-will-change: border-radius;
-          -ms-will-change: border-radius;
-          -moz-will-change: border-radius;
-          -khtml-will-change: border-radius;
           -webkit-will-change: border-radius;
+          -khtml-will-change: border-radius;
+          -moz-will-change: border-radius;
+          -ms-will-change: border-radius;
+          -o-will-change: border-radius;
+          will-change: border-radius;
           zoom: 1;
-          will-change: width;
-          -o-will-change: width;
-          -ms-will-change: width;
-          -moz-will-change: width;
-          -khtml-will-change: width;
           -webkit-will-change: width;
+          -khtml-will-change: width;
+          -moz-will-change: width;
+          -ms-will-change: width;
+          -o-will-change: width;
+          will-change: width;
           zoom: 1;
-          transform: translateZ(0);
-          -o-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          -moz-transform: translateZ(0);
-          -khtml-transform: translateZ(0);
           -webkit-transform: translateZ(0);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateZ(0);
+          transform: translateZ(0);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
           #index .login-form-container .login-text-field .login-form-wrapper input:focus {
             border: 1px solid #17C060; }
@@ -3246,30 +2827,21 @@ p {
           margin-bottom: 32px;
           background-color: #17C060;
           border-radius: 8px;
-          -o-border-radius: 8px;
-          -ms-border-radius: 8px;
-          -moz-border-radius: 8px;
-          -khtml-border-radius: 8px;
-          -webkit-border-radius: 8px;
-          will-change: border-radius;
-          -o-will-change: border-radius;
-          -ms-will-change: border-radius;
-          -moz-will-change: border-radius;
-          -khtml-will-change: border-radius;
           -webkit-will-change: border-radius;
+          -khtml-will-change: border-radius;
+          -moz-will-change: border-radius;
+          -ms-will-change: border-radius;
+          -o-will-change: border-radius;
+          will-change: border-radius;
           zoom: 1;
-          transition: all 0.25s ease;
-          -o-transition: all 0.25s ease;
-          -ms-transition: all 0.25s ease;
-          -moz-transition: all 0.25s ease;
-          -khtml-transition: all 0.25s ease;
           -webkit-transition: all 0.25s ease;
-          will-change: transition;
-          -o-will-change: transition;
-          -ms-will-change: transition;
-          -moz-will-change: transition;
-          -khtml-will-change: transition;
+          transition: all 0.25s ease;
           -webkit-will-change: transition;
+          -khtml-will-change: transition;
+          -moz-will-change: transition;
+          -ms-will-change: transition;
+          -o-will-change: transition;
+          will-change: transition;
           zoom: 1; }
           #index .login-form-container .login-text-field .login-form-wrapper .login-btn:hover {
             cursor: pointer;
@@ -3286,38 +2858,32 @@ p {
           top: 50%;
           position: relative;
           display: inline-block;
-          transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -khtml-transform: translateY(-50%);
           -webkit-transform: translateY(-50%);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateY(-50%);
+          transform: translateY(-50%);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1;
-          will-change: width;
-          -o-will-change: width;
-          -ms-will-change: width;
-          -moz-will-change: width;
-          -khtml-will-change: width;
           -webkit-will-change: width;
+          -khtml-will-change: width;
+          -moz-will-change: width;
+          -ms-will-change: width;
+          -o-will-change: width;
+          will-change: width;
           zoom: 1;
-          transform: translateZ(0);
-          -o-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          -moz-transform: translateZ(0);
-          -khtml-transform: translateZ(0);
           -webkit-transform: translateZ(0);
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateZ(0);
+          transform: translateZ(0);
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; }
           #index .login-form-container .login-text-field .login-form-wrapper .login-form-remember-me #login-remember-me,
           #index .login-form-container .login-text-field .login-form-wrapper .login-form-remember-me label {
@@ -3335,6 +2901,9 @@ p {
     color: #999;
     margin-top: 16px;
     display: inline-block; }
+  .board-vote-container .board-vote-wrapper ::-moz-selection {
+    color: white !important;
+    background-color: #17C060 !important; }
   .board-vote-container .board-vote-wrapper ::selection {
     color: white !important;
     background-color: #17C060 !important; }
@@ -3347,6 +2916,9 @@ p {
     font-size: 1.5rem;
     line-height: 32px;
     line-height: 2rem; }
+    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::-moz-selection {
+      color: white !important;
+      background-color: #17C060 !important; }
     .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::selection {
       color: white !important;
       background-color: #17C060 !important; }
@@ -3392,62 +2964,51 @@ p {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1;
-    transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -khtml-transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
     .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item.item-failed {
       opacity: 0.38;
       filter: alpha(opacity=38);
-      will-change: opacity;
-      -o-will-change: opacity;
-      -ms-will-change: opacity;
-      -moz-will-change: opacity;
-      -khtml-will-change: opacity;
       -webkit-will-change: opacity;
+      -khtml-will-change: opacity;
+      -moz-will-change: opacity;
+      -ms-will-change: opacity;
+      -o-will-change: opacity;
+      will-change: opacity;
       zoom: 1; }
     .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .checked {
       margin-right: 8px;
-      transform: translateY(10%);
-      -o-transform: translateY(10%);
-      -ms-transform: translateY(10%);
-      -moz-transform: translateY(10%);
-      -khtml-transform: translateY(10%);
       -webkit-transform: translateY(10%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(10%);
+      transform: translateY(10%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
     .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item:last-child {
       margin-bottom: 0; }
@@ -3455,78 +3016,63 @@ p {
       float: right;
       color: #999;
       margin-right: 16px;
-      transform: translateY(30%);
-      -o-transform: translateY(30%);
-      -ms-transform: translateY(30%);
-      -moz-transform: translateY(30%);
-      -khtml-transform: translateY(30%);
       -webkit-transform: translateY(30%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(30%);
+      transform: translateY(30%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
       @supports (-ms-ime-align: auto) {
         .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
-          transform: translateY(40%) !important;
-          -o-transform: translateY(40%) !important;
-          -ms-transform: translateY(40%) !important;
-          -moz-transform: translateY(40%) !important;
-          -khtml-transform: translateY(40%) !important;
           -webkit-transform: translateY(40%) !important;
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateY(40%) !important;
+          transform: translateY(40%) !important;
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; } }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
-          transform: translateY(40%) !important;
-          -o-transform: translateY(40%) !important;
-          -ms-transform: translateY(40%) !important;
-          -moz-transform: translateY(40%) !important;
-          -khtml-transform: translateY(40%) !important;
           -webkit-transform: translateY(40%) !important;
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateY(40%) !important;
+          transform: translateY(40%) !important;
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; } }
       @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
         .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
-          transform: translateY(40%) !important;
-          -o-transform: translateY(40%) !important;
-          -ms-transform: translateY(40%) !important;
-          -moz-transform: translateY(40%) !important;
-          -khtml-transform: translateY(40%) !important;
           -webkit-transform: translateY(40%) !important;
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateY(40%) !important;
+          transform: translateY(40%) !important;
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; } }
       @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
         .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
-          transform: translateY(40%) !important;
-          -o-transform: translateY(40%) !important;
-          -ms-transform: translateY(40%) !important;
-          -moz-transform: translateY(40%) !important;
-          -khtml-transform: translateY(40%) !important;
           -webkit-transform: translateY(40%) !important;
-          will-change: transform;
-          -o-will-change: transform;
-          -ms-will-change: transform;
-          -moz-will-change: transform;
-          -khtml-will-change: transform;
+          -khtml-transform: translateY(40%) !important;
+          transform: translateY(40%) !important;
           -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
           zoom: 1; } }
       .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb:after {
         content: "명"; }
@@ -3536,17 +3082,12 @@ p {
       display: inline-block;
       background-color: #eee;
       border-radius: 7px 0 0 7px;
-      -o-border-radius: 7px 0 0 7px;
-      -ms-border-radius: 7px 0 0 7px;
-      -moz-border-radius: 7px 0 0 7px;
-      -khtml-border-radius: 7px 0 0 7px;
-      -webkit-border-radius: 7px 0 0 7px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1; }
       .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
         padding-left: 8px;
@@ -3554,84 +3095,68 @@ p {
         overflow: hidden;
         white-space: nowrap;
         display: inline-block;
-        text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        -ms-text-overflow: ellipsis;
-        -moz-text-overflow: ellipsis;
-        -khtml-text-overflow: ellipsis;
         -webkit-text-overflow: ellipsis;
-        transform: translateY(0%) !important;
-        -o-transform: translateY(0%) !important;
-        -ms-transform: translateY(0%) !important;
-        -moz-transform: translateY(0%) !important;
-        -khtml-transform: translateY(0%) !important;
+        -khtml-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
         -webkit-transform: translateY(0%) !important;
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -khtml-transform: translateY(0%) !important;
+        transform: translateY(0%) !important;
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
         @supports (-ms-ime-align: auto) {
           .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
-            transform: translateY(10%) !important;
-            -o-transform: translateY(10%) !important;
-            -ms-transform: translateY(10%) !important;
-            -moz-transform: translateY(10%) !important;
-            -khtml-transform: translateY(10%) !important;
             -webkit-transform: translateY(10%) !important;
-            will-change: transform;
-            -o-will-change: transform;
-            -ms-will-change: transform;
-            -moz-will-change: transform;
-            -khtml-will-change: transform;
+            -khtml-transform: translateY(10%) !important;
+            transform: translateY(10%) !important;
             -webkit-will-change: transform;
+            -khtml-will-change: transform;
+            -moz-will-change: transform;
+            -ms-will-change: transform;
+            -o-will-change: transform;
+            will-change: transform;
             zoom: 1; } }
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
-            transform: translateY(10%) !important;
-            -o-transform: translateY(10%) !important;
-            -ms-transform: translateY(10%) !important;
-            -moz-transform: translateY(10%) !important;
-            -khtml-transform: translateY(10%) !important;
             -webkit-transform: translateY(10%) !important;
-            will-change: transform;
-            -o-will-change: transform;
-            -ms-will-change: transform;
-            -moz-will-change: transform;
-            -khtml-will-change: transform;
+            -khtml-transform: translateY(10%) !important;
+            transform: translateY(10%) !important;
             -webkit-will-change: transform;
+            -khtml-will-change: transform;
+            -moz-will-change: transform;
+            -ms-will-change: transform;
+            -o-will-change: transform;
+            will-change: transform;
             zoom: 1; } }
         @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
           .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
-            transform: translateY(10%) !important;
-            -o-transform: translateY(10%) !important;
-            -ms-transform: translateY(10%) !important;
-            -moz-transform: translateY(10%) !important;
-            -khtml-transform: translateY(10%) !important;
             -webkit-transform: translateY(10%) !important;
-            will-change: transform;
-            -o-will-change: transform;
-            -ms-will-change: transform;
-            -moz-will-change: transform;
-            -khtml-will-change: transform;
+            -khtml-transform: translateY(10%) !important;
+            transform: translateY(10%) !important;
             -webkit-will-change: transform;
+            -khtml-will-change: transform;
+            -moz-will-change: transform;
+            -ms-will-change: transform;
+            -o-will-change: transform;
+            will-change: transform;
             zoom: 1; } }
         @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
           .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
-            transform: translateY(10%) !important;
-            -o-transform: translateY(10%) !important;
-            -ms-transform: translateY(10%) !important;
-            -moz-transform: translateY(10%) !important;
-            -khtml-transform: translateY(10%) !important;
             -webkit-transform: translateY(10%) !important;
-            will-change: transform;
-            -o-will-change: transform;
-            -ms-will-change: transform;
-            -moz-will-change: transform;
-            -khtml-will-change: transform;
+            -khtml-transform: translateY(10%) !important;
+            transform: translateY(10%) !important;
             -webkit-will-change: transform;
+            -khtml-will-change: transform;
+            -moz-will-change: transform;
+            -ms-will-change: transform;
+            -o-will-change: transform;
+            will-change: transform;
             zoom: 1; } }
       .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .item-highest {
         font-weight: 900; }
@@ -3703,25 +3228,22 @@ p {
   outline: none;
   font-weight: 900;
   margin-bottom: 16px;
-  will-change: width;
-  -o-will-change: width;
-  -ms-will-change: width;
-  -moz-will-change: width;
-  -khtml-will-change: width;
   -webkit-will-change: width;
+  -khtml-will-change: width;
+  -moz-will-change: width;
+  -ms-will-change: width;
+  -o-will-change: width;
+  will-change: width;
   zoom: 1;
-  transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -khtml-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
 
 .write-post-wrapper .write-post-wrapper-paragraph {
@@ -3737,39 +3259,31 @@ p {
     border: 1px solid #ccc;
     overflow-x: hidden !important;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1;
-    will-change: width;
-    -o-will-change: width;
-    -ms-will-change: width;
-    -moz-will-change: width;
-    -khtml-will-change: width;
     -webkit-will-change: width;
+    -khtml-will-change: width;
+    -moz-will-change: width;
+    -ms-will-change: width;
+    -o-will-change: width;
+    will-change: width;
     zoom: 1;
     line-height: 25.6px;
     line-height: 1.6rem;
-    transform: translateZ(0);
-    -o-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -khtml-transform: translateZ(0);
     -webkit-transform: translateZ(0);
-    will-change: transform;
-    -o-will-change: transform;
-    -ms-will-change: transform;
-    -moz-will-change: transform;
-    -khtml-will-change: transform;
+    -khtml-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-will-change: transform;
+    -khtml-will-change: transform;
+    -moz-will-change: transform;
+    -ms-will-change: transform;
+    -o-will-change: transform;
+    will-change: transform;
     zoom: 1; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-parahraph:focus {
       border: 1px solid #17C060; }
@@ -3780,8 +3294,10 @@ p {
     cursor: pointer;
     position: relative;
     user-select: none;
+    -o-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+    -khtml-user-select: none;
     -webkit-user-select: none; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label:not(:last-of-type),
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label:not(:last-of-type),
@@ -3810,47 +3326,35 @@ p {
       padding: 8px 16px;
       border: 1px solid #eee;
       border-radius: 8px;
-      -o-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1;
-      transition: all 0.25s ease !important;
-      -o-transition: all 0.25s ease !important;
-      -ms-transition: all 0.25s ease !important;
-      -moz-transition: all 0.25s ease !important;
-      -khtml-transition: all 0.25s ease !important;
       -webkit-transition: all 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease !important;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:active,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:active,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:active,
       .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span:active {
-        transform: scale(0.975);
-        -o-transform: scale(0.975);
-        -ms-transform: scale(0.975);
-        -moz-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
-        -webkit-transform: scale(0.975);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -webkit-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        transform: scale(0.95);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:hover,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:hover,
@@ -3906,18 +3410,15 @@ p {
     .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-set-duedate-title .material-icons {
       margin-right: 4px;
       display: inline-block;
-      transform: translateY(20%);
-      -o-transform: translateY(20%);
-      -ms-transform: translateY(20%);
-      -moz-transform: translateY(20%);
-      -khtml-transform: translateY(20%);
       -webkit-transform: translateY(20%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(20%);
+      transform: translateY(20%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; }
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-set-time,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-set-duedate,
@@ -3968,17 +3469,12 @@ p {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 0 8px 8px 0;
-    -o-border-radius: 0 8px 8px 0;
-    -ms-border-radius: 0 8px 8px 0;
-    -moz-border-radius: 0 8px 8px 0;
-    -khtml-border-radius: 0 8px 8px 0;
-    -webkit-border-radius: 0 8px 8px 0;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn::after {
       content: "항목삭제"; }
@@ -4012,17 +3508,12 @@ p {
     border: 1px solid #ccc;
     background-color: transparent;
     border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    will-change: border-radius;
-    -o-will-change: border-radius;
-    -ms-will-change: border-radius;
-    -moz-will-change: border-radius;
-    -khtml-will-change: border-radius;
     -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
     zoom: 1; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .add-vote-item-input:hover,
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .add-vote-item-btn:hover {
@@ -4070,91 +3561,73 @@ p {
   top: 50%;
   position: relative;
   display: inline-block;
-  transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -khtml-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1;
-  transform: translateY(-64%);
-  -o-transform: translateY(-64%);
-  -ms-transform: translateY(-64%);
-  -moz-transform: translateY(-64%);
-  -khtml-transform: translateY(-64%);
   -webkit-transform: translateY(-64%);
-  will-change: transform;
-  -o-will-change: transform;
-  -ms-will-change: transform;
-  -moz-will-change: transform;
-  -khtml-will-change: transform;
+  -khtml-transform: translateY(-64%);
+  transform: translateY(-64%);
   -webkit-will-change: transform;
+  -khtml-will-change: transform;
+  -moz-will-change: transform;
+  -ms-will-change: transform;
+  -o-will-change: transform;
+  will-change: transform;
   zoom: 1; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .board-petition-set-status-inline .petition-set-status-selectbox-inline {
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; } }
   @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     .board-petition-set-status-inline .petition-set-status-selectbox-inline {
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; } }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .board-petition-set-status-inline .petition-set-status-selectbox-inline {
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; } }
   @supports (-ms-ime-align: auto) {
     .board-petition-set-status-inline .petition-set-status-selectbox-inline {
-      transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -khtml-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
-      will-change: transform;
-      -o-will-change: transform;
-      -ms-will-change: transform;
-      -moz-will-change: transform;
-      -khtml-will-change: transform;
+      -khtml-transform: translateY(-50%);
+      transform: translateY(-50%);
       -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
       zoom: 1; } }
 
 .open-petition-count::after {
@@ -4170,17 +3643,12 @@ p {
   margin-top: 24px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  will-change: border-radius;
-  -o-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -khtml-will-change: border-radius;
   -webkit-will-change: border-radius;
+  -khtml-will-change: border-radius;
+  -moz-will-change: border-radius;
+  -ms-will-change: border-radius;
+  -o-will-change: border-radius;
+  will-change: border-radius;
   zoom: 1; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-legend {
     font-weight: 900;
@@ -4199,8 +3667,10 @@ p {
     cursor: pointer;
     position: relative;
     user-select: none;
+    -o-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+    -khtml-user-select: none;
     -webkit-user-select: none; }
     .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item:not(:last-of-type) {
       margin-right: 4px; }
@@ -4217,44 +3687,32 @@ p {
       padding: 8px 16px;
       border: 1px solid #eee;
       border-radius: 8px;
-      -o-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -khtml-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      will-change: border-radius;
-      -o-will-change: border-radius;
-      -ms-will-change: border-radius;
-      -moz-will-change: border-radius;
-      -khtml-will-change: border-radius;
       -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
       zoom: 1;
-      transition: all 0.25s ease !important;
-      -o-transition: all 0.25s ease !important;
-      -ms-transition: all 0.25s ease !important;
-      -moz-transition: all 0.25s ease !important;
-      -khtml-transition: all 0.25s ease !important;
       -webkit-transition: all 0.25s ease !important;
-      will-change: transition;
-      -o-will-change: transition;
-      -ms-will-change: transition;
-      -moz-will-change: transition;
-      -khtml-will-change: transition;
+      transition: all 0.25s ease !important;
       -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
       zoom: 1; }
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:active {
-        transform: scale(0.975);
-        -o-transform: scale(0.975);
-        -ms-transform: scale(0.975);
-        -moz-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
-        -webkit-transform: scale(0.975);
-        will-change: transform;
-        -o-will-change: transform;
-        -ms-will-change: transform;
-        -moz-will-change: transform;
-        -khtml-will-change: transform;
+        -webkit-transform: scale(0.95);
+        -khtml-transform: scale(0.95);
+        transform: scale(0.95);
         -webkit-will-change: transform;
+        -khtml-will-change: transform;
+        -moz-will-change: transform;
+        -ms-will-change: transform;
+        -o-will-change: transform;
+        will-change: transform;
         zoom: 1; }
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:hover {
         background-color: #fafafa; }

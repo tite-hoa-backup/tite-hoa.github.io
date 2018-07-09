@@ -50,6 +50,13 @@
                 margin-top: $grid4x;
                 display: inline-block;
 
+                &.noti {
+                    &::after {
+                        font-weight: 400;
+                        content: " 이 시간에 공지사항/알림을 내립니다.";
+                    }
+                }
+
                 &.pre-noti {
                     &::after {
                         font-weight: 400;

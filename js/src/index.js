@@ -146,7 +146,8 @@
     ];
 
     var headTitle = document.querySelector('head');
-    metaLists.forEach(function(metaList) {
+    metaLists.forEach(function(metaList)
+    {
 
         if (metaList.name) {
             var setMeta = document.createElement('meta');
@@ -201,3 +202,50 @@
     });
 
 })();
+
+
+
+/* ==============================
+    checkbox innerhtml
+============================== */
+// (function(){
+//     var getSetTimeDiv = document.querySelector('.write-post-set-time-form');
+//     var getSetTimeSpan = document.querySelector('.write-post-summary > .write-post-summary-text');
+//     var getCheckboxAll = document.querySelectorAll('.write-post-set-date > .write-post-set-date-item > input');
+//     var getCheckboxAllLabel = document.querySelectorAll('.write-post-set-date > .write-post-set-date-item');
+//     var getRadioAll = document.querySelectorAll('.write-post-set-date > .write-post-set-date-radio-wrapper > input');
+
+
+    // getCheckboxAllLabel.forEach(function(label) {
+    //     var check = function() {
+    //         label.input.checked = true;
+    //     };
+
+    //     label.addEventListener('click', check);
+    // });
+
+//     getRadioAll.forEach(function(radioEach) {
+//         if (radioEach.checked == true) {
+//             getSetTimeSpan.innerHTML += radioEach.value;
+//         }
+//     });
+
+//     var check = function() {
+//         this.checked = true;
+//     };
+
+//     for (var i = 0; i < getCheckboxAll.length; i++) {
+    
+//         getCheckboxAllLabel[i].addEventListener('click', check);
+    
+//         if (getCheckboxAll[i].checked == true) {
+//             if (getCheckboxAll[i]) {
+//                 getSetTimeSpan.innerHTML += getCheckboxAll[i].value;
+//             }
+//             else {
+//                 getSetTimeSpan.innerHTML += ', ' + getCheckboxAll[i].value;
+//             }
+//         }
+//     }
+
+// })();

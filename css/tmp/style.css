@@ -2734,6 +2734,13 @@ p {
   .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text::after {
     font-weight: 400;
     content: " 마다 주민들에게 알림을 전송합니다."; }
+  .post-wrapper .post-wrapper-paragraph .write-post-summary .stop-pre-noti-temp {
+    display: block;
+    cursor: pointer;
+    margin-top: 8px; }
+    .post-wrapper .post-wrapper-paragraph .write-post-summary .stop-pre-noti-temp span {
+      color: #777;
+      margin-left: 4px; }
 
 /* ==============================
     scss modules - pages

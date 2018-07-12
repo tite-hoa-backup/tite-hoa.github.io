@@ -13,6 +13,17 @@
                     content: " 마다 주민들에게 알림을 전송합니다.";
                 }
             }
+
+            .stop-pre-noti-temp {
+                display: block;
+                cursor: pointer;
+                margin-top: $grid2x;
+
+                span {
+                    color: $text777;
+                    margin-left: $grid;
+                }
+            }
         }
     }
 }

@@ -2742,6 +2742,10 @@ p {
       color: #777;
       margin-left: 4px; }
 
+.post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.business::after {
+  font-weight: 400;
+  content: " 후에 광고 게시가 종료됩니다." !important; }
+
 /* ==============================
     scss modules - pages
 ============================== */

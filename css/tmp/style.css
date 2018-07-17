@@ -85,13 +85,13 @@ html {
   max-width: 1680px;
   direction: ltr;
   font-feature-settings: 'liga';
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: 'liga';
   -webkit-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale !important;
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility !important;
-  text-decoration-skip: ink;
   -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
   font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   -moz-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   -webkit-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
@@ -146,13 +146,13 @@ body {
   background-color: #f4f4f4;
   direction: ltr;
   font-feature-settings: 'liga';
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: 'liga';
   -webkit-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale !important;
   -webkit-font-smoothing: antialiased !important;
   text-rendering: optimizeLegibility !important;
-  text-decoration-skip: ink;
   -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
   font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   -moz-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   -webkit-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
@@ -191,18 +191,16 @@ input[type="time"],
 input[type="file"],
 input[type="radio"],
 input[type="checkbox"] {
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-moz-placeholder,
 ::-ms-input-placeholder,
-:-ms-input-placeholder {
-  color: #ccc; }
-
+:-ms-input-placeholder,
 ::placeholder {
   opacity: 1;
-  color: #ccc; }
+  color: #eee; }
 
 /** Bold */
 /* ==============================

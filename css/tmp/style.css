@@ -172,18 +172,6 @@ textarea:focus {
   textarea:focus::-ms-clear,
   textarea:focus::-ms-reveal {
     display: none; }
-  input:focus::-webkit-contacts-auto-fill-button, input:focus::-webkit-credentials-auto-fill-button,
-  select:focus::-webkit-contacts-auto-fill-button,
-  select:focus::-webkit-credentials-auto-fill-button,
-  button:focus::-webkit-contacts-auto-fill-button,
-  button:focus::-webkit-credentials-auto-fill-button,
-  textarea:focus::-webkit-contacts-auto-fill-button,
-  textarea:focus::-webkit-credentials-auto-fill-button {
-    right: 0;
-    position: absolute;
-    visibility: hidden;
-    pointer-events: none;
-    display: none !important; }
 
 select,
 input[type="date"],

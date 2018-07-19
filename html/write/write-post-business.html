@@ -74,7 +74,7 @@
 
                 <!-- upload image -->
                 <div class="post-wrapper-duedate-wrapper">
-                    <form class="write-post-upload-image-wrapper">
+                    <form class="write-post-upload-image-wrapper" id="checkedRadioVal">
                         <label for="upload-image" class="write-post-upload-image-title">
                             <i class="material-icons md-24">image</i>사진첨부: 
                         </label>
@@ -86,33 +86,33 @@
 
                                 <div class="write-post-set-date-radio-wrapper">
                                     <label class="write-post-set-date-item weekly-event" for="twoweeks">
-                                        <input type="radio" id="twoweeks" value="2주" name="set-date" checked>
+                                        <input type="radio" id="twoweeks" value="2주" name="set-date" v-model="checkedRadioVal" checked>
                                         <span for="twoweeks">2주</span>
                                     </label>
 
                                     <label class="write-post-set-date-item weekly-event" for="onemonth">
-                                        <input type="radio" id="onemonth" value="1개월" name="set-date">
+                                        <input type="radio" id="onemonth" value="1개월" name="set-date" v-model="checkedRadioVal">
                                         <span for="onemonth">1개월</span>
                                     </label>
 
                                     <label class="write-post-set-date-item weekly-event" for="twomonths">
-                                        <input type="radio" id="twomonths" value="2개월" name="set-date">
+                                        <input type="radio" id="twomonths" value="2개월" name="set-date" v-model="checkedRadioVal">
                                         <span for="twomonths">2개월</span>
                                     </label>
 
                                     <label class="write-post-set-date-item weekly-event" for="threemonths">
-                                        <input type="radio" id="threemonths" value="3개월" name="set-date">
+                                        <input type="radio" id="threemonths" value="3개월" name="set-date" v-model="checkedRadioVal">
                                         <span for="threemonths">3개월</span>
                                     </label>
 
                                     <label class="write-post-set-date-item weekly-event" for="fourmonths">
-                                        <input type="radio" id="fourmonths" value="4개월" name="set-date">
+                                        <input type="radio" id="fourmonths" value="4개월" name="set-date" v-model="checkedRadioVal">
                                         <span for="fourmonths">4개월</span>
                                     </label>
                                 </div>
 
                                 <div class="write-post-summary">
-                                    <span class="write-post-summary-text business">2주</span>
+                                    <span class="write-post-summary-text business">{{checkedRadioVal}}</span>
                                     <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
                                 </div>
 
@@ -132,6 +132,16 @@
 
     <!-- inject:js -->
     <script src="/js/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- endinject -->
+
+    <script>
+        var app = new Vue({
+            el: '#checkedRadioVal',
+            data: {
+                checkedRadioVal: ''
+            }
+        })
+    </script>
 </body>
 </html>

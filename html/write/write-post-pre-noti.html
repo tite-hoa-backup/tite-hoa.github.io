@@ -82,82 +82,73 @@
                     </form>
                 </div>
 
-                <form class="write-post-set-time-form">
+                <form class="write-post-set-time-form" id="checkedRadioVal">
                     <fieldset class="write-post-set-time-wrapper">
                         <legend class="write-post-set-time-legend">예약알림 설정</legend>
 
                         <label class="write-post-set-time-title" for="set-noti-time">예약알림 시간 설정: </label>
-                        <input class="write-post-set-time" type="time" id="set-noti-time" value="09:00">
+                        <input class="write-post-set-time" type="time" id="set-noti-time" value="09:00" v-model="selectedTimeVal">
 
                         <div class="write-post-set-date">
                             <span class="write-post-set-date-text">예약알림 반복 설정: </span>
 
                             <div class="write-post-set-date-radio-wrapper">
                                 <label class="write-post-set-date-item weekly-event" for="weekly">
-                                    <input type="radio" id="weekly" value="매주" name="set-date" checked>
+                                    <input type="radio" id="weekly" value="매주" name="set-date" v-model="checkedRadioVal" checked>
                                     <span for="weekly">매주</span>
                                 </label>
 
                                 <label class="write-post-set-date-item weekly-event" for="biweekly">
-                                    <input type="radio" id="biweekly" value="격주" name="set-date">
+                                    <input type="radio" id="biweekly" value="격주" name="set-date" v-model="checkedRadioVal">
                                     <span for="biweekly">격주</span>
                                 </label>
 
                                 <label class="write-post-set-date-item weekly-event" for="next">
-                                    <input type="radio" id="next" value="돌아오는" name="set-date">
+                                    <input type="radio" id="next" value="돌아오는" name="set-date" v-model="checkedRadioVal">
                                     <span for="next">돌아오는</span>
-                                </label>
-
-                                <label class="write-post-set-date-item weekly-event" for="today">
-                                    <input type="radio" id="today" value="오늘만" name="set-date">
-                                    <span for="today">오늘만</span>
-                                    <!-- 선택시 아래 요일 체크박스 비활성화 -->
                                 </label>
                             </div>
 
                             <label class="write-post-set-date-item" for="mon">
                                 <!-- <input type="checkbox" id="mon" value="월요일"> -->
-                                <input type="checkbox" id="mon" value="월요일" checked>
+                                <input type="checkbox" id="mon" value="월요일" v-model="checkedCheckboxVal" checked>
                                 <!-- 예시를 위한 임시 체크 선택 -->
                                 <span for="mon">월요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="tue">
-                                <input type="checkbox" id="tue" value="화요일">
+                                <input type="checkbox" id="tue" value="화요일" v-model="checkedCheckboxVal">
                                 <span for="tue">화요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="wed">
-                                <input type="checkbox" id="wed" value="수요일">
+                                <input type="checkbox" id="wed" value="수요일" v-model="checkedCheckboxVal">
                                 <span for="wed">수요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="thu">
-                                <input type="checkbox" id="thu" value="목요일">
+                                <input type="checkbox" id="thu" value="목요일" v-model="checkedCheckboxVal">
                                 <span for="thu">목요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="fri">
-                                <!-- <input type="checkbox" id="fri" value="금요일"> -->
-                                <input type="checkbox" id="fri" value="금요일" checked>
-                                <!-- 예시를 위한 임시 체크 선택 -->
+                                <input type="checkbox" id="fri" value="금요일" v-model="checkedCheckboxVal" checked>
                                 <span for="fri">금요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="sat">
-                                <input type="checkbox" id="sat" value="토요일">
+                                <input type="checkbox" id="sat" value="토요일" v-model="checkedCheckboxVal">
                                 <span for="sat">토요일</span>
                             </label>
 
                             <label class="write-post-set-date-item" for="sun">
-                                <input type="checkbox" id="sun" value="일요일">
+                                <input type="checkbox" id="sun" value="일요일" v-model="checkedCheckboxVal">
                                 <span for="sun">일요일</span>
                             </label>
                         </div>
 
                         <div class="write-post-summary">
-                            <span class="write-post-summary-text pre-noti">매주 월요일, 금요일 오전 09:00</span>
-                            <!-- <span class="write-post-summary-text pre-noti"></span> -->
+                            <span class="write-post-summary-text pre-noti">{{checkedRadioVal + ' ' + checkedCheckboxVal + ' ' + selectedTimeVal}}</span>
                             <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
                         </div>
                     </fieldset>
@@ -173,6 +164,18 @@
 
     <!-- inject:js -->
     <script src="/js/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- endinject -->
+
+    <script>
+    var app = new Vue({
+        el: '#checkedRadioVal',
+        data: {
+            selectedTimeVal: '',
+            checkedRadioVal: '',
+            checkedCheckboxVal: []
+        }
+    })
+    </script>
 </body>
 </html>

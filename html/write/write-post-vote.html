@@ -93,39 +93,39 @@
                         <input type="file" name="upload-image" id="upload-image" class="write-post-upload-image" accept="image/*" multiple>
                     </form>
 
-                    <form class="write-post-vote-items-each">
+                    <form class="write-post-vote-items-each" id="checkedRadioVal">
                         <form class="write-post-set-time-form">
                             <fieldset class="write-post-set-time-wrapper">
                                 <legend class="write-post-set-time-legend">투표기간 설정</legend>
                                 <div class="write-post-set-date-radio-wrapper">
                                     <label class="write-post-set-date-item" for="oneday">
-                                        <input type="radio" id="oneday" value="oneday" name="vote-duedate" checked>
+                                        <input type="radio" id="oneday" value="1일" name="vote-duedate" v-model="checkedRadioVal" checked>
                                         <span for="oneday">1일</span>
                                     </label>
 
                                     <label class="write-post-set-date-item" for="threedays">
-                                        <input type="radio" id="threedays" value="threedays" name="vote-duedate">
+                                        <input type="radio" id="threedays" value="3일" name="vote-duedate" v-model="checkedRadioVal">
                                         <span for="threedays">3일</span>
                                     </label>
 
                                     <label class="write-post-set-date-item" for="week">
-                                        <input type="radio" id="week" value="week" name="vote-duedate">
+                                        <input type="radio" id="week" value="1주일" name="vote-duedate" v-model="checkedRadioVal">
                                         <span for="week">1주일</span>
                                     </label>
 
                                     <label class="write-post-set-date-item" for="twoweeks">
-                                        <input type="radio" id="twoweeks" value="twoweeks" name="vote-duedate">
+                                        <input type="radio" id="twoweeks" value="2주일" name="vote-duedate" v-model="checkedRadioVal">
                                         <span for="twoweeks">2주일</span>
                                     </label>
 
                                     <label class="write-post-set-date-item" for="month">
-                                        <input type="radio" id="month" value="month" name="vote-duedate">
+                                        <input type="radio" id="month" value="1개월" name="vote-duedate" v-model="checkedRadioVal">
                                         <span for="month">1개월</span>
                                     </label>
                                 </div>
 
                                 <div class="write-post-summary">
-                                    <span class="write-post-summary-text vote">1일</span>
+                                    <span class="write-post-summary-text vote">{{checkedRadioVal}}</span>
                                     <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
                                 </div>
                             </fieldset>
@@ -143,6 +143,16 @@
 
     <!-- inject:js -->
     <script src="/js/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- endinject -->
+
+    <script>
+        var app = new Vue({
+            el: '#checkedRadioVal',
+            data: {
+                checkedRadioVal: ''
+            }
+        })
+    </script>
 </body>
 </html>

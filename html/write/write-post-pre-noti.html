@@ -107,6 +107,16 @@
                                     <input type="radio" id="next" value="돌아오는" name="set-date" v-model="checkedRadioVal">
                                     <span for="next">돌아오는</span>
                                 </label>
+
+                                <label class="write-post-set-date-item weekly-event" for="monthfirst">
+                                    <input type="radio" id="monthfirst" value="매월 첫번째주" name="set-date" v-model="checkedRadioVal">
+                                    <span for="monthfirst">매월 첫번째주</span>
+                                </label>
+
+                                <label class="write-post-set-date-item weekly-event" for="monthlast">
+                                    <input type="radio" id="monthlast" value="매월 마지막주" name="set-date" v-model="checkedRadioVal">
+                                    <span for="monthlast">매월 마지막주</span>
+                                </label>
                             </div>
 
                             <label class="write-post-set-date-item" for="mon">
@@ -164,18 +174,18 @@
 
     <!-- inject:js -->
     <script src="/js/dist/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- endinject -->
 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
-    var app = new Vue({
-        el: '#checkedRadioVal',
-        data: {
-            selectedTimeVal: '',
-            checkedRadioVal: '',
-            checkedCheckboxVal: []
-        }
-    })
+        var app = new Vue({
+            el: '#checkedRadioVal',
+            data: {
+                selectedTimeVal: '',
+                checkedRadioVal: '',
+                checkedCheckboxVal: []
+            }
+        })
     </script>
 </body>
 </html>

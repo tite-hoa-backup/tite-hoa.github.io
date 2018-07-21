@@ -13,9 +13,14 @@
                 padding: 0 $grid2x;
             }
 
+            .write-post-set-time-title {
+                display: inline-block;
+                margin-bottom: $grid2x !important;
+            }
+
             .write-post-set-time,
             .write-post-set-time-title {
-                margin: 0 0 $grid4x 0;
+                margin: 0 0 $grid6x 0;
             }
 
             .write-post-set-date {

@@ -86,8 +86,21 @@
                     <fieldset class="write-post-set-time-wrapper">
                         <legend class="write-post-set-time-legend">예약알림 설정</legend>
 
-                        <label class="write-post-set-time-title" for="set-noti-time">예약알림 시간 설정: </label>
-                        <input class="write-post-set-time" type="time" id="set-noti-time" value="09:00" v-model="selectedTimeVal">
+                        <label class="write-post-set-time-title" for="set-noti-time">예약알림 시간 설정:&nbsp;</label><br>
+                        <!-- <input
+                            id="set-noti-time"
+                            type="time"
+                            name="timepicker"
+                            data-toggle="timepicker"
+                            class="write-post-set-time"
+                            v-model="timepicker"> -->
+                        <input
+                            class="write-post-set-time"
+                            type="time"
+                            id="set-noti-time"
+                            value="08:00"
+                            name="timepicker"
+                            v-model="selectedTimeVal">
 
                         <div class="write-post-set-date">
                             <span class="write-post-set-date-text">예약알림 반복 설정: </span>
@@ -121,7 +134,7 @@
 
                             <label class="write-post-set-date-item" for="mon">
                                 <!-- <input type="checkbox" id="mon" value="월요일"> -->
-                                <input type="checkbox" id="mon" value="월요일" v-model="checkedCheckboxVal" checked>
+                                <input type="checkbox" id="mon" value="월요일" v-model="checkedCheckboxVal">
                                 <!-- 예시를 위한 임시 체크 선택 -->
                                 <span for="mon">월요일</span>
                             </label>
@@ -142,7 +155,7 @@
                             </label>
 
                             <label class="write-post-set-date-item" for="fri">
-                                <input type="checkbox" id="fri" value="금요일" v-model="checkedCheckboxVal" checked>
+                                <input type="checkbox" id="fri" value="금요일" v-model="checkedCheckboxVal">
                                 <span for="fri">금요일</span>
                             </label>
 
@@ -158,7 +171,7 @@
                         </div>
 
                         <div class="write-post-summary">
-                            <span class="write-post-summary-text pre-noti">{{checkedRadioVal + ' ' + checkedCheckboxVal + ' ' + selectedTimeVal}}</span>
+                            <span class="write-post-summary-text pre-noti">{{ checkedRadioVal + ' ' + checkedCheckboxVal + ' ' + selectedTimeVal }}</span>
                             <!-- 위에서 선택한 시간과 체크박스의 내용이 이곳에 텍스트로 반영됩니다 -->
                         </div>
                     </fieldset>
@@ -174,6 +187,7 @@
 
     <!-- inject:js -->
     <script src="/js/dist/index.js"></script>
+    <script src="/js/dist/timepicker.js"></script>
     <!-- endinject -->
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -181,11 +195,20 @@
         var app = new Vue({
             el: '#checkedRadioVal',
             data: {
-                selectedTimeVal: '',
+                selectedTimeVal: '08:00',
                 checkedRadioVal: '',
                 checkedCheckboxVal: []
             }
         })
+
+        // timepicker
+        document.addEventListener("DOMContentLoaded", function(event)
+        {
+            timepicker.load({
+                interval: 15,
+                defaultHour: 8
+            });
+        });
     </script>
 </body>
 </html>

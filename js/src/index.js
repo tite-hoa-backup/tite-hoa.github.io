@@ -4,32 +4,24 @@
     addEventListener -> input 로그인
 ============================== */
 (function(){
-
     var getIdForm = document.querySelector('.text-field-id');
     var getPwForm = document.querySelector('.text-field-pw');
-    
     var getLoginBtn = document.querySelector('.login-btn');
 
     if (getIdForm) {
-
         getIdForm.addEventListener('input', function() {
-            if (this.value.length === 0) {
+            if (this.value.length === 0) 
                 getLoginBtn.disabled = true;
-            }
             else if (this.value.length >= 0) {
                 getPwForm.addEventListener('input', function() {
-
                     if (getIdForm.value.length >= 0 && getPwForm.value.length >= 0) {
                         getLoginBtn.disabled = false;
                         getLoginBtn.setAttribute('title', '로그인');
                     }
-
-                });
+                })
             }
-        });
-        
+        })
     }
-
 })();
 
 
@@ -38,32 +30,26 @@
     show/hide hamburger menu 아이콘 설정
 ============================== */
 (function() {
-
     var getHamburgerClass = document.querySelector('.hamburger');
     var setHamburgerIcon = document.querySelector('.hamburger > i');
     var vw = window.innerWidth;
 
         if (getHamburgerClass) {
-    
             var setHamburgerToggle = {
                 navToggle: document.querySelector('.hamburger'),
                 nav: document.querySelector('.sidebar-container'),
-
                 dim: document.querySelector('.dim'),
-
                 dimLayer: document.querySelector('.dim-layer'),
         
                 doToggle: function(e) {
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');
                     this.nav.classList.toggle('expanded');
-
                     this.dim.classList.toggle('dim-layer');
                     // this.dimLayer.classList.toggle('dim-layer');
 
-                    if (this.dimLayer) {
+                    if (this.dimLayer)
                         this.dim.classList.toggle('dim-layer');
-                    }
                 }
             };
         
@@ -71,24 +57,19 @@
                 setHamburgerToggle.doToggle(e);
             });
     
-    
             // hamburger menu icon change toggle (mqbp 아이콘 변경)
             var setHamburger = document.querySelector('.hamburger');
             
             if (setHamburger) {
                 setHamburger.addEventListener('click', function() {
                     var getHamburgerExpanded = document.querySelectorAll('.expanded')[1];
-                    if (getHamburgerExpanded) {
+                    if (getHamburgerExpanded)
                         setHamburgerIcon.innerHTML = 'close';
-                    }
-                    else {
+                    else 
                         setHamburgerIcon.innerHTML = 'menu';
-                    }
                 });
             }
-            
         }
-
 }());
 
 
@@ -97,7 +78,6 @@
     meta Tags **meta [name, content]**
 ============================== */
 (function(){
-
     var thisUrl = window.location.href;
     var thisTitle = document.title;
     var thisDesc = document.querySelector('meta[name="description"]').getAttribute('content');
@@ -146,9 +126,7 @@
     ];
 
     var headTitle = document.querySelector('head');
-    metaLists.forEach(function(metaList)
-    {
-
+    metaLists.forEach(function(metaList) {
         if (metaList.name) {
             var setMeta = document.createElement('meta');
             setMeta.setAttribute('name', metaList.name);
@@ -186,11 +164,10 @@
                 setLink.setAttribute('type', 'image/png');
                 setLink.setAttribute('sizes', metaList.sizes);
 
-                if (metaList.sizes == '192x192') {
+                if (metaList.sizes == '192x192') 
                     setLink.setAttribute('href', '/favicon/android-icon-' + metaList.sizes + '.png');
-                } else {
+                else 
                     setLink.setAttribute('href', '/favicon/favicon-' + metaList.sizes + '.png');
-                }
                 
             } else {
                 setLink.setAttribute('href', metaList.href);
@@ -198,9 +175,7 @@
 
             headTitle.appendChild(setLink);
         }
-
     });
-
 })();
 
 

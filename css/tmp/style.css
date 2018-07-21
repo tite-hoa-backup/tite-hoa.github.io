@@ -1940,6 +1940,34 @@ p {
     .list-board-page-indicator .indicator-pagination .this-page li:hover {
       text-decoration: none; }
 
+div.timepicker {
+  z-index: 10;
+  position: absolute;
+  margin-top: -16px; }
+  div.timepicker > ul {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    overflow: scroll;
+    font-size: 12px;
+    background: #fff;
+    overflow-x: hidden;
+    max-height: 320px;
+    list-style-type: none;
+    border: 1px solid #eee;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.16); }
+    div.timepicker > ul > li {
+      height: 100%;
+      display: block;
+      color: #333;
+      cursor: pointer;
+      height: 40px;
+      line-height: 300%;
+      text-align: center;
+      text-decoration: none; }
+      div.timepicker > ul > li.hover {
+        background: #eee; }
+
 /* ==============================
     scss modules - dashboard copmonents
 ============================== */
@@ -3649,9 +3677,12 @@ p {
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-legend {
     font-weight: 900;
     padding: 0 8px; }
+  .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-title {
+    display: inline-block;
+    margin-bottom: 8px !important; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time,
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-time-title {
-    margin: 0 0 16px 0; }
+    margin: 0 0 24px 0; }
   .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date:first-child {
     padding: 16px 0 16px;
     border-bottom: 1px dashed #eee; }

@@ -1,0 +1,34 @@
+div.timepicker {
+    z-index: 10;
+    position: absolute;
+    margin-top: -$grid4x;
+    
+    > ul {
+        margin: 0;
+        padding: 0;
+        width: $grid20x;
+        overflow: scroll;
+        font-size: $grid3x;
+        background: #fff;
+        overflow-x: hidden;
+        max-height: $grid80x;
+        list-style-type: none;
+        border: 1px solid $texteee;
+        box-shadow: 0 0 $grid 0 $black16;
+        
+        > li {
+            height: 100%;
+            display: block;
+            color: $text333;
+            cursor: pointer;
+            height: $grid10x;
+            line-height: 300%;
+            text-align: center;
+            text-decoration: none;
+            
+            &.hover {
+                background: $texteee;
+            }
+        }
+    }
+}

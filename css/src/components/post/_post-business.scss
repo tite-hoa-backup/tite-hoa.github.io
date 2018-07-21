@@ -6,11 +6,14 @@
 
             .write-post-summary-text {
                 
-                &.business {
+                &.post {
 
-                    &::after {
-                        font-weight: 400;
-                        content: " 후에 광고 게시가 종료됩니다." !important;
+                    &.business {
+
+                        &::after {
+                            font-weight: 400;
+                            content: " 후 광고 게시가 종료됩니다." !important;
+                        }
                     }
                 }
             }

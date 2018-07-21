@@ -104,7 +104,7 @@
                             v-model="selectedTimeVal">
 
                         <div class="write-post-set-date">
-                            <span class="write-post-set-date-text">예약알림 반복 설정: </span>
+                            <span class="write-post-set-date-text">예약알림 요일 설정: </span>
 
                             <div class="write-post-set-date-radio-wrapper">
                                 <label class="write-post-set-date-item weekly-event" for="weekly">
@@ -118,18 +118,18 @@
                                 </label>
 
                                 <label class="write-post-set-date-item weekly-event" for="next">
-                                    <input type="radio" id="next" value="돌아오는" name="set-date" v-model="checkedRadioVal">
-                                    <span for="next">돌아오는</span>
+                                    <input type="radio" id="next" value="다음주" name="set-date" v-model="checkedRadioVal">
+                                    <span for="next">다음주</span>
                                 </label>
 
                                 <label class="write-post-set-date-item weekly-event" for="monthfirst">
-                                    <input type="radio" id="monthfirst" value="매월 첫번째주" name="set-date" v-model="checkedRadioVal">
-                                    <span for="monthfirst">매월 첫번째주</span>
+                                    <input type="radio" id="monthfirst" value="매월 첫번째" name="set-date" v-model="checkedRadioVal">
+                                    <span for="monthfirst">매월 첫번째</span>
                                 </label>
 
                                 <label class="write-post-set-date-item weekly-event" for="monthlast">
-                                    <input type="radio" id="monthlast" value="매월 마지막주" name="set-date" v-model="checkedRadioVal">
-                                    <span for="monthlast">매월 마지막주</span>
+                                    <input type="radio" id="monthlast" value="매월 마지막" name="set-date" v-model="checkedRadioVal">
+                                    <span for="monthlast">매월 마지막</span>
                                 </label>
                             </div>
 

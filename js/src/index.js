@@ -9,18 +9,19 @@
     var getLoginBtn = document.querySelector('.login-btn');
 
     if (getIdForm) {
-        getIdForm.addEventListener('input', function() {
-            if (this.value.length === 0) 
-                getLoginBtn.disabled = true;
-            else if (this.value.length >= 0) {
-                getPwForm.addEventListener('input', function() {
-                    if (getIdForm.value.length >= 0 && getPwForm.value.length >= 0) {
-                        getLoginBtn.disabled = false;
-                        getLoginBtn.setAttribute('title', '로그인');
-                    }
-                })
-            }
-        })
+        getLoginBtn.disabled = false;
+        // getIdForm.addEventListener('input', function() {
+        //     if (this.value.length === 0) 
+        //         getLoginBtn.disabled = true;
+        //     else if (this.value.length >= 0 || getPwForm.value.length >= 0) {
+        //         getPwForm.addEventListener('input', function() {
+        //             if (getIdForm.value.length >= 0 && getPwForm.value.length >= 0) {
+        //                 getLoginBtn.disabled = false;
+        //                 getLoginBtn.setAttribute('title', '로그인');
+        //             }
+        //         })
+        //     }
+        // })
     }
 })();
 
@@ -191,18 +192,17 @@
 //     var getRadioAll = document.querySelectorAll('.write-post-set-date > .write-post-set-date-radio-wrapper > input');
 
 
-    // getCheckboxAllLabel.forEach(function(label) {
-    //     var check = function() {
-    //         label.input.checked = true;
-    //     };
+//     getCheckboxAllLabel.forEach(function(label) {
+//         var check = function() {
+//             label.input.checked = true;
+//         };
 
-    //     label.addEventListener('click', check);
-    // });
+//         label.addEventListener('click', check);
+//     });
 
 //     getRadioAll.forEach(function(radioEach) {
-//         if (radioEach.checked == true) {
+//         if (radioEach.checked == true)
 //             getSetTimeSpan.innerHTML += radioEach.value;
-//         }
 //     });
 
 //     var check = function() {
@@ -214,12 +214,10 @@
 //         getCheckboxAllLabel[i].addEventListener('click', check);
     
 //         if (getCheckboxAll[i].checked == true) {
-//             if (getCheckboxAll[i]) {
+//             if (getCheckboxAll[i])
 //                 getSetTimeSpan.innerHTML += getCheckboxAll[i].value;
-//             }
-//             else {
+//             else
 //                 getSetTimeSpan.innerHTML += ', ' + getCheckboxAll[i].value;
-//             }
 //         }
 //     }
 

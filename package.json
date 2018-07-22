@@ -15,7 +15,7 @@
     "gulp": "^3.9.1"
   },
   "dependencies": {
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.24.6",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-imagemin": "^4.1.0",

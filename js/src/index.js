@@ -165,9 +165,9 @@
                 setLink.setAttribute('type', 'image/png');
                 setLink.setAttribute('sizes', metaList.sizes);
 
-                if (metaList.sizes == '192x192') 
+                if (metaList.sizes == '192x192')
                     setLink.setAttribute('href', '/favicon/android-icon-' + metaList.sizes + '.png');
-                else 
+                else
                     setLink.setAttribute('href', '/favicon/favicon-' + metaList.sizes + '.png');
                 
             } else {

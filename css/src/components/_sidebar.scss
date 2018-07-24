@@ -40,7 +40,7 @@
 
     @media #{$landsc} {
         width: $grid64x;
-        left: -($grid64x);
+        left: calc(-#{$grid64x});
     }
 
     .sidebar-wrapper {

@@ -83,7 +83,7 @@
 
                         @media #{$mobile} {
                             display: block;
-                            margin: -$grid4x 0 $grid4x 0;
+                            margin: (-$grid4x) 0 $grid4x 0;
                         }
                     }
                 }
@@ -261,8 +261,8 @@
 .noline {
     border: 0 !important;
     padding: 0 !important;
-    margin-top: -($grid2x !important);
     margin-bottom: $grid6x !important;
+    margin-top: calc(-#{$grid2x}) !important;
 }
 
 

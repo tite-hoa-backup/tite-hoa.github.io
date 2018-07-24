@@ -11,8 +11,8 @@
     .dashboard-activity-wrapper {
 
         .dashboard-activity-item {
-            padding: $grid2x $grid4x;
             padding-top: $grid;
+            padding: $grid $grid4x $grid2x;
             border: 1px solid $texteee;
             @include border-radius();
             @include transition(background-color .5s ease);
@@ -64,13 +64,13 @@
                 // overflow -> ellipsis
                 $line-height: 1.6;
                 $lines-to-show: 5;
-                $noti-font-size: 14px;
+                $noti-font-size: $grid4x - ($grid / 2);
 
                 .dashboard-card-item-span {
                     color: $text777;
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
-                    height: $line-height * $lines-to-show * $noti-font-size;
+                    height: calc(#{$line-height} * #{$lines-to-show} * #{$noti-font-size}) !important;
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

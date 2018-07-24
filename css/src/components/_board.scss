@@ -6,7 +6,7 @@
     z-index: 1;
     max-width: 960px;
     position: relative;
-    top: (($grid16x) + $grid8x);
+    top: calc((#{$grid16x}) + #{$grid8x});
     margin: 0 $grid6x $grid8x (($grid64x) + $grid6x);
     @include box-sizing(border-box);
     @include transition(margin .5s ease);
@@ -140,6 +140,7 @@
             }
         }
     }
+    
     
     .board-wrapper {
         z-index: 2;

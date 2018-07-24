@@ -1,8 +1,8 @@
 .board-wrapper {
     
     .list-board-plain {
-        width: 100%;
         margin: 0;
+        width: 100%;
         height: $grid12x;
         padding: 0 $grid4x;
         position: relative;
@@ -134,44 +134,44 @@
 
         .list-board-text-wrapper {
             // background-color: thistle;
-            left: ($numbering-width + $grid8x) !important;
-            right: ($date-width + $view-count-width + $grid10x) !important;
+            left: calc(#{$numbering-width} + #{$grid8x}) !important;
+            right: calc(#{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
 
             @media #{$tablet} {
-                right: ($view-count-width + $grid6x) !important;
+                right: calc(#{$view-count-width} + #{$grid6x}) !important;
             }
 
             @media #{$landsc} {
-                right: ($date-width + $view-count-width + $grid10x) !important;
+                right: calc(#{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
             }
 
             @media #{$middle} {
-                right: ($view-count-width + $grid6x) !important;
+                right: calc(#{$view-count-width} + #{$grid6x}) !important;
             }
 
             @media #{$mobile} {
-                left: ($numbering-width + $grid6x) !important;
-                right: ($view-count-width + $grid4x) !important;
+                left: calc(#{$numbering-width} + #{$grid6x}) !important;
+                right: calc(#{$view-count-width} + #{$grid4x}) !important;
             }
 
             &.petition-title-text {
-                right: ($date-width + $view-count-width + $grid18x) !important;
+                right: calc(#{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
 
                 @media #{$tablet} {
-                    right: ($view-count-width + $grid14x) !important;
+                    right: calc(#{$view-count-width} + #{$grid14x}) !important;
                 }
     
                 @media #{$landsc} {
-                    right: ($date-width + $view-count-width + $grid18x) !important;
+                    right: calc(#{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
                 }
     
                 @media #{$middle} {
-                    right: ($view-count-width + $grid14x) !important;
+                    right: calc(#{$view-count-width} + #{$grid14x}) !important;
                 }
     
                 @media #{$mobile} {
-                    left: ($numbering-width + $grid6x) !important;
-                    right: ($view-count-width + $grid12x) !important;
+                    left: calc(#{$numbering-width} + #{$grid6x}) !important;
+                    right: calc(#{$view-count-width} + #{$grid12x}) !important;
                 }
             }
         }
@@ -179,10 +179,10 @@
         .list-board-time {
             // background-color: sandybrown;
             width: $date-width !important;
-            right: ($view-count-width + $grid6x) !important;
+            right: calc(#{$view-count-width} + #{$grid6x}) !important;
 
             &.petition-submitted-time {
-                right: ($view-count-width + $grid14x) !important;
+                right: calc(#{$view-count-width} + #{$grid14x}) !important;
             }
         }
 
@@ -192,7 +192,7 @@
             right: $grid2x !important;
 
             &.board-petition-set-status-inline {
-                width: $view-count-width + $grid8x !important;
+                width: calc(#{$view-count-width} + #{$grid8x}) !important;
             }
         }
     }

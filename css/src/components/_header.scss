@@ -24,7 +24,7 @@
             }
             
             @media #{$pablet} {
-                margin-left: -($grid2x) !important;
+                margin-left: calc(-#{$grid2x}) !important;
             }
 
             // prevent refresh animation ie
@@ -69,7 +69,7 @@
         .main-header-link {
 
             @media #{$landsc} {
-                margin-left: -($grid) !important;
+                margin-left: calc(-#{$grid}) !important;
             }
 
             .main-header-apt-name-box {

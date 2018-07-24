@@ -440,7 +440,7 @@ p {
         margin-left: 0 !important; } }
     @media screen and (max-width: 420px) {
       #main .main-header .main-header-logo {
-        margin-left: -8px !important; } }
+        margin-left: calc(-8px) !important; } }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       #main .main-header .main-header-logo {
         -webkit-transition: margin-left 0s ease;
@@ -504,7 +504,7 @@ p {
         margin-left: 16px; } }
   @media screen and (max-width: 640px) {
     #main .main-header .main-header-link {
-      margin-left: -4px !important; } }
+      margin-left: calc(-4px) !important; } }
   #main .main-header .main-header-link .main-header-apt-name-box {
     width: 50%;
     color: #333;
@@ -678,7 +678,7 @@ p {
   @media screen and (max-width: 640px) {
     .sidebar-container {
       width: 256px;
-      left: -256px; } }
+      left: calc(-256px); } }
   .sidebar-container .sidebar-wrapper {
     padding-top: 64px; }
     .sidebar-container .sidebar-wrapper:first-child {
@@ -870,7 +870,7 @@ p {
   z-index: 1;
   max-width: 960px;
   position: relative;
-  top: 96px;
+  top: calc((64px) + 32px);
   margin: 0 24px 32px 280px;
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;
@@ -1111,8 +1111,8 @@ p {
   line-height: 1.2rem; }
 
 .board-wrapper .list-board-plain {
-  width: 100%;
   margin: 0;
+  width: 100%;
   height: 48px;
   padding: 0 16px;
   position: relative;
@@ -1326,46 +1326,46 @@ p {
   .board-wrapper .list-board-plain .list-numbering-wrapper {
     width: 40px !important; }
   .board-wrapper .list-board-plain .list-board-text-wrapper {
-    left: 72px !important;
-    right: 184px !important; }
+    left: calc(40px + 32px) !important;
+    right: calc(96px + 48px + 40px) !important; }
     @media screen and (max-width: 768px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: 72px !important; } }
+        right: calc(48px + 24px) !important; } }
     @media screen and (max-width: 640px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: 184px !important; } }
+        right: calc(96px + 48px + 40px) !important; } }
     @media screen and (max-width: 520px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: 72px !important; } }
+        right: calc(48px + 24px) !important; } }
     @media screen and (max-width: 360px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        left: 64px !important;
-        right: 64px !important; } }
+        left: calc(40px + 24px) !important;
+        right: calc(48px + 16px) !important; } }
     .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-      right: 216px !important; }
+      right: calc(96px + 48px + 72px) !important; }
       @media screen and (max-width: 768px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: 104px !important; } }
+          right: calc(48px + 56px) !important; } }
       @media screen and (max-width: 640px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: 216px !important; } }
+          right: calc(96px + 48px + 72px) !important; } }
       @media screen and (max-width: 520px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: 104px !important; } }
+          right: calc(48px + 56px) !important; } }
       @media screen and (max-width: 360px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          left: 64px !important;
-          right: 96px !important; } }
+          left: calc(40px + 24px) !important;
+          right: calc(48px + 48px) !important; } }
   .board-wrapper .list-board-plain .list-board-time {
     width: 96px !important;
-    right: 72px !important; }
+    right: calc(48px + 24px) !important; }
     .board-wrapper .list-board-plain .list-board-time.petition-submitted-time {
-      right: 104px !important; }
+      right: calc(48px + 56px) !important; }
   .board-wrapper .list-board-plain .list-board-view-count {
     width: 48px !important;
     right: 8px !important; }
     .board-wrapper .list-board-plain .list-board-view-count.board-petition-set-status-inline {
-      width: 80px !important; }
+      width: calc(48px + 32px) !important; }
 
 .dashboard-container {
   -webkit-box-sizing: border-box;
@@ -1544,7 +1544,7 @@ p {
     .dashboard-container .dashboard-wrapper .dashboard-card {
       position: relative;
       z-index: 5 !important;
-      height: 408px;
+      height: calc(400px + 8px);
       padding: 16px;
       background-color: white;
       border-radius: 8px 8px 0 0;
@@ -1565,7 +1565,7 @@ p {
         color: white !important;
         background-color: #17C060 !important; }
       .dashboard-container .dashboard-wrapper .dashboard-card.extended {
-        height: 488px;
+        height: calc(400px + 80px + 8px);
         border-radius: 8px;
         -webkit-will-change: border-radius;
         -khtml-will-change: border-radius;
@@ -1582,7 +1582,7 @@ p {
           height: auto; } }
       .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-title {
         color: #17C060;
-        margin-top: -8px;
+        margin-top: calc(-12px);
         margin-bottom: 16px;
         border-bottom: 1px solid #eee;
         font-size: 16px;
@@ -1675,7 +1675,7 @@ p {
           will-change: transition;
           zoom: 1; }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:not(:first-child) {
-          margin-top: -8px; }
+          margin-top: calc(-8px); }
       .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-subtitle {
         font-weight: 900;
         font-size: 20px;
@@ -1731,7 +1731,7 @@ p {
           font-weight: 900;
           -moz-line-clamp: 1 !important;
           -webkit-line-clamp: 1 !important;
-          height: 25.6px;
+          height: calc(1.6 * 1 * 16px);
           -webkit-will-change: width;
           -khtml-will-change: width;
           -moz-will-change: width;
@@ -1759,7 +1759,7 @@ p {
           color: #777;
           -moz-line-clamp: 3 !important;
           -webkit-line-clamp: 3 !important;
-          height: 67.2px;
+          height: calc(1.6 * 3 * 14px);
           -webkit-text-overflow: ellipsis;
           -khtml-text-overflow: ellipsis;
           -moz-text-overflow: ellipsis;
@@ -1952,7 +1952,7 @@ p {
     content: "개의 최근 공지사항이 있습니다"; }
 
 .dashboard-card-vote .dashboard-card-subtitle {
-  margin-bottom: -4px;
+  margin-bottom: calc(-4px);
   line-height: 32px;
   line-height: 2rem; }
   .dashboard-card-vote .dashboard-card-subtitle a {
@@ -2051,8 +2051,8 @@ p {
     content: "최근 우리아파트 타이트 유저들의 활동입니다"; }
 
 .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item {
-  padding: 8px 16px;
   padding-top: 4px;
+  padding: 4px 16px 8px;
   border: 1px solid #eee;
   border-radius: 8px;
   -webkit-will-change: border-radius;
@@ -2114,7 +2114,7 @@ p {
       color: #777;
       -moz-line-clamp: 5 !important;
       -webkit-line-clamp: 5 !important;
-      height: 112px;
+      height: calc(1.6 * 5 * 14px) !important;
       -webkit-text-overflow: ellipsis;
       -khtml-text-overflow: ellipsis;
       -moz-text-overflow: ellipsis;
@@ -2244,7 +2244,7 @@ p {
       -webkit-box-orient: vertical !important;
       -moz-line-clamp: 1 !important;
       -webkit-line-clamp: 1 !important;
-      height: 25.6px; }
+      height: calc(1.6 * 1 * 16px); }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
       font-weight: 900; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
@@ -2446,8 +2446,8 @@ p {
       color: #999;
       font-weight: 400; }
   .post-comment-container .post-info-wrapper .post-comment-comment-container {
-    padding: 4px 8px;
     margin-top: 16px;
+    padding: 4px 8px;
     background-color: #f9f9f9;
     border-radius: 8px;
     -webkit-will-change: border-radius;
@@ -2536,7 +2536,7 @@ p {
         display: inline-block; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-username {
           font-weight: 900;
-          margin-right: 2px; }
+          margin-right: calc(4px / 2); }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info,
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info {
           display: block;
@@ -2605,11 +2605,11 @@ p {
           vertical-align: baseline; }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-reply-username {
             font-weight: 900;
-            margin-right: 2px; }
+            margin-right: calc(4px / 2); }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info {
             display: block;
             color: #999;
-            margin-top: -2px;
+            margin-top: calc(-(4px / 4));
             font-size: 14px;
             font-size: 0.875rem; }
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info .post-reply-timestamp::after {
@@ -2644,7 +2644,7 @@ p {
         padding: 16px;
         position: relative;
         border: 1px solid #eee;
-        padding-right: 84px;
+        padding-right: calc(80px + 4px);
         border-radius: 8px;
         -webkit-will-change: border-radius;
         -khtml-will-change: border-radius;
@@ -2680,7 +2680,7 @@ p {
             overflow-y: hidden !important; } }
         @media screen and (max-width: 360px) {
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea {
-            padding-right: 68px; } }
+            padding-right: calc(64px + 4px); } }
       .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn {
         right: 0;
         z-index: 1;
@@ -3234,8 +3234,8 @@ p {
 .noline {
   border: 0 !important;
   padding: 0 !important;
-  margin-top: -8px !important;
-  margin-bottom: 24px !important; }
+  margin-bottom: 24px !important;
+  margin-top: calc(-8px) !important; }
 
 .open-vote-count::after {
   content: "의 진행중인 투표가 있습니다" !important; }
@@ -3384,8 +3384,8 @@ p {
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label,
       .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label {
-        display: inline-block;
-        margin-top: 8px; }
+        margin-top: 8px;
+        display: inline-block; }
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label input,
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label input,
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label input,
@@ -3498,7 +3498,7 @@ p {
       content: "항목삭제"; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn {
-        margin-top: -48px; } }
+        margin-top: calc(-48px); } }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn:hover {
       background-color: #eee; }
     @media screen and (max-width: 420px) {
@@ -3507,7 +3507,7 @@ p {
     @media screen and (max-width: 320px) {
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn {
         width: 80px;
-        margin-top: -48px; } }
+        margin-top: calc(-48px); } }
   @media screen and (max-width: 320px) and (-ms-high-contrast: active), screen and (max-width: 320px) and (-ms-high-contrast: none) {
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn {
       margin-top: 16px; } }
@@ -3742,8 +3742,8 @@ p {
         background-color: #fafafa; }
     @media screen and (max-width: 1280px) {
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item {
-        display: inline-block;
-        margin-top: 8px; }
+        margin-top: 8px;
+        display: inline-block; }
         .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item input {
           margin-left: 8px; } }
 

@@ -22,7 +22,7 @@
     "gulp-inject": "^4.3.2",
     "gulp-js-minify": "0.0.3",
     "gulp-sass": "^4.0.1",
-    "gulp-watch": "^5.0.0",
+    "gulp-watch": "^5.0.1",
     "npm": "^6.2.0"
   },
   "browserslist": [

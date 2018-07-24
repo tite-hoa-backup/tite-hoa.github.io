@@ -26,9 +26,9 @@
                 margin-top: $grid2x;
             }
 
-            &:first-child {
-                border: 1px solid $brand;
-            }
+            // &:first-child {
+            //     border: 1px solid $brand;
+            // }
 
             .material-icons {
                 color: $text999;
@@ -50,6 +50,27 @@
                     &::after {
                         content: "명";
                     }
+                }
+            }
+
+            &.dashboard-item-each {
+                padding-top: $grid4x;
+                padding-bottom: $grid4x;
+                
+                // overflow -> ellipsis
+                $line-height: 1.6;
+                $lines-to-show: 5;
+                $noti-font-size: 14px;
+
+                .dashboard-card-item-span {
+                    color: $text777;
+                    -moz-line-clamp: $lines-to-show !important;
+                    -webkit-line-clamp: $lines-to-show !important;
+                    height: $line-height * $lines-to-show * $noti-font-size;
+                    @include selection();
+                    @include text-overflow();
+                    @include font-size($noti-font-size);
+                    @include line-height($noti-font-size);
                 }
             }
         }

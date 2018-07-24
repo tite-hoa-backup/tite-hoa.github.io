@@ -114,7 +114,7 @@
                 height: 100%;
                 cursor: pointer;
                 padding: $grid4x;
-                overflow: scroll;
+                // overflow: scroll;
                 border: 1px solid $texteee;
                 @include border-radius();
                 @include render-hack(width);

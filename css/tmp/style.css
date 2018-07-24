@@ -1607,7 +1607,6 @@ p {
         height: 100%;
         cursor: pointer;
         padding: 16px;
-        overflow: scroll;
         border: 1px solid #eee;
         border-radius: 8px;
         -webkit-will-change: border-radius;
@@ -2085,8 +2084,6 @@ p {
     zoom: 1; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
     margin-top: 8px; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:first-child {
-    border: 1px solid #17C060; }
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
     color: #999;
     margin-right: 8px;
@@ -2108,6 +2105,29 @@ p {
       content: "개"; }
     .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count.new-users::after {
       content: "명"; }
+  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
+      color: #777;
+      -moz-line-clamp: 5 !important;
+      -webkit-line-clamp: 5 !important;
+      height: 112px;
+      -webkit-text-overflow: ellipsis;
+      -khtml-text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 22.4px;
+      line-height: 1.4rem; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::-moz-selection {
+        color: white !important;
+        background-color: #17C060 !important; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::selection {
+        color: white !important;
+        background-color: #17C060 !important; }
 
 .dashboard-card-business .new-business-count {
   color: #999;

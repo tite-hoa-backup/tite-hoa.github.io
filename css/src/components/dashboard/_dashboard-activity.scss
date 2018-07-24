@@ -9,6 +9,7 @@
     }
 
     .dashboard-activity-wrapper {
+        cursor: default !important;
 
         .dashboard-activity-item {
             padding-top: $grid;
@@ -25,10 +26,6 @@
             &:not(:first-child) {
                 margin-top: $grid2x;
             }
-
-            // &:first-child {
-            //     border: 1px solid $brand;
-            // }
 
             .material-icons {
                 color: $text999;
@@ -57,7 +54,8 @@
                 padding-top: $grid4x;
                 padding-bottom: $grid4x;
 
-                .dashboard-card-item-atitle {
+                .dashboard-card-item-atitle,
+                .dashboard-card-item-span {
                     cursor: default !important;
                 }
                 
@@ -70,7 +68,8 @@
                     color: $text777;
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
-                    height: calc(#{$line-height} * #{$lines-to-show} * #{$noti-font-size}) !important;
+                    height: calc(
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}) !important;
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

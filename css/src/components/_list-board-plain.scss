@@ -11,7 +11,6 @@
         @include render-hack(width);
         @include box-sizing(border-box);
         @include transform(translateZ(0));
-        // background-color: powderblue;
 
         &:nth-of-type(odd) {
             background-color: #f9f9f9;
@@ -20,8 +19,8 @@
         &.header {
             span {
                 font-weight: 900;
-                cursor: default !important;
                 color: $text999 !important;
+                cursor: default !important;
             }
 
             .list-numbering-wrapper {
@@ -111,7 +110,6 @@
 
 
 
-
         $margin: $grid2x;
         $numbering-width: $grid10x;
         $date-width: $grid24x;
@@ -128,71 +126,91 @@
         }
 
         .list-numbering-wrapper {
-            // background-color: lightseagreen;
             width: $numbering-width !important;
         }
 
+
         .list-board-text-wrapper {
-            // background-color: thistle;
-            left: calc(#{$numbering-width} + #{$grid8x}) !important;
-            right: calc(#{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
+            left: calc(
+                #{$numbering-width} + #{$grid8x}) !important;
+            right: calc(
+                #{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
+            @include render-hack(left, right);
 
             @media #{$tablet} {
-                right: calc(#{$view-count-width} + #{$grid6x}) !important;
+                right: calc(
+                    #{$view-count-width} + #{$grid6x}) !important;
             }
 
             @media #{$landsc} {
-                right: calc(#{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
+                right: calc(
+                    #{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
             }
 
             @media #{$middle} {
-                right: calc(#{$view-count-width} + #{$grid6x}) !important;
+                right: calc(
+                    #{$view-count-width} + #{$grid6x}) !important;
             }
 
             @media #{$mobile} {
-                left: calc(#{$numbering-width} + #{$grid6x}) !important;
-                right: calc(#{$view-count-width} + #{$grid4x}) !important;
+                left: calc(
+                    #{$numbering-width} + #{$grid6x}) !important;
+                right: calc(
+                    #{$view-count-width} + #{$grid4x}) !important;
             }
 
+
             &.petition-title-text {
-                right: calc(#{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
+                right: calc(
+                    #{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
+                @include render-hack(right);
 
                 @media #{$tablet} {
-                    right: calc(#{$view-count-width} + #{$grid14x}) !important;
+                    right: calc(
+                        #{$view-count-width} + #{$grid14x}) !important;
                 }
     
                 @media #{$landsc} {
-                    right: calc(#{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
+                    right: calc(
+                        #{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
                 }
     
                 @media #{$middle} {
-                    right: calc(#{$view-count-width} + #{$grid14x}) !important;
+                    right: calc(
+                        #{$view-count-width} + #{$grid14x}) !important;
                 }
     
                 @media #{$mobile} {
-                    left: calc(#{$numbering-width} + #{$grid6x}) !important;
-                    right: calc(#{$view-count-width} + #{$grid12x}) !important;
+                    left: calc(
+                        #{$numbering-width} + #{$grid6x}) !important;
+                    right: calc(
+                        #{$view-count-width} + #{$grid12x}) !important;
                 }
             }
         }
 
+
         .list-board-time {
-            // background-color: sandybrown;
             width: $date-width !important;
-            right: calc(#{$view-count-width} + #{$grid6x}) !important;
+            right: calc(
+                #{$view-count-width} + #{$grid6x}) !important;
+            @include render-hack(right);
 
             &.petition-submitted-time {
-                right: calc(#{$view-count-width} + #{$grid14x}) !important;
+                right: calc(
+                    #{$view-count-width} + #{$grid14x}) !important;
             }
         }
 
+
         .list-board-view-count {
-            // background-color: salmon;
-            width: $view-count-width !important;
             right: $grid2x !important;
+            width: $view-count-width !important;
+            @include render-hack(right);
 
             &.board-petition-set-status-inline {
-                width: calc(#{$view-count-width} + #{$grid8x}) !important;
+                width: calc(
+                    #{$view-count-width} + #{$grid8x}) !important;
             }
         }
     }

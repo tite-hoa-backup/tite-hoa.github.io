@@ -112,7 +112,7 @@
     width: $grid5x;
     height: $grid5x;
     text-align: center;
-    // margin-left: $grid;
+    margin-left: $grid;
     display: inline-block;
     background-color: $noti;
     @extend %center-vertical;

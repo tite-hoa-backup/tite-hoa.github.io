@@ -251,7 +251,8 @@
                     padding: $grid4x;
                     position: relative;
                     border: 1px solid $texteee;
-                    padding-right: calc(#{$grid20x} + #{$grid});
+                    padding-right: calc(
+                        #{$grid20x} + #{$grid});
                     @include border-radius();
                     @include render-hack(width);
                     @include line-height($grid4x);
@@ -266,7 +267,8 @@
                     }
 
                     @media #{$mobile} {
-                        padding-right: calc(#{$grid16x} + #{$grid});
+                        padding-right: calc(
+                            #{$grid16x} + #{$grid});
                     }
                 }
 

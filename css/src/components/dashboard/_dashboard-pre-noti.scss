@@ -50,6 +50,7 @@
                 @include transition(all .25s ease);
             }
             
+            
             // overflow -> ellipsis
             $line-height: 1.6;
             $lines-to-show: 1;
@@ -64,7 +65,8 @@
                 -webkit-box-orient: vertical !important;
                 -moz-line-clamp: $lines-to-show !important;
                 -webkit-line-clamp: $lines-to-show !important;
-                height: calc(#{$line-height} * #{$lines-to-show} * #{$grid4x});
+                height: calc(
+                    #{$line-height} * #{$lines-to-show} * #{$grid4x});
             }
 
             .dashboard-card-pre-noti-title {

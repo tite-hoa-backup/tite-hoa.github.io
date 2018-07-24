@@ -791,6 +791,7 @@ p {
   width: 20px;
   height: 20px;
   text-align: center;
+  margin-left: 4px;
   display: inline-block;
   background-color: #EA3955;
   border-radius: 100%;
@@ -1163,8 +1164,8 @@ p {
     background-color: #f9f9f9; }
   .board-wrapper .list-board-plain.header span {
     font-weight: 900;
-    cursor: default !important;
-    color: #999 !important; }
+    color: #999 !important;
+    cursor: default !important; }
   .board-wrapper .list-board-plain.header .list-numbering-wrapper {
     -webkit-transform: translateY(-50%);
     -khtml-transform: translateY(-50%);
@@ -1326,46 +1327,74 @@ p {
   .board-wrapper .list-board-plain .list-numbering-wrapper {
     width: 40px !important; }
   .board-wrapper .list-board-plain .list-board-text-wrapper {
-    left: calc(40px + 32px) !important;
-    right: calc(96px + 48px + 40px) !important; }
+    left: calc( 40px + 32px) !important;
+    right: calc( 96px + 48px + 40px) !important;
+    -webkit-will-change: left, right;
+    -khtml-will-change: left, right;
+    -moz-will-change: left, right;
+    -ms-will-change: left, right;
+    -o-will-change: left, right;
+    will-change: left, right;
+    zoom: 1; }
     @media screen and (max-width: 768px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: calc(48px + 24px) !important; } }
+        right: calc( 48px + 24px) !important; } }
     @media screen and (max-width: 640px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: calc(96px + 48px + 40px) !important; } }
+        right: calc( 96px + 48px + 40px) !important; } }
     @media screen and (max-width: 520px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        right: calc(48px + 24px) !important; } }
+        right: calc( 48px + 24px) !important; } }
     @media screen and (max-width: 360px) {
       .board-wrapper .list-board-plain .list-board-text-wrapper {
-        left: calc(40px + 24px) !important;
-        right: calc(48px + 16px) !important; } }
+        left: calc( 40px + 24px) !important;
+        right: calc( 48px + 16px) !important; } }
     .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-      right: calc(96px + 48px + 72px) !important; }
+      right: calc( 96px + 48px + 72px) !important;
+      -webkit-will-change: right;
+      -khtml-will-change: right;
+      -moz-will-change: right;
+      -ms-will-change: right;
+      -o-will-change: right;
+      will-change: right;
+      zoom: 1; }
       @media screen and (max-width: 768px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: calc(48px + 56px) !important; } }
+          right: calc( 48px + 56px) !important; } }
       @media screen and (max-width: 640px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: calc(96px + 48px + 72px) !important; } }
+          right: calc( 96px + 48px + 72px) !important; } }
       @media screen and (max-width: 520px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          right: calc(48px + 56px) !important; } }
+          right: calc( 48px + 56px) !important; } }
       @media screen and (max-width: 360px) {
         .board-wrapper .list-board-plain .list-board-text-wrapper.petition-title-text {
-          left: calc(40px + 24px) !important;
-          right: calc(48px + 48px) !important; } }
+          left: calc( 40px + 24px) !important;
+          right: calc( 48px + 48px) !important; } }
   .board-wrapper .list-board-plain .list-board-time {
     width: 96px !important;
-    right: calc(48px + 24px) !important; }
+    right: calc( 48px + 24px) !important;
+    -webkit-will-change: right;
+    -khtml-will-change: right;
+    -moz-will-change: right;
+    -ms-will-change: right;
+    -o-will-change: right;
+    will-change: right;
+    zoom: 1; }
     .board-wrapper .list-board-plain .list-board-time.petition-submitted-time {
-      right: calc(48px + 56px) !important; }
+      right: calc( 48px + 56px) !important; }
   .board-wrapper .list-board-plain .list-board-view-count {
+    right: 8px !important;
     width: 48px !important;
-    right: 8px !important; }
+    -webkit-will-change: right;
+    -khtml-will-change: right;
+    -moz-will-change: right;
+    -ms-will-change: right;
+    -o-will-change: right;
+    will-change: right;
+    zoom: 1; }
     .board-wrapper .list-board-plain .list-board-view-count.board-petition-set-status-inline {
-      width: calc(48px + 32px) !important; }
+      width: calc( 48px + 32px) !important; }
 
 .dashboard-container {
   -webkit-box-sizing: border-box;
@@ -1544,7 +1573,7 @@ p {
     .dashboard-container .dashboard-wrapper .dashboard-card {
       position: relative;
       z-index: 5 !important;
-      height: calc(400px + 8px);
+      height: calc( 400px + 8px);
       padding: 16px;
       background-color: white;
       border-radius: 8px 8px 0 0;
@@ -1565,7 +1594,7 @@ p {
         color: white !important;
         background-color: #17C060 !important; }
       .dashboard-container .dashboard-wrapper .dashboard-card.extended {
-        height: calc(400px + 80px + 8px);
+        height: calc( 400px + 80px + 8px);
         border-radius: 8px;
         -webkit-will-change: border-radius;
         -khtml-will-change: border-radius;
@@ -1731,7 +1760,7 @@ p {
           font-weight: 900;
           -moz-line-clamp: 1 !important;
           -webkit-line-clamp: 1 !important;
-          height: calc(1.6 * 1 * 16px);
+          height: calc( 1.6 * 1 * 16px);
           -webkit-will-change: width;
           -khtml-will-change: width;
           -moz-will-change: width;
@@ -1759,7 +1788,7 @@ p {
           color: #777;
           -moz-line-clamp: 3 !important;
           -webkit-line-clamp: 3 !important;
-          height: calc(1.6 * 3 * 14px);
+          height: calc( 1.6 * 3 * 14px);
           -webkit-text-overflow: ellipsis;
           -khtml-text-overflow: ellipsis;
           -moz-text-overflow: ellipsis;
@@ -2050,31 +2079,22 @@ p {
   .dashboard-card-activity .new-admin-count:after {
     content: "최근 우리아파트 타이트 유저들의 활동입니다"; }
 
-.dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item {
-  padding-top: 4px;
-  padding: 4px 16px 8px;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  -webkit-will-change: border-radius;
-  -khtml-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -o-will-change: border-radius;
-  will-change: border-radius;
-  zoom: 1;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  -webkit-will-change: transition;
-  -khtml-will-change: transition;
-  -moz-will-change: transition;
-  -ms-will-change: transition;
-  -o-will-change: transition;
-  will-change: transition;
-  zoom: 1; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
-    background-color: #fafafa;
-    -webkit-transition: background-color 0.1s ease;
-    transition: background-color 0.1s ease;
+.dashboard-card-activity .dashboard-activity-wrapper {
+  cursor: default !important; }
+  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item {
+    padding-top: 4px;
+    padding: 4px 16px 8px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
+    zoom: 1;
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
     -webkit-will-change: transition;
     -khtml-will-change: transition;
     -moz-will-change: transition;
@@ -2082,54 +2102,66 @@ p {
     -o-will-change: transition;
     will-change: transition;
     zoom: 1; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
-    margin-top: 8px; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
-    color: #999;
-    margin-right: 8px;
-    -webkit-transform: translateY(25%);
-    -khtml-transform: translateY(25%);
-    transform: translateY(25%);
-    -webkit-will-change: transform;
-    -khtml-will-change: transform;
-    -moz-will-change: transform;
-    -ms-will-change: transform;
-    -o-will-change: transform;
-    will-change: transform;
-    zoom: 1; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count {
-    color: #17C060;
-    font-weight: 900;
-    margin-left: 4px; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count::after {
-      content: "개"; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count.new-users::after {
-      content: "명"; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
-    padding-top: 16px;
-    padding-bottom: 16px; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle {
-      cursor: default !important; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
-      color: #777;
-      -moz-line-clamp: 5 !important;
-      -webkit-line-clamp: 5 !important;
-      height: calc(1.6 * 5 * 14px) !important;
-      -webkit-text-overflow: ellipsis;
-      -khtml-text-overflow: ellipsis;
-      -moz-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      font-size: 14px;
-      font-size: 0.875rem;
-      line-height: 22.4px;
-      line-height: 1.4rem; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::-moz-selection {
-        color: white !important;
-        background-color: #17C060 !important; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::selection {
-        color: white !important;
-        background-color: #17C060 !important; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
+      background-color: #fafafa;
+      -webkit-transition: background-color 0.1s ease;
+      transition: background-color 0.1s ease;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
+      zoom: 1; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
+      margin-top: 8px; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
+      color: #999;
+      margin-right: 8px;
+      -webkit-transform: translateY(25%);
+      -khtml-transform: translateY(25%);
+      transform: translateY(25%);
+      -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
+      zoom: 1; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count {
+      color: #17C060;
+      font-weight: 900;
+      margin-left: 4px; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count::after {
+        content: "개"; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count.new-users::after {
+        content: "명"; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
+      padding-top: 16px;
+      padding-bottom: 16px; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle,
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
+        cursor: default !important; }
+      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
+        color: #777;
+        -moz-line-clamp: 5 !important;
+        -webkit-line-clamp: 5 !important;
+        height: calc( 1.6 * 5 * 14px) !important;
+        -webkit-text-overflow: ellipsis;
+        -khtml-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 22.4px;
+        line-height: 1.4rem; }
+        .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::-moz-selection {
+          color: white !important;
+          background-color: #17C060 !important; }
+        .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::selection {
+          color: white !important;
+          background-color: #17C060 !important; }
 
 .dashboard-card-business .new-business-count {
   color: #999;
@@ -2244,7 +2276,7 @@ p {
       -webkit-box-orient: vertical !important;
       -moz-line-clamp: 1 !important;
       -webkit-line-clamp: 1 !important;
-      height: calc(1.6 * 1 * 16px); }
+      height: calc( 1.6 * 1 * 16px); }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
       font-weight: 900; }
     .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
@@ -2644,7 +2676,7 @@ p {
         padding: 16px;
         position: relative;
         border: 1px solid #eee;
-        padding-right: calc(80px + 4px);
+        padding-right: calc( 80px + 4px);
         border-radius: 8px;
         -webkit-will-change: border-radius;
         -khtml-will-change: border-radius;
@@ -2680,7 +2712,7 @@ p {
             overflow-y: hidden !important; } }
         @media screen and (max-width: 360px) {
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea {
-            padding-right: calc(64px + 4px); } }
+            padding-right: calc( 64px + 4px); } }
       .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn {
         right: 0;
         z-index: 1;

@@ -62,12 +62,14 @@
         .dashboard-card {
             position: relative;
             z-index: 5 !important;
-            height: calc(#{$grid100x} + #{$grid2x});
+            height: calc(
+                #{$grid100x} + #{$grid2x});
             @include selection();
             @include board-card();
 
             &.extended {
-                height: calc(#{$grid100x} + #{$grid20x} + #{$grid2x});
+                height: calc(
+                    #{$grid100x} + #{$grid20x} + #{$grid2x});
                 @include border-radius();
 
                 @media #{$pablet} {
@@ -195,7 +197,8 @@
                     font-weight: 900;
                     -moz-line-clamp: 1 !important;
                     -webkit-line-clamp: 1 !important;
-                    height: calc(#{$line-height} * 1 * 16px);
+                    height: calc(
+                        #{$line-height} * 1 * 16px);
                     @include selection();
                     @include render-hack(width);
                     @include transform(translateZ(0));
@@ -205,7 +208,8 @@
                     color: $text777;
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
-                    height: calc(#{$line-height} * #{$lines-to-show} * #{$noti-font-size});
+                    height: calc(
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size});
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

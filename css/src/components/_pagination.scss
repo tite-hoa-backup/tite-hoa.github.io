@@ -7,7 +7,6 @@
     border-top: 1px solid $texteee;
     @include render-hack(width);
     @include transform(translateZ(0));
-    // background-color: burlywood;
 
 
     .indicator-before,
@@ -33,14 +32,8 @@
     }
 
 
-    // .indicator-before,
-    // .indicator-next {
-    //     background-color: antiquewhite;
-    // }
-
     
     .indicator-pagination {
-        // background-color: aquamarine;
 
         li {
             color: $text999;

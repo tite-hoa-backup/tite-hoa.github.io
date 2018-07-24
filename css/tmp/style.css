@@ -2108,6 +2108,8 @@ p {
   .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
     padding-top: 16px;
     padding-bottom: 16px; }
+    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle {
+      cursor: default !important; }
     .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
       color: #777;
       -moz-line-clamp: 5 !important;

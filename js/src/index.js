@@ -41,7 +41,7 @@
                 nav: document.querySelector('.sidebar-container'),
                 dim: document.querySelector('.dim'),
                 dimLayer: document.querySelector('.dim-layer'),
-        
+                
                 doToggle: function(e) {
                     e.preventDefault();
                     this.navToggle.classList.toggle('expanded');

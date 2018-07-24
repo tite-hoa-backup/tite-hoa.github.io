@@ -56,6 +56,10 @@
             &.dashboard-item-each {
                 padding-top: $grid4x;
                 padding-bottom: $grid4x;
+
+                .dashboard-card-item-atitle {
+                    cursor: default !important;
+                }
                 
                 // overflow -> ellipsis
                 $line-height: 1.6;

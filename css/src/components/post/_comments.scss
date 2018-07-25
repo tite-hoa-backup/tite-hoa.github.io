@@ -268,7 +268,8 @@
 
                     @media #{$mobile} {
                         padding-right: calc(
-                            #{$grid16x} + #{$grid});
+                            #{$grid16x} + #{$grid}
+                        );
                     }
                 }
 

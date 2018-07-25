@@ -6,7 +6,9 @@
     z-index: 1;
     max-width: 960px;
     position: relative;
-    top: calc((#{$grid16x}) + #{$grid8x});
+    top: calc(
+        (#{$grid16x}) + #{$grid8x}
+    );
     margin: 0 $grid6x $grid8x (($grid64x) + $grid6x);
     @include box-sizing(border-box);
     @include transition(margin .5s ease);
@@ -116,6 +118,7 @@
                 @media #{$pablet} {
                     display: none;
                 }
+                
 
                 &.noti {                 &::after { content: "새 공지사항 게시";}
                     @media #{$desktop} { &::after { content: "새 공지사항"; } }

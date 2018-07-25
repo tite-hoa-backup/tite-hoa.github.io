@@ -132,59 +132,72 @@
 
         .list-board-text-wrapper {
             left: calc(
-                #{$numbering-width} + #{$grid8x}) !important;
+                #{$numbering-width} + #{$grid8x}
+            ) !important;
             right: calc(
-                #{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
+                #{$date-width} + #{$view-count-width} + #{$grid10x}
+            ) !important;
             @include render-hack(left, right);
 
             @media #{$tablet} {
                 right: calc(
-                    #{$view-count-width} + #{$grid6x}) !important;
+                    #{$view-count-width} + #{$grid6x}
+                ) !important;
             }
 
             @media #{$landsc} {
                 right: calc(
-                    #{$date-width} + #{$view-count-width} + #{$grid10x}) !important;
+                    #{$date-width} + #{$view-count-width} + #{$grid10x}
+                ) !important;
             }
 
             @media #{$middle} {
                 right: calc(
-                    #{$view-count-width} + #{$grid6x}) !important;
+                    #{$view-count-width} + #{$grid6x}
+                ) !important;
             }
 
             @media #{$mobile} {
                 left: calc(
-                    #{$numbering-width} + #{$grid6x}) !important;
+                    #{$numbering-width} + #{$grid6x}
+                ) !important;
                 right: calc(
-                    #{$view-count-width} + #{$grid4x}) !important;
+                    #{$view-count-width} + #{$grid4x}
+                ) !important;
             }
 
 
             &.petition-title-text {
                 right: calc(
-                    #{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
+                    #{$date-width} + #{$view-count-width} + #{$grid18x}
+                ) !important;
                 @include render-hack(right);
 
                 @media #{$tablet} {
                     right: calc(
-                        #{$view-count-width} + #{$grid14x}) !important;
+                        #{$view-count-width} + #{$grid14x}
+                    ) !important;
                 }
     
                 @media #{$landsc} {
                     right: calc(
-                        #{$date-width} + #{$view-count-width} + #{$grid18x}) !important;
+                        #{$date-width} + #{$view-count-width} + #{$grid18x}
+                    ) !important;
                 }
     
                 @media #{$middle} {
                     right: calc(
-                        #{$view-count-width} + #{$grid14x}) !important;
+                        #{$view-count-width} + #{$grid14x}
+                    ) !important;
                 }
     
                 @media #{$mobile} {
                     left: calc(
-                        #{$numbering-width} + #{$grid6x}) !important;
+                        #{$numbering-width} + #{$grid6x}
+                    ) !important;
                     right: calc(
-                        #{$view-count-width} + #{$grid12x}) !important;
+                        #{$view-count-width} + #{$grid12x}
+                    ) !important;
                 }
             }
         }
@@ -193,12 +206,14 @@
         .list-board-time {
             width: $date-width !important;
             right: calc(
-                #{$view-count-width} + #{$grid6x}) !important;
+                #{$view-count-width} + #{$grid6x}
+            ) !important;
             @include render-hack(right);
 
             &.petition-submitted-time {
                 right: calc(
-                    #{$view-count-width} + #{$grid14x}) !important;
+                    #{$view-count-width} + #{$grid14x}
+                ) !important;
             }
         }
 
@@ -210,7 +225,8 @@
 
             &.board-petition-set-status-inline {
                 width: calc(
-                    #{$view-count-width} + #{$grid8x}) !important;
+                    #{$view-count-width} + #{$grid8x}
+                ) !important;
             }
         }
     }

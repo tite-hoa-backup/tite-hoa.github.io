@@ -59,6 +59,7 @@
                     cursor: default !important;
                 }
                 
+                
                 // overflow -> ellipsis
                 $line-height: 1.6;
                 $lines-to-show: 5;
@@ -69,7 +70,8 @@
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
                     height: calc(
-                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}) !important;
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}
+                    ) !important;
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

@@ -63,13 +63,15 @@
             position: relative;
             z-index: 5 !important;
             height: calc(
-                #{$grid100x} + #{$grid2x});
+                #{$grid100x} + #{$grid2x}
+            );
             @include selection();
             @include board-card();
 
             &.extended {
                 height: calc(
-                    #{$grid100x} + #{$grid20x} + #{$grid2x});
+                    #{$grid100x} + #{$grid20x} + #{$grid2x}
+                );
                 @include border-radius();
 
                 @media #{$pablet} {
@@ -209,7 +211,8 @@
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
                     height: calc(
-                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size});
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}
+                    );
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

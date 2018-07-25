@@ -871,7 +871,7 @@ p {
   z-index: 1;
   max-width: 960px;
   position: relative;
-  top: calc((64px) + 32px);
+  top: calc( (64px) + 32px);
   margin: 0 24px 32px 280px;
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;

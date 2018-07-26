@@ -1971,14 +1971,17 @@ p {
 /* ==============================
     scss modules - dashboard copmonents
 ============================== */
-.dashboard-card-notification .new-notification-count {
+.dashboard-wrapper .dashboard-card-notification .new-notification-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-card-notification .new-notification-count:after {
+  .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
     content: "개의 최근 공지사항이 있습니다"; }
+
+.dashboard-wrapper .dashboard-button-wrapper {
+  z-index: 100 !important; }
 
 .dashboard-card-vote .dashboard-card-subtitle {
   margin-bottom: calc(-4px);

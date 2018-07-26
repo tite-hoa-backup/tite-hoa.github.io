@@ -99,7 +99,7 @@ gulp.task('inject', function () {
                             './html/**/*.html']);
     var sources = gulp.src(['./js/dist/index.js',
                             // './js/dist/timepicker.js',
-                            './css/dist/style.css'], {read: false});
+                            './css/dist/*.css'], {read: false});
 
     return target.pipe(inject(sources))
         .pipe(gulp.dest('./html/'))

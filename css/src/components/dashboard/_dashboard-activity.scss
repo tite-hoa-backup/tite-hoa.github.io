@@ -58,6 +58,21 @@
                 .dashboard-card-item-span {
                     cursor: default !important;
                 }
+
+                .dashboard-card-user-nickname {
+
+                    &::after {
+                        content: "님의 감사 메시지";
+                    }
+                }
+
+                .dashboard-card-item-atitle {
+
+                    &::after {
+                        content: " ❤️";
+                        @include font-size($grid3x + ($grid / 2));
+                    }
+                }
                 
                 
                 // overflow -> ellipsis

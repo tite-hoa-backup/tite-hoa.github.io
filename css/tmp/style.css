@@ -1980,9 +1980,6 @@ p {
   .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
     content: "개의 최근 공지사항이 있습니다"; }
 
-.dashboard-wrapper .dashboard-button-wrapper {
-  z-index: 100 !important; }
-
 .dashboard-card-vote .dashboard-card-subtitle {
   margin-bottom: calc(-4px);
   line-height: 32px;
@@ -2482,6 +2479,7 @@ p {
     cursor: pointer;
     font-weight: 900;
     display: inline-block; }
+    .post-comment-container .post-info-wrapper .post-edit-remove .post-end::after,
     .post-comment-container .post-info-wrapper .post-edit-remove .post-edit::after {
       content: " | ";
       color: #999;

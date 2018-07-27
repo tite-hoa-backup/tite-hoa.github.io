@@ -62,12 +62,16 @@
         .dashboard-card {
             position: relative;
             z-index: 5 !important;
-            height: $grid100x + $grid2x;
+            height: calc(
+                #{$grid100x} + #{$grid2x}
+            );
             @include selection();
             @include board-card();
 
             &.extended {
-                height: $grid100x + $grid20x + $grid2x;
+                height: calc(
+                    #{$grid100x} + #{$grid20x} + #{$grid2x}
+                );
                 @include border-radius();
 
                 @media #{$pablet} {
@@ -81,7 +85,7 @@
 
             .dashboard-title {
                 color: $brand;
-                margin-top: -($grid2x);
+                margin-top: calc(-#{$grid3x});
                 margin-bottom: $grid4x;
                 border-bottom: 1px solid $texteee;
                 @include font-size($grid4x);
@@ -114,7 +118,6 @@
                 height: 100%;
                 cursor: pointer;
                 padding: $grid4x;
-                overflow: scroll;
                 border: 1px solid $texteee;
                 @include border-radius();
                 @include render-hack(width);
@@ -129,7 +132,7 @@
                 }
 
                 &:not(:first-child) {
-                    margin-top: -($grid2x);
+                    margin-top: calc(-#{$grid2x});
                 }
             }
 
@@ -177,7 +180,7 @@
                 // overflow -> ellipsis
                 $line-height: 1.6;
                 $lines-to-show: 3;
-                $noti-font-size: 14px;
+                $noti-font-size: $grid4x - ($grid / 2);
             
                 .dashboard-card-item-atitle,
                 .dashboard-card-item-span {
@@ -196,7 +199,8 @@
                     font-weight: 900;
                     -moz-line-clamp: 1 !important;
                     -webkit-line-clamp: 1 !important;
-                    height: $line-height * 1 * 16px;
+                    height: calc(
+                        #{$line-height} * 1 * 16px);
                     @include selection();
                     @include render-hack(width);
                     @include transform(translateZ(0));
@@ -206,7 +210,9 @@
                     color: $text777;
                     -moz-line-clamp: $lines-to-show !important;
                     -webkit-line-clamp: $lines-to-show !important;
-                    height: $line-height * $lines-to-show * $noti-font-size;
+                    height: calc(
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}
+                    );
                     @include selection();
                     @include text-overflow();
                     @include font-size($noti-font-size);

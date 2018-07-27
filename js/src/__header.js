@@ -31,12 +31,10 @@
 //             // hamburger menu icon change toggle
 //             setHamburger.addEventListener('click', function() {
 //                 var getHamburgerExpanded = document.querySelectorAll('.expanded')[1];
-//                 if (getHamburgerExpanded) {
+//                 if (getHamburgerExpanded)
 //                     setHamburgerIcon.innerHTML = 'menu';
-//                 }
-//                 else {
+//                 else
 //                     setHamburgerIcon.innerHTML = 'close';
-//                 }
 //             });
 
 //             getHeader.appendChild(setHamburger);

@@ -64,9 +64,9 @@
         height: 3px;
         z-index: -1;
         content: "";
-        bottom: -($grid);
         position: absolute;
         background: white;
+        bottom: calc(-#{$grid});
         @include transition(width .5s ease);
     }
     
@@ -196,8 +196,8 @@
     }
 
     @media #{$wide} {
-        display: inline-block;
         margin-top: $grid2x;
+        display: inline-block;
 
         input {
             margin-left: $grid2x;

@@ -13,9 +13,14 @@
                 padding: 0 $grid2x;
             }
 
+            .write-post-set-time-title {
+                display: inline-block;
+                margin-bottom: $grid2x !important;
+            }
+
             .write-post-set-time,
             .write-post-set-time-title {
-                margin: 0 0 $grid4x 0;
+                margin: 0 0 $grid6x 0;
             }
 
             .write-post-set-date {
@@ -50,10 +55,17 @@
                 margin-top: $grid4x;
                 display: inline-block;
 
+                &.noti {
+                    &::after {
+                        font-weight: 400;
+                        content: " 후 이 시간에 공지사항 게시를 종료합니다.";
+                    }
+                }
+
                 &.pre-noti {
                     &::after {
                         font-weight: 400;
-                        content: " 마다 주민들에게 알림을 전송합니다.";
+                        content: " 주민들에게 알림을 전송합니다.";
                     }
                 }
 

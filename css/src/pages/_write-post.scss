@@ -134,7 +134,7 @@
                     }
 
                     @media #{$chrome} {
-                        margin-top: -($grid12x);
+                        margin-top: calc(-#{$grid12x});
                     }
 
                     &:hover {
@@ -147,7 +147,7 @@
 
                     @media #{$mini} {
                         width: $grid20x;
-                        margin-top: -($grid12x);
+                        margin-top: calc(-#{$grid12x});
 
                         @media #{$ie} {
                             margin-top: $grid4x;

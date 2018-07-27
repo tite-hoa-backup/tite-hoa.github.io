@@ -40,7 +40,7 @@
 
     @media #{$landsc} {
         width: $grid64x;
-        left: -($grid64x);
+        left: calc(-#{$grid64x});
     }
 
     .sidebar-wrapper {
@@ -112,7 +112,7 @@
     width: $grid5x;
     height: $grid5x;
     text-align: center;
-    // margin-left: $grid;
+    margin-left: $grid;
     display: inline-block;
     background-color: $noti;
     @extend %center-vertical;

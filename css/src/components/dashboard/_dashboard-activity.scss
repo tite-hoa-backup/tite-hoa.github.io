@@ -9,10 +9,11 @@
     }
 
     .dashboard-activity-wrapper {
+        cursor: default !important;
 
         .dashboard-activity-item {
-            padding: $grid2x $grid4x;
             padding-top: $grid;
+            padding: $grid $grid4x $grid2x;
             border: 1px solid $texteee;
             @include border-radius();
             @include transition(background-color .5s ease);
@@ -24,10 +25,6 @@
 
             &:not(:first-child) {
                 margin-top: $grid2x;
-            }
-
-            &:first-child {
-                border: 1px solid $brand;
             }
 
             .material-icons {
@@ -50,6 +47,50 @@
                     &::after {
                         content: "명";
                     }
+                }
+            }
+
+            &.dashboard-item-each {
+                padding-top: $grid4x;
+                padding-bottom: $grid4x;
+
+                .dashboard-card-item-atitle,
+                .dashboard-card-item-span {
+                    cursor: default !important;
+                }
+
+                .dashboard-card-user-nickname {
+
+                    &::after {
+                        content: "님의 감사 메시지";
+                    }
+                }
+
+                .dashboard-card-item-atitle {
+
+                    &::after {
+                        content: " ❤️";
+                        @include font-size($grid3x + ($grid / 2));
+                    }
+                }
+                
+                
+                // overflow -> ellipsis
+                $line-height: 1.6;
+                $lines-to-show: 5;
+                $noti-font-size: $grid4x - ($grid / 2);
+
+                .dashboard-card-item-span {
+                    color: $text777;
+                    -moz-line-clamp: $lines-to-show !important;
+                    -webkit-line-clamp: $lines-to-show !important;
+                    height: calc(
+                        #{$line-height} * #{$lines-to-show} * #{$noti-font-size}
+                    ) !important;
+                    @include selection();
+                    @include text-overflow();
+                    @include font-size($noti-font-size);
+                    @include line-height($noti-font-size);
                 }
             }
         }

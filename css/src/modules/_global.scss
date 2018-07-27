@@ -15,13 +15,13 @@
 @mixin font-settings() {
     direction: ltr;
             font-feature-settings: 'liga';
-       -moz-font-feature-settings: "liga" on;
+       -moz-font-feature-settings: 'liga';
     -webkit-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale !important;
-    -webkit-font-smoothing: antialiased !important;
-    text-rendering: optimizeLegibility !important;
-            text-decoration-skip: ink;
+     -webkit-font-smoothing: antialiased !important;
+            text-rendering:  optimizeLegibility !important;
     -webkit-text-decoration-skip: ink;
+            text-decoration-skip: ink;
 }
 
 
@@ -91,14 +91,14 @@ textarea:focus {
         display: none;
     }
 
-    &::-webkit-contacts-auto-fill-button,
-    &::-webkit-credentials-auto-fill-button {
-        right: 0;
-        position: absolute;
-        visibility: hidden;
-        pointer-events: none;
-        display: none !important;
-    }
+    // &::-webkit-contacts-auto-fill-button,
+    // &::-webkit-credentials-auto-fill-button {
+    //     right: 0;
+    //     position: absolute;
+    //     visibility: hidden;
+    //     pointer-events: none;
+    //     display: none !important;
+    // }
 }
 
 
@@ -108,7 +108,7 @@ input[type="time"],
 input[type="file"],
 input[type="radio"],
 input[type="checkbox"] {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 
@@ -116,13 +116,10 @@ input[type="checkbox"] {
 ::-moz-placeholder,
 :-moz-placeholder,
 ::-ms-input-placeholder,
-:-ms-input-placeholder {
-    color: $textccc;
-}
-
+:-ms-input-placeholder,
 ::placeholder {
     opacity: 1;
-    color: $textccc;
+    color: $texteee;
 }
 
 

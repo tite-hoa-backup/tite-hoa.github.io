@@ -51,6 +51,7 @@
             font-weight: 900;
             display: inline-block;
             
+            .post-end,
             .post-edit {
                 
                 &::after {
@@ -63,8 +64,8 @@
 
         // comment wrapper
         .post-comment-comment-container {
-            padding: $grid $grid2x;
             margin-top: $grid4x;
+            padding: $grid $grid2x;
             background-color: $textf9;
             @include border-radius();
 
@@ -122,14 +123,14 @@
     
                     .post-comment-username {
                         font-weight: 900;
-                        margin-right: ($grid / 2);
+                        margin-right: calc(#{$grid} / 2);
                     }
     
                     .post-comment-reply-info,
                     .post-comment-comment-info {
                         display: block;
                         color: $text999;
-                        @include font-size(14px);
+                        @include font-size($grid4x - ($grid / 2));
     
                         .post-comment-timestamp {
                             
@@ -198,14 +199,14 @@
     
                         .post-reply-username {
                             font-weight: 900;
-                            margin-right: ($grid / 2);
+                            margin-right: calc(#{$grid} / 2);
                         }
     
                         .post-comment-reply-info {
                             display: block;
                             color: $text999;
-                            margin-top: -($grid / 2);
-                            @include font-size(($grid3x) + ($grid / 2));
+                            margin-top: calc(-(#{$grid} / 4));
+                            @include font-size($grid3x + ($grid / 2));
         
                             .post-reply-timestamp {
                                 
@@ -251,7 +252,8 @@
                     padding: $grid4x;
                     position: relative;
                     border: 1px solid $texteee;
-                    padding-right: ($grid20x + $grid);
+                    padding-right: calc(
+                        #{$grid20x} + #{$grid});
                     @include border-radius();
                     @include render-hack(width);
                     @include line-height($grid4x);
@@ -266,7 +268,9 @@
                     }
 
                     @media #{$mobile} {
-                        padding-right: ($grid16x + $grid);
+                        padding-right: calc(
+                            #{$grid16x} + #{$grid}
+                        );
                     }
                 }
 

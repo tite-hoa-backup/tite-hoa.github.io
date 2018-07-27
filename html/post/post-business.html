@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Tite - 예약알림 | 첫 번째 예약알림을 만들어보세요</title>
+    <title>Tite - 광고 글 게시 | 광고 관련 글을 게시하고 관리해보세요</title>
 
     <meta name="description" content="Tite - 관리사무소 도구">
     <meta name="keywords" content="Tite">
@@ -47,10 +47,10 @@
                 <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
                 <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
             </a>
-            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
+            <a class="sidebar-item board-plain this" title="광고 글 게시" href="/html/business-post.html">
                 <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
             </a>
-            <a class="sidebar-item board-plain this" title="예약알림 설정" href="/html/pre-noti.html">
+            <a class="sidebar-item board-plain" title="예약알림 설정" href="/html/pre-noti.html">
                 <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
             </a>
         </div>
@@ -60,37 +60,45 @@
     <div class="board-container copy">
         <div class="board-header">
             <h3 class="header-title">
-                <i class="material-icons md-24 title-icon">alarm_add</i>예약알림
+                <i class="material-icons md-24 title-icon">store</i>광고 글 게시
             </h3>
-            <span class="header-subtitle-description">알림을 만들거나 관리하고, 입주민들에게 전송할 수 있습니다</span>
+            
+            <span class="header-subtitle-description">광고 관련 글을 게재하고 관리할 수 있습니다</span>
             <!-- write new post -->
-            <a href="/html/write/write-post-pre-noti.html" class="header-newpost" title="새로운 글 작성하기">
-                <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text pre-noti"></span>
+            <a href="/html/write/write-post-business.html" class="header-newpost" title="새로운 글 작성하기">
+                <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text business"></span>
             </a>
         </div>
 
         <!-- post body -->
         <div class="post-wrapper">
             <div class="post-wrapper-header">
-                <h3 class="post-title">첫 번째 예약알림을 만들어보세요</h3>
+                <h3 class="post-title">광고 관련 글을 게시하고 관리해보세요</h3>
                 <span class="post-timestamp">2018/07/13</span>
             </div>
             <div class="post-wrapper-paragraph">
                 <p>
-                    '예약알림 설정' 게시판에서는 주민들에게 스마트폰으로 전송할 예약알림을 만들고 관리할 수 있습니다
+                    우리 아파트와 제휴를 맺은 업체, 기관 등의 광고 글을 게시하고 관리할 수 있습니다.
                     <br>
-                    분리수거 일자, 승용차 요일제 등 자주 사용되는 알림을 미리 만들고 주민들의 스마트폰으로 전송할 수 있습니다.
+                    게시한 광고 글은, 타이트 앱을 사용하는 주민들에게도 보여지게 됩니다.
                     <br>
-                    매번 방송이나 종이 전단지로 하는 알림이 아닌, 모바일로 간단하고 빠르게 전송하는 예약알림을 만들어보세요!
+                    사후 관리가 힘들고 지저분한 종이 광고나 전단지 대신,
+                    <br>
+                    아파트 관리도구를 통해 깔끔하고 스마트하게 광고를 진행하세요!
                 </p>
+                
+                <!-- post image -->
+                <div class="post-image-wrapper">
+                    <img class="post-image-landscape" src="https://images.unsplash.com/photo-1531348538526-ded4780a55e9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2073c18a560d9b2ae6711555ec0546fa&auto=format&fit=crop&w=900&q=60">
+                </div>
+
 
                 <div class="write-post-summary">
-                    <span class="write-post-summary-text">매주 월요일, 금요일 오전 09:00</span>
-                    <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
-                        <input type="checkbox" id="stop-pre-noti-temp" value="알림 일시정지">
-                        <!-- 디폴트는 체크가 안되어있는 상태입니다 -->
-                        <span for="stop-pre-noti-temp">알림 일시중지하기</span>
-                    </label>
+                    <span class="write-post-summary-text post business">2주</span>
+                    <!-- <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
+                        <input type="checkbox" id="stop-pre-noti-temp" value="지금 광고 게시 종료하기">
+                        <span for="stop-pre-noti-temp">지금 광고 게시 종료하기</span>
+                    </label> -->
                 </div>
             </div>
 
@@ -100,6 +108,7 @@
                     <span class="post-like-title"><span class="post-like-count">24</span></span>
                     <span class="post-comment-title"><span class="post-comment-count">2</span></span>
                     <div class="post-edit-remove">
+                        <a class="post-end" onclick="confirm('지금 광고 게시를 종료하시겠습니까?')">광고종료</a>
                         <a class="post-edit">수정</a>
                         <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
                     </div>
@@ -183,7 +192,7 @@
 
             <!-- back button -->
             <div class="post-back-list">
-                <a href="/html/pre-noti.html" class="post-back-list-link">
+                <a href="/html/business-post.html" class="post-back-list-link">
                     <button class="post-back-list-button"></button>
                 </a>
             </div>

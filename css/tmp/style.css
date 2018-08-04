@@ -2958,74 +2958,75 @@ p {
             cursor: pointer;
             display: inline-block; }
 
-.board-vote-container {
-  padding: 16px; }
+.board-wrapper .board-vote-container {
+  padding: 16px;
+  border-bottom: 1px solid #eee; }
   @media screen and (max-width: 360px) {
-    .board-vote-container {
+    .board-wrapper .board-vote-container {
       padding: 16px 0; } }
-  .board-vote-container:not(:last-of-type) {
-    border-bottom: 1px solid #eee; }
-  .board-vote-container .board-vote-header {
+  .board-wrapper .board-vote-container .board-vote-header {
     color: #999;
     margin-top: 16px;
     display: inline-block; }
-  .board-vote-container .board-vote-wrapper ::-moz-selection {
+  .board-wrapper .board-vote-container:nth-last-of-type(2) {
+    border-bottom: none !important; }
+  .board-wrapper .board-vote-container .board-vote-wrapper ::-moz-selection {
     color: white !important;
     background-color: #17C060 !important; }
-  .board-vote-container .board-vote-wrapper ::selection {
+  .board-wrapper .board-vote-container .board-vote-wrapper ::selection {
     color: white !important;
     background-color: #17C060 !important; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-text {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-text {
     margin-bottom: 24px; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle {
     font-weight: 900;
     margin: 16px 0 0;
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 32px;
     line-height: 2rem; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::-moz-selection {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::-moz-selection {
       color: white !important;
       background-color: #17C060 !important; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::selection {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle ::selection {
       color: white !important;
       background-color: #17C060 !important; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle a {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle a {
       color: #333;
       cursor: pointer; }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle a:hover {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-subtitle a:hover {
         text-decoration: underline; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-duedate {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-duedate {
     color: #999;
     display: inline-block;
     margin-bottom: 16px;
     font-size: 12px;
     font-size: 0.75rem; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-duedate::after {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-duedate::after {
       content: " 종료됨"; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip {
     font-weight: 900;
     color: #17C060 !important; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip::after {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip::after {
       content: " 종료예정"; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-wip-post {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-wip-post {
       margin-top: 8px;
       font-size: 16px;
       font-size: 1rem; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date {
       font-weight: 400;
       color: #999 !important;
       font-size: 12px;
       font-size: 0.75rem; }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date::before {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date::before {
         content: "("; }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date::after {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date::after {
         content: "일 남음)"; }
       @media screen and (max-width: 360px) {
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .vote-wip.vote-date {
           display: block;
           margin: -16px 0 16px 0; } }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item {
     width: 100%;
     max-width: 640px;
     margin-bottom: 8px;
@@ -3056,7 +3057,7 @@ p {
     -o-will-change: transform;
     will-change: transform;
     zoom: 1; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item.item-failed {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item.item-failed {
       opacity: 0.38;
       filter: alpha(opacity=38);
       -webkit-will-change: opacity;
@@ -3066,7 +3067,7 @@ p {
       -o-will-change: opacity;
       will-change: opacity;
       zoom: 1; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .checked {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .checked {
       margin-right: 8px;
       -webkit-transform: translateY(10%);
       -khtml-transform: translateY(10%);
@@ -3078,9 +3079,9 @@ p {
       -o-will-change: transform;
       will-change: transform;
       zoom: 1; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item:last-child {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item:last-child {
       margin-bottom: 0; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
       float: right;
       color: #999;
       margin-right: 16px;
@@ -3095,7 +3096,7 @@ p {
       will-change: transform;
       zoom: 1; }
       @supports (-ms-ime-align: auto) {
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
           -webkit-transform: translateY(40%) !important;
           -khtml-transform: translateY(40%) !important;
           transform: translateY(40%) !important;
@@ -3107,7 +3108,7 @@ p {
           will-change: transform;
           zoom: 1; } }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
           -webkit-transform: translateY(40%) !important;
           -khtml-transform: translateY(40%) !important;
           transform: translateY(40%) !important;
@@ -3119,7 +3120,7 @@ p {
           will-change: transform;
           zoom: 1; } }
       @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
           -webkit-transform: translateY(40%) !important;
           -khtml-transform: translateY(40%) !important;
           transform: translateY(40%) !important;
@@ -3131,7 +3132,7 @@ p {
           will-change: transform;
           zoom: 1; } }
       @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
           -webkit-transform: translateY(40%) !important;
           -khtml-transform: translateY(40%) !important;
           transform: translateY(40%) !important;
@@ -3142,9 +3143,9 @@ p {
           -o-will-change: transform;
           will-change: transform;
           zoom: 1; } }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb:after {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb:after {
         content: "명"; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress {
       height: 100%;
       padding: 8px;
       display: inline-block;
@@ -3157,7 +3158,7 @@ p {
       -o-will-change: border-radius;
       will-change: border-radius;
       zoom: 1; }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
         padding-left: 8px;
         word-wrap: break-word !important;
         overflow: hidden;
@@ -3179,7 +3180,7 @@ p {
         will-change: transform;
         zoom: 1; }
         @supports (-ms-ime-align: auto) {
-          .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
+          .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
             -webkit-transform: translateY(10%) !important;
             -khtml-transform: translateY(10%) !important;
             transform: translateY(10%) !important;
@@ -3191,7 +3192,7 @@ p {
             will-change: transform;
             zoom: 1; } }
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-          .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
+          .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
             -webkit-transform: translateY(10%) !important;
             -khtml-transform: translateY(10%) !important;
             transform: translateY(10%) !important;
@@ -3203,7 +3204,7 @@ p {
             will-change: transform;
             zoom: 1; } }
         @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-          .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
+          .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
             -webkit-transform: translateY(10%) !important;
             -khtml-transform: translateY(10%) !important;
             transform: translateY(10%) !important;
@@ -3215,7 +3216,7 @@ p {
             will-change: transform;
             zoom: 1; } }
         @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-          .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
+          .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .vote-item-title {
             -webkit-transform: translateY(10%) !important;
             -khtml-transform: translateY(10%) !important;
             transform: translateY(10%) !important;
@@ -3226,9 +3227,9 @@ p {
             -o-will-change: transform;
             will-change: transform;
             zoom: 1; } }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .item-highest {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress .item-highest {
         font-weight: 900; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join {
     margin-bottom: 16px;
     color: #999;
     font-weight: 900;
@@ -3236,49 +3237,49 @@ p {
     display: inline-block;
     font-size: 14px;
     font-size: 0.875rem; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join::after {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join::after {
       font-weight: 400;
       content: "이 읽었습니다"; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join::after {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-join::after {
       content: " 참여"; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-result {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-result {
     color: #17C060;
     display: block;
     font-weight: 900;
     margin-bottom: 16px; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-result::before {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-result::before {
       font-weight: 400;
       content: "투표결과: "; }
-  .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper {
+  .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper {
     padding: 8px 0 16px; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title,
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title,
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title {
       color: #999; }
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count,
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count,
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count,
-      .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count {
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count,
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count,
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count,
+      .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count {
         color: #333;
         font-weight: 900; }
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::before, .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::after,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::after,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::after,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::after {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::before, .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::after,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::after,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::after,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::after {
           color: #999;
           font-weight: 400; }
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::before,
-        .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::before {
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-like-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title .post-comment-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::before,
+        .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::before {
           content: " "; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::before {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::before {
       content: "좋아요 "; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::after {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::after {
       content: " ㆍ "; }
-    .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title::before {
+    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title::before {
       content: "댓글 "; }
 
 .noline {

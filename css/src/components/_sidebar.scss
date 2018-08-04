@@ -20,18 +20,22 @@
     @include transition(all .5s ease);
     @include transform(translateZ(0));
 
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
+
     // hide scrollbar ie
     // prevent refresh animation ie
     @media #{$ie} {
-        overflow: hidden;
+        overflow: hidden !important;
         @include transition(all 0s ease);
     }
 
     // hide scrollbar edge
     // prevent refresh animation edge
     @supports (-ms-ime-align:auto) {
-        overflow: hidden;
-        // @include transition(all 0s ease);
+        overflow: hidden !important;
+        @include transition(all 0s ease);
     }
 
     @media #{$tablet} {

@@ -657,9 +657,11 @@ p {
   -o-will-change: transform;
   will-change: transform;
   zoom: 1; }
+  .sidebar-container::-webkit-scrollbar {
+    display: none; }
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .sidebar-container {
-      overflow: hidden;
+      overflow: hidden !important;
       -webkit-transition: all 0s ease;
       transition: all 0s ease;
       -webkit-will-change: transition;
@@ -671,7 +673,16 @@ p {
       zoom: 1; } }
   @supports (-ms-ime-align: auto) {
     .sidebar-container {
-      overflow: hidden; } }
+      overflow: hidden !important;
+      -webkit-transition: all 0s ease;
+      transition: all 0s ease;
+      -webkit-will-change: transition;
+      -khtml-will-change: transition;
+      -moz-will-change: transition;
+      -ms-will-change: transition;
+      -o-will-change: transition;
+      will-change: transition;
+      zoom: 1; } }
   @media screen and (max-width: 768px) {
     .sidebar-container {
       width: 224px; } }

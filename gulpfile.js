@@ -98,7 +98,7 @@ gulp.task('inject', function () {
                             './html/*.html',
                             './html/**/*.html']);
     var sources = gulp.src(['./js/dist/index.js',
-                            // './js/dist/timepicker.js',
+                            './js/dist/polyfill.js',
                             './css/dist/*.css'], {read: false});
 
     return target.pipe(inject(sources))

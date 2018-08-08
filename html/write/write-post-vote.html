@@ -99,6 +99,13 @@
                             <fieldset class="write-post-set-time-wrapper">
                                 <legend class="write-post-set-time-legend">투표기간 설정</legend>
                                 <div class="write-post-set-date-radio-wrapper">
+
+                                    <!-- 복수선택허용 -->
+                                    <label class="write-post-set-date-item multipleselect" for="multipleselect">
+                                        <input type="checkbox" id="multipleselect" value="복수선택허용">
+                                        <span for="multipleselect">복수선택허용</span>
+                                    </label>
+
                                     <label class="write-post-set-date-item" for="oneday">
                                         <input type="radio" id="oneday" value="1일" name="vote-duedate" v-model="checkedRadioVal" checked>
                                         <span for="oneday">1일</span>

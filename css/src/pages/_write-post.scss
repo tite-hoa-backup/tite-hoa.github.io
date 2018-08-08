@@ -48,6 +48,12 @@
 
                 label {
                     @include input-styling();
+
+
+                    &.multipleselect {
+                        display: block;
+                        margin-bottom: $grid2x;
+                    }
                 }
             }
 

@@ -3442,6 +3442,12 @@ p {
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label input,
         .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label input {
           margin-left: 8px; } }
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label.multipleselect,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label.multipleselect,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label.multipleselect,
+    .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label.multipleselect {
+      display: block;
+      margin-bottom: 8px; }
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-vote-set-duedate-title,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-upload-image-title,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-set-time-title,

@@ -52,12 +52,14 @@
                 width: 64%;
             }
 
-            .post-image-portrait {
+            .post-image-portrait,
+            .post-image-square {
                 width: 48%;
             }
 
             .post-image-landscape,
-            .post-image-portrait {
+            .post-image-portrait,
+            .post-image-square {
                 @include border-radius();
 
                 @media #{$pablet} {

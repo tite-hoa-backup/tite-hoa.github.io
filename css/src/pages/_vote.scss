@@ -276,3 +276,13 @@
         content: "의 진행중인 투표가 있습니다" !important;
     }
 }
+
+
+.multipleselect {
+    display: block;
+    margin: $grid5x 0 $grid;
+
+    span[for="multipleselect"] {
+        margin-left: $grid;
+    }
+}

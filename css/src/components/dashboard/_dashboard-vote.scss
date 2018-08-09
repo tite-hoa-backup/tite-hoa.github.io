@@ -46,7 +46,6 @@
         
         .vote-item-progress {
             height: 100%;
-            padding: $grid2x;
             display: inline-block;
             background-color: $texteee;
             @include border-radius(7px 0 0 7px);
@@ -55,8 +54,8 @@
                 display: block;
                 overflow: visible;
                 white-space: nowrap;
-                padding-left: $grid2x;
                 text-overflow: ellipsis;
+                padding: $grid2x 0 $grid2x $grid4x;
             }
 
             .item-highest {

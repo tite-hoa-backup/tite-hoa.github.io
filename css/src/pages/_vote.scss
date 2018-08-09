@@ -1,3 +1,4 @@
+.post-wrapper,
 .board-wrapper {
 
     .board-vote-container {
@@ -152,15 +153,13 @@
     
                         .vote-item-progress {
                             height: 100%;
-                            padding: $grid2x;
                             display: inline-block;
                             background-color: $texteee;
                             @include border-radius(7px 0 0 7px);
     
                             .vote-item-title {
-                                padding-left: $grid2x;
-                                // white-space: initial !important;
                                 word-wrap: break-word !important;
+                                padding: $grid2x 0 $grid2x $grid4x;
                                 @include overflow();
                                 @include transform(translateY(0%) !important);
     

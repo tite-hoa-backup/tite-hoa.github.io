@@ -2593,6 +2593,7 @@ p {
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info {
           display: block;
           color: #999;
+          margin-bottom: 4px;
           font-size: 14px;
           font-size: 0.875rem; }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-timestamp::after,
@@ -2638,6 +2639,25 @@ p {
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply:hover,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply:hover {
               color: #333; }
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-show-reply {
+          color: #999;
+          cursor: pointer;
+          text-decoration: underline;
+          -webkit-transition: color 0.25s ease;
+          transition: color 0.25s ease;
+          -webkit-will-change: transition;
+          -khtml-will-change: transition;
+          -moz-will-change: transition;
+          -ms-will-change: transition;
+          -o-will-change: transition;
+          will-change: transition;
+          zoom: 1;
+          font-size: 14px;
+          font-size: 0.875rem; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-show-reply::after {
+            content: "개의 답글 더 보기"; }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-show-reply:hover {
+            color: #333; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-reply-thumbnail {
           width: 32px;
           height: 32px;

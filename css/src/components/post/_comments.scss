@@ -130,6 +130,7 @@
                     .post-comment-comment-info {
                         display: block;
                         color: $text999;
+                        margin-bottom: $grid;
                         @include font-size($grid4x - ($grid / 2));
     
                         .post-comment-timestamp {
@@ -179,6 +180,22 @@
                             &:hover {
                                 color: $text333;
                             }
+                        }
+                    }
+
+                    .post-comment-show-reply {
+                        color: $text999;
+                        cursor: pointer;
+                        text-decoration: underline;
+                        @include transition(color .25s ease);
+                        @include font-size($grid4x - ($grid / 2));
+                            
+                        &::after {
+                            content: "개의 답글 더 보기";
+                        }
+
+                        &:hover {
+                            color: $text333;
                         }
                     }
 

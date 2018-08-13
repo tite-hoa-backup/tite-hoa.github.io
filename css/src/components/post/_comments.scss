@@ -102,10 +102,19 @@
                 .post-comment-box {
                     vertical-align: top;
                     display: inline-block;
+                    margin-top: -#{$grid};
     
                     .post-comment-username {
                         font-weight: 900;
                         margin-right: calc(#{$grid} / 2);
+                    }
+
+                    .post-comment-text {
+                            
+                        &::before {
+                            content: "\a ";
+                            white-space: pre;
+                        }
                     }
     
                     .post-comment-reply-info,
@@ -121,8 +130,8 @@
                                 content: " 전 ㆍ ";
                             }
                         }
-        
-
+                        
+                        
                         .post-reply-liked-count,
                         .post-comment-liked-count {
                             cursor: pointer;
@@ -194,11 +203,20 @@
 
                     .post-comment-reply {
                         display: inline-block;
-                        vertical-align: baseline;
+                        margin-top: $grid4x;
+                        vertical-align: top;
     
                         .post-reply-username {
                             font-weight: 900;
                             margin-right: calc(#{$grid} / 2);
+                        }
+
+                        .post-reply-text {
+                            
+                            &::before {
+                                content: "\a ";
+                                white-space: pre;
+                            }
                         }
     
                         .post-comment-reply-info {

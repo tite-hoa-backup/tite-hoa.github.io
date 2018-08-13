@@ -2581,10 +2581,14 @@ p {
         zoom: 1; }
       .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box {
         vertical-align: top;
-        display: inline-block; }
+        display: inline-block;
+        margin-top: -4px; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-username {
           font-weight: 900;
           margin-right: calc(4px / 2); }
+        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-text::before {
+          content: "\a ";
+          white-space: pre; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info,
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info {
           display: block;
@@ -2670,10 +2674,14 @@ p {
           zoom: 1; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply {
           display: inline-block;
-          vertical-align: baseline; }
+          margin-top: 16px;
+          vertical-align: top; }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-reply-username {
             font-weight: 900;
             margin-right: calc(4px / 2); }
+          .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-reply-text::before {
+            content: "\a ";
+            white-space: pre; }
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply .post-comment-reply-info {
             display: block;
             color: #999;

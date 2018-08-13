@@ -2635,7 +2635,7 @@ p {
               color: #999 !important; }
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply::after,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply::after {
-              content: "답글 더 보기"; }
+              content: "답글달기"; }
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-reply-info .post-comment-see-reply:hover,
             .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper .post-comment-box .post-comment-comment-info .post-comment-see-reply:hover {
               color: #333; }

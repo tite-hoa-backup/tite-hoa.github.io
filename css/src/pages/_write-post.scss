@@ -76,6 +76,16 @@
                 margin: $grid6x 0 0;
                 max-width: $grid56x;
             }
+
+            .write-post-remove-image {
+                outline: none;
+                color: $text333;
+                cursor: pointer;
+                padding: $grid3x $grid6x;
+                border: 1px solid $textccc;
+                background-color: transparent;
+                @include border-radius($grid2x);
+            }
         }
 
 

@@ -3609,6 +3609,24 @@ p {
   .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-upload-image {
     margin: 24px 0 0;
     max-width: 224px; }
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-remove-image,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-remove-image,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-remove-image,
+  .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-remove-image {
+    outline: none;
+    color: #333;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 8px;
+    -webkit-will-change: border-radius;
+    -khtml-will-change: border-radius;
+    -moz-will-change: border-radius;
+    -ms-will-change: border-radius;
+    -o-will-change: border-radius;
+    will-change: border-radius;
+    zoom: 1; }
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .write-post-vote-set-duedate-title {
     color: #17C060;
     margin-top: 32px;

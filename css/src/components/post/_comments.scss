@@ -27,20 +27,30 @@
         }
 
         .post-like-title {
+            cursor: pointer;
+
+            &.liked {
+                color: $brand;
+                font-weight: 900;
+
+                .post-like-count {
+                    color: $brand;
+                }
+            }
             
             &::before {
                 content: "좋아요 ";
             }
-            
-            &::after {
-                content: " ㆍ ";
+
+            &:hover {
+                text-decoration: underline;
             }
         }
 
         .post-comment-title {
             
             &::before {
-                content: "댓글 ";
+                content: " ㆍ 댓글 ";
             }
         }
 

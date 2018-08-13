@@ -2481,12 +2481,19 @@ p {
       .post-comment-container .post-info-wrapper .post-comment-title .post-like-count::before,
       .post-comment-container .post-info-wrapper .post-comment-title .post-comment-count::before {
         content: " "; }
-  .post-comment-container .post-info-wrapper .post-like-title::before {
-    content: "좋아요 "; }
-  .post-comment-container .post-info-wrapper .post-like-title::after {
-    content: " ㆍ "; }
+  .post-comment-container .post-info-wrapper .post-like-title {
+    cursor: pointer; }
+    .post-comment-container .post-info-wrapper .post-like-title.liked {
+      color: #17C060;
+      font-weight: 900; }
+      .post-comment-container .post-info-wrapper .post-like-title.liked .post-like-count {
+        color: #17C060; }
+    .post-comment-container .post-info-wrapper .post-like-title::before {
+      content: "좋아요 "; }
+    .post-comment-container .post-info-wrapper .post-like-title:hover {
+      text-decoration: underline; }
   .post-comment-container .post-info-wrapper .post-comment-title::before {
-    content: "댓글 "; }
+    content: " ㆍ 댓글 "; }
   .post-comment-container .post-info-wrapper .post-edit-remove {
     float: right;
     cursor: pointer;

@@ -2026,9 +2026,10 @@ p {
   .dashboard-card-vote .dashboard-card-vote-item:last-child {
     margin-bottom: 0; }
   .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
+    position: absolute;
     float: right;
-    color: #999;
-    margin-right: 16px;
+    color: #333;
+    right: 32px;
     -webkit-transform: translateY(30%);
     -khtml-transform: translateY(30%);
     transform: translateY(30%);
@@ -2042,10 +2043,11 @@ p {
     .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
       content: "명"; }
   .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress {
+    z-index: -1;
     height: 100%;
     display: inline-block;
     background-color: #eee;
-    border-radius: 7px 0 0 7px;
+    border-radius: 7px;
     -webkit-will-change: border-radius;
     -khtml-will-change: border-radius;
     -moz-will-change: border-radius;
@@ -2481,19 +2483,6 @@ p {
       .post-comment-container .post-info-wrapper .post-comment-title .post-like-count::before,
       .post-comment-container .post-info-wrapper .post-comment-title .post-comment-count::before {
         content: " "; }
-  .post-comment-container .post-info-wrapper .post-like-title {
-    cursor: pointer; }
-    .post-comment-container .post-info-wrapper .post-like-title.post-liked {
-      color: #17C060;
-      font-weight: 900; }
-      .post-comment-container .post-info-wrapper .post-like-title.post-liked .post-like-count {
-        color: #17C060; }
-    .post-comment-container .post-info-wrapper .post-like-title::before {
-      content: "좋아요 "; }
-    .post-comment-container .post-info-wrapper .post-like-title:hover {
-      text-decoration: underline; }
-  .post-comment-container .post-info-wrapper .post-comment-title::before {
-    content: " ㆍ 댓글 "; }
   .post-comment-container .post-info-wrapper .post-edit-remove {
     float: right;
     cursor: pointer;
@@ -2814,6 +2803,21 @@ p {
         @media screen and (max-width: 360px) {
           .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn {
             width: 56px; } }
+
+.post-like-title {
+  cursor: pointer; }
+  .post-like-title.post-liked {
+    color: #17C060 !important;
+    font-weight: 900; }
+    .post-like-title.post-liked .post-like-count {
+      color: #17C060 !important; }
+  .post-like-title::before {
+    content: "좋아요 " !important; }
+  .post-like-title:hover {
+    text-decoration: underline; }
+
+.post-comment-title::before {
+  content: " ㆍ 댓글 " !important; }
 
 .post-wrapper .post-wrapper-paragraph .write-post-summary {
   margin-top: 16px;
@@ -3137,9 +3141,10 @@ p {
       margin-bottom: 0; }
     .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb,
     .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+      position: absolute;
       float: right;
-      color: #999;
-      margin-right: 16px;
+      color: #333;
+      right: 16px;
       -webkit-transform: translateY(30%);
       -khtml-transform: translateY(30%);
       transform: translateY(30%);
@@ -3207,10 +3212,11 @@ p {
         content: "명"; }
     .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress,
     .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-progress {
+      z-index: -1;
       height: 100%;
       display: inline-block;
       background-color: #eee;
-      border-radius: 7px 0 0 7px;
+      border-radius: 7px;
       -webkit-will-change: border-radius;
       -khtml-will-change: border-radius;
       -moz-will-change: border-radius;
@@ -3365,15 +3371,6 @@ p {
         .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-like-count::before,
         .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title .post-comment-count::before {
           content: " "; }
-    .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::before,
-    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::before {
-      content: "좋아요 "; }
-    .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::after,
-    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-like-title::after {
-      content: " ㆍ "; }
-    .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title::before,
-    .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .post-info-wrapper .post-comment-title::before {
-      content: "댓글 "; }
 
 .noline {
   border: 0 !important;

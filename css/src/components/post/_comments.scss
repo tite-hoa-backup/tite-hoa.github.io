@@ -26,34 +26,6 @@
             }
         }
 
-        .post-like-title {
-            cursor: pointer;
-
-            &.post-liked {
-                color: $brand;
-                font-weight: 900;
-
-                .post-like-count {
-                    color: $brand;
-                }
-            }
-            
-            &::before {
-                content: "좋아요 ";
-            }
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .post-comment-title {
-            
-            &::before {
-                content: " ㆍ 댓글 ";
-            }
-        }
-
 
         .post-edit-remove {
             float: right;
@@ -329,5 +301,34 @@
                 }
             }
         }
+    }
+}
+
+
+.post-like-title {
+    cursor: pointer;
+
+    &.post-liked {
+        color: $brand !important;
+        font-weight: 900;
+
+        .post-like-count {
+            color: $brand !important;
+        }
+    }
+    
+    &::before {
+        content: "좋아요 " !important;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.post-comment-title {
+    
+    &::before {
+        content: " ㆍ 댓글 " !important;
     }
 }

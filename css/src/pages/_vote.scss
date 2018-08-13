@@ -125,9 +125,10 @@
                         }
     
                         .vote-item-numb {
+                            position: absolute;
                             float: right;
-                            color: $text999;
-                            margin-right: $grid4x;
+                            color: $text333;
+                            right: $grid4x;
                             @include transform(translateY(30%));
     
                             @supports (-ms-ime-align:auto) {
@@ -152,10 +153,11 @@
                         }
     
                         .vote-item-progress {
+                            z-index: -1;
                             height: 100%;
                             display: inline-block;
                             background-color: $texteee;
-                            @include border-radius(7px 0 0 7px);
+                            @include border-radius(7px);
     
                             .vote-item-title {
                                 word-wrap: break-word !important;
@@ -236,23 +238,23 @@
                             }
                         }
     
-                        .post-like-title {
+                        // .post-like-title {
                             
-                            &::before {
-                                content: "좋아요 ";
-                            }
+                        //     &::before {
+                        //         content: "좋아요 ";
+                        //     }
                             
-                            &::after {
-                                content: " ㆍ ";
-                            }
-                        }
+                        //     &::after {
+                        //         content: " ㆍ ";
+                        //     }
+                        // }
     
-                        .post-comment-title {
+                        // .post-comment-title {
                             
-                            &::before {
-                                content: "댓글 ";
-                            }
-                        }
+                        //     &::before {
+                        //         content: "댓글 ";
+                        //     }
+                        // }
                     }
                 }
             }

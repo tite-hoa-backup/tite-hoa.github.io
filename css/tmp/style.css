@@ -2483,10 +2483,10 @@ p {
         content: " "; }
   .post-comment-container .post-info-wrapper .post-like-title {
     cursor: pointer; }
-    .post-comment-container .post-info-wrapper .post-like-title.liked {
+    .post-comment-container .post-info-wrapper .post-like-title.post-liked {
       color: #17C060;
       font-weight: 900; }
-      .post-comment-container .post-info-wrapper .post-like-title.liked .post-like-count {
+      .post-comment-container .post-info-wrapper .post-like-title.post-liked .post-like-count {
         color: #17C060; }
     .post-comment-container .post-info-wrapper .post-like-title::before {
       content: "좋아요 "; }

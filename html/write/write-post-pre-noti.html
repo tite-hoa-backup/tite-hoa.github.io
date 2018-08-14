@@ -80,7 +80,28 @@
                             <i class="material-icons md-24">image</i>사진첨부: 
                         </label>
                         <input type="file" name="upload-image" id="upload-image" class="write-post-upload-image" accept="image/*" multiple>
-                        <button class="write-post-remove-image" onClick="this.form.reset(); return false">사진 지우기</button>
+                        <!-- <button class="write-post-remove-image" onClick="this.form.reset(); return false">사진 지우기</button> -->
+
+                        <div class="write-post-uploaded-image-body">
+                            <div class="write-post-uploaded-image-each-wrapper">
+                                <img class="write-post-uploaded-image" src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9fc409d72ac99c1a6d2590c883ed2f62&auto=format&fit=crop&w=900&q=60">
+                                <button onClick="return false">
+                                    <i class="md-18 material-icons" title="사진 삭제하기">close</i>
+                                </button>
+                            </div>
+                            <div class="write-post-uploaded-image-each-wrapper">
+                                <img class="write-post-uploaded-image" src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=900&q=60">
+                                <button onClick="return false">
+                                    <i class="md-18 material-icons" title="사진 삭제하기">close</i>
+                                </button>
+                            </div>
+                            <div class="write-post-uploaded-image-each-wrapper">
+                                <img class="write-post-uploaded-image" src="https://images.unsplash.com/photo-1516930828473-2d3b2a2e36fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aa872492a9f3ffa83f1787f629338495&auto=format&fit=crop&w=900&q=60">
+                                <button onClick="return false">
+                                    <i class="md-18 material-icons" title="사진 삭제하기">close</i>
+                                </button>
+                            </div>
+                        </div>
                     </form>
                 </div>
 

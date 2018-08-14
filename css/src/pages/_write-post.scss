@@ -44,6 +44,54 @@
         .write-post-set-time-wrapper,
         .post-wrapper-duedate-wrapper {
 
+            .write-post-uploaded-image-body {
+                margin-top: $grid4x;
+
+                .write-post-uploaded-image-each-wrapper {
+                    width: $grid32x;
+                    height: $grid32x;
+                    position: relative;
+                    box-sizing: initial;
+                    display: inline-block;
+                    border: 1px solid $textccc;
+                    @include border-radius($grid);
+
+                    &:not(:first-child) {
+                        margin-left: $grid3x;
+                    }
+
+                    .write-post-uploaded-image {
+                        width: $grid32x;
+                        height: $grid32x;
+                        object-fit: cover;
+                        display: inline-block;
+                        @include border-radius($grid);
+                    }
+    
+                    button {
+                        border: none;
+                        outline: none;
+                        width: $grid6x;
+                        height: $grid6x;
+                        cursor: pointer;
+                        top: -#{$grid2x};
+                        right: -#{$grid2x};
+                        position: absolute;
+                        background: $texteee;
+                        @include border-radius($grid8x);
+    
+                        &:hover {
+                            background: $textccc;
+                        }
+    
+                        .material-icons {
+                            color: $text999;
+                            @include transform(translateY(1px));
+                        }
+                    }
+                }
+            }
+
             fieldset {
 
                 label {

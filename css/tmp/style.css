@@ -3460,6 +3460,91 @@ p {
     zoom: 1; }
     .write-post-wrapper .write-post-wrapper-paragraph .write-post-parahraph:focus {
       border: 1px solid #17C060; }
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body,
+  .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body,
+  .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body {
+    margin-top: 16px; }
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper,
+    .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper,
+    .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper {
+      width: 128px;
+      height: 128px;
+      position: relative;
+      box-sizing: initial;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
+      zoom: 1; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper:not(:first-child),
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper:not(:first-child),
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper:not(:first-child),
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper:not(:first-child) {
+        margin-left: 12px; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper .write-post-uploaded-image,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper .write-post-uploaded-image,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper .write-post-uploaded-image,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper .write-post-uploaded-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        display: inline-block;
+        border-radius: 4px;
+        -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
+        zoom: 1; }
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button,
+      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button,
+      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button {
+        border: none;
+        outline: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        top: -8px;
+        right: -8px;
+        position: absolute;
+        background: #eee;
+        border-radius: 32px;
+        -webkit-will-change: border-radius;
+        -khtml-will-change: border-radius;
+        -moz-will-change: border-radius;
+        -ms-will-change: border-radius;
+        -o-will-change: border-radius;
+        will-change: border-radius;
+        zoom: 1; }
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover,
+        .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover {
+          background: #ccc; }
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button .material-icons,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button .material-icons,
+        .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button .material-icons,
+        .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button .material-icons {
+          color: #999;
+          -webkit-transform: translateY(1px);
+          -khtml-transform: translateY(1px);
+          transform: translateY(1px);
+          -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
+          zoom: 1; }
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label,
   .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label,

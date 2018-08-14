@@ -53,7 +53,6 @@
                     position: relative;
                     box-sizing: initial;
                     display: inline-block;
-                    border: 1px solid $textccc;
                     @include border-radius($grid);
 
                     &:not(:first-child) {
@@ -79,6 +78,7 @@
                         position: absolute;
                         background: $texteee;
                         @include border-radius($grid8x);
+                        @include transition(background .25s ease);
     
                         &:hover {
                             background: $textccc;

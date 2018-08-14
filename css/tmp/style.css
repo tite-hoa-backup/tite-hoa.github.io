@@ -3474,7 +3474,6 @@ p {
       position: relative;
       box-sizing: initial;
       display: inline-block;
-      border: 1px solid #ccc;
       border-radius: 4px;
       -webkit-will-change: border-radius;
       -khtml-will-change: border-radius;
@@ -3524,6 +3523,15 @@ p {
         -ms-will-change: border-radius;
         -o-will-change: border-radius;
         will-change: border-radius;
+        zoom: 1;
+        -webkit-transition: background 0.25s ease;
+        transition: background 0.25s ease;
+        -webkit-will-change: transition;
+        -khtml-will-change: transition;
+        -moz-will-change: transition;
+        -ms-will-change: transition;
+        -o-will-change: transition;
+        will-change: transition;
         zoom: 1; }
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover,
         .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper .write-post-uploaded-image-body .write-post-uploaded-image-each-wrapper button:hover,

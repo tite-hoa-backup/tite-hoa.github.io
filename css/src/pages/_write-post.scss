@@ -52,11 +52,11 @@
                     height: $grid32x;
                     position: relative;
                     box-sizing: initial;
+                    margin-top: $grid2x;
                     display: inline-block;
-                    @include border-radius($grid);
 
-                    &:not(:first-child) {
-                        margin-left: $grid3x;
+                    &:not(:last-child) {
+                        margin-right: $grid3x;
                     }
 
                     .write-post-uploaded-image {
@@ -64,7 +64,7 @@
                         height: $grid32x;
                         object-fit: cover;
                         display: inline-block;
-                        @include border-radius($grid);
+                        @include border-radius($grid2x);
                     }
     
                     button {

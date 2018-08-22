@@ -91,11 +91,11 @@
 
                 <div class="write-post-summary">
                     <span class="write-post-summary-text">매주 월요일, 금요일 오전 09:00</span>
-                    <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
+                    <!-- <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
                         <input type="checkbox" id="stop-pre-noti-temp" value="알림 일시정지">
-                        <!-- 디폴트는 체크가 안되어있는 상태입니다 -->
-                        <span for="stop-pre-noti-temp">알림 일시중지하기</span>
-                    </label>
+                        디폴트는 체크가 안되어있는 상태입니다
+                        <span for="stop-pre-noti-temp">알림 일시정지</span>
+                    </label> -->
                 </div>
             </div>
 
@@ -105,6 +105,7 @@
                     <span class="post-like-title"><span class="post-like-count">24</span></span>
                     <span class="post-comment-title"><span class="post-comment-count">2</span></span>
                     <div class="post-edit-remove">
+                        <a class="post-end" onclick="confirm('예약알림을 일시정지 하시겠습니까?')">알림 일시정지</a>
                         <a class="post-edit">수정</a>
                         <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
                     </div>

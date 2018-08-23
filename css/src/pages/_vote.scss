@@ -125,6 +125,7 @@
                         }
     
                         .vote-item-numb {
+                            z-index: 9999 !important;
                             position: absolute;
                             float: right;
                             color: $text333;
@@ -139,12 +140,13 @@
                                 @include transform(translateY(40%) !important);
                             }
     
-                            @media #{$chrome} {
+                            @media #{$firefox} {
                                 @include transform(translateY(40%) !important);
                             }
     
-                            @media #{$firefox} {
-                                @include transform(translateY(40%) !important);
+                            @media #{$chrome} {
+                                display: block !important;
+                                @include transform(translateY(-140%) !important);
                             }
     
                             &:after {

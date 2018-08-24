@@ -1276,6 +1276,9 @@ p {
       zoom: 1; }
       .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text:hover {
         text-decoration: underline; }
+      .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text.list-paused::after {
+        color: #ccc;
+        content: " (일시중지됨)"; }
   .board-wrapper .list-board-plain .list-board-view-count,
   .board-wrapper .list-board-plain .list-board-time {
     color: #999;
@@ -2356,6 +2359,12 @@ p {
       font-size: 1.5rem;
       line-height: 38.4px;
       line-height: 2.4rem; }
+      .post-wrapper .post-wrapper-header .post-title.post-paused::after {
+        color: #ccc;
+        font-weight: 400;
+        content: " (일시중지됨)";
+        font-size: 16px;
+        font-size: 1rem; }
     .post-wrapper .post-wrapper-header .post-timestamp {
       color: #999;
       margin: 0 0 16px 0;

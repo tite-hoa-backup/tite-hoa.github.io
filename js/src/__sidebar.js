@@ -77,19 +77,19 @@
 //             setSidebarItem.className = 'sidebar-item ' + list.type;
 //             setSidebarItem.setAttribute('title', list.name);
             
-//             var se로라mIcon = document.createElement('i');
-//             var se로라mText = document.createElement('span');
+//             var setItemIcon = document.createElement('i');
+//             var setItemText = document.createElement('span');
 
-//             se로라mIcon.className = 'material-icons md-24';
-//             se로라mIcon.innerHTML = list.icon;
-//             se로라mText.className = 'sidebar-text';
-//             se로라mText.setAttribute('data-subtitle', list.subtitle);
-//             se로라mText.innerHTML = list.name;
+//             setItemIcon.className = 'material-icons md-24';
+//             setItemIcon.innerHTML = list.icon;
+//             setItemText.className = 'sidebar-text';
+//             setItemText.setAttribute('data-subtitle', list.subtitle);
+//             setItemText.innerHTML = list.name;
 
 //             setSidebarItem.setAttribute('href', '/html/' + list.href + '.html');
 
-//             setSidebarItem.appendChild(se로라mIcon);
-//             setSidebarItem.appendChild(se로라mText);
+//             setSidebarItem.appendChild(setItemIcon);
+//             setSidebarItem.appendChild(setItemText);
 
 
 

@@ -132,8 +132,8 @@
                     @media #{$desktop} { &::after { content: "새 관리자 글"; } }
                 }
 
-                &.business {             &::after { content: "새 광고 글 게시";}
-                    @media #{$desktop} { &::after { content: "새 광고 글"; } }
+                &.business {             &::after { content: "새 글 게시";}
+                    @media #{$desktop} { &::after { content: "새 글 게시"; } }
                 }
 
                 &.pre-noti {             &::after { content: "새 예약알림 만들기";}

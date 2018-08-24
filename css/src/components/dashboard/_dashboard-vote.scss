@@ -1,4 +1,5 @@
 .dashboard-card-vote {
+    position: relative;
 
     .dashboard-card-subtitle {
         margin-bottom: calc(-#{$grid});
@@ -34,14 +35,20 @@
         }
 
         .vote-item-numb {
+            z-index: 9999 !important;
             position: absolute;
             float: right;
             color: $text333;
-            right: $grid8x;
+            right: $grid4x;
             @include transform(translateY(30%));
 
             &:after {
                 content: "명"
+            }
+
+            @media #{$chrome} {
+                display: block;
+                @include transform(translateY(-130%));
             }
         }
         

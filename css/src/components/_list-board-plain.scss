@@ -17,6 +17,7 @@
         }
 
         &.header {
+
             span {
                 font-weight: 900;
                 color: $text999 !important;
@@ -69,6 +70,14 @@
     
                 &:hover {
                     text-decoration: underline;
+                }
+
+                &.list-paused {
+                    
+                    &::after {
+                        color: $textccc;
+                        content: " (일시중지됨)";
+                    }
                 }
             }
         }

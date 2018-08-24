@@ -1069,10 +1069,10 @@ p {
           .board-container .board-header .header-newpost .header-newpost-text.admin::after {
             content: "새 관리자 글"; } }
         .board-container .board-header .header-newpost .header-newpost-text.business::after {
-          content: "새 광고 글 게시"; }
+          content: "새 글 게시"; }
         @media screen and (max-width: 980px) {
           .board-container .board-header .header-newpost .header-newpost-text.business::after {
-            content: "새 광고 글"; } }
+            content: "새 글 게시"; } }
         .board-container .board-header .header-newpost .header-newpost-text.pre-noti::after {
           content: "새 예약알림 만들기"; }
         @media screen and (max-width: 980px) {
@@ -1276,6 +1276,9 @@ p {
       zoom: 1; }
       .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text:hover {
         text-decoration: underline; }
+      .board-wrapper .list-board-plain .list-board-text-wrapper .list-board-text.list-paused::after {
+        color: #ccc;
+        content: " (일시중지됨)"; }
   .board-wrapper .list-board-plain .list-board-view-count,
   .board-wrapper .list-board-plain .list-board-time {
     color: #999;
@@ -1991,63 +1994,31 @@ p {
   .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
     content: "개의 최근 공지사항이 있습니다"; }
 
-.dashboard-card-vote .dashboard-card-subtitle {
-  margin-bottom: calc(-4px);
-  line-height: 32px;
-  line-height: 2rem; }
-  .dashboard-card-vote .dashboard-card-subtitle a {
-    color: #333;
-    cursor: pointer; }
-    .dashboard-card-vote .dashboard-card-subtitle a:hover {
-      text-decoration: underline; }
-
-.dashboard-card-vote .dashboard-card-vote-duedate {
-  color: #999;
-  display: inline-block;
-  margin-bottom: 16px;
-  font-size: 12px;
-  font-size: 0.75rem; }
-  .dashboard-card-vote .dashboard-card-vote-duedate::after {
-    content: " 종료예정"; }
-
-.dashboard-card-vote .dashboard-card-vote-item {
-  width: 100%;
-  margin-bottom: 8px;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  -webkit-will-change: border-radius;
-  -khtml-will-change: border-radius;
-  -moz-will-change: border-radius;
-  -ms-will-change: border-radius;
-  -o-will-change: border-radius;
-  will-change: border-radius;
-  zoom: 1; }
-  .dashboard-card-vote .dashboard-card-vote-item:last-child {
-    margin-bottom: 0; }
-  .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
-    position: absolute;
-    float: right;
-    color: #333;
-    right: 32px;
-    -webkit-transform: translateY(30%);
-    -khtml-transform: translateY(30%);
-    transform: translateY(30%);
-    -webkit-will-change: transform;
-    -khtml-will-change: transform;
-    -moz-will-change: transform;
-    -ms-will-change: transform;
-    -o-will-change: transform;
-    will-change: transform;
-    zoom: 1; }
-    .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
-      content: "명"; }
-  .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress {
-    z-index: -1;
-    height: 100%;
+.dashboard-card-vote {
+  position: relative; }
+  .dashboard-card-vote .dashboard-card-subtitle {
+    margin-bottom: calc(-4px);
+    line-height: 32px;
+    line-height: 2rem; }
+    .dashboard-card-vote .dashboard-card-subtitle a {
+      color: #333;
+      cursor: pointer; }
+      .dashboard-card-vote .dashboard-card-subtitle a:hover {
+        text-decoration: underline; }
+  .dashboard-card-vote .dashboard-card-vote-duedate {
+    color: #999;
     display: inline-block;
-    background-color: #eee;
-    border-radius: 7px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    .dashboard-card-vote .dashboard-card-vote-duedate::after {
+      content: " 종료예정"; }
+  .dashboard-card-vote .dashboard-card-vote-item {
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     -webkit-will-change: border-radius;
     -khtml-will-change: border-radius;
     -moz-will-change: border-radius;
@@ -2055,23 +2026,68 @@ p {
     -o-will-change: border-radius;
     will-change: border-radius;
     zoom: 1; }
-    .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .vote-item-title {
-      display: block;
-      overflow: visible;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      padding: 8px 0 8px 16px; }
-    .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .item-highest {
-      font-weight: 900; }
-
-.dashboard-card-vote .dashboard-card-vote-join {
-  color: #999;
-  margin: 8px 0;
-  display: inline-block;
-  font-size: 14px;
-  font-size: 0.875rem; }
-  .dashboard-card-vote .dashboard-card-vote-join::after {
-    content: "명 참여"; }
+    .dashboard-card-vote .dashboard-card-vote-item:last-child {
+      margin-bottom: 0; }
+    .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
+      z-index: 9999 !important;
+      position: absolute;
+      float: right;
+      color: #333;
+      right: 16px;
+      -webkit-transform: translateY(30%);
+      -khtml-transform: translateY(30%);
+      transform: translateY(30%);
+      -webkit-will-change: transform;
+      -khtml-will-change: transform;
+      -moz-will-change: transform;
+      -ms-will-change: transform;
+      -o-will-change: transform;
+      will-change: transform;
+      zoom: 1; }
+      .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
+        content: "명"; }
+      @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+        .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
+          display: block;
+          -webkit-transform: translateY(-130%);
+          -khtml-transform: translateY(-130%);
+          transform: translateY(-130%);
+          -webkit-will-change: transform;
+          -khtml-will-change: transform;
+          -moz-will-change: transform;
+          -ms-will-change: transform;
+          -o-will-change: transform;
+          will-change: transform;
+          zoom: 1; } }
+    .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress {
+      z-index: -1;
+      height: 100%;
+      display: inline-block;
+      background-color: #eee;
+      border-radius: 7px;
+      -webkit-will-change: border-radius;
+      -khtml-will-change: border-radius;
+      -moz-will-change: border-radius;
+      -ms-will-change: border-radius;
+      -o-will-change: border-radius;
+      will-change: border-radius;
+      zoom: 1; }
+      .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .vote-item-title {
+        display: block;
+        overflow: visible;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 8px 0 8px 16px; }
+      .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .item-highest {
+        font-weight: 900; }
+  .dashboard-card-vote .dashboard-card-vote-join {
+    color: #999;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem; }
+    .dashboard-card-vote .dashboard-card-vote-join::after {
+      content: "명 참여"; }
 
 .dashboard-card-petition .new-petition-count {
   color: #999;
@@ -2188,7 +2204,7 @@ p {
   font-size: 12px;
   font-size: 0.75rem; }
   .dashboard-card-business .new-business-count:after {
-    content: "개의 게시중인 광고 글이 있습니다"; }
+    content: "개의 게시중인 글이 있습니다"; }
 
 .dashboard-card-pre-noti .new-pre-noti-count {
   color: #999;
@@ -2343,6 +2359,12 @@ p {
       font-size: 1.5rem;
       line-height: 38.4px;
       line-height: 2.4rem; }
+      .post-wrapper .post-wrapper-header .post-title.post-paused::after {
+        color: #ccc;
+        font-weight: 400;
+        content: " (일시중지됨)";
+        font-size: 16px;
+        font-size: 1rem; }
     .post-wrapper .post-wrapper-header .post-timestamp {
       color: #999;
       margin: 0 0 16px 0;
@@ -2843,7 +2865,7 @@ p {
 
 .post-wrapper .post-wrapper-paragraph .write-post-summary .write-post-summary-text.post.business::after {
   font-weight: 400;
-  content: " 후 광고 게시가 종료됩니다." !important; }
+  content: " 후 글 게시가 종료됩니다." !important; }
 
 /* ==============================
     scss modules - pages
@@ -3149,6 +3171,7 @@ p {
       margin-bottom: 0; }
     .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb,
     .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
+      z-index: 9999 !important;
       position: absolute;
       float: right;
       color: #333;
@@ -3189,7 +3212,7 @@ p {
           -o-will-change: transform;
           will-change: transform;
           zoom: 1; } }
-      @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+      @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
         .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb,
         .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
           -webkit-transform: translateY(40%) !important;
@@ -3202,12 +3225,13 @@ p {
           -o-will-change: transform;
           will-change: transform;
           zoom: 1; } }
-      @media screen and (min--moz-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+      @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
         .post-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb,
         .board-wrapper .board-vote-container .board-vote-wrapper .board-vote-card .board-vote-card-vote .board-vote-card-vote-item .vote-item-numb {
-          -webkit-transform: translateY(40%) !important;
-          -khtml-transform: translateY(40%) !important;
-          transform: translateY(40%) !important;
+          display: block !important;
+          -webkit-transform: translateY(-140%) !important;
+          -khtml-transform: translateY(-140%) !important;
+          transform: translateY(-140%) !important;
           -webkit-will-change: transform;
           -khtml-will-change: transform;
           -moz-will-change: transform;

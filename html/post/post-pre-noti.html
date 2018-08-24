@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Tite - 예약알림 | 첫 번째 예약알림을 만들어보세요</title>
+    <title>로라 - 예약알림 | 첫 번째 예약알림을 만들어보세요</title>
 
-    <meta name="description" content="Tite - 관리사무소 도구">
-    <meta name="keywords" content="Tite">
+    <meta name="description" content="로라 - 관리사무소 도구">
+    <meta name="keywords" content="로라">
     <meta property="og:image" content="/img/dist/launcher.png">
 
     <!-- inject:css -->
@@ -47,8 +47,8 @@
                 <i class="material-icons md-24">record_voice_over</i><span class="sidebar-text" data-subtitle="Dashboard">민원</span>
                 <div class="sidebar-noti-new"><span class="noti-count">2</span></div>
             </a>
-            <a class="sidebar-item board-plain" title="광고 글 게시" href="/html/business-post.html">
-                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">광고 글 게시</span>
+            <a class="sidebar-item board-plain" title="게시물" href="/html/business-post.html">
+                <i class="material-icons md-24">store</i><span class="sidebar-text" data-subtitle="Business post">게시물</span>
             </a>
             <a class="sidebar-item board-plain this" title="예약알림 설정" href="/html/pre-noti.html">
                 <i class="material-icons md-24">alarm_add</i><span class="sidebar-text" data-subtitle="Notification">예약알림 설정</span>
@@ -91,11 +91,11 @@
 
                 <div class="write-post-summary">
                     <span class="write-post-summary-text">매주 월요일, 금요일 오전 09:00</span>
-                    <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
-                        <input type="checkbox" id="stop-pre-noti-temp" value="알림 일시정지">
-                        <!-- 디폴트는 체크가 안되어있는 상태입니다 -->
-                        <span for="stop-pre-noti-temp">알림 일시중지하기</span>
-                    </label>
+                    <!-- <label class="stop-pre-noti-temp" for="stop-pre-noti-temp">
+                        <input type="checkbox" id="stop-pre-noti-temp" value="알림 일시중지">
+                        디폴트는 체크가 안되어있는 상태입니다
+                        <span for="stop-pre-noti-temp">알림 일시중지</span>
+                    </label> -->
                 </div>
             </div>
 
@@ -105,6 +105,7 @@
                     <span class="post-like-title"><span class="post-like-count">24</span></span>
                     <span class="post-comment-title"><span class="post-comment-count">2</span></span>
                     <div class="post-edit-remove">
+                        <a class="post-end" onclick="confirm('예약알림을 일시중지 하시겠습니까?')">알림 일시중지</a>
                         <a class="post-edit">수정</a>
                         <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
                     </div>

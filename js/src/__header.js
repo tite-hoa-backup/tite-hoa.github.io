@@ -50,7 +50,7 @@
 //             var setHeaderLogoLink = document.createElement('a');
 //             setHeaderLogoLink.setAttribute('href', '/html/dashboard.html');
     
-//             // set tite logo svg
+//             // set 로라 logo svg
 //             var setHeaderLogo = document.createElement('img');
 //             setHeaderLogo.setAttribute('src', '/img/dist/launcher.svg');
 //             setHeaderLogo.className = 'main-header-logo';

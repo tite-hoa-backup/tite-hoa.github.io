@@ -18,6 +18,16 @@
             margin-bottom: $grid;
             @include font-size($grid6x);
             @include line-height($grid6x);
+
+            &.post-paused {
+                    
+                &::after {
+                    color: $textccc;
+                    font-weight: 400;
+                    content: " (일시중지됨)";
+                    @include font-size($grid4x);
+                }
+            }
         }
 
         .post-timestamp {

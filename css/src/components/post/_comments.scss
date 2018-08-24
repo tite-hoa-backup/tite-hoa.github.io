@@ -91,6 +91,7 @@
                 }
     
                 .post-comment-thumbnail {
+                    float: left;
                     width: $grid10x;
                     height: $grid10x;
                     margin-right: $grid4x;
@@ -103,6 +104,12 @@
                     vertical-align: top;
                     display: inline-block;
                     margin-top: -#{$grid};
+                    width: calc(100% - #{$grid14x});
+
+                    .post-comment-reply-box {
+                        left: -#{$grid4x};
+                        position: relative;
+                    }
     
                     .post-comment-username {
                         font-weight: 900;
@@ -116,7 +123,7 @@
                             white-space: pre;
                         }
                     }
-    
+                    
                     .post-comment-reply-info,
                     .post-comment-comment-info {
                         display: block;
@@ -193,11 +200,12 @@
 
                     // comment reply
                     .post-reply-thumbnail {
+                        float: left;
                         width: $grid8x;
                         height: $grid8x;
                         display: inline-block;
                         background-color: white;
-                        margin: $grid6x $grid2x 0 0;
+                        margin: $grid6x $grid4x 0 0;
                         @include border-radius($grid8x);
                     }
 
@@ -205,6 +213,7 @@
                         display: inline-block;
                         margin-top: $grid4x;
                         vertical-align: top;
+                        width: calc(100% - #{$grid14x});
     
                         .post-reply-username {
                             font-weight: 900;

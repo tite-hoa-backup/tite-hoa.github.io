@@ -132,7 +132,7 @@
                     @media #{$desktop} { &::after { content: "새 관리자 글"; } }
                 }
 
-                &.business {             &::after { content: "새 글 게시";}
+                &.business {             &::after { content: "새 게시물 작성";}
                     @media #{$desktop} { &::after { content: "새 글 게시"; } }
                 }
 

@@ -1,10 +1,16 @@
-.dashboard-card-petition {
-
-    .new-petition-count {
-        @include dashboard-subspan();
-
-        &:after {
-            content: "개의 새로운 민원이 있습니다";
+.dashboard-container {
+    
+    .dashboard-wrapper {
+        
+        .dashboard-card-petition {
+        
+            .new-petition-count {
+                @include dashboard-subspan();
+        
+                &:after {
+                    content: "개의 새로운 민원이 있습니다";
+                }
+            }
         }
     }
 }

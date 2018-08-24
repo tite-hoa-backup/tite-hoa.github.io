@@ -1,18 +1,16 @@
-.dashboard-wrapper {
-
-    .dashboard-card-notification {
+.dashboard-container {
     
-        .new-notification-count {
-            @include dashboard-subspan();
+    .dashboard-wrapper {
     
-            &:after {
-                content: "개의 최근 공지사항이 있습니다";
+        .dashboard-card-notification {
+        
+            .new-notification-count {
+                @include dashboard-subspan();
+        
+                &:after {
+                    content: "개의 최근 공지사항이 있습니다";
+                }
             }
         }
     }
-
-
-    // .dashboard-button-wrapper {
-    //     z-index: 9999 !important;
-    // }
 }

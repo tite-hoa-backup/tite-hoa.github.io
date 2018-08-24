@@ -1069,7 +1069,7 @@ p {
           .board-container .board-header .header-newpost .header-newpost-text.admin::after {
             content: "새 관리자 글"; } }
         .board-container .board-header .header-newpost .header-newpost-text.business::after {
-          content: "새 글 게시"; }
+          content: "새 게시물 작성"; }
         @media screen and (max-width: 980px) {
           .board-container .board-header .header-newpost .header-newpost-text.business::after {
             content: "새 글 게시"; } }
@@ -1985,35 +1985,34 @@ p {
 /* ==============================
     scss modules - dashboard copmonents
 ============================== */
-.dashboard-wrapper .dashboard-card-notification .new-notification-count {
+.dashboard-container .dashboard-wrapper .dashboard-card-notification .new-notification-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
+  .dashboard-container .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
     content: "개의 최근 공지사항이 있습니다"; }
 
-.dashboard-card-vote {
+.dashboard-container .dashboard-wrapper .dashboard-card-vote {
   position: relative; }
-  .dashboard-card-vote .dashboard-card-subtitle {
-    margin-bottom: calc(-4px);
-    line-height: 32px;
-    line-height: 2rem; }
-    .dashboard-card-vote .dashboard-card-subtitle a {
+  .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-subtitle {
+    line-height: 25.6px;
+    line-height: 1.6rem; }
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-subtitle a {
       color: #333;
       cursor: pointer; }
-      .dashboard-card-vote .dashboard-card-subtitle a:hover {
+      .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-subtitle a:hover {
         text-decoration: underline; }
-  .dashboard-card-vote .dashboard-card-vote-duedate {
+  .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-duedate {
     color: #999;
     display: inline-block;
     margin-bottom: 16px;
     font-size: 12px;
     font-size: 0.75rem; }
-    .dashboard-card-vote .dashboard-card-vote-duedate::after {
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-duedate::after {
       content: " 종료예정"; }
-  .dashboard-card-vote .dashboard-card-vote-item {
+  .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item {
     width: 100%;
     margin-bottom: 8px;
     background-color: white;
@@ -2026,9 +2025,9 @@ p {
     -o-will-change: border-radius;
     will-change: border-radius;
     zoom: 1; }
-    .dashboard-card-vote .dashboard-card-vote-item:last-child {
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item:last-child {
       margin-bottom: 0; }
-    .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
       z-index: 9999 !important;
       position: absolute;
       float: right;
@@ -2044,10 +2043,10 @@ p {
       -o-will-change: transform;
       will-change: transform;
       zoom: 1; }
-      .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
+      .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb:after {
         content: "명"; }
       @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-        .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
+        .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-numb {
           display: block;
           -webkit-transform: translateY(-130%);
           -khtml-transform: translateY(-130%);
@@ -2059,7 +2058,7 @@ p {
           -o-will-change: transform;
           will-change: transform;
           zoom: 1; } }
-    .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress {
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress {
       z-index: -1;
       height: 100%;
       display: inline-block;
@@ -2072,44 +2071,44 @@ p {
       -o-will-change: border-radius;
       will-change: border-radius;
       zoom: 1; }
-      .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .vote-item-title {
+      .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .vote-item-title {
         display: block;
         overflow: visible;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding: 8px 0 8px 16px; }
-      .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .item-highest {
+      .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item .vote-item-progress .item-highest {
         font-weight: 900; }
-  .dashboard-card-vote .dashboard-card-vote-join {
+  .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-join {
     color: #999;
     margin: 8px 0;
     display: inline-block;
     font-size: 14px;
     font-size: 0.875rem; }
-    .dashboard-card-vote .dashboard-card-vote-join::after {
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-join::after {
       content: "명 참여"; }
 
-.dashboard-card-petition .new-petition-count {
+.dashboard-container .dashboard-wrapper .dashboard-card-petition .new-petition-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-card-petition .new-petition-count:after {
+  .dashboard-container .dashboard-wrapper .dashboard-card-petition .new-petition-count:after {
     content: "개의 새로운 민원이 있습니다"; }
 
-.dashboard-card-activity .new-admin-count {
+.dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .new-admin-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-card-activity .new-admin-count:after {
+  .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .new-admin-count:after {
     content: "최근 우리아파트 타이트 유저들의 활동입니다"; }
 
-.dashboard-card-activity .dashboard-activity-wrapper {
+.dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper {
   cursor: default !important; }
-  .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item {
+  .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item {
     padding-top: 4px;
     padding: 4px 16px 8px;
     border: 1px solid #eee;
@@ -2130,7 +2129,7 @@ p {
     -o-will-change: transition;
     will-change: transition;
     zoom: 1; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
+    .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:hover {
       background-color: #fafafa;
       -webkit-transition: background-color 0.1s ease;
       transition: background-color 0.1s ease;
@@ -2141,9 +2140,9 @@ p {
       -o-will-change: transition;
       will-change: transition;
       zoom: 1; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
+    .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item:not(:first-child) {
       margin-top: 8px; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
+    .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .material-icons {
       color: #999;
       margin-right: 8px;
       -webkit-transform: translateY(25%);
@@ -2156,27 +2155,27 @@ p {
       -o-will-change: transform;
       will-change: transform;
       zoom: 1; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count {
+    .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count {
       color: #17C060;
       font-weight: 900;
       margin-left: 4px; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count::after {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count::after {
         content: "개"; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count.new-users::after {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item .dashboard-activity-count.new-users::after {
         content: "명"; }
-    .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
+    .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each {
       padding-top: 16px;
       padding-bottom: 16px; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle,
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle,
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
         cursor: default !important; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-user-nickname::after {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-user-nickname::after {
         content: "님의 감사 메시지"; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle::after {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-atitle::after {
         content: " ❤️";
         font-size: 14px;
         font-size: 0.875rem; }
-      .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
+      .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span {
         color: #777;
         -moz-line-clamp: 5 !important;
         -webkit-line-clamp: 5 !important;
@@ -2190,36 +2189,36 @@ p {
         font-size: 0.875rem;
         line-height: 22.4px;
         line-height: 1.4rem; }
-        .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::-moz-selection {
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::-moz-selection {
           color: white !important;
           background-color: #17C060 !important; }
-        .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::selection {
+        .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper .dashboard-activity-item.dashboard-item-each .dashboard-card-item-span ::selection {
           color: white !important;
           background-color: #17C060 !important; }
 
-.dashboard-card-business .new-business-count {
+.dashboard-container .dashboard-wrapper .dashboard-card-business .new-business-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-card-business .new-business-count:after {
+  .dashboard-container .dashboard-wrapper .dashboard-card-business .new-business-count:after {
     content: "개의 게시중인 글이 있습니다"; }
 
-.dashboard-card-pre-noti .new-pre-noti-count {
+.dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .new-pre-noti-count {
   color: #999;
   display: inline-block;
   margin-bottom: 16px;
   font-size: 12px;
   font-size: 0.75rem; }
-  .dashboard-card-pre-noti .new-pre-noti-count:after {
+  .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .new-pre-noti-count:after {
     content: "개의 게시중인 예약알림이 있습니다"; }
 
-.dashboard-card-pre-noti .dashboard-card-pre-noti-item {
+.dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item {
   margin-top: 8px; }
-  .dashboard-card-pre-noti .dashboard-card-pre-noti-item:first-of-type {
+  .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item:first-of-type {
     margin-top: 0; }
-  .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+  .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
     width: 100%;
     height: 100%;
     display: block;
@@ -2272,7 +2271,7 @@ p {
     will-change: transition;
     zoom: 1;
     overflow: hidden !important; }
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:active {
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:active {
       -webkit-transform: scale(0.985);
       -khtml-transform: scale(0.985);
       transform: scale(0.985);
@@ -2284,12 +2283,12 @@ p {
       will-change: transform;
       zoom: 1; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+      .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
         overflow: hidden !important; } }
     @supports (-ms-ime-align: auto) {
-      .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
+      .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
         overflow: hidden !important; } }
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:hover {
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:hover {
       border: 1px solid #17C060;
       background-color: #fafafa;
       -webkit-transition: all 0.25s ease;
@@ -2301,8 +2300,8 @@ p {
       -o-will-change: transition;
       will-change: transition;
       zoom: 1; }
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title,
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title,
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
       overflow: hidden !important;
       display: -webkit-box !important;
       display: -moz-box !important;
@@ -2311,9 +2310,9 @@ p {
       -moz-line-clamp: 1 !important;
       -webkit-line-clamp: 1 !important;
       height: calc( 1.6 * 1 * 16px); }
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-title {
       font-weight: 900; }
-    .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
+    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link .dashboard-card-pre-noti-time {
       color: #777;
       -webkit-text-overflow: ellipsis;
       -khtml-text-overflow: ellipsis;

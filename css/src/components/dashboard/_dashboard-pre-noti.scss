@@ -1,84 +1,90 @@
-.dashboard-card-pre-noti {
-
-    .new-pre-noti-count {
-        @include dashboard-subspan();
-
-        &:after {
-            content: "개의 게시중인 예약알림이 있습니다";
-        }
-    }
-
-    .dashboard-card-pre-noti-item {
-        margin-top: $grid2x;
-
-        &:first-of-type {
-            margin-top: 0;
-        }
-
-        .dashboard-card-pre-noti-item-link {
-            width: 100%;
-            height: 100%;
-            display: block;
-            color: $text333;
-            cursor: pointer;
-            padding: $grid4x;
-            overflow: scroll;
-            border: 1px solid $texteee;
-            @include border-radius();
-            @include render-hack(width);
-            @include button-pressed(0.985);
-            @include transform(translateZ(0));
-            @include transition(all .25s ease);
-
-
-            // prevent scrollbar
-            overflow: hidden !important;
-
-            // hide scrollbar ie
-            @media #{$ie} {
-                overflow: hidden !important;
-            }
-
-            // hide scrollbar edge
-            @supports (-ms-ime-align:auto) {
-                overflow: hidden !important;
-            }
-
-            &:hover {
-                border: 1px solid $brand;
-                background-color: $textfa;
-                @include transition(all .25s ease);
-            }
-            
-            
-            // overflow -> ellipsis
-            $line-height: 1.6;
-            $lines-to-show: 1;
-            $noti-font-size: $grid4x - ($grid / 2);
-
-            .dashboard-card-pre-noti-title,
-            .dashboard-card-pre-noti-time {
-                overflow: hidden !important;
-                display: -webkit-box !important;
-                display: -moz-box !important;
-                display: -ms-flexbox !important;
-                -webkit-box-orient: vertical !important;
-                -moz-line-clamp: $lines-to-show !important;
-                -webkit-line-clamp: $lines-to-show !important;
-                height: calc(
-                    #{$line-height} * #{$lines-to-show} * #{$grid4x}
-                );
-            }
-
-            .dashboard-card-pre-noti-title {
-                font-weight: 900;
-            }
+.dashboard-container {
     
-            .dashboard-card-pre-noti-time {
-                color: $text777;
-                @include text-overflow();
-                @include font-size($noti-font-size);
-                @include line-height($noti-font-size);
+    .dashboard-wrapper {
+        
+        .dashboard-card-pre-noti {
+        
+            .new-pre-noti-count {
+                @include dashboard-subspan();
+        
+                &:after {
+                    content: "개의 게시중인 예약알림이 있습니다";
+                }
+            }
+        
+            .dashboard-card-pre-noti-item {
+                margin-top: $grid2x;
+        
+                &:first-of-type {
+                    margin-top: 0;
+                }
+        
+                .dashboard-card-pre-noti-item-link {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    color: $text333;
+                    cursor: pointer;
+                    padding: $grid4x;
+                    overflow: scroll;
+                    border: 1px solid $texteee;
+                    @include border-radius();
+                    @include render-hack(width);
+                    @include button-pressed(0.985);
+                    @include transform(translateZ(0));
+                    @include transition(all .25s ease);
+        
+        
+                    // prevent scrollbar
+                    overflow: hidden !important;
+        
+                    // hide scrollbar ie
+                    @media #{$ie} {
+                        overflow: hidden !important;
+                    }
+        
+                    // hide scrollbar edge
+                    @supports (-ms-ime-align:auto) {
+                        overflow: hidden !important;
+                    }
+        
+                    &:hover {
+                        border: 1px solid $brand;
+                        background-color: $textfa;
+                        @include transition(all .25s ease);
+                    }
+                    
+                    
+                    // overflow -> ellipsis
+                    $line-height: 1.6;
+                    $lines-to-show: 1;
+                    $noti-font-size: $grid4x - ($grid / 2);
+        
+                    .dashboard-card-pre-noti-title,
+                    .dashboard-card-pre-noti-time {
+                        overflow: hidden !important;
+                        display: -webkit-box !important;
+                        display: -moz-box !important;
+                        display: -ms-flexbox !important;
+                        -webkit-box-orient: vertical !important;
+                        -moz-line-clamp: $lines-to-show !important;
+                        -webkit-line-clamp: $lines-to-show !important;
+                        height: calc(
+                            #{$line-height} * #{$lines-to-show} * #{$grid4x}
+                        );
+                    }
+        
+                    .dashboard-card-pre-noti-title {
+                        font-weight: 900;
+                    }
+            
+                    .dashboard-card-pre-noti-time {
+                        color: $text777;
+                        @include text-overflow();
+                        @include font-size($noti-font-size);
+                        @include line-height($noti-font-size);
+                    }
+                }
             }
         }
     }

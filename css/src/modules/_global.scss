@@ -49,10 +49,6 @@
 ============================== */
 html {
     max-width: 1680px;
-    @include font-settings();
-    @include font-stack-html();
-    @include font-size($grid4x);
-    @include line-height($grid4x);
     @include box-sizing(border-box);
 }
 
@@ -73,6 +69,7 @@ body {
     @include font-settings();
     @include font-stack-html();
     @include font-size($grid4x);
+    @include line-height($grid4x);
 }
 
 // ::selection {

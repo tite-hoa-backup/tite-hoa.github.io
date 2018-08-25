@@ -83,22 +83,6 @@
 ============================== */
 html {
   max-width: 1680px;
-  direction: ltr;
-  font-feature-settings: 'liga';
-  -moz-font-feature-settings: 'liga';
-  -webkit-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale !important;
-  -webkit-font-smoothing: antialiased !important;
-  text-rendering: optimizeLegibility !important;
-  -webkit-text-decoration-skip: ink;
-  text-decoration-skip: ink;
-  font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
-  -moz-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
-  -webkit-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 25.6px;
-  line-height: 1.6rem;
   -webkit-box-sizing: border-box;
   -khtml-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -157,7 +141,9 @@ body {
   -moz-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   -webkit-font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'SF Pro KR', 'SF Pro Display', 'Apple Gothic',  'Source Sans Pro', 'Nanum Barun Gothic', 'Nanum Gothic', '돋움', 'Dotum', 'Verdana', 'Arial', 'sans-serif' !important;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 25.6px;
+  line-height: 1.6rem; }
 
 input:focus,
 select:focus,

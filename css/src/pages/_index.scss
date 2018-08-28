@@ -38,7 +38,6 @@
                     background-color: $textf9;
                     border: 1px solid $textccc;
                     @include border-radius();
-                    @include render-hack(width);
                     @include transform(translateZ(0));
 
                     &:focus {
@@ -82,7 +81,6 @@
                     height: $grid12x;
                     display: inline-block;
                     @include center-text();
-                    @include render-hack(width);
                     @include transform(translateZ(0));
 
                     #login-remember-me,

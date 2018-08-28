@@ -100,7 +100,6 @@
                         background-color: white;
                         border: 1px solid $textddd;
                         @include border-radius();
-                        @include render-hack(width);
                         @include transform(translateZ(0));
     
                         &.item-failed {

@@ -9,7 +9,6 @@
         background-color: white;
         border-bottom: 1px solid $texteee;
         @include box-shadow();
-        @include render-hack(width);
         @include box-sizing(border-box);
         @include transform(translateZ(0));
 
@@ -78,7 +77,6 @@
                 min-width: $grid50x;
                 display: inline-block;
                 @include overflow();
-                @include render-hack(width);
                 @include transform(translateY(-100%));
 
                 @media #{$chrome} {

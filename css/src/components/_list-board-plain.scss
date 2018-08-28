@@ -8,7 +8,6 @@
         position: relative;
         @include selection();
         @include border-radius();
-        @include render-hack(width);
         @include box-sizing(border-box);
         @include transform(translateZ(0));
 
@@ -39,7 +38,6 @@
 
         .list-numbering-wrapper {
             @include center-text();
-            @include render-hack(width);
 
             .list-numbering {
                 color: $brand;
@@ -131,7 +129,6 @@
             position: absolute;
             height: $grid12x !important;
             margin-right: $margin !important;
-            @include render-hack(translateZ(0));
         }
 
         .list-numbering-wrapper {
@@ -146,7 +143,6 @@
             right: calc(
                 #{$date-width} + #{$view-count-width} + #{$grid10x}
             ) !important;
-            @include render-hack(left, right);
 
             @media #{$tablet} {
                 right: calc(
@@ -180,7 +176,6 @@
                 right: calc(
                     #{$date-width} + #{$view-count-width} + #{$grid18x}
                 ) !important;
-                @include render-hack(right);
 
                 @media #{$tablet} {
                     right: calc(
@@ -217,7 +212,6 @@
             right: calc(
                 #{$view-count-width} + #{$grid6x}
             ) !important;
-            @include render-hack(right);
 
             &.petition-submitted-time {
                 right: calc(
@@ -230,7 +224,6 @@
         .list-board-view-count {
             right: $grid2x !important;
             width: $view-count-width !important;
-            @include render-hack(right);
 
             &.board-petition-set-status-inline {
                 width: calc(

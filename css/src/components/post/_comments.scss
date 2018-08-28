@@ -281,7 +281,6 @@
                     padding-right: calc(
                         #{$grid20x} + #{$grid});
                     @include border-radius();
-                    @include render-hack(width);
                     @include line-height($grid4x);
                     @include transform(translateZ(0));
 

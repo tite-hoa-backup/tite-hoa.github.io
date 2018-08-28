@@ -140,7 +140,6 @@ input[type="checkbox"] {
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie);
-    @include render-hack(opacity);
 }
 
 

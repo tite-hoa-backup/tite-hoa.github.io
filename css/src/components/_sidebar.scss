@@ -1,7 +1,6 @@
 .expanded {
     zoom: 1;
     left: 0 !important;
-    @include render-hack(left);
     @include transform(translateZ(0));
 }
 
@@ -15,7 +14,6 @@
     position: fixed;
     overflow: scroll;
     background-color: $brand;
-    @include render-hack(left);
     @include box-sizing(border-box);
     @include transition(all .5s ease);
     @include transform(translateZ(0));

@@ -10,6 +10,23 @@
                 &:after {
                     content: "개의 게시중인 글이 있습니다";
                 }
+
+                &.dashboard-empty {
+        
+                    &:after {
+                        content: "현재 게시중인 글이 없습니다";
+                    }
+                }
+            }
+
+            .dashboard-card-item-span {
+    
+                &.dashboard-content-empty {
+    
+                    &:after {
+                        content: "이곳을 눌러, 첫 번째 게시물을 작성해보세요";
+                    }
+                }
             }
         }
     }

@@ -24,6 +24,23 @@
                 &::after {
                     content: " 종료예정";
                 }
+
+                &.dashboard-empty {
+
+                    &::after {
+                        content: "아래 버튼을 눌러, 새로운 주민투표를 진행해보세요";
+                    }
+                }
+            }
+
+            .dashboard-card-item-span {
+    
+                &.dashboard-content-empty {
+    
+                    &:after {
+                        content: "이곳을 눌러, 첫 번째 주민투표를 진행해보세요";
+                    }
+                }
             }
         
             .dashboard-card-vote-item {

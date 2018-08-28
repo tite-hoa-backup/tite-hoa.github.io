@@ -10,6 +10,23 @@
                 &:after {
                     content: "개의 최근 공지사항이 있습니다";
                 }
+
+                &.dashboard-empty {
+        
+                    &:after {
+                        content: "현재 게시중인 공지사항이 없습니다";
+                    }
+                }
+            }
+
+            .dashboard-card-item-span {
+    
+                &.dashboard-content-empty {
+    
+                    &:after {
+                        content: "이곳을 눌러, 첫 번째 공지사항을 게시해보세요";
+                    }
+                }
             }
         }
     }

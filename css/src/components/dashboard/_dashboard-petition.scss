@@ -10,6 +10,23 @@
                 &:after {
                     content: "개의 새로운 민원이 있습니다";
                 }
+
+                &.dashboard-empty {
+        
+                    &:after {
+                        content: "현재 진행중인 민원이 없습니다";
+                    }
+                }
+            }
+
+            .dashboard-card-item-span {
+    
+                &.dashboard-content-empty {
+    
+                    &:after {
+                        content: "아직 진행중인 민원이 없습니다. 새로운 민원이 접수되면, 이곳에 나타나게 됩니다.";
+                    }
+                }
             }
         }
     }

@@ -1979,6 +1979,11 @@ p {
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card-notification .new-notification-count:after {
     content: "개의 최근 공지사항이 있습니다"; }
+  .dashboard-container .dashboard-wrapper .dashboard-card-notification .new-notification-count.dashboard-empty:after {
+    content: "현재 게시중인 공지사항이 없습니다"; }
+
+.dashboard-container .dashboard-wrapper .dashboard-card-notification .dashboard-card-item-span.dashboard-content-empty:after {
+  content: "이곳을 눌러, 첫 번째 공지사항을 게시해보세요"; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card-vote {
   position: relative; }
@@ -1998,6 +2003,10 @@ p {
     font-size: 0.75rem; }
     .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-duedate::after {
       content: " 종료예정"; }
+    .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-duedate.dashboard-empty::after {
+      content: "아래 버튼을 눌러, 새로운 주민투표를 진행해보세요"; }
+  .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-item-span.dashboard-content-empty:after {
+    content: "이곳을 눌러, 첫 번째 주민투표를 진행해보세요"; }
   .dashboard-container .dashboard-wrapper .dashboard-card-vote .dashboard-card-vote-item {
     width: 100%;
     margin-bottom: 8px;
@@ -2082,6 +2091,11 @@ p {
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card-petition .new-petition-count:after {
     content: "개의 새로운 민원이 있습니다"; }
+  .dashboard-container .dashboard-wrapper .dashboard-card-petition .new-petition-count.dashboard-empty:after {
+    content: "현재 진행중인 민원이 없습니다"; }
+
+.dashboard-container .dashboard-wrapper .dashboard-card-petition .dashboard-card-item-span.dashboard-content-empty:after {
+  content: "아직 진행중인 민원이 없습니다. 새로운 민원이 접수되면, 이곳에 나타나게 됩니다."; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .new-admin-count {
   color: #999;
@@ -2190,6 +2204,11 @@ p {
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card-business .new-business-count:after {
     content: "개의 게시중인 글이 있습니다"; }
+  .dashboard-container .dashboard-wrapper .dashboard-card-business .new-business-count.dashboard-empty:after {
+    content: "현재 게시중인 글이 없습니다"; }
+
+.dashboard-container .dashboard-wrapper .dashboard-card-business .dashboard-card-item-span.dashboard-content-empty:after {
+  content: "이곳을 눌러, 첫 번째 게시물을 작성해보세요"; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .new-pre-noti-count {
   color: #999;
@@ -2199,6 +2218,11 @@ p {
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .new-pre-noti-count:after {
     content: "개의 게시중인 예약알림이 있습니다"; }
+  .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .new-pre-noti-count.dashboard-empty:after {
+    content: "현재 진행중인 예약알림이 없습니다"; }
+
+.dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-time.dashboard-content-empty:after {
+  content: "이곳을 눌러, 첫 번째 예약알림을 만들어보세요"; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item {
   margin-top: 8px; }

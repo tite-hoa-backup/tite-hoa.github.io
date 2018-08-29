@@ -915,7 +915,7 @@ p {
     width: 96px !important;
     right: calc( 48px + 24px) !important; }
     .board-wrapper .list-board-plain .list-board-time.petition-submitted-time {
-      right: calc( 48px + 56px) !important; }
+      right: calc( 48px + 40px) !important; }
   .board-wrapper .list-board-plain .list-board-view-count {
     right: 8px !important;
     width: 48px !important; }
@@ -2612,7 +2612,18 @@ p {
   display: inline-block; }
 
 .post-wrapper-paragraph .board-petition-set-status .petition-set-status-selectbox {
-  margin-left: 4px; }
+  margin-left: 4px;
+  margin-bottom: 4px; }
+
+.post-wrapper-paragraph .board-petition-set-status .petition-set-status-save {
+  color: #999;
+  cursor: pointer;
+  display: inline; }
+  .post-wrapper-paragraph .board-petition-set-status .petition-set-status-save::after {
+    white-space: pre;
+    content: "\a변경사항 저장하기"; }
+  .post-wrapper-paragraph .board-petition-set-status .petition-set-status-save:hover {
+    text-decoration: underline; }
 
 .board-petition-set-status-inline .petition-set-status-selectbox-inline {
   top: 50%;

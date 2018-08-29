@@ -40,6 +40,22 @@
 
         .petition-set-status-selectbox {
             margin-left: $grid;
+            margin-bottom: $grid;
+        }
+
+        .petition-set-status-save {
+            color: $text999;
+            cursor: pointer;
+            display: inline;
+
+            &::after {
+                white-space: pre;
+                content: "\a변경사항 저장하기";
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

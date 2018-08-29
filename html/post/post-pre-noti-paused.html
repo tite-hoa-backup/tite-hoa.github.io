@@ -14,6 +14,7 @@
 
     <!-- inject:css -->
     <link rel="stylesheet" href="/css/dist/animate.css">
+    <link rel="stylesheet" href="/css/dist/ballon.css">
     <link rel="stylesheet" href="/css/dist/style.css">
     <!-- endinject -->
 </head>
@@ -64,7 +65,7 @@
             </h3>
             <span class="header-subtitle-description">알림을 만들거나 관리하고, 입주민들에게 전송할 수 있습니다</span>
             <!-- write new post -->
-            <a href="/html/write/write-post-pre-noti.html" class="header-newpost" title="새로운 글 작성하기">
+            <a href="/html/write/write-post-pre-noti.html" class="header-newpost" data-balloon="새로운 글 작성하기" data-balloon-pos="down">
                 <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text pre-noti"></span>
             </a>
         </div>
@@ -103,7 +104,7 @@
                     <div class="post-edit-remove">
                         <a class="post-end" onclick="confirm('일시중지된 예약알림을 다시 활성화 하시겠습니까?')">일시중지 해제</a>
                         <a class="post-edit">수정</a>
-                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
+                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')" data-balloon="이 게시물을 삭제합니다" data-balloon-pos="up">삭제</a>
                     </div>
                     
                     <!-- comment see more -->

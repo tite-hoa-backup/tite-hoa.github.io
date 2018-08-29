@@ -185,10 +185,6 @@
                     border: 1px solid $textccc;
                     @include border-radius(0 $grid2x $grid2x 0);
 
-                    &::after {
-                        content: "항목삭제";
-                    }
-
                     @media #{$chrome} {
                         margin-top: calc(-#{$grid12x});
                     }

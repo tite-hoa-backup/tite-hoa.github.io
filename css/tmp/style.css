@@ -2539,8 +2539,6 @@ p {
     border: 1px solid #ccc;
     -webkit-border-radius: 0 8px 8px 0;
     border-radius: 0 8px 8px 0; }
-    .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn::after {
-      content: "항목삭제"; }
     @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-wrapper .write-post-vote-items-each .remove-vote-item-btn {
         margin-top: calc(-48px); } }
@@ -2618,10 +2616,7 @@ p {
 .post-wrapper-paragraph .board-petition-set-status .petition-set-status-save {
   color: #999;
   cursor: pointer;
-  display: inline; }
-  .post-wrapper-paragraph .board-petition-set-status .petition-set-status-save::after {
-    white-space: pre;
-    content: "\a변경사항 저장하기"; }
+  display: inline-block; }
   .post-wrapper-paragraph .board-petition-set-status .petition-set-status-save:hover {
     text-decoration: underline; }
 

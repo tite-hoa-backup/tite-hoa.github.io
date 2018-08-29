@@ -14,6 +14,7 @@
 
     <!-- inject:css -->
     <link rel="stylesheet" href="/css/dist/animate.css">
+    <link rel="stylesheet" href="/css/dist/ballon.css">
     <link rel="stylesheet" href="/css/dist/style.css">
     <!-- endinject -->
 </head>
@@ -97,7 +98,8 @@
                         <option>반려</option>
                     </select>
                     <!-- 민원 상태가 변경되었을 경우, 아래의 링크가 보여집니다 -->
-                    <a class="petition-set-status-save" title="변경된 민원 상태를 저장합니다"></a>
+                    <br>
+                    <a class="petition-set-status-save" data-balloon="변경된 민원 상태를 저장하려면 클릭하세요" data-balloon-pos="down">변경사항 저장하기</a>
                 </div>
             </div>
 
@@ -108,7 +110,7 @@
                     <span class="post-comment-title"><span class="post-comment-count">2</span></span>
                     <div class="post-edit-remove">
                         <a class="post-edit">수정</a>
-                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')">삭제</a>
+                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')" data-balloon="이 게시물을 삭제합니다" data-balloon-pos="up">삭제</a>
                     </div>
                     
                     <!-- comment see more -->

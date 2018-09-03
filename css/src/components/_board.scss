@@ -92,7 +92,7 @@
             &:hover {
                 background-color: $brand-hover;
             }
-            
+
             .header-newpost-icon {
                 top: 50%;
                 margin-right: $grid2x;
@@ -118,7 +118,7 @@
                 @media #{$pablet} {
                     display: none;
                 }
-                
+
 
                 &.noti {                 &::after { content: "새 공지사항 게시";}
                     @media #{$desktop} { &::after { content: "새 공지사항"; } }
@@ -143,8 +143,8 @@
             }
         }
     }
-    
-    
+
+
     .board-wrapper {
         z-index: 2;
         display: block;
@@ -162,32 +162,32 @@
                 font-weight: 900;
                 display: inline-block;
                 margin: $grid2x 0 $grid4x;
-                
+
                 &::before,
                 &::after {
                     font-weight: 400;
                     color: $text333;
                 }
-                
+
                 &::before {
                     content: "총 ";
                 }
-                
+
                 &::after {
                     content: "의 글이 있습니다";
                 }
 
                 &.pre-noti-posts {
-                
+
                     &::after {
                         content: "의 게시중인 예약알림이 있습니다";
                     }
                 }
 
                 &.business-posts {
-                
+
                     &::after {
-                        content: "의 게시중인 광고 글이 있습니다";
+                        content: "의 게시중인 글이 있습니다";
                     }
                 }
             }

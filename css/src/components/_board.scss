@@ -195,14 +195,25 @@
     }
 }
 
-.copy {
+.copyright {
+    color: $text999;
+    margin: $grid8x 0;
+    display: inline-block;
+    @include font-size($grid3x);
+    @include line-height($grid3x);
+
+    &::before {
+        content: "© ";
+    }
 
     &::after {
-        color: $text999;
-        margin: $grid8x 0;
-        display: inline-block;
-        content: "© 2018. 타이트 주식회사. Tite, Ltd., All Rights Reserved.";
-        @include font-size($grid3x);
-        @include line-height($grid3x);
+        content: ". 타이트 주식회사. Tite, Ltd., All Rights Reserved.";
+    }
+}
+
+.dashboard-container {
+
+    .copyright {
+        margin-top: $grid4x;
     }
 }

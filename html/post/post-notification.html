@@ -58,14 +58,14 @@
     </div>
 
     <!-- board -->
-    <div class="board-container copy">
+    <div class="board-container">
         <div class="board-header">
             <h3 class="header-title">
                 <i class="material-icons md-24 title-icon">notification_important</i>공지사항
             </h3>
             <span class="header-subtitle-description">입주민들에게 공지사항을 전송할 수 있습니다</span>
             <!-- write new post -->
-            <a href="/html/write/write-post-noti.html" class="header-newpost" title="새 공지사항 게시">
+            <a href="/html/write/write-post-noti.html" class="header-newpost" data-balloon="새로운 공지사항 만들기" data-balloon-pos="down">
                 <i class="material-icons md-24 header-newpost-icon">create</i><span class="header-newpost-text noti"></span>
             </a>
         </div>
@@ -101,13 +101,13 @@
                     <span class="post-comment-title"><span class="post-comment-count">2</span></span>
                     <div class="post-edit-remove">
                         <a class="post-edit">수정</a>
-                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')" data-balloon="이 게시물을 삭제합니다" data-balloon-pos="up">삭제</a>
+                        <a class="post-remove" onclick="confirm('삭제된 글은 타이트 앱을 사용하는 주민들에게도 보여지지 않게됩니다.\n정말로 글을 삭제하시겠습니까?')" data-balloon="이 공지사항을 삭제합니다" data-balloon-pos="up">삭제</a>
                     </div>
                     
                     <!-- comment see more -->
                     <div class="post-comment-comment-container">
                         <div class="post-comment-see-more">
-                            <button class="post-comment-see-more-btn">댓글 더 불러오기</button>
+                            <button class="post-comment-see-more-btn" data-balloon="이전 댓글을 더 불러옵니다" data-balloon-pos="up">댓글 더 불러오기</button>
                         </div>
     
                         <!-- comments -->
@@ -203,6 +203,8 @@
                 </a>
             </div>
         </div>
+
+        <p class="copyright"></p>
     </div>
 
     <!-- inject:js -->

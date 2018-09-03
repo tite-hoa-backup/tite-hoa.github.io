@@ -28,6 +28,17 @@
 
 
 /* ==============================
+    getFullYear
+============================== */
+(function(){
+    var d = new Date();
+    var y = d.getFullYear();
+    document.getElementsByClassName("copyright")[0].innerHTML = y;
+})();
+
+
+
+/* ==============================
     show/hide hamburger menu 아이콘 설정
 ============================== */
 (function() {

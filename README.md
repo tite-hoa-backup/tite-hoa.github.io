@@ -8,6 +8,6 @@
 # install dependencies
 npm install
 
-# task runner
+# task runner & build with static server
 gulp watch
 ```

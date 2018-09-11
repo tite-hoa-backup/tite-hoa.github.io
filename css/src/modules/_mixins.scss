@@ -129,10 +129,10 @@
   button pressed
 ============================== */
 @mixin button-pressed($val:0.95){
-    @include transition(all .25s ease !important);
-    &:active {
-        @include transform(scale($val));
-    }
+    // @include transition(all .25s ease !important);
+    // &:active {
+    //     @include transform(scale($val));
+    // }
 }
 
 

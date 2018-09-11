@@ -494,14 +494,8 @@ p {
       font-size: 1rem;
       line-height: 51.2px;
       line-height: 3.2rem;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-      .sidebar-container .sidebar-wrapper .sidebar-item:active {
-        -webkit-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        transform: scale(0.95); }
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .sidebar-container .sidebar-wrapper .sidebar-item {
           -webkit-transition: all 0s ease;
@@ -651,14 +645,8 @@ p {
       padding: 0 16px 0 12px;
       -webkit-border-radius: 8px;
       border-radius: 8px;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important;
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease; }
-      .board-container .board-header .header-newpost:active {
-        -webkit-transform: scale(0.975);
-        -khtml-transform: scale(0.975);
-        transform: scale(0.975); }
       @media screen and (max-width: 420px) {
         .board-container .board-header .header-newpost {
           width: 48px; } }
@@ -1041,17 +1029,11 @@ p {
         border: 1px solid #eee;
         -webkit-border-radius: 8px;
         border-radius: 8px;
-        -webkit-transition: all 0.25s ease !important;
-        transition: all 0.25s ease !important;
         -webkit-transform: translateZ(0);
         -khtml-transform: translateZ(0);
         transform: translateZ(0);
         -webkit-transition: all 0.25s ease;
         transition: all 0.25s ease; }
-        .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:active {
-          -webkit-transform: scale(0.985);
-          -khtml-transform: scale(0.985);
-          transform: scale(0.985); }
         .dashboard-container .dashboard-wrapper .dashboard-card .scrollable:hover {
           border: 1px solid #17C060;
           background-color: #fafafa;
@@ -1157,8 +1139,6 @@ p {
         border-radius: 8px;
         -webkit-transition: all 0.25s ease;
         transition: all 0.25s ease;
-        -webkit-transition: all 0.25s ease !important;
-        transition: all 0.25s ease !important;
         -webkit-transform: translateZ(0);
         -khtml-transform: translateZ(0);
         transform: translateZ(0); }
@@ -1166,10 +1146,6 @@ p {
           color: white;
           background-color: #17C060;
           border: 1px solid transparent; }
-        .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall:active {
-          -webkit-transform: scale(0.985);
-          -khtml-transform: scale(0.985);
-          transform: scale(0.985); }
 
 /* ==============================
     mixins
@@ -1252,7 +1228,7 @@ p {
   position: absolute;
   opacity: 0.38;
   background-color: #fff;
-  animation: ripple 1000ms; }
+  animation: ripple 750ms; }
 
 @-moz-keyframes ripple {
   to {
@@ -1492,18 +1468,12 @@ p {
     border: 1px solid #eee;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    -webkit-transition: all 0.25s ease !important;
-    transition: all 0.25s ease !important;
     -webkit-transform: translateZ(0);
     -khtml-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     overflow: hidden !important; }
-    .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link:active {
-      -webkit-transform: scale(0.985);
-      -khtml-transform: scale(0.985);
-      transform: scale(0.985); }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .dashboard-container .dashboard-wrapper .dashboard-card-pre-noti .dashboard-card-pre-noti-item .dashboard-card-pre-noti-item-link {
         overflow: hidden !important; } }
@@ -1629,8 +1599,6 @@ p {
     .post-wrapper .post-back-list .post-back-list-button {
       width: 192px;
       height: 48px;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important;
       color: #17C060;
       cursor: pointer;
       font-weight: 900;
@@ -1640,13 +1608,6 @@ p {
       border-radius: 8px;
       -webkit-transition: all 0.25s ease;
       transition: all 0.25s ease; }
-      .post-wrapper .post-write-submit .post-write-submit-button:active,
-      .post-wrapper .post-write-submit .post-back-list-button:active,
-      .post-wrapper .post-back-list .post-write-submit-button:active,
-      .post-wrapper .post-back-list .post-back-list-button:active {
-        -webkit-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        transform: scale(0.95); }
       .post-wrapper .post-write-submit .post-write-submit-button:hover,
       .post-wrapper .post-write-submit .post-back-list-button:hover,
       .post-wrapper .post-back-list .post-write-submit-button:hover,
@@ -1714,16 +1675,10 @@ p {
         background-color: transparent;
         -webkit-border-radius: 8px;
         border-radius: 8px;
-        -webkit-transition: all 0.25s ease !important;
-        transition: all 0.25s ease !important;
         font-size: 14px;
         font-size: 0.875rem;
         -webkit-transition: background-color 0.25s ease;
         transition: background-color 0.25s ease; }
-        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:active {
-          -webkit-transform: scale(0.95);
-          -khtml-transform: scale(0.95);
-          transform: scale(0.95); }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-see-more .post-comment-see-more-btn:hover {
           background-color: white; }
     .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-comment-wrapper {
@@ -1900,16 +1855,10 @@ p {
         position: absolute;
         margin-right: 16px;
         background-color: #17C060;
-        -webkit-transition: all 0.25s ease !important;
-        transition: all 0.25s ease !important;
         -webkit-border-radius: 0 8px 8px 0;
         border-radius: 0 8px 8px 0;
         -webkit-transition: background-color 0.25s ease;
         transition: background-color 0.25s ease; }
-        .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:active {
-          -webkit-transform: scale(0.95);
-          -khtml-transform: scale(0.95);
-          transform: scale(0.95); }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn:hover {
           background-color: #14A251; }
         .post-comment-container .post-info-wrapper .post-comment-comment-container .post-comment-textarea-wrapper .post-comment-textarea-btn::after {
@@ -2457,16 +2406,7 @@ p {
       padding: 8px 16px;
       border: 1px solid #eee;
       -webkit-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important; }
-      .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:active,
-      .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:active,
-      .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:active,
-      .write-post-wrapper .write-post-wrapper-paragraph .post-wrapper-duedate-wrapper fieldset label span:active {
-        -webkit-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        transform: scale(0.95); }
+      border-radius: 8px; }
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-vote-items-each fieldset label span:hover,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-upload-image-wrapper fieldset label span:hover,
       .write-post-wrapper .write-post-wrapper-paragraph .write-post-set-time-wrapper fieldset label span:hover,
@@ -2755,13 +2695,7 @@ p {
       padding: 8px 16px;
       border: 1px solid #eee;
       -webkit-border-radius: 8px;
-      border-radius: 8px;
-      -webkit-transition: all 0.25s ease !important;
-      transition: all 0.25s ease !important; }
-      .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:active {
-        -webkit-transform: scale(0.95);
-        -khtml-transform: scale(0.95);
-        transform: scale(0.95); }
+      border-radius: 8px; }
       .post-wrapper .post-wrapper-paragraph .write-post-set-time-wrapper .write-post-set-date .write-post-set-date-item span:hover {
         background-color: #fafafa; }
     @media screen and (max-width: 1280px) {

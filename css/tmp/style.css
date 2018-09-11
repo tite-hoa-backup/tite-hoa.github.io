@@ -1164,7 +1164,8 @@ p {
         transform: translateZ(0); }
         .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall:hover {
           color: white;
-          background-color: #17C060; }
+          background-color: #17C060;
+          border: 1px solid transparent; }
         .dashboard-container .dashboard-wrapper .dashboard-button-wrapper .dashboard-btn-overall-link .dashboard-btn-overall:active {
           -webkit-transform: scale(0.985);
           -khtml-transform: scale(0.985);
@@ -1233,6 +1234,45 @@ p {
     color: #17C060 !important; }
     .list-board-page-indicator .indicator-pagination .this-page li:hover {
       text-decoration: none; }
+
+[ripple] {
+  position: relative;
+  overflow: hidden; }
+
+[ripple] .ripple--container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+[ripple] .ripple--container span {
+  transform: scale(0);
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0.38;
+  background-color: #fff;
+  animation: ripple 1000ms; }
+
+@-moz-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2); } }
+
+@-webkit-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2); } }
+
+@-o-keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2); } }
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2); } }
 
 /* ==============================
     scss modules - dashboard copmonents
@@ -1612,7 +1652,8 @@ p {
       .post-wrapper .post-back-list .post-write-submit-button:hover,
       .post-wrapper .post-back-list .post-back-list-button:hover {
         color: white;
-        background-color: #17C060; }
+        background-color: #17C060;
+        border: 1px solid transparent; }
 
 .post-comment-container .post-info-wrapper {
   padding: 32px 0 32px;

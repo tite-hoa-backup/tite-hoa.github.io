@@ -34,6 +34,7 @@
     var getBtnTags = Array.prototype.slice.call(document.querySelectorAll('button'));
     var getBtnNewPost = Array.prototype.slice.call(document.querySelectorAll('.header-newpost'));
     var getBtnSidebar = Array.prototype.slice.call(document.querySelectorAll('.sidebar-item'));
+    // var getBtnSelector = Array.prototype.slice.call(document.querySelectorAll('fieldset span'));
 
     var getBtnAll = [];
     getBtnAll = getBtnAll.concat(getBtnTags, getBtnNewPost, getBtnSidebar);

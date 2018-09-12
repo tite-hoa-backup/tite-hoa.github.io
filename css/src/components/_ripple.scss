@@ -12,6 +12,7 @@
 }
 
 [ripple] .ripple--container span {
+    z-index: 9999;
     transform: scale(0);
     border-radius: 100%;
     position: absolute;

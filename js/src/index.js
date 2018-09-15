@@ -61,20 +61,23 @@
 
     debounce = function(func, delay) {
         var inDebounce;
+
         inDebounce = undefined;
+
         return function() {
             var args, context;
             context = this;
             args = arguments;
             clearTimeout(inDebounce);
             return inDebounce = setTimeout(function() {
-            return func.apply(context, args);
+                return func.apply(context, args);
             }, delay);
         };
     };
 
     showRipple = function(e) {
         var pos, ripple, rippler, size, style, x, y;
+
         ripple = this;
         rippler = document.createElement('span');
         size = ripple.offsetWidth;
@@ -83,6 +86,7 @@
         y = e.pageY - pos.top - (size / 2);
         style = 'top:' + y + 'px; left: ' + x + 'px; height: ' + size + 'px; width: ' + size + 'px;';
         ripple.rippleContainer.appendChild(rippler);
+        
         return rippler.setAttribute('style', style);
     };
 

@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-npm install
+npm i
 
 # task runner & build with static server
 gulp watch

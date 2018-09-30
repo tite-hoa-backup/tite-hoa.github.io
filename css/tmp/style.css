@@ -1231,26 +1231,6 @@ p {
   background-color: #fff;
   animation: ripple 750ms; }
 
-@-moz-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2); } }
-
-@-webkit-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2); } }
-
-@-o-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2); } }
-
-@keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2); } }
-
 /* ==============================
     scss modules - dashboard copmonents
 ============================== */

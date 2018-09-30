@@ -1951,10 +1951,10 @@ p {
           #index .login-form-container .login-text-field .login-form-wrapper input:hover {
             background-color: #eee; }
         #index .login-form-container .login-text-field .login-form-wrapper .login-btn {
+          width: 100%;
           border: none;
           color: white;
           display: block;
-          width: 80px;
           height: 40px;
           font-weight: 900;
           margin-bottom: 32px;
@@ -1974,6 +1974,7 @@ p {
         #index .login-form-container .login-text-field .login-form-wrapper .login-form-remember-me {
           width: 100%;
           height: 48px;
+          text-align: center;
           display: inline-block;
           top: 50%;
           position: relative;

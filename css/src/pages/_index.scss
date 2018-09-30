@@ -50,10 +50,10 @@
                 }
 
                 .login-btn {
+                    width: 100%;
                     border: none;
                     color: white;
                     display: block;
-                    width: $grid20x;
                     height: $grid10x;
                     font-weight: 900;
                     margin-bottom: $grid8x;
@@ -79,6 +79,8 @@
                 .login-form-remember-me {
                     width: 100%;
                     height: $grid12x;
+                    // font-weight: 400;
+                    text-align: center;
                     display: inline-block;
                     @include center-text();
                     @include transform(translateZ(0));

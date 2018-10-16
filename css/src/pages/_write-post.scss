@@ -62,7 +62,7 @@
                         height: $grid32x;
                         object-fit: cover;
                         display: inline-block;
-                        @include border-radius($grid2x);
+                        @include border-radius();
                     }
     
                     button {
@@ -130,7 +130,7 @@
                 padding: $grid3x $grid6x;
                 border: 1px solid $textccc;
                 background-color: transparent;
-                @include border-radius($grid2x);
+                @include border-radius();
             }
         }
 
@@ -183,7 +183,7 @@
                     margin-right: $grid8x;
                     background-color: $textf9;
                     border: 1px solid $textccc;
-                    @include border-radius(0 $grid2x $grid2x 0);
+                    @include border-radius(0 $grid $grid 0);
 
                     @media #{$chrome} {
                         margin-top: calc(-#{$grid12x});

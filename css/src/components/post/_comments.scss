@@ -310,7 +310,7 @@
                     margin-right: $grid4x;
                     background-color: $brand;
                     @include button-pressed();
-                    @include border-radius(0 $grid2x $grid2x 0);
+                    @include border-radius(0 $grid $grid 0);
                     @include transition(background-color .25s ease);
 
                     &:hover {

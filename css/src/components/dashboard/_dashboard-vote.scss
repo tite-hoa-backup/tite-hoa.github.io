@@ -77,7 +77,7 @@
                     height: 100%;
                     display: inline-block;
                     background-color: $texteee;
-                    @include border-radius(7px);
+                    @include border-radius(3.5px);
         
                     .vote-item-title {
                         display: block;

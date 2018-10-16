@@ -5,7 +5,7 @@
     background-color: white;
     border: 1px solid $texteee;
     @include selection();
-    @include border-radius($grid2x);
+    @include border-radius();
 
     @media #{$pablet} {
         padding: $grid8x $grid4x;

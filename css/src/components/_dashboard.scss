@@ -219,7 +219,7 @@
             width: 100%;
             padding: $grid4x;
             background-color: white;
-            @include border-radius(0 0 $grid2x $grid2x);
+            @include border-radius(0 0 $grid $grid);
 
             .dashboard-btn-overall-link {
 

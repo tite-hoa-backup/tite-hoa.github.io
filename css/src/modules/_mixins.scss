@@ -44,7 +44,7 @@
 @mixin board-card(){
     padding: $grid4x;
     background-color: white;
-    @include border-radius($grid2x $grid2x 0 0);
+    @include border-radius($grid $grid 0 0);
 }
 
 

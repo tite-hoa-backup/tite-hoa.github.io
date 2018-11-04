@@ -2,10 +2,10 @@
     
     .main-header {
         top: 0;
-        z-index: 10000;
         width: 100%;
-        height: $grid16x;
+        z-index: 10000;
         position: fixed;
+        height: $grid16x;
         background-color: white;
         border-bottom: 1px solid $texteee;
         @include box-shadow();
@@ -15,7 +15,7 @@
         .main-header-logo {
             width: $grid10x;
             height: $grid10x;
-            margin: $grid3x $grid4x $grid3x $grid8x;
+            margin: $grid3x $grid2x $grid3x $grid4x;
             @include transition(margin-left .5s ease);
             
             @media #{$landsc} {
@@ -23,7 +23,7 @@
             }
             
             @media #{$pablet} {
-                margin-left: calc(-#{$grid2x}) !important;
+                margin-left: -#{$grid2x} !important;
             }
 
             // prevent refresh animation ie
@@ -54,27 +54,26 @@
                 cursor: pointer;
                 width: $grid12x;
                 height: $grid12x;
-                margin-left: $grid4x;
+                padding-left: $grid4x;
                 display: inline-block;
                 @include transform(translateY(-68%));
             }
 
             @media #{$pablet} {
                 height: $grid8x;
-                margin-left: $grid4x;
+                padding-left: $grid4x;
             }
         }
 
         .main-header-link {
 
             @media #{$landsc} {
-                margin-left: calc(-#{$grid}) !important;
+                padding-left: $grid2x;
             }
 
             .main-header-apt-name-box {
                 width: 50%;
                 color: $text333;
-                min-width: $grid50x;
                 display: inline-block;
                 @include overflow();
                 @include transform(translateY(-100%));
@@ -99,6 +98,25 @@
             .main-header-apt-name {
                 font-weight: 900;
                 @include font-size($grid4x);
+            }
+        }
+
+        .main-header-logout {
+            top: 50%;
+            float: right;
+            color: $text999;
+            margin: $grid5x $grid8x 0 0;
+
+            @media #{$ipad} {
+                margin-right: $grid6x;
+            }
+
+            @media #{$tablet} {
+                margin-right: $grid4x;
+            }
+
+            @media #{$pablet} {
+                display: none;
             }
         }
     }

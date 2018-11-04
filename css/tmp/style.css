@@ -324,10 +324,10 @@ p {
 ============================== */
 #main .main-header {
   top: 0;
-  z-index: 10000;
   width: 100%;
-  height: 64px;
+  z-index: 10000;
   position: fixed;
+  height: 64px;
   background-color: white;
   border-bottom: 1px solid #eee;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
@@ -345,7 +345,7 @@ p {
   #main .main-header .main-header-logo {
     width: 40px;
     height: 40px;
-    margin: 12px 16px 12px 32px;
+    margin: 12px 8px 12px 16px;
     -webkit-transition: margin-left 0.5s ease;
     transition: margin-left 0.5s ease; }
     @media screen and (max-width: 640px) {
@@ -353,7 +353,7 @@ p {
         margin-left: 0 !important; } }
     @media screen and (max-width: 420px) {
       #main .main-header .main-header-logo {
-        margin-left: calc(-8px) !important; } }
+        margin-left: -8px !important; } }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       #main .main-header .main-header-logo {
         -webkit-transition: margin-left 0s ease;
@@ -378,7 +378,7 @@ p {
         cursor: pointer;
         width: 48px;
         height: 48px;
-        margin-left: 16px;
+        padding-left: 16px;
         display: inline-block;
         -webkit-transform: translateY(-68%);
         -khtml-transform: translateY(-68%);
@@ -386,14 +386,13 @@ p {
     @media screen and (max-width: 420px) {
       #main .main-header .hamburger {
         height: 32px;
-        margin-left: 16px; } }
+        padding-left: 16px; } }
   @media screen and (max-width: 640px) {
     #main .main-header .main-header-link {
-      margin-left: calc(-4px) !important; } }
+      padding-left: 8px; } }
   #main .main-header .main-header-link .main-header-apt-name-box {
     width: 50%;
     color: #333;
-    min-width: 200px;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
@@ -430,6 +429,20 @@ p {
     font-weight: 900;
     font-size: 16px;
     font-size: 1rem; }
+  #main .main-header .main-header-logout {
+    top: 50%;
+    float: right;
+    color: #999;
+    margin: 20px 32px 0 0; }
+    @media screen and (max-width: 1112px) {
+      #main .main-header .main-header-logout {
+        margin-right: 24px; } }
+    @media screen and (max-width: 768px) {
+      #main .main-header .main-header-logout {
+        margin-right: 16px; } }
+    @media screen and (max-width: 420px) {
+      #main .main-header .main-header-logout {
+        display: none; } }
 
 .expanded {
   zoom: 1;

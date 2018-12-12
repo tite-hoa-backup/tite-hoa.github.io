@@ -1368,7 +1368,7 @@ p {
   font-size: 12px;
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .new-admin-count:after {
-    content: "최근 우리아파트 타이트 유저들의 활동입니다"; }
+    content: "최근 우리아파트 로라 유저들의 활동입니다"; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper {
   cursor: default !important; }

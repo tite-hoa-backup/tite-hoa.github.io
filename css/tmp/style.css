@@ -1925,8 +1925,8 @@ p {
 #index {
   background-color: #17C060; }
   #index .login-form-container {
-    width: 400px;
-    height: 340px;
+    max-width: 400px;
+    max-height: 340px;
     background-color: white;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -1942,6 +1942,11 @@ p {
     #index .login-form-container .login-text-field {
       width: 320px;
       margin: 0 auto; }
+      @media screen and (max-width: 420px) {
+        #index .login-form-container .login-text-field {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; } }
       #index .login-form-container .login-text-field .login-form-wrapper {
         margin-top: 32px; }
         #index .login-form-container .login-text-field .login-form-wrapper ::-moz-selection {
@@ -1950,9 +1955,6 @@ p {
         #index .login-form-container .login-text-field .login-form-wrapper ::selection {
           color: white !important;
           background-color: #17C060 !important; }
-        @media screen and (max-width: 420px) {
-          #index .login-form-container .login-text-field .login-form-wrapper {
-            width: 80%; } }
         #index .login-form-container .login-text-field .login-form-wrapper input {
           width: 100%;
           display: block;

@@ -2,8 +2,8 @@
     background-color: $brand;
 
     .login-form-container {
-        width: 400px;
-        height: 340px;
+        max-width: 400px;
+        max-height: 340px;
         background-color: white;
         @extend %center-all;
         @include border-radius($grid4x);
@@ -21,13 +21,15 @@
             width: 320px;
             margin: 0 auto;
 
+            @media #{$pablet} {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             .login-form-wrapper {
                 margin-top: $grid8x;
                 @include selection();
-
-                @media #{$pablet} {
-                    width: 80%;
-                }
 
                 input {
                     width: 100%;

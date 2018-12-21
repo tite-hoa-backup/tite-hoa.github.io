@@ -2,8 +2,10 @@
     background-color: $brand;
 
     .login-form-container {
-        max-width: 400px;
-        max-height: 340px;
+        width: 400px;
+        height: 340px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: white;
         @extend %center-all;
         @include border-radius($grid4x);

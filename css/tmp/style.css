@@ -1925,8 +1925,10 @@ p {
 #index {
   background-color: #17C060; }
   #index .login-form-container {
-    max-width: 400px;
-    max-height: 340px;
+    width: 400px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;

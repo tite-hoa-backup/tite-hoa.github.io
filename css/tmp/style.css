@@ -1368,7 +1368,7 @@ p {
   font-size: 12px;
   font-size: 0.75rem; }
   .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .new-admin-count:after {
-    content: "최근 우리아파트 타이트 유저들의 활동입니다"; }
+    content: "최근 우리아파트 로라 유저들의 활동입니다"; }
 
 .dashboard-container .dashboard-wrapper .dashboard-card .dashboard-card-activity .dashboard-activity-wrapper {
   cursor: default !important; }
@@ -1927,6 +1927,8 @@ p {
   #index .login-form-container {
     width: 400px;
     height: 340px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -1942,6 +1944,11 @@ p {
     #index .login-form-container .login-text-field {
       width: 320px;
       margin: 0 auto; }
+      @media screen and (max-width: 420px) {
+        #index .login-form-container .login-text-field {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; } }
       #index .login-form-container .login-text-field .login-form-wrapper {
         margin-top: 32px; }
         #index .login-form-container .login-text-field .login-form-wrapper ::-moz-selection {
@@ -1950,9 +1957,6 @@ p {
         #index .login-form-container .login-text-field .login-form-wrapper ::selection {
           color: white !important;
           background-color: #17C060 !important; }
-        @media screen and (max-width: 420px) {
-          #index .login-form-container .login-text-field .login-form-wrapper {
-            width: 80%; } }
         #index .login-form-container .login-text-field .login-form-wrapper input {
           width: 100%;
           display: block;

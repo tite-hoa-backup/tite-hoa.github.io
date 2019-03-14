@@ -1,4 +1,9 @@
 #!/bin/bash
+prjname="tite-hoa-markup"
+
+echo "=============================="
+echo ${prjname}
+echo "=============================="
 
 # run on a local server with gulpfile.js
 # sudo gulp watch
